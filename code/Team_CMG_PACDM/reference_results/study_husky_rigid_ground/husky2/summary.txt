@@ -1,0 +1,22 @@
+status: complete  (simulated 268.6 s)
+payload while carried: position error max 0.7 mm, tilt max 0.5 mrad, yaw error max 0.6 mrad
+base tracking: r1 3.1 mm / 6.5 mrad, r2 2.8 mm / 5.4 mrad
+internal wrench while carried: force max 158.3 N (rms 5.8), moment max 43.2 N m (rms 1.6)
+  grasp_r1: force max 225.7 N, moment max 55.2 N m, vertical share 0.500 [0.412, 0.523]
+  grasp_r2: force max 246.7 N, moment max 59.6 N m, vertical share 0.500 [0.411, 0.507]
+  wrist sensor readings, largest: r1 239.2 N / 32.9 N m, r2 260.8 N / 35.4 N m (declared range 100 N / 10 N m)
+actuator demand: max ratio 0.68 (r1_front_left_wheel_motor), saturated steps 0
+  r1: min wheel load -929 N, net traction utilization max 0.152 (p99 0.065), tipping margin min -19.840 m, base height vs rigid wheels +0.00 mm [-0.00, +0.41]
+    r1 skid steering: turned 6.3 rad in all, wheel slip up to 334 mm/s, friction power max 377 W, energy 2.11 kJ; against the skid model: yaw rate ratio 0.996, error max 29.1 mrad/s (rms 4.8), sideways max 19.4 mm/s (rms 3.3); one side of the base without wheel load in 1 of 2681 samples (no skid model there)
+  r2: min wheel load -1000 N, net traction utilization max 0.138 (p99 0.065), tipping margin min -6.850 m, base height vs rigid wheels +0.00 mm [-0.00, +0.47]
+    r2 skid steering: turned 8.3 rad in all, wheel slip up to 352 mm/s, friction power max 401 W, energy 2.78 kJ; against the skid model: yaw rate ratio 0.996, error max 26.3 mrad/s (rms 7.0), sideways max 26.5 mm/s (rms 5.6); one side of the base without wheel load in 1 of 2681 samples (no skid model there)
+smallest clearance 0.050 m; by category: payload:door 0.441, payload:guide 0.006, payload:mount 0.030, payload:neighbour 0.090, payload:pad 0.000, payload:rack 0.060, payload:wall 0.350, robot:door 0.389, robot:guide 0.160, robot:mount 0.184, robot:neighbour 0.060, robot:pad 0.145, robot:payload 0.050, robot:rack 0.145, robot:wall 0.326, team:obstacle 0.612
+forbidden contacts reported by the plant: 0 []
+  compiled reaction recovery vs wrist sensor grasp_r1: force max 218.9 N (rms 6.1), moment max 52.6 N m (rms 1.4)
+  compiled reaction recovery vs wrist sensor grasp_r2: force max 230.7 N (rms 6.3), moment max 55.2 N m (rms 1.5)
+  compiled ground loads vs plant contacts: total normal max 3562.5 N (rms 65.8), friction of sliding wheels max 741.3 N (rms 21.8)
+    r1 mean wheel loads (N): model [316.0, 260.0, 311.0, 255.0] plant [316.0, 259.0, 312.0, 256.0]
+    r2 mean wheel loads (N): model [318.0, 267.0, 304.0, 253.0] plant [318.0, 266.0, 305.0, 254.0]
+  displacement vs summed rates per 20 ms: floating bodies max 498.65 um / 1814.38 urad, joints max 2161.37 u(rad|m)
+supports verified: True  checks {'grasps_unloaded': True, 'payload_at_rest': True, 'pads_loaded': True, 'placed_within_tolerance': True}  placement error 0.01 mm, 0.00 mrad
+declared bounds: NOT met: grasp_force (246.66372813249748 vs 85.0), grasp_moment (59.581974396924274 vs 10.0), tipping (-19.839585609415053 vs 0.1), wheel_load (-999.6934755024733 vs 100.0)

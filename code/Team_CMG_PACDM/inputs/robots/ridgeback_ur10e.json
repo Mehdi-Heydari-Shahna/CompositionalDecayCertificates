@@ -1,0 +1,2892 @@
+{
+ "schema": "cmg.physical-mobile-manipulator/1.0",
+ "name": "Clearpath Ridgeback with UR10e",
+ "units": "SI",
+ "floating_root": "chassis_link",
+ "bodies": [
+  {
+   "id": "chassis_link",
+   "mass_kg": 165.304,
+   "com_m": [
+    0.012,
+    0.002,
+    0.067
+   ],
+   "inertia_kg_m2": [
+    [
+     4.6155,
+     0.003646999999999981,
+     0.12279999999999973
+    ],
+    [
+     0.003646999999999981,
+     4.4744,
+     0.030979999999999987
+    ],
+    [
+     0.12279999999999973,
+     0.030979999999999987,
+     7.1624
+    ]
+   ]
+  },
+  {
+   "id": "arm_base_link_inertia",
+   "mass_kg": 4.0,
+   "com_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "inertia_kg_m2": [
+    [
+     0.0061063308908,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0061063308908,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.01125
+    ]
+   ]
+  },
+  {
+   "id": "arm_shoulder_link",
+   "mass_kg": 7.369,
+   "com_m": [
+    0.021,
+    -0.027,
+    0.0
+   ],
+   "inertia_kg_m2": [
+    [
+     0.03408,
+     0.00425,
+     2.000000000000189e-05
+    ],
+    [
+     0.00425,
+     0.02156,
+     -8.00000000000061e-05
+    ],
+    [
+     2.000000000000189e-05,
+     -8.00000000000061e-05,
+     0.03529
+    ]
+   ]
+  },
+  {
+   "id": "arm_upper_arm_link",
+   "mass_kg": 13.051,
+   "com_m": [
+    -0.2327,
+    0.0,
+    0.158
+   ],
+   "inertia_kg_m2": [
+    [
+     0.02814,
+     5e-05,
+     -0.01561
+    ],
+    [
+     5e-05,
+     0.77068,
+     2e-05
+    ],
+    [
+     -0.01561,
+     2e-05,
+     0.76943
+    ]
+   ]
+  },
+  {
+   "id": "arm_forearm_link",
+   "mass_kg": 3.989,
+   "com_m": [
+    -0.33155,
+    0.0,
+    0.068
+   ],
+   "inertia_kg_m2": [
+    [
+     0.01014,
+     8e-05,
+     0.00916
+    ],
+    [
+     8e-05,
+     0.30928,
+     0.0
+    ],
+    [
+     0.00916,
+     0.0,
+     0.30646
+    ]
+   ]
+  },
+  {
+   "id": "arm_wrist_1_link",
+   "mass_kg": 2.1,
+   "com_m": [
+    0.0,
+    -0.018,
+    0.007
+   ],
+   "inertia_kg_m2": [
+    [
+     0.00296,
+     4.4408920985006265e-21,
+     -1e-05
+    ],
+    [
+     4.4408920985006265e-21,
+     0.00258,
+     0.00024000000000000017
+    ],
+    [
+     -1e-05,
+     0.00024000000000000017,
+     0.00222
+    ]
+   ]
+  },
+  {
+   "id": "arm_wrist_2_link",
+   "mass_kg": 1.98,
+   "com_m": [
+    0.0,
+    0.018,
+    -0.007
+   ],
+   "inertia_kg_m2": [
+    [
+     0.00296,
+     4.4408920985006265e-21,
+     1e-05
+    ],
+    [
+     4.4408920985006265e-21,
+     0.00258,
+     0.00023999999999999984
+    ],
+    [
+     1e-05,
+     0.00023999999999999984,
+     0.00222
+    ]
+   ]
+  },
+  {
+   "id": "arm_wrist_3_link",
+   "mass_kg": 0.615,
+   "com_m": [
+    0.0,
+    0.0,
+    -0.026
+   ],
+   "inertia_kg_m2": [
+    [
+     0.0004,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.00041,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.00034
+    ]
+   ]
+  },
+  {
+   "id": "front_rocker_link",
+   "mass_kg": 10.267,
+   "com_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "inertia_kg_m2": [
+    [
+     0.413,
+     -1.3145000000042655e-05,
+     0.001894399999999998
+    ],
+    [
+     -1.3145000000042655e-05,
+     0.0288,
+     2.204839999999788e-06
+    ],
+    [
+     0.001894399999999998,
+     2.204839999999788e-06,
+     0.4324
+    ]
+   ]
+  },
+  {
+   "id": "front_left_wheel_link",
+   "mass_kg": 2.3,
+   "com_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "inertia_kg_m2": [
+    [
+     0.004508657416666666,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0066424,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.004508657416666666
+    ]
+   ]
+  },
+  {
+   "id": "front_right_wheel_link",
+   "mass_kg": 2.3,
+   "com_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "inertia_kg_m2": [
+    [
+     0.004508657416666666,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0066424,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.004508657416666666
+    ]
+   ]
+  },
+  {
+   "id": "rear_rocker_link",
+   "mass_kg": 10.267,
+   "com_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "inertia_kg_m2": [
+    [
+     0.413,
+     -1.3145000000042655e-05,
+     0.001894399999999998
+    ],
+    [
+     -1.3145000000042655e-05,
+     0.0288,
+     2.204839999999788e-06
+    ],
+    [
+     0.001894399999999998,
+     2.204839999999788e-06,
+     0.4324
+    ]
+   ]
+  },
+  {
+   "id": "rear_left_wheel_link",
+   "mass_kg": 2.3,
+   "com_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "inertia_kg_m2": [
+    [
+     0.004508657416666666,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0066424,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.004508657416666666
+    ]
+   ]
+  },
+  {
+   "id": "rear_right_wheel_link",
+   "mass_kg": 2.3,
+   "com_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "inertia_kg_m2": [
+    [
+     0.004508657416666666,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0066424,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.004508657416666666
+    ]
+   ]
+  },
+  {
+   "id": "clamp",
+   "mass_kg": 1.2,
+   "com_m": [
+    0,
+    0,
+    0.055
+   ],
+   "inertia_kg_m2": [
+    [
+     0.0031263999999999997,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0034000000000000002,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0026063999999999996
+    ]
+   ]
+  }
+ ],
+ "joints": [
+  {
+   "id": "arm_base_link-base_link_inertia",
+   "type": "fixed",
+   "body_a": "chassis_link",
+   "body_b": "arm_base_link_inertia",
+   "T_AJ": [
+    [
+     -1.0,
+     -1.2246467991473532e-16,
+     0.0,
+     0.0
+    ],
+    [
+     1.2246467991473532e-16,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.28
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  {
+   "id": "arm_shoulder_pan_joint",
+   "type": "revolute",
+   "body_a": "arm_base_link_inertia",
+   "body_b": "arm_shoulder_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.1807
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "id": "arm_shoulder_lift_joint",
+   "type": "revolute",
+   "body_a": "arm_shoulder_link",
+   "body_b": "arm_upper_arm_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -2.0510348974767112e-10,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     -2.0510348974767112e-10,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "id": "arm_elbow_joint",
+   "type": "revolute",
+   "body_a": "arm_upper_arm_link",
+   "body_b": "arm_forearm_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     -0.6127
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "id": "arm_wrist_1_joint",
+   "type": "revolute",
+   "body_a": "arm_forearm_link",
+   "body_b": "arm_wrist_1_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     -0.57155
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.17415
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "id": "arm_wrist_2_joint",
+   "type": "revolute",
+   "body_a": "arm_wrist_1_link",
+   "body_b": "arm_wrist_2_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -2.0510348974767112e-10,
+     -1.0,
+     -0.11985
+    ],
+    [
+     0.0,
+     1.0,
+     -2.0510348974767112e-10,
+     -2.458164590756244e-11
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "id": "arm_wrist_3_joint",
+   "type": "revolute",
+   "body_a": "arm_wrist_2_link",
+   "body_b": "arm_wrist_3_link",
+   "T_AJ": [
+    [
+     1.0,
+     -1.2246467993985327e-16,
+     1.2246467988961737e-16,
+     0.0
+    ],
+    [
+     -1.2246467991473532e-16,
+     -2.0510360076997358e-10,
+     1.0,
+     0.11655
+    ],
+    [
+     -1.2246467991473532e-16,
+     -1.0,
+     -2.0510360076997358e-10,
+     -2.390480459346185e-11
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "id": "front_rocker",
+   "type": "revolute",
+   "body_a": "chassis_link",
+   "body_b": "front_rocker_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.319
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.05
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "front_left_wheel",
+   "type": "revolute",
+   "body_a": "front_rocker_link",
+   "body_b": "front_left_wheel_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.27549999999999997
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "id": "front_right_wheel",
+   "type": "revolute",
+   "body_a": "front_rocker_link",
+   "body_b": "front_right_wheel_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     -0.27549999999999997
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "id": "rear_rocker",
+   "type": "fixed",
+   "body_a": "chassis_link",
+   "body_b": "rear_rocker_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     -0.319
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.05
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  {
+   "id": "rear_left_wheel",
+   "type": "revolute",
+   "body_a": "rear_rocker_link",
+   "body_b": "rear_left_wheel_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.27549999999999997
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "id": "rear_right_wheel",
+   "type": "revolute",
+   "body_a": "rear_rocker_link",
+   "body_b": "rear_right_wheel_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     -0.27549999999999997
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "id": "sensor_joint",
+   "type": "fixed",
+   "body_a": "arm_wrist_3_link",
+   "body_b": "clamp",
+   "T_AJ": [
+    [
+     1.0,
+     -1.1102230246251564e-16,
+     -1.1102230246251565e-16,
+     0.0
+    ],
+    [
+     1.1102230246251564e-16,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.1102230246251565e-16,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  }
+ ],
+ "frames": {
+  "base_link": {
+   "body": "chassis_link",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "riser_link": {
+   "body": "chassis_link",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.22
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "top_link": {
+   "body": "chassis_link",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     -2.7755575615628914e-17
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "mid_mount": {
+   "body": "chassis_link",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.28
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "arm_base_link": {
+   "body": "chassis_link",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.28
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "arm_ft_frame": {
+   "body": "arm_wrist_3_link",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     -1.2246467991473532e-16,
+     0.0
+    ],
+    [
+     0.0,
+     1.2246467991473532e-16,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "arm_flange": {
+   "body": "arm_wrist_3_link",
+   "T_body_frame": [
+    [
+     1.232595164407831e-32,
+     1.0,
+     -1.1102230246251565e-16,
+     0.0
+    ],
+    [
+     -1.1102230246251565e-16,
+     1.1102230246251565e-16,
+     1.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     1.1102230246251565e-16,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "arm_tool0": {
+   "body": "arm_wrist_3_link",
+   "T_body_frame": [
+    [
+     1.0,
+     -1.1102230246251564e-16,
+     -1.1102230246251565e-16,
+     0.0
+    ],
+    [
+     1.1102230246251564e-16,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.1102230246251565e-16,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "right_side_cover_link": {
+   "body": "chassis_link",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "left_side_cover_link": {
+   "body": "chassis_link",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "front_cover_link": {
+   "body": "chassis_link",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "rear_cover_link": {
+   "body": "chassis_link",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "front_lights_link": {
+   "body": "chassis_link",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "rear_lights_link": {
+   "body": "chassis_link",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "axle_link": {
+   "body": "chassis_link",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.05
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "imu_link": {
+   "body": "chassis_link",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.2085
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     -0.2902
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.1681
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "tool": {
+   "body": "clamp",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.1
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "ft_sensor_frame": {
+   "body": "clamp",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  }
+ },
+ "limits": {
+  "arm_shoulder_pan_joint": {
+   "lower": -6.283185307179586,
+   "upper": 6.283185307179586
+  },
+  "arm_shoulder_lift_joint": {
+   "lower": -6.283185307179586,
+   "upper": 6.283185307179586
+  },
+  "arm_elbow_joint": {
+   "lower": -3.141592653589793,
+   "upper": 3.141592653589793
+  },
+  "arm_wrist_1_joint": {
+   "lower": -6.283185307179586,
+   "upper": 6.283185307179586
+  },
+  "arm_wrist_2_joint": {
+   "lower": -6.283185307179586,
+   "upper": 6.283185307179586
+  },
+  "arm_wrist_3_joint": {
+   "lower": -6.283185307179586,
+   "upper": 6.283185307179586
+  },
+  "front_rocker": {
+   "lower": -0.08726,
+   "upper": 0.08726
+  },
+  "front_left_wheel": {
+   "lower": -1000000000.0,
+   "upper": 1000000000.0
+  },
+  "front_right_wheel": {
+   "lower": -1000000000.0,
+   "upper": 1000000000.0
+  },
+  "rear_left_wheel": {
+   "lower": -1000000000.0,
+   "upper": 1000000000.0
+  },
+  "rear_right_wheel": {
+   "lower": -1000000000.0,
+   "upper": 1000000000.0
+  }
+ },
+ "actuators": [
+  {
+   "id": "arm_shoulder_pan_motor",
+   "joint_id": "arm_shoulder_pan_joint",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -330.0,
+    330.0
+   ],
+   "velocity_limit": 2.0943951023931953,
+   "source": "ur_description config/ur10e/joint_limits.yaml"
+  },
+  {
+   "id": "arm_shoulder_lift_motor",
+   "joint_id": "arm_shoulder_lift_joint",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -330.0,
+    330.0
+   ],
+   "velocity_limit": 2.0943951023931953,
+   "source": "ur_description config/ur10e/joint_limits.yaml"
+  },
+  {
+   "id": "arm_elbow_motor",
+   "joint_id": "arm_elbow_joint",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -150.0,
+    150.0
+   ],
+   "velocity_limit": 3.141592653589793,
+   "source": "ur_description config/ur10e/joint_limits.yaml"
+  },
+  {
+   "id": "arm_wrist_1_motor",
+   "joint_id": "arm_wrist_1_joint",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -54.0,
+    54.0
+   ],
+   "velocity_limit": 3.141592653589793,
+   "source": "ur_description config/ur10e/joint_limits.yaml"
+  },
+  {
+   "id": "arm_wrist_2_motor",
+   "joint_id": "arm_wrist_2_joint",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -54.0,
+    54.0
+   ],
+   "velocity_limit": 3.141592653589793,
+   "source": "ur_description config/ur10e/joint_limits.yaml"
+  },
+  {
+   "id": "arm_wrist_3_motor",
+   "joint_id": "arm_wrist_3_joint",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -54.0,
+    54.0
+   ],
+   "velocity_limit": 3.141592653589793,
+   "source": "ur_description config/ur10e/joint_limits.yaml"
+  },
+  {
+   "id": "front_left_wheel_motor",
+   "joint_id": "front_left_wheel",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -40.0,
+    40.0
+   ],
+   "velocity_limit": 14.493,
+   "source": "declared: 40 N m (no public drive torque); velocity limit from the published top speed 1.1 m/s and the wheel radius"
+  },
+  {
+   "id": "front_right_wheel_motor",
+   "joint_id": "front_right_wheel",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -40.0,
+    40.0
+   ],
+   "velocity_limit": 14.493,
+   "source": "declared: 40 N m (no public drive torque); velocity limit from the published top speed 1.1 m/s and the wheel radius"
+  },
+  {
+   "id": "rear_left_wheel_motor",
+   "joint_id": "rear_left_wheel",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -40.0,
+    40.0
+   ],
+   "velocity_limit": 14.493,
+   "source": "declared: 40 N m (no public drive torque); velocity limit from the published top speed 1.1 m/s and the wheel radius"
+  },
+  {
+   "id": "rear_right_wheel_motor",
+   "joint_id": "rear_right_wheel",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -40.0,
+    40.0
+   ],
+   "velocity_limit": 14.493,
+   "source": "declared: 40 N m (no public drive torque); velocity limit from the published top speed 1.1 m/s and the wheel radius"
+  }
+ ],
+ "wheels": [
+  {
+   "id": "front_left",
+   "joint_id": "front_left_wheel",
+   "body": "front_left_wheel_link",
+   "type": "mecanum",
+   "radius_m": 0.0759,
+   "width_m": 0.079,
+   "traction_direction_base": [
+    0.7071067811865475,
+    -0.7071067811865475,
+    0.0
+   ],
+   "friction": 0.8,
+   "rollers": {
+    "count": 10,
+    "max_radius_m": 0.0145,
+    "length_m": 0.104,
+    "mass_kg": 0.05,
+    "contact_time_constant_s": 0.01,
+    "contact_damping_ratio": 0.5,
+    "contact_stiffness_N_m": 700000.0,
+    "contact_damping_N_s_m": 6000.0
+   },
+   "source": "radius, width and mass: upstream ridgeback.urdf.xacro; traction direction: mecanum wheel macro of clearpath_common (see provenance); friction, roller geometry and roller compliance: declared. The compliance is given twice, for two contact models that are not equivalent: a soft-contact time constant and damping ratio (MuJoCo), and a spring and damper per contact point (PhysX; one such spring deflects about 0.8 mm under a quarter of the robot weight). Every run reports the base height against rigid wheels"
+  },
+  {
+   "id": "front_right",
+   "joint_id": "front_right_wheel",
+   "body": "front_right_wheel_link",
+   "type": "mecanum",
+   "radius_m": 0.0759,
+   "width_m": 0.079,
+   "traction_direction_base": [
+    0.7071067811865475,
+    0.7071067811865475,
+    0.0
+   ],
+   "friction": 0.8,
+   "rollers": {
+    "count": 10,
+    "max_radius_m": 0.0145,
+    "length_m": 0.104,
+    "mass_kg": 0.05,
+    "contact_time_constant_s": 0.01,
+    "contact_damping_ratio": 0.5,
+    "contact_stiffness_N_m": 700000.0,
+    "contact_damping_N_s_m": 6000.0
+   },
+   "source": "radius, width and mass: upstream ridgeback.urdf.xacro; traction direction: mecanum wheel macro of clearpath_common (see provenance); friction, roller geometry and roller compliance: declared. The compliance is given twice, for two contact models that are not equivalent: a soft-contact time constant and damping ratio (MuJoCo), and a spring and damper per contact point (PhysX; one such spring deflects about 0.8 mm under a quarter of the robot weight). Every run reports the base height against rigid wheels"
+  },
+  {
+   "id": "rear_left",
+   "joint_id": "rear_left_wheel",
+   "body": "rear_left_wheel_link",
+   "type": "mecanum",
+   "radius_m": 0.0759,
+   "width_m": 0.079,
+   "traction_direction_base": [
+    0.7071067811865475,
+    0.7071067811865475,
+    0.0
+   ],
+   "friction": 0.8,
+   "rollers": {
+    "count": 10,
+    "max_radius_m": 0.0145,
+    "length_m": 0.104,
+    "mass_kg": 0.05,
+    "contact_time_constant_s": 0.01,
+    "contact_damping_ratio": 0.5,
+    "contact_stiffness_N_m": 700000.0,
+    "contact_damping_N_s_m": 6000.0
+   },
+   "source": "radius, width and mass: upstream ridgeback.urdf.xacro; traction direction: mecanum wheel macro of clearpath_common (see provenance); friction, roller geometry and roller compliance: declared. The compliance is given twice, for two contact models that are not equivalent: a soft-contact time constant and damping ratio (MuJoCo), and a spring and damper per contact point (PhysX; one such spring deflects about 0.8 mm under a quarter of the robot weight). Every run reports the base height against rigid wheels"
+  },
+  {
+   "id": "rear_right",
+   "joint_id": "rear_right_wheel",
+   "body": "rear_right_wheel_link",
+   "type": "mecanum",
+   "radius_m": 0.0759,
+   "width_m": 0.079,
+   "traction_direction_base": [
+    0.7071067811865475,
+    -0.7071067811865475,
+    0.0
+   ],
+   "friction": 0.8,
+   "rollers": {
+    "count": 10,
+    "max_radius_m": 0.0145,
+    "length_m": 0.104,
+    "mass_kg": 0.05,
+    "contact_time_constant_s": 0.01,
+    "contact_damping_ratio": 0.5,
+    "contact_stiffness_N_m": 700000.0,
+    "contact_damping_N_s_m": 6000.0
+   },
+   "source": "radius, width and mass: upstream ridgeback.urdf.xacro; traction direction: mecanum wheel macro of clearpath_common (see provenance); friction, roller geometry and roller compliance: declared. The compliance is given twice, for two contact models that are not equivalent: a soft-contact time constant and damping ratio (MuJoCo), and a spring and damper per contact point (PhysX; one such spring deflects about 0.8 mm under a quarter of the robot weight). Every run reports the base height against rigid wheels"
+  }
+ ],
+ "ports": {
+  "tool": {
+   "frame": "tool",
+   "latch_points": [
+    [
+     0.06,
+     0.0415,
+     0.0
+    ],
+    [
+     -0.06,
+     0.0415,
+     0.0
+    ],
+    [
+     0.0,
+     -0.0415,
+     0.0
+    ]
+   ],
+   "clamp": {
+    "stiffness_N_m": 80000.0,
+    "damping_N_s_m": 300.0,
+    "rot_stiffness_Nm_rad": 400.0,
+    "rot_damping_Nm_s_rad": 2.5
+   }
+  },
+  "sensor": {
+   "joint_id": "sensor_joint",
+   "frame": "ft_sensor_frame",
+   "range": {
+    "force_N": 100.0,
+    "torque_Nm": 10.0
+   }
+  }
+ },
+ "drive": {
+  "arm_shoulder_pan_joint": {
+   "armature": 1.2,
+   "damping": 5.0
+  },
+  "arm_shoulder_lift_joint": {
+   "armature": 1.2,
+   "damping": 5.0
+  },
+  "arm_elbow_joint": {
+   "armature": 0.6,
+   "damping": 3.0
+  },
+  "arm_wrist_1_joint": {
+   "armature": 0.12,
+   "damping": 1.0
+  },
+  "arm_wrist_2_joint": {
+   "armature": 0.12,
+   "damping": 1.0
+  },
+  "arm_wrist_3_joint": {
+   "armature": 0.12,
+   "damping": 1.0
+  },
+  "front_left_wheel": {
+   "armature": 0.05,
+   "damping": 0.02
+  },
+  "front_right_wheel": {
+   "armature": 0.05,
+   "damping": 0.02
+  },
+  "rear_left_wheel": {
+   "armature": 0.05,
+   "damping": 0.02
+  },
+  "rear_right_wheel": {
+   "armature": 0.05,
+   "damping": 0.02
+  },
+  "front_rocker": {
+   "armature": 0.0,
+   "damping": 2.0
+  }
+ },
+ "geometry": [
+  {
+   "body": "chassis_link",
+   "name": "chassis",
+   "type": "box",
+   "half_size": [
+    0.4663,
+    0.395,
+    0.13585
+   ],
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.13965000000000002
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.16,
+    0.17,
+    0.19,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "chassis_link",
+   "name": "deck",
+   "type": "box",
+   "half_size": [
+    0.4658,
+    0.395,
+    0.003150000000000014
+   ],
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.27685000000000004
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.16,
+    0.17,
+    0.19,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "chassis_link",
+   "name": "side_covers",
+   "type": "box",
+   "half_size": [
+    0.235,
+    0.3966,
+    0.1075
+   ],
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.11270000000000001
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.85,
+    0.72,
+    0.12,
+    1.0
+   ],
+   "collide": false
+  },
+  {
+   "body": "front_rocker_link",
+   "name": "front_rocker",
+   "type": "box",
+   "half_size": [
+    0.06,
+    0.2362,
+    0.0275
+   ],
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.16,
+    0.17,
+    0.19,
+    1.0
+   ],
+   "collide": false
+  },
+  {
+   "body": "rear_rocker_link",
+   "name": "rear_rocker",
+   "type": "box",
+   "half_size": [
+    0.06,
+    0.2362,
+    0.0275
+   ],
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.16,
+    0.17,
+    0.19,
+    1.0
+   ],
+   "collide": false
+  },
+  {
+   "body": "arm_base_link_inertia",
+   "name": "arm_base",
+   "type": "cylinder",
+   "radius": 0.095,
+   "half_length": 0.05,
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.05
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "arm_shoulder_link",
+   "name": "shoulder",
+   "type": "cylinder",
+   "radius": 0.09,
+   "half_length": 0.1,
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "arm_upper_arm_link",
+   "name": "upper_arm",
+   "type": "capsule",
+   "radius": 0.065,
+   "half_length": 0.30635,
+   "T_body_geom": [
+    [
+     0.0,
+     0.0,
+     -1.0,
+     -0.30635
+    ],
+    [
+     -0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.1762
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "arm_upper_arm_link",
+   "name": "shoulder_cap",
+   "type": "cylinder",
+   "radius": 0.085,
+   "half_length": 0.11,
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.09
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": false
+  },
+  {
+   "body": "arm_forearm_link",
+   "name": "forearm",
+   "type": "capsule",
+   "radius": 0.05,
+   "half_length": 0.285775,
+   "T_body_geom": [
+    [
+     0.0,
+     0.0,
+     -1.0,
+     -0.285775
+    ],
+    [
+     -0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0393
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "arm_forearm_link",
+   "name": "elbow_cap",
+   "type": "cylinder",
+   "radius": 0.065,
+   "half_length": 0.095,
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.075
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": false
+  },
+  {
+   "body": "arm_wrist_1_link",
+   "name": "wrist_1",
+   "type": "cylinder",
+   "radius": 0.047,
+   "half_length": 0.065,
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "arm_wrist_2_link",
+   "name": "wrist_2",
+   "type": "cylinder",
+   "radius": 0.047,
+   "half_length": 0.065,
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "arm_wrist_3_link",
+   "name": "wrist_3",
+   "type": "cylinder",
+   "radius": 0.045,
+   "half_length": 0.03,
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     -0.03
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "clamp",
+   "name": "clamp_top",
+   "type": "box",
+   "half_size": [
+    0.06,
+    0.054,
+    0.015
+   ],
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.015
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.95,
+    0.55,
+    0.12,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "clamp",
+   "name": "clamp_jaw_a",
+   "type": "box",
+   "half_size": [
+    0.06,
+    0.012499999999999999,
+    0.05500000000000001
+   ],
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     -0.0415
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.085
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.95,
+    0.55,
+    0.12,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "clamp",
+   "name": "clamp_jaw_b",
+   "type": "box",
+   "half_size": [
+    0.06,
+    0.012499999999999999,
+    0.05500000000000001
+   ],
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0415
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.085
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.95,
+    0.55,
+    0.12,
+    1.0
+   ],
+   "collide": true
+  }
+ ],
+ "seed": {
+  "joints": {
+   "arm_shoulder_pan_joint": 3.1416,
+   "arm_shoulder_lift_joint": -1.9,
+   "arm_elbow_joint": 2.3,
+   "arm_wrist_1_joint": -1.97,
+   "arm_wrist_2_joint": -1.5708,
+   "arm_wrist_3_joint": 0.0,
+   "front_rocker": 0.0,
+   "front_left_wheel": 0.0,
+   "front_right_wheel": 0.0,
+   "rear_left_wheel": 0.0,
+   "rear_right_wheel": 0.0
+  }
+ },
+ "gravity_m_s2": [
+  0.0,
+  0.0,
+  -9.81
+ ],
+ "declared": {
+  "tooling": "the clamp (1.2 kg), its inertia, the tool frame, the points at which it holds a section and its compliance are synthetic. The wrist sensor is modelled in the tool flange with the range of the force/torque sensor built into the UR10e (100 N, 10 N m; UR10e data sheet).",
+  "drive": "armature and damping, including the damping of the rocker pivot, are synthetic values for numerical realism, not UR or Clearpath data.",
+  "actuators": "arm effort bounds are the ur_description UR10e limits; the wheel effort bound is declared, the wheel speed limit follows from the published top speed of 1.1 m/s.",
+  "rocker": "the front rocker is a passive revolute joint with limits of +-0.08726 rad and the rear rocker is fixed, as in the upstream description used here (ridgeback_description 0.3.5). The newer clearpath_common description fixes both rockers.",
+  "arm_mount": "the arm base is on the link mid_mount with zero offset, the default of Clearpath's ridgeback_ur10_e_description; upstream the offset is an environment variable, and the user manual describes mounting holes at the front end of the plate.",
+  "geometry": "boxes, cylinders and capsules placed from the kinematic frames, the published centres of mass and the bounding boxes of the upstream chassis, deck, cover and rocker meshes; not CAD.",
+  "masses": "upstream URDF values. The platform bodies sum to 195.0 kg (chassis 165.304, two rockers of 10.267, four wheels of 2.3); the Ridgeback user manual of 2016 gives a weight of 135 kg. The base link mass of the UR10e is marked \"might be incorrect\" upstream.",
+  "wheel_inertia": "upstream gives each wheel the inertia of a thin disc (3.3212e-3, 6.6424e-3, 3.3212e-3 kg m2), which leaves no physical hub once rollers are taken from it. The two transverse moments are replaced by those of a solid cylinder of the upstream mass, radius and width (4.509e-3 kg m2), the formula of the wheel macro of clearpath_common; mass and axial moment are unchanged.",
+  "omitted": "the dummy mass of the IMU link (1 g), laser scanners and other accessories of the upstream description; the UR control box (12 kg in the UR10e data sheet) and the arm cable."
+ },
+ "provenance": {
+  "ridgeback_description": "https://github.com/ridgeback/ridgeback commit 7f2489993f1369906e808402e8f45e4c2aebf5b3 (BSD-3-Clause)",
+  "ur_description": "https://github.com/UniversalRobots/Universal_Robots_ROS2_Description commit 6662e15f32c23c12ece57d0050aee9a716e4fc41 (BSD-3-Clause)",
+  "xacro_top": "upstream/ridgeback_description/urdf/ridgeback.urdf.xacro with RIDGEBACK_URDF_EXTRAS = inputs/xacro/ridgeback_ur10e_extras.urdf.xacro; the laser description the accessory mounts include (package lms1xx) is replaced by an empty file, no accessory is enabled",
+  "references": {
+   "arm_mount": "https://github.com/ridgeback/ridgeback_manipulation commit 748d284978610bab37984847700497ca35a71575, ridgeback_ur_description/urdf/ridgeback_ur10_e_description.urdf.xacro (read, not copied)",
+   "traction_directions": "https://github.com/clearpathrobotics/clearpath_common commit 726d7fba367f18e53899d3ac03f0b276380ae847, clearpath_platform_description/urdf/r100/drivetrain/wheels/mecanum.urdf.xacro (read, not copied)",
+   "platform": "Ridgeback user manual and integration pages, https://docs.clearpathrobotics.com/docs_robots/indoor_robots/ridgeback/user_manual_ridgeback/ (maximum payload 100 kg, maximum speed 1.1 m/s); weight 135 kg: Ridgeback user manual, 2016",
+   "arm": "UR10e data sheet, https://www.universal-robots.com/manuals/latest/en/datasheets/ur10e/ (payload 12.5 kg, reach 1300 mm, force/torque sensor range 100 N and 10 N m, control box 12 kg)"
+  },
+  "urdf_sha256": "3288bb8d664b6924d23bf7fa1ef9eef119bf30ceaa053bf508645f5755f5621e"
+ }
+}

@@ -1,0 +1,110 @@
+[
+ {
+  "team": "ridgeback2",
+  "plant": "mujoco",
+  "feedforward": "desired",
+  "feedforward_rate": "slow",
+  "timestep": 0.002,
+  "velocity_filter_hz": 15.0,
+  "advance": "positions",
+  "arm_damping_ratio": 1.0,
+  "lift_damping_ratio": 1.0,
+  "options": {},
+  "start": {
+   "form_min": 11.322334057955178,
+   "form_max": 222.79668320827568,
+   "rate": [
+    28.880917171192266,
+    240.97927581680756
+   ],
+   "d": 12,
+   "W_before": 0.0034322242954376468
+  },
+  "W0": 0.1740339344063632,
+  "W_max_ratio": 1.1702129042553815,
+  "t_of_max": 0.005999999999999339,
+  "W_end_ratio": 0.011160820031605411,
+  "largest_rise_between_steps": 0.09890284042732445,
+  "above_upper_bound": 1.116630341288932,
+  "time_to_floor": 0.041999999999995374,
+  "floor": 0.05,
+  "rate_fitted": 39.98864619638798,
+  "balance": 1.5830758499829007,
+  "max_effort_ratio": 0.8079370991717237,
+  "max_internal_ratio": 0.013956651768424573,
+  "largest_displacement": 0.005990160784231265,
+  "seconds": 5.8
+ },
+ {
+  "team": "ridgeback2",
+  "plant": "mujoco",
+  "feedforward": "fitted",
+  "feedforward_rate": "slow",
+  "timestep": 0.002,
+  "velocity_filter_hz": 0.0,
+  "advance": "positions",
+  "arm_damping_ratio": 1.0,
+  "lift_damping_ratio": 1.0,
+  "options": {},
+  "start": {
+   "form_min": 11.322227979696038,
+   "form_max": 222.7969300348949,
+   "rate": [
+    28.880917312358225,
+    240.9795499608963
+   ],
+   "d": 12,
+   "W_before": 0.002670063177521555
+  },
+  "W0": 0.1740082353918049,
+  "W_max_ratio": 1.0,
+  "t_of_max": 0.0,
+  "W_end_ratio": 0.014065099806733648,
+  "largest_rise_between_steps": 0.007705880119089003,
+  "above_upper_bound": 0.0,
+  "time_to_floor": 0.033999999999996255,
+  "floor": 0.05,
+  "rate_fitted": 47.032865887823206,
+  "balance": 0.103399624618258,
+  "max_effort_ratio": 0.9265702536556101,
+  "max_internal_ratio": 0.008404798037232028,
+  "largest_displacement": 0.0034764415066126405,
+  "seconds": 6.1
+ },
+ {
+  "team": "ridgeback2",
+  "plant": "mujoco",
+  "feedforward": "fitted",
+  "feedforward_rate": "fast",
+  "timestep": 0.002,
+  "velocity_filter_hz": 0.0,
+  "advance": "positions",
+  "arm_damping_ratio": 1.0,
+  "lift_damping_ratio": 1.0,
+  "options": {},
+  "start": {
+   "form_min": 11.32220473484102,
+   "form_max": 222.7968233106207,
+   "rate": [
+    28.88092112238633,
+    240.97944387523344
+   ],
+   "d": 12,
+   "W_before": 0.0028983376831588133
+  },
+  "W0": 0.17397062086681792,
+  "W_max_ratio": 1.0,
+  "t_of_max": 0.0,
+  "W_end_ratio": 0.012051538081323249,
+  "largest_rise_between_steps": 0.008062614309810878,
+  "above_upper_bound": 0.0,
+  "time_to_floor": 0.033999999999996255,
+  "floor": 0.05,
+  "rate_fitted": 45.67059028628759,
+  "balance": 0.10119638945136335,
+  "max_effort_ratio": 0.9271226545183623,
+  "max_internal_ratio": 0.008176985172374734,
+  "largest_displacement": 0.0034665720320436596,
+  "seconds": 13.1
+ }
+]

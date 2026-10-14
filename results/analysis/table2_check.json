@@ -1,0 +1,116 @@
+{
+ "team2": {
+  "d": 14,
+  "p": 22,
+  "rate": 15.617098032109611,
+  "interface_rate": 15.61709821813827,
+  "equal_shares": 0.41211004866078194,
+  "optimized_scalar": 0.4121218961543589,
+  "realizable": true,
+  "self_motion_orders": {
+   "r1": 4,
+   "r2": 4
+  },
+  "supplies_at_centralized_rate": {
+   "kappa": 15.617098032109611,
+   "aggregate_feasible": true,
+   "min_eig_S": 2.2755864030784528e-12,
+   "sum_defect": 4.0703827245533116e-16,
+   "normalized_local_min_eig": {
+    "r1": 1.1303204837092535e-16,
+    "r2": -1.1300476256014168e-17
+   },
+   "indefinite": {
+    "r1": true,
+    "r2": true
+   }
+  }
+ },
+ "team3": {
+  "d": 18,
+  "p": 33,
+  "rate": 16.374960768937743,
+  "interface_rate": 16.374960989830832,
+  "equal_shares": 0.29352586161617744,
+  "optimized_scalar": 0.49023626903101597,
+  "realizable": true,
+  "self_motion_orders": {
+   "r1": 4,
+   "r2": 4,
+   "r3": 4
+  },
+  "supplies_at_centralized_rate": {
+   "kappa": 16.374960768937743,
+   "aggregate_feasible": true,
+   "min_eig_S": -1.5543937668857923e-12,
+   "sum_defect": 7.204145485346969e-16,
+   "normalized_local_min_eig": {
+    "r1": -8.196460391046135e-18,
+    "r2": 3.847293457172459e-17,
+    "r3": 1.2557488625769496e-17
+   },
+   "indefinite": {
+    "r1": true,
+    "r2": true,
+    "r3": true
+   }
+  }
+ },
+ "ridgeback2": {
+  "d": 12,
+  "p": 20,
+  "rate": 28.880613757889527,
+  "interface_rate": 28.88061376265819,
+  "equal_shares": 0.8490601570144037,
+  "optimized_scalar": 0.8491064276290754,
+  "realizable": true,
+  "self_motion_orders": {
+   "r1": 3,
+   "r2": 3
+  },
+  "supplies_at_centralized_rate": {
+   "kappa": 28.880613757889527,
+   "aggregate_feasible": true,
+   "min_eig_S": -1.5603602435038713e-12,
+   "sum_defect": 1.9762808882888172e-16,
+   "normalized_local_min_eig": {
+    "r1": -2.3188856827589996e-17,
+    "r2": -1.1790278228844003e-17
+   },
+   "indefinite": {
+    "r1": true,
+    "r2": true
+   }
+  }
+ },
+ "ridgeback3": {
+  "d": 15,
+  "p": 30,
+  "rate": 29.134953642840095,
+  "interface_rate": 29.134953646416133,
+  "equal_shares": 0.7355186101114816,
+  "optimized_scalar": 1.1159953188651637,
+  "realizable": true,
+  "self_motion_orders": {
+   "r1": 3,
+   "r2": 3,
+   "r3": 3
+  },
+  "supplies_at_centralized_rate": {
+   "kappa": 29.134953642840095,
+   "aggregate_feasible": true,
+   "min_eig_S": 2.5039717747222552e-12,
+   "sum_defect": 1.7478868695484566e-16,
+   "normalized_local_min_eig": {
+    "r1": -1.1207635231393453e-17,
+    "r2": -1.7259258099421106e-18,
+    "r3": -4.1031997435983525e-18
+   },
+   "indefinite": {
+    "r1": true,
+    "r2": true,
+    "r3": true
+   }
+  }
+ }
+}

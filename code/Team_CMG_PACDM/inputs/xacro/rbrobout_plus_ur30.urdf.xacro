@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+  RB-ROBOUT+ with a UR30, assembled from the unchanged upstream macros.
+
+  This reproduces robots/rbrobout/rbrobout_plus.urdf.xacro of robotnik_description with
+  ur_type=ur30 and without the sensor macros (IMU, laser scanners, RGB-D camera), which
+  live in the separate robotnik_sensors package and carry no mechanism.
+  The solid_cuboid_inertia macro is copied verbatim from
+  robotnik_description/urdf/structures/elevator.urdf.xacro.
+-->
+<robot name="rbrobout_plus_ur30" xmlns:xacro="http://wiki.ros.org/xacro">
+  <xacro:arg name="namespace" default="robot"/>
+  <xacro:arg name="prefix" default=""/>
+  <xacro:arg name="gazebo_ignition" default="false"/>
+  <xacro:arg name="ur_type" default="ur30"/>
+
+  <xacro:macro name="solid_cuboid_inertia" params="m h d w">
+    <inertia ixx="${(m*(h*h+d*d))/12}" ixy="0" ixz="0" iyy="${(m*(w*w+d*d))/12}" iyz="0" izz="${(m*(w*w+h*h))/12}" />
+  </xacro:macro>
+
+  <xacro:include filename="$(find robotnik_description)/urdf/bases/rbrobout/rbrobout_base.urdf.xacro"/>
+  <xacro:include filename="$(find robotnik_description)/urdf/bases/rbrobout/rbrobout_top_cover.urdf.xacro"/>
+  <xacro:include filename="$(find robotnik_description)/urdf/structures/ewellix/ewellix_lift_900mm.urdf.xacro"/>
+  <xacro:include filename="$(find robotnik_description)/urdf/arms/ur_macro.urdf.xacro"/>
+
+  <xacro:rbrobout prefix="$(arg prefix)" gazebo_ignition="$(arg gazebo_ignition)" namespace="$(arg namespace)"/>
+  <xacro:top_cover prefix="$(arg prefix)" parent="$(arg prefix)base_link">
+    <origin xyz="0 0 -0.1" rpy="0 0 0"/>
+  </xacro:top_cover>
+  <xacro:ewellix_lift_900mm prefix="$(arg prefix)lift_" parent="$(arg prefix)base_link">
+    <origin xyz="-0.76 0.0 0.18" rpy="0 0 0"/>
+  </xacro:ewellix_lift_900mm>
+  <xacro:arm_ur ur_type="$(arg ur_type)" frame_prefix="$(arg prefix)arm_" parent="$(arg prefix)lift_top_link"
+                gazebo_ignition="$(arg gazebo_ignition)">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </xacro:arm_ur>
+</robot>

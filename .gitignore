@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+MUJOCO_LOG.TXT
+
+# Outputs of new runs (the recorded results of the paper are in results/ and code/Team_CMG_PACDM/reference_results/)
+/code/Team_CMG_PACDM/results/
+/results/logs/
+/results/analysis/native_loading_*/record.npz

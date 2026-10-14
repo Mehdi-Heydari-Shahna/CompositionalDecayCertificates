@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!--
+  Clearpath Husky A300 with a UR10e, assembled from the unchanged upstream macros.
+
+  The platform part is what Clearpath's description generator (clearpath_generator_common) writes
+  for the sample configuration clearpath_config/sample/a300/a300_default.yaml: the common
+  materials, the a300 macro in its default skid-steer configuration (control diff_4wd, outdoor
+  wheels front and rear), the two bumpers and the top plate.
+
+  The arm follows clearpath_config/sample/manipulators/arms/universal_robots.yaml (model
+  universal_robots, zero offset on its parent) with ur_type ur10e, one of the types the
+  configuration accepts.  That sample mounts the arm of a Husky A200 on default_mount; on the A300
+  default_mount lies under the top plate, so the arm is put on top_plate_default_mount, the mount
+  the plate itself provides at its centre.  The macro clearpath_manipulators_description/urdf/arm/
+  universal_robots.urdf.xacro forwards its arguments to the ur_robot macro of ur_description and
+  adds ros2_control blocks, which carry no mechanism; here ur_robot is called directly with the
+  same arguments, and the links are prefixed arm_ as in the other robot records of this package.
+
+  Arguments set by tools/build_robot.py: use_platform_controllers:=false (no ros2_control block).
+-->
+<robot name="husky_a300_ur10e" xmlns:xacro="http://ros.org/wiki/xacro">
+  <!-- Common -->
+  <xacro:include filename="$(find clearpath_platform_description)/urdf/common.urdf.xacro"/>
+
+  <!-- Platform -->
+  <xacro:include filename="$(find clearpath_platform_description)/urdf/a300/a300.urdf.xacro"/>
+  <xacro:a300 control="diff_4wd" front_wheels="outdoor" rear_wheels="outdoor"/>
+
+  <!-- Attachments -->
+  <xacro:include filename="$(find clearpath_platform_description)/urdf/a300/attachments/bumper.urdf.xacro"/>
+  <xacro:bumper name="front_bumper" model="default" parent_link="front_bumper_mount" extension="0.0">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </xacro:bumper>
+  <xacro:bumper name="rear_bumper" model="default" parent_link="rear_bumper_mount" extension="0.0">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </xacro:bumper>
+  <xacro:include filename="$(find clearpath_platform_description)/urdf/a300/attachments/top_plate.urdf.xacro"/>
+  <xacro:top_plate name="top_plate" model="default" parent_link="default_mount">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </xacro:top_plate>
+
+  <!-- Manipulators -->
+  <xacro:include filename="$(find ur_description)/urdf/ur_macro.xacro"/>
+  <xacro:ur_robot name="arm" tf_prefix="arm_" parent="top_plate_default_mount"
+                  joint_limits_parameters_file="$(find ur_description)/config/ur10e/joint_limits.yaml"
+                  kinematics_parameters_file="$(find ur_description)/config/ur10e/default_kinematics.yaml"
+                  physical_parameters_file="$(find ur_description)/config/ur10e/physical_parameters.yaml"
+                  visual_parameters_file="$(find ur_description)/config/ur10e/visual_parameters.yaml"
+                  safety_limits="false" safety_pos_margin="0.15" safety_k_position="20">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </xacro:ur_robot>
+</robot>

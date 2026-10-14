@@ -1,0 +1,20 @@
+status: complete  (simulated 246.6 s)
+payload while carried: position error max 0.5 mm, tilt max 0.6 mrad, yaw error max 0.3 mrad
+base tracking: r1 5.2 mm / 2.3 mrad, r2 10.1 mm / 2.1 mrad
+internal wrench while carried: force max 6.5 N (rms 1.5), moment max 0.4 N m (rms 0.1)
+  grasp_r1: force max 59.4 N, moment max 0.3 N m, vertical share 0.500 [0.478, 0.516]
+  grasp_r2: force max 59.1 N, moment max 0.3 N m, vertical share 0.500 [0.484, 0.515]
+  wrist sensor readings, largest: r1 71.4 N / 0.8 N m, r2 70.9 N / 0.6 N m (declared range 100 N / 10 N m)
+actuator demand: max ratio 0.68 (r2_arm_elbow_motor), saturated steps 0
+  r1: min wheel load 352 N, traction utilization max 0.184 (p99 0.111), tipping margin min 0.077 m, base height vs rigid wheels -0.06 mm [-0.10, -0.00], front_rocker [-0.4, +0.4] mrad of +-87
+  r2: min wheel load 354 N, traction utilization max 0.131 (p99 0.113), tipping margin min 0.078 m, base height vs rigid wheels -0.06 mm [-0.10, -0.01], front_rocker [-0.4, +0.4] mrad of +-87
+smallest clearance 0.050 m; by category: payload:door 0.419, payload:guide 0.006, payload:mount 0.030, payload:neighbour 0.090, payload:pad 0.000, payload:rack 0.060, payload:wall 0.363, robot:door 0.334, robot:guide 0.160, robot:mount 0.184, robot:neighbour 0.060, robot:pad 0.151, robot:payload 0.050, robot:rack 0.151, robot:wall 0.326, team:obstacle 0.607
+forbidden contacts reported by the plant: 0 []
+  compiled reaction recovery vs wrist sensor grasp_r1: force max 3.3 N (rms 0.1), moment max 1.1 N m (rms 0.0)
+  compiled reaction recovery vs wrist sensor grasp_r2: force max 4.1 N (rms 0.1), moment max 1.5 N m (rms 0.1)
+  compiled ground loads vs plant contacts: total normal max 4.1 N (rms 0.1), each wheel normal max 38.4 N (rms 12.3), wheel traction max 121.9 N (rms 18.4)
+    r1 mean wheel loads (N): model [566.0, 566.0, 676.0, 482.0] plant [567.0, 564.0, 673.0, 485.0]
+    r2 mean wheel loads (N): model [566.0, 566.0, 680.0, 477.0] plant [568.0, 564.0, 677.0, 481.0]
+  displacement vs summed rates per 20 ms: floating bodies max 0.00 um / 0.04 urad, joints max 0.00 u(rad|m)
+supports verified: True  checks {'grasps_unloaded': True, 'payload_at_rest': True, 'pads_loaded': True, 'placed_within_tolerance': True}  placement error 0.11 mm, 0.00 mrad
+declared bounds: all met

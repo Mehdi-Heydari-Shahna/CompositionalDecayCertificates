@@ -1,0 +1,3 @@
+# Test suite.
+-r requirements-linux.txt
+pytest==9.1.1

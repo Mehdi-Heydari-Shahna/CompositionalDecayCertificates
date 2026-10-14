@@ -1,0 +1,2681 @@
+{
+ "schema": "cmg.physical-mobile-manipulator/1.0",
+ "name": "RB-ROBOUT+ with UR30",
+ "units": "SI",
+ "floating_root": "base_link",
+ "bodies": [
+  {
+   "id": "base_link",
+   "mass_kg": 200.0,
+   "com_m": [
+    0.0,
+    0.0,
+    0.1
+   ],
+   "inertia_kg_m2": [
+    [
+     38.166666666666664,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     67.33333333333333,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     104.16666666666667
+    ]
+   ]
+  },
+  {
+   "id": "front_right_wheel_link",
+   "mass_kg": 6.5,
+   "com_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "inertia_kg_m2": [
+    [
+     0.0303095,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.05241925,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0303095
+    ]
+   ]
+  },
+  {
+   "id": "front_left_wheel_link",
+   "mass_kg": 6.5,
+   "com_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "inertia_kg_m2": [
+    [
+     0.0303095,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.05241925,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0303095
+    ]
+   ]
+  },
+  {
+   "id": "back_left_wheel_link",
+   "mass_kg": 6.5,
+   "com_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "inertia_kg_m2": [
+    [
+     0.0303095,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.05241925,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0303095
+    ]
+   ]
+  },
+  {
+   "id": "back_right_wheel_link",
+   "mass_kg": 6.5,
+   "com_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "inertia_kg_m2": [
+    [
+     0.0303095,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.05241925,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0303095
+    ]
+   ]
+  },
+  {
+   "id": "top_cover_base_link",
+   "mass_kg": 200.0,
+   "com_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "inertia_kg_m2": [
+    [
+     1.391,
+     0.004,
+     0.0
+    ],
+    [
+     0.004,
+     6.853,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     6.125
+    ]
+   ]
+  },
+  {
+   "id": "lift_top_link",
+   "mass_kg": 2.0,
+   "com_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "inertia_kg_m2": [
+    [
+     0.02,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.02,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.02
+    ]
+   ]
+  },
+  {
+   "id": "arm_base_link_inertia",
+   "mass_kg": 4.0,
+   "com_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "inertia_kg_m2": [
+    [
+     0.0061063308908,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0061063308908,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.01125
+    ]
+   ]
+  },
+  {
+   "id": "arm_shoulder_link",
+   "mass_kg": 16.343,
+   "com_m": [
+    -0.0001,
+    -0.0069,
+    -0.06
+   ],
+   "inertia_kg_m2": [
+    [
+     0.03351,
+     9.999999999999992e-06,
+     2.0000000000000005e-05
+    ],
+    [
+     9.999999999999992e-06,
+     0.021,
+     -0.0037400000000000055
+    ],
+    [
+     2.0000000000000005e-05,
+     -0.0037400000000000055,
+     0.03374
+    ]
+   ]
+  },
+  {
+   "id": "arm_upper_arm_link",
+   "mass_kg": 28.542,
+   "com_m": [
+    -0.2476,
+    0.0,
+    0.2103
+   ],
+   "inertia_kg_m2": [
+    [
+     0.02796,
+     -0.0001,
+     -0.0072
+    ],
+    [
+     -0.0001,
+     0.47558,
+     3e-05
+    ],
+    [
+     -0.0072,
+     3e-05,
+     0.47635
+    ]
+   ]
+  },
+  {
+   "id": "arm_forearm_link",
+   "mass_kg": 7.156,
+   "com_m": [
+    -0.278,
+    0.0,
+    0.0629
+   ],
+   "inertia_kg_m2": [
+    [
+     0.01091,
+     6e-05,
+     0.01012
+    ],
+    [
+     6e-05,
+     0.1206,
+     1e-05
+    ],
+    [
+     0.01012,
+     1e-05,
+     0.11714
+    ]
+   ]
+  },
+  {
+   "id": "arm_wrist_1_link",
+   "mass_kg": 3.054,
+   "com_m": [
+    0.0,
+    -0.0353,
+    -0.0048
+   ],
+   "inertia_kg_m2": [
+    [
+     0.00609,
+     4.4408920985006265e-21,
+     -1e-05
+    ],
+    [
+     4.4408920985006265e-21,
+     0.00579,
+     -0.0008299999999999985
+    ],
+    [
+     -1e-05,
+     -0.0008299999999999985,
+     0.002449999999999999
+    ]
+   ]
+  },
+  {
+   "id": "arm_wrist_2_link",
+   "mass_kg": 3.126,
+   "com_m": [
+    0.0,
+    0.0341,
+    -0.0046
+   ],
+   "inertia_kg_m2": [
+    [
+     0.00389,
+     -4.4408920985006265e-21,
+     -1e-05
+    ],
+    [
+     -4.4408920985006265e-21,
+     0.00363,
+     0.00044999999999999934
+    ],
+    [
+     -1e-05,
+     0.00044999999999999934,
+     0.00219
+    ]
+   ]
+  },
+  {
+   "id": "arm_wrist_3_link",
+   "mass_kg": 0.926,
+   "com_m": [
+    0.0,
+    0.0,
+    -0.0293
+   ],
+   "inertia_kg_m2": [
+    [
+     0.00117,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.00118,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.00084
+    ]
+   ]
+  },
+  {
+   "id": "ft_sensor",
+   "mass_kg": 0.35,
+   "com_m": [
+    0,
+    0,
+    0.0175
+   ],
+   "inertia_kg_m2": [
+    [
+     0.00017572916666666667,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.00017572916666666667,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.00028
+    ]
+   ]
+  },
+  {
+   "id": "clamp",
+   "mass_kg": 3.2,
+   "com_m": [
+    0,
+    0,
+    0.065
+   ],
+   "inertia_kg_m2": [
+    [
+     0.011195733333333334,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.012053333333333334,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.009595733333333334
+    ]
+   ]
+  }
+ ],
+ "joints": [
+  {
+   "id": "front_right_wheel_joint",
+   "type": "revolute",
+   "body_a": "base_link",
+   "body_b": "front_right_wheel_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.558
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     -0.2865
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "id": "front_left_wheel_joint",
+   "type": "revolute",
+   "body_a": "base_link",
+   "body_b": "front_left_wheel_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.558
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.2865
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "id": "back_left_wheel_joint",
+   "type": "revolute",
+   "body_a": "base_link",
+   "body_b": "back_left_wheel_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     -0.558
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.2865
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "id": "back_right_wheel_joint",
+   "type": "revolute",
+   "body_a": "base_link",
+   "body_b": "back_right_wheel_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     -0.558
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     -0.2865
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "id": "top_cover_base_joint",
+   "type": "fixed",
+   "body_a": "base_link",
+   "body_b": "top_cover_base_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     -0.1
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  {
+   "id": "lift_top_joint",
+   "type": "prismatic",
+   "body_a": "base_link",
+   "body_b": "lift_top_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     -0.76
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.8999999999999999
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "id": "arm_base_link-base_link_inertia",
+   "type": "fixed",
+   "body_a": "lift_top_link",
+   "body_b": "arm_base_link_inertia",
+   "T_AJ": [
+    [
+     -1.0,
+     -1.2246467991473532e-16,
+     0.0,
+     0.0
+    ],
+    [
+     1.2246467991473532e-16,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  {
+   "id": "arm_shoulder_pan_joint",
+   "type": "revolute",
+   "body_a": "arm_base_link_inertia",
+   "body_b": "arm_shoulder_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.2363
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "id": "arm_shoulder_lift_joint",
+   "type": "revolute",
+   "body_a": "arm_shoulder_link",
+   "body_b": "arm_upper_arm_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -2.0510348974767112e-10,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     -2.0510348974767112e-10,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "id": "arm_elbow_joint",
+   "type": "revolute",
+   "body_a": "arm_upper_arm_link",
+   "body_b": "arm_forearm_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     -0.637
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "id": "arm_wrist_1_joint",
+   "type": "revolute",
+   "body_a": "arm_forearm_link",
+   "body_b": "arm_wrist_1_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     -0.5037
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.201
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "id": "arm_wrist_2_joint",
+   "type": "revolute",
+   "body_a": "arm_wrist_1_link",
+   "body_b": "arm_wrist_2_link",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -2.0510348974767112e-10,
+     -1.0,
+     -0.1593
+    ],
+    [
+     0.0,
+     1.0,
+     -2.0510348974767112e-10,
+     -3.267297616249225e-11
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "id": "arm_wrist_3_joint",
+   "type": "revolute",
+   "body_a": "arm_wrist_2_link",
+   "body_b": "arm_wrist_3_link",
+   "T_AJ": [
+    [
+     1.0,
+     -1.2246467993985327e-16,
+     1.2246467988961737e-16,
+     0.0
+    ],
+    [
+     -1.2246467991473532e-16,
+     -2.0510360076997358e-10,
+     1.0,
+     0.1543
+    ],
+    [
+     -1.2246467991473532e-16,
+     -1.0,
+     -2.0510360076997358e-10,
+     -3.1647459019915597e-11
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "id": "sensor_mount",
+   "type": "fixed",
+   "body_a": "arm_wrist_3_link",
+   "body_b": "ft_sensor",
+   "T_AJ": [
+    [
+     1.0,
+     -1.1102230246251564e-16,
+     -1.1102230246251565e-16,
+     0.0
+    ],
+    [
+     1.1102230246251564e-16,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.1102230246251565e-16,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  {
+   "id": "sensor_joint",
+   "type": "fixed",
+   "body_a": "ft_sensor",
+   "body_b": "clamp",
+   "T_AJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.035
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_BJ": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  }
+ ],
+ "frames": {
+  "arm_base_link": {
+   "body": "lift_top_link",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "arm_ft_frame": {
+   "body": "arm_wrist_3_link",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0,
+     -1.2246467991473532e-16,
+     0.0
+    ],
+    [
+     0.0,
+     1.2246467991473532e-16,
+     -1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "arm_flange": {
+   "body": "arm_wrist_3_link",
+   "T_body_frame": [
+    [
+     1.232595164407831e-32,
+     1.0,
+     -1.1102230246251565e-16,
+     0.0
+    ],
+    [
+     -1.1102230246251565e-16,
+     1.1102230246251565e-16,
+     1.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     1.1102230246251565e-16,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "arm_tool0": {
+   "body": "arm_wrist_3_link",
+   "T_body_frame": [
+    [
+     1.0,
+     -1.1102230246251564e-16,
+     -1.1102230246251565e-16,
+     0.0
+    ],
+    [
+     1.1102230246251564e-16,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.1102230246251565e-16,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "tool": {
+   "body": "clamp",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.12
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "ft_sensor_frame": {
+   "body": "clamp",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  "footprint": {
+   "body": "base_link",
+   "T_body_frame": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     -0.127
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  }
+ },
+ "limits": {
+  "front_right_wheel_joint": {
+   "lower": -1000000000.0,
+   "upper": 1000000000.0
+  },
+  "front_left_wheel_joint": {
+   "lower": -1000000000.0,
+   "upper": 1000000000.0
+  },
+  "back_left_wheel_joint": {
+   "lower": -1000000000.0,
+   "upper": 1000000000.0
+  },
+  "back_right_wheel_joint": {
+   "lower": -1000000000.0,
+   "upper": 1000000000.0
+  },
+  "lift_top_joint": {
+   "lower": 0.0,
+   "upper": 0.9
+  },
+  "arm_shoulder_pan_joint": {
+   "lower": -6.283185307179586,
+   "upper": 6.283185307179586
+  },
+  "arm_shoulder_lift_joint": {
+   "lower": -6.283185307179586,
+   "upper": 6.283185307179586
+  },
+  "arm_elbow_joint": {
+   "lower": -3.141592653589793,
+   "upper": 3.141592653589793
+  },
+  "arm_wrist_1_joint": {
+   "lower": -6.283185307179586,
+   "upper": 6.283185307179586
+  },
+  "arm_wrist_2_joint": {
+   "lower": -6.283185307179586,
+   "upper": 6.283185307179586
+  },
+  "arm_wrist_3_joint": {
+   "lower": -6.283185307179586,
+   "upper": 6.283185307179586
+  }
+ },
+ "actuators": [
+  {
+   "id": "lift_motor",
+   "joint_id": "lift_top_joint",
+   "gear": 1.0,
+   "unit": "N",
+   "effort_bounds": [
+    -1500.0,
+    1500.0
+   ],
+   "velocity_limit": 0.088,
+   "source": "declared: 1500 N (distributor listing of the 900 mm LIFTKIT-UR column). The upstream URDF placeholder is 700 N, below the weight of a UR30 with payload; velocity limit 0.088 m/s is the upstream URDF value."
+  },
+  {
+   "id": "arm_shoulder_pan_motor",
+   "joint_id": "arm_shoulder_pan_joint",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -738.0,
+    738.0
+   ],
+   "velocity_limit": 2.0943951023931953,
+   "source": "ur_description config/ur30/joint_limits.yaml"
+  },
+  {
+   "id": "arm_shoulder_lift_motor",
+   "joint_id": "arm_shoulder_lift_joint",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -738.0,
+    738.0
+   ],
+   "velocity_limit": 2.0943951023931953,
+   "source": "ur_description config/ur30/joint_limits.yaml"
+  },
+  {
+   "id": "arm_elbow_motor",
+   "joint_id": "arm_elbow_joint",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -433.0,
+    433.0
+   ],
+   "velocity_limit": 2.6179938779914944,
+   "source": "ur_description config/ur30/joint_limits.yaml"
+  },
+  {
+   "id": "arm_wrist_1_motor",
+   "joint_id": "arm_wrist_1_joint",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -107.0,
+    107.0
+   ],
+   "velocity_limit": 3.6651914291880923,
+   "source": "ur_description config/ur30/joint_limits.yaml"
+  },
+  {
+   "id": "arm_wrist_2_motor",
+   "joint_id": "arm_wrist_2_joint",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -107.0,
+    107.0
+   ],
+   "velocity_limit": 3.6651914291880923,
+   "source": "ur_description config/ur30/joint_limits.yaml"
+  },
+  {
+   "id": "arm_wrist_3_motor",
+   "joint_id": "arm_wrist_3_joint",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -107.0,
+    107.0
+   ],
+   "velocity_limit": 3.6651914291880923,
+   "source": "ur_description config/ur30/joint_limits.yaml"
+  },
+  {
+   "id": "front_left_wheel_motor",
+   "joint_id": "front_left_wheel_joint",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -150.0,
+    150.0
+   ],
+   "velocity_limit": 10.0,
+   "source": "declared: 150 N m; velocity limit 10 rad/s from the upstream ros2_control file (the upstream URDF effort limit 100000 is a placeholder)"
+  },
+  {
+   "id": "front_right_wheel_motor",
+   "joint_id": "front_right_wheel_joint",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -150.0,
+    150.0
+   ],
+   "velocity_limit": 10.0,
+   "source": "declared: 150 N m; velocity limit 10 rad/s from the upstream ros2_control file (the upstream URDF effort limit 100000 is a placeholder)"
+  },
+  {
+   "id": "back_left_wheel_motor",
+   "joint_id": "back_left_wheel_joint",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -150.0,
+    150.0
+   ],
+   "velocity_limit": 10.0,
+   "source": "declared: 150 N m; velocity limit 10 rad/s from the upstream ros2_control file (the upstream URDF effort limit 100000 is a placeholder)"
+  },
+  {
+   "id": "back_right_wheel_motor",
+   "joint_id": "back_right_wheel_joint",
+   "gear": 1.0,
+   "unit": "N m",
+   "effort_bounds": [
+    -150.0,
+    150.0
+   ],
+   "velocity_limit": 10.0,
+   "source": "declared: 150 N m; velocity limit 10 rad/s from the upstream ros2_control file (the upstream URDF effort limit 100000 is a placeholder)"
+  }
+ ],
+ "wheels": [
+  {
+   "id": "front_left",
+   "joint_id": "front_left_wheel_joint",
+   "body": "front_left_wheel_link",
+   "type": "mecanum",
+   "radius_m": 0.127,
+   "width_m": 0.087,
+   "traction_direction_base": [
+    0.7071067811865475,
+    -0.7071067811865475,
+    0.0
+   ],
+   "friction": 0.8,
+   "rollers": {
+    "count": 10,
+    "max_radius_m": 0.022,
+    "length_m": 0.118,
+    "mass_kg": 0.12,
+    "contact_time_constant_s": 0.01,
+    "contact_damping_ratio": 0.5,
+    "contact_stiffness_N_m": 1400000.0,
+    "contact_damping_N_s_m": 13000.0
+   },
+   "source": "radius, width, mass and traction direction: upstream mecanum wheel macro; friction, roller geometry and roller compliance: declared. The compliance is given twice, for two contact models that are not equivalent: a soft-contact time constant and damping ratio (MuJoCo), and a spring and damper per contact point (PhysX; one such spring deflects about 0.9 mm under a quarter of the robot weight). Every run reports the base height against rigid wheels"
+  },
+  {
+   "id": "front_right",
+   "joint_id": "front_right_wheel_joint",
+   "body": "front_right_wheel_link",
+   "type": "mecanum",
+   "radius_m": 0.127,
+   "width_m": 0.087,
+   "traction_direction_base": [
+    0.7071067811865475,
+    0.7071067811865475,
+    0.0
+   ],
+   "friction": 0.8,
+   "rollers": {
+    "count": 10,
+    "max_radius_m": 0.022,
+    "length_m": 0.118,
+    "mass_kg": 0.12,
+    "contact_time_constant_s": 0.01,
+    "contact_damping_ratio": 0.5,
+    "contact_stiffness_N_m": 1400000.0,
+    "contact_damping_N_s_m": 13000.0
+   },
+   "source": "radius, width, mass and traction direction: upstream mecanum wheel macro; friction, roller geometry and roller compliance: declared. The compliance is given twice, for two contact models that are not equivalent: a soft-contact time constant and damping ratio (MuJoCo), and a spring and damper per contact point (PhysX; one such spring deflects about 0.9 mm under a quarter of the robot weight). Every run reports the base height against rigid wheels"
+  },
+  {
+   "id": "back_left",
+   "joint_id": "back_left_wheel_joint",
+   "body": "back_left_wheel_link",
+   "type": "mecanum",
+   "radius_m": 0.127,
+   "width_m": 0.087,
+   "traction_direction_base": [
+    0.7071067811865475,
+    0.7071067811865475,
+    0.0
+   ],
+   "friction": 0.8,
+   "rollers": {
+    "count": 10,
+    "max_radius_m": 0.022,
+    "length_m": 0.118,
+    "mass_kg": 0.12,
+    "contact_time_constant_s": 0.01,
+    "contact_damping_ratio": 0.5,
+    "contact_stiffness_N_m": 1400000.0,
+    "contact_damping_N_s_m": 13000.0
+   },
+   "source": "radius, width, mass and traction direction: upstream mecanum wheel macro; friction, roller geometry and roller compliance: declared. The compliance is given twice, for two contact models that are not equivalent: a soft-contact time constant and damping ratio (MuJoCo), and a spring and damper per contact point (PhysX; one such spring deflects about 0.9 mm under a quarter of the robot weight). Every run reports the base height against rigid wheels"
+  },
+  {
+   "id": "back_right",
+   "joint_id": "back_right_wheel_joint",
+   "body": "back_right_wheel_link",
+   "type": "mecanum",
+   "radius_m": 0.127,
+   "width_m": 0.087,
+   "traction_direction_base": [
+    0.7071067811865475,
+    -0.7071067811865475,
+    0.0
+   ],
+   "friction": 0.8,
+   "rollers": {
+    "count": 10,
+    "max_radius_m": 0.022,
+    "length_m": 0.118,
+    "mass_kg": 0.12,
+    "contact_time_constant_s": 0.01,
+    "contact_damping_ratio": 0.5,
+    "contact_stiffness_N_m": 1400000.0,
+    "contact_damping_N_s_m": 13000.0
+   },
+   "source": "radius, width, mass and traction direction: upstream mecanum wheel macro; friction, roller geometry and roller compliance: declared. The compliance is given twice, for two contact models that are not equivalent: a soft-contact time constant and damping ratio (MuJoCo), and a spring and damper per contact point (PhysX; one such spring deflects about 0.9 mm under a quarter of the robot weight). Every run reports the base height against rigid wheels"
+  }
+ ],
+ "ports": {
+  "tool": {
+   "frame": "tool"
+  },
+  "sensor": {
+   "joint_id": "sensor_joint",
+   "frame": "ft_sensor_frame",
+   "range": {
+    "force_N": 600.0,
+    "torque_Nm": 60.0
+   },
+   "builtin_ur30_range": {
+    "force_N": 200.0,
+    "torque_Nm": 20.0
+   }
+  }
+ },
+ "drive": {
+  "arm_shoulder_pan_joint": {
+   "armature": 2.5,
+   "damping": 8.0
+  },
+  "arm_shoulder_lift_joint": {
+   "armature": 2.5,
+   "damping": 8.0
+  },
+  "arm_elbow_joint": {
+   "armature": 1.2,
+   "damping": 5.0
+  },
+  "arm_wrist_1_joint": {
+   "armature": 0.25,
+   "damping": 1.5
+  },
+  "arm_wrist_2_joint": {
+   "armature": 0.25,
+   "damping": 1.5
+  },
+  "arm_wrist_3_joint": {
+   "armature": 0.25,
+   "damping": 1.5
+  },
+  "lift_top_joint": {
+   "armature": 40.0,
+   "damping": 400.0
+  },
+  "front_left_wheel_joint": {
+   "armature": 0.15,
+   "damping": 0.05
+  },
+  "front_right_wheel_joint": {
+   "armature": 0.15,
+   "damping": 0.05
+  },
+  "back_left_wheel_joint": {
+   "armature": 0.15,
+   "damping": 0.05
+  },
+  "back_right_wheel_joint": {
+   "armature": 0.15,
+   "damping": 0.05
+  }
+ },
+ "geometry": [
+  {
+   "body": "base_link",
+   "name": "chassis",
+   "type": "box",
+   "half_size": [
+    0.8585,
+    0.425,
+    0.15
+   ],
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.056999999999999995
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.16,
+    0.17,
+    0.19,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "top_cover_base_link",
+   "name": "deck",
+   "type": "box",
+   "half_size": [
+    0.854,
+    0.4475,
+    0.046500000000000014
+   ],
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     -0.0050000000000000044
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     -0.022499999999999992
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.35350000000000004
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.62,
+    0.64,
+    0.67,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "top_cover_base_link",
+   "name": "cabinet",
+   "type": "box",
+   "half_size": [
+    0.6,
+    0.4425,
+    0.14999999999999997
+   ],
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.25
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     -0.017500000000000016
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.55
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.62,
+    0.64,
+    0.67,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "base_link",
+   "name": "lift_column",
+   "type": "box",
+   "half_size": [
+    0.09999999999999998,
+    0.1,
+    0.3438
+   ],
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     -0.76
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.5238
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.75,
+    0.77,
+    0.8,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "lift_top_link",
+   "name": "lift_tube",
+   "type": "box",
+   "half_size": [
+    0.074,
+    0.074,
+    0.4962
+   ],
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     -0.4962
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.75,
+    0.77,
+    0.8,
+    1.0
+   ],
+   "collide": false
+  },
+  {
+   "body": "arm_base_link_inertia",
+   "name": "arm_base",
+   "type": "cylinder",
+   "radius": 0.12,
+   "half_length": 0.05,
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.05
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "arm_shoulder_link",
+   "name": "shoulder",
+   "type": "cylinder",
+   "radius": 0.11,
+   "half_length": 0.12,
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "arm_upper_arm_link",
+   "name": "upper_arm",
+   "type": "capsule",
+   "radius": 0.075,
+   "half_length": 0.3185,
+   "T_body_geom": [
+    [
+     0.0,
+     0.0,
+     -1.0,
+     -0.3185
+    ],
+    [
+     -0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.215
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "arm_upper_arm_link",
+   "name": "shoulder_cap",
+   "type": "cylinder",
+   "radius": 0.1,
+   "half_length": 0.13,
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.11
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": false
+  },
+  {
+   "body": "arm_forearm_link",
+   "name": "forearm",
+   "type": "capsule",
+   "radius": 0.055,
+   "half_length": 0.25185,
+   "T_body_geom": [
+    [
+     0.0,
+     0.0,
+     -1.0,
+     -0.25185
+    ],
+    [
+     -0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.063
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "arm_forearm_link",
+   "name": "elbow_cap",
+   "type": "cylinder",
+   "radius": 0.08,
+   "half_length": 0.11,
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.1
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": false
+  },
+  {
+   "body": "arm_wrist_1_link",
+   "name": "wrist_1",
+   "type": "cylinder",
+   "radius": 0.055,
+   "half_length": 0.075,
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "arm_wrist_2_link",
+   "name": "wrist_2",
+   "type": "cylinder",
+   "radius": 0.055,
+   "half_length": 0.075,
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "arm_wrist_3_link",
+   "name": "wrist_3",
+   "type": "cylinder",
+   "radius": 0.05,
+   "half_length": 0.03,
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     -0.03
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.36,
+    0.55,
+    0.78,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "ft_sensor",
+   "name": "ft_sensor",
+   "type": "cylinder",
+   "radius": 0.045,
+   "half_length": 0.0175,
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.0175
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.75,
+    0.77,
+    0.8,
+    1.0
+   ],
+   "collide": false
+  },
+  {
+   "body": "clamp",
+   "name": "clamp_top",
+   "type": "box",
+   "half_size": [
+    0.07,
+    0.064,
+    0.025
+   ],
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.025
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.95,
+    0.55,
+    0.12,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "clamp",
+   "name": "clamp_jaw_a",
+   "type": "box",
+   "half_size": [
+    0.07,
+    0.015,
+    0.055
+   ],
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     -0.049
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.10500000000000001
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.95,
+    0.55,
+    0.12,
+    1.0
+   ],
+   "collide": true
+  },
+  {
+   "body": "clamp",
+   "name": "clamp_jaw_b",
+   "type": "box",
+   "half_size": [
+    0.07,
+    0.015,
+    0.055
+   ],
+   "T_body_geom": [
+    [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0,
+     0.049
+    ],
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.10500000000000001
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "rgba": [
+    0.95,
+    0.55,
+    0.12,
+    1.0
+   ],
+   "collide": true
+  }
+ ],
+ "seed": {
+  "joints": {
+   "arm_shoulder_pan_joint": 0.0,
+   "arm_shoulder_lift_joint": -1.2,
+   "arm_elbow_joint": -1.7,
+   "arm_wrist_1_joint": -1.8,
+   "arm_wrist_2_joint": 1.5708,
+   "arm_wrist_3_joint": 0.0,
+   "lift_top_joint": 0.4,
+   "front_left_wheel_joint": 0.0,
+   "front_right_wheel_joint": 0.0,
+   "back_left_wheel_joint": 0.0,
+   "back_right_wheel_joint": 0.0
+  }
+ },
+ "gravity_m_s2": [
+  0.0,
+  0.0,
+  -9.81
+ ],
+ "declared": {
+  "tooling": "ft_sensor (0.35 kg) and clamp (3.2 kg) bodies, their inertias, the tool frame and the sensor range are synthetic. The built-in UR30 force/torque sensor range (200 N, 20 N m, UR30 technical specification) is recorded for the load audit only.",
+  "drive": "armature and damping are synthetic values for numerical realism, not UR or Robotnik data.",
+  "actuators": "arm effort bounds are the ur_description UR30 limits; lift and wheel bounds are declared.",
+  "geometry": "boxes, cylinders and capsules placed from the kinematic frames, the published centres of mass and the bounding boxes of the upstream chassis and cover meshes; not CAD.",
+  "masses": "upstream URDF values, several of them marked TODO upstream (base 200 kg, top cover 200 kg); the lift base link has zero mass upstream and is treated as a frame.",
+  "omitted": "IMU, laser scanners, RGB-D camera and the signal mast of the upstream robot."
+ },
+ "provenance": {
+  "robotnik_description": "https://github.com/RobotnikAutomation/robotnik_description commit 4bc73425d090ead4591a7091e7ef7e7dc4fe862a (BSD-3-Clause)",
+  "ur_description": "https://github.com/UniversalRobots/Universal_Robots_ROS2_Description commit 6662e15f32c23c12ece57d0050aee9a716e4fc41 (BSD-3-Clause)",
+  "xacro_top": "inputs/xacro/rbrobout_plus_ur30.urdf.xacro",
+  "urdf_sha256": "72c01cdd7b9a57d0c3e1b231f14c2cb47ea4fdec6d257804289e7a3a2ba45a3d"
+ }
+}

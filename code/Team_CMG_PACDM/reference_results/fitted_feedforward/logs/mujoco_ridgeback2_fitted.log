@@ -1,0 +1,73 @@
+rendering with the MuJoCo OpenGL backend: osmesa
+IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=8, resizing from (960, 540) to (960, 544) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+  t    5.0 s  approach      carried  0.000  l   0.00 m  wall   44.4 s
+  t   10.0 s  approach      carried  0.000  l   0.00 m  wall   88.2 s
+  t   15.0 s  approach      carried  0.000  l   0.00 m  wall  135.9 s
+  t   20.0 s  dock          carried  0.000  l   0.00 m  wall  185.5 s
+  t   25.0 s  pregrasp      carried  0.000  l   0.00 m  wall  235.0 s
+  t   30.0 s  over          carried  0.000  l   0.00 m  wall  285.3 s
+  t   35.0 s  descend       carried  0.000  l   0.00 m  wall  330.2 s
+  t   40.0 s  take_weight   carried  0.335  l   0.00 m  wall  375.4 s
+  t   45.0 s  raise         carried  0.995  l   0.00 m  wall  401.7 s
+  t   50.0 s  extract       carried  1.000  l   0.00 m  wall  424.7 s
+  t   55.0 s  stow          carried  1.001  l   0.00 m  wall  448.3 s
+  t   60.0 s  navigate      carried  0.997  l   0.92 m  wall  471.6 s
+  t   65.0 s  navigate      carried  1.003  l   3.17 m  wall  495.5 s
+  t   70.0 s  navigate      carried  0.996  l   5.42 m  wall  518.6 s
+  t   75.0 s  navigate      carried  1.003  l   7.00 m  wall  542.3 s
+  t   80.0 s  navigate      carried  1.002  l   8.40 m  wall  565.8 s
+  t   85.0 s  navigate      carried  0.996  l   9.80 m  wall  590.3 s
+  t   90.0 s  navigate      carried  0.997  l  11.20 m  wall  613.7 s
+  t   95.0 s  navigate      carried  0.992  l  12.60 m  wall  637.3 s
+  t  100.0 s  navigate      carried  0.997  l  14.08 m  wall  659.7 s
+  t  105.0 s  navigate      carried  1.006  l  15.58 m  wall  682.5 s
+  t  110.0 s  navigate      carried  0.999  l  17.00 m  wall  705.9 s
+  t  115.0 s  navigate      carried  1.000  l  17.20 m  wall  728.1 s
+  t  120.0 s  navigate      carried  1.000  l  17.20 m  wall  751.0 s
+  t  125.0 s  navigate      carried  1.008  l  18.39 m  wall  774.7 s
+  t  130.0 s  navigate      carried  0.995  l  20.06 m  wall  797.5 s
+  t  135.0 s  navigate      carried  1.000  l  21.56 m  wall  820.5 s
+  t  140.0 s  navigate      carried  1.002  l  23.06 m  wall  849.7 s
+  t  145.0 s  navigate      carried  1.001  l  24.56 m  wall  896.9 s
+  t  150.0 s  navigate      carried  1.006  l  26.06 m  wall  942.8 s
+  t  155.0 s  navigate      carried  1.003  l  27.56 m  wall  988.0 s
+  t  160.0 s  navigate      carried  1.001  l  28.93 m  wall 1033.8 s
+  t  165.0 s  navigate      carried  1.015  l  30.33 m  wall 1070.7 s
+  t  170.0 s  navigate      carried  1.004  l  31.67 m  wall 1116.0 s
+  t  175.0 s  navigate      carried  0.987  l  33.67 m  wall 1161.0 s
+  t  180.0 s  navigate      carried  1.006  l  35.10 m  wall 1207.1 s
+  t  185.0 s  navigate      carried  1.002  l  35.81 m  wall 1253.6 s
+  t  190.0 s  present       carried  1.001  l  35.91 m  wall 1300.8 s
+  t  195.0 s  present       carried  0.996  l  35.91 m  wall 1352.3 s
+  t  200.0 s  insert        carried  1.000  l  35.91 m  wall 1400.0 s
+  t  205.0 s  lower         carried  1.000  l  35.91 m  wall 1446.8 s
+  t  210.0 s  transfer      carried  0.847  l  35.91 m  wall 1492.7 s
+  t  215.0 s  verify        carried -0.002  l  35.91 m  wall 1539.2 s
+  t  220.0 s  retract_back  carried -0.001  l  35.91 m  wall 1586.8 s
+  t  225.0 s  fold          carried -0.000  l  35.91 m  wall 1633.0 s
+  t  230.0 s  retract_up    carried  0.000  l  35.91 m  wall 1676.8 s
+  t  235.0 s  retract_back  carried  0.000  l  35.91 m  wall 1717.9 s
+  t  240.0 s  fold          carried  0.000  l  35.91 m  wall 1758.4 s
+  t  245.0 s  retreat       carried  0.000  l  35.91 m  wall 1797.2 s
+status: complete  (simulated 246.6 s)
+payload while carried: position error max 0.4 mm, tilt max 0.5 mrad, yaw error max 0.3 mrad
+base tracking: r1 5.2 mm / 1.9 mrad, r2 10.2 mm / 2.2 mrad
+internal wrench while carried: force max 33.5 N (rms 6.0), moment max 7.8 N m (rms 1.4)
+  grasp_r1: force max 69.6 N, moment max 8.8 N m, vertical share 0.500 [0.488, 0.514]
+  grasp_r2: force max 64.9 N, moment max 5.6 N m, vertical share 0.500 [0.478, 0.519]
+  wrist sensor readings, largest: r1 81.2 N / 5.0 N m, r2 76.8 N / 3.3 N m (declared range 100 N / 10 N m)
+actuator demand: max ratio 0.69 (r2_arm_elbow_motor), saturated steps 0
+loops, feedforward of the fitted reference: error energy against their fitted reference median 4.8e-03 J, 99 % below 3.8e-01 J, largest 5.4e-01 J (navigate, t = 173.5 s); rates of the stability statement 24.0 to 366 1/s; loop effort that moves nothing at most 0.042 of an actuator bound
+  r1: min wheel load 354 N, traction utilization max 0.173 (p99 0.115), tipping margin min 0.078 m, base height vs rigid wheels -0.06 mm [-0.10, -0.01], front_rocker [-0.3, +0.4] mrad of +-87
+  r2: min wheel load 354 N, traction utilization max 0.195 (p99 0.113), tipping margin min 0.077 m, base height vs rigid wheels -0.06 mm [-0.10, -0.01], front_rocker [-0.3, +0.5] mrad of +-87
+smallest clearance 0.050 m; by category: payload:door 0.419, payload:guide 0.006, payload:mount 0.030, payload:neighbour 0.090, payload:pad 0.000, payload:rack 0.060, payload:wall 0.363, robot:door 0.335, robot:guide 0.160, robot:mount 0.184, robot:neighbour 0.059, robot:pad 0.151, robot:payload 0.050, robot:rack 0.151, robot:wall 0.326, team:obstacle 0.607
+forbidden contacts reported by the plant: 0 []
+  compiled reaction recovery vs wrist sensor grasp_r1: force max 0.5 N (rms 0.1), moment max 0.2 N m (rms 0.0)
+  compiled reaction recovery vs wrist sensor grasp_r2: force max 0.5 N (rms 0.1), moment max 0.1 N m (rms 0.0)
+  compiled ground loads vs plant contacts: total normal max 0.5 N (rms 0.0), each wheel normal max 34.0 N (rms 10.9), wheel traction max 157.3 N (rms 18.3)
+    r1 mean wheel loads (N): model [566.0, 566.0, 676.0, 482.0] plant [568.0, 563.0, 675.0, 484.0]
+    r2 mean wheel loads (N): model [566.0, 566.0, 680.0, 477.0] plant [562.0, 570.0, 680.0, 477.0]
+  displacement vs summed rates per 20 ms: floating bodies max 0.00 um / 0.03 urad, joints max 0.00 u(rad|m)
+supports verified: True  checks {'grasps_unloaded': True, 'payload_at_rest': True, 'pads_loaded': True, 'placed_within_tolerance': True}  placement error 0.03 mm, 0.00 mrad
+declared bounds: all met
+written to results/v7/mujoco_ridgeback2_fitted

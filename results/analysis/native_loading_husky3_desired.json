@@ -1,0 +1,50 @@
+{
+ "team": "husky3",
+ "kind": "desired",
+ "controller": {},
+ "dt": 0.002,
+ "record_interval_steps": 10,
+ "status": "complete",
+ "sim_time_s": 298.2900000006962,
+ "seconds": 1163.9270708560944,
+ "payload_mm": 0.723956596040775,
+ "payload_rms_mm": 0.06420357635291178,
+ "audit_grasp_moment_max": 9.072143643563523,
+ "grasp_moment_bound": 10.0,
+ "saturated_steps": 0,
+ "by_grasp": {
+  "grasp_r1": {
+   "steps": 91825,
+   "moment_max_per_step": 14.186385734228187,
+   "t_of_max": 183.91400000015005,
+   "moment_max_20ms_mean": 6.321539428856669,
+   "force_max_per_step": 70.06606629243346,
+   "steps_above_bound": 4,
+   "share_above_bound": 4.3561121698883743e-05,
+   "moment_p99_per_step": 1.4825335789985286
+  },
+  "grasp_r2": {
+   "steps": 98125,
+   "moment_max_per_step": 11.94669979632219,
+   "t_of_max": 169.25600000008006,
+   "moment_max_20ms_mean": 5.578700915256359,
+   "force_max_per_step": 70.83439612267405,
+   "steps_above_bound": 3,
+   "share_above_bound": 3.057324840764331e-05,
+   "moment_p99_per_step": 1.3273207012280885
+  },
+  "grasp_r3": {
+   "steps": 104425,
+   "moment_max_per_step": 14.16995346267841,
+   "t_of_max": 178.5860000001246,
+   "moment_max_20ms_mean": 9.07227037148849,
+   "force_max_per_step": 69.65850625442653,
+   "steps_above_bound": 5,
+   "share_above_bound": 4.7881254488867606e-05,
+   "moment_p99_per_step": 1.4942390906734206
+  }
+ },
+ "moment_max_per_step": 14.186385734228187,
+ "moment_max_20ms_mean": 9.07227037148849,
+ "steps_above_bound": 12
+}

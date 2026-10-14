@@ -1,0 +1,45 @@
+{
+ "team": "team2",
+ "kind": "fitted05",
+ "controller": {
+  "feedforward": "fitted",
+  "monitor": true,
+  "arm_damping_ratio": 0.5,
+  "lift_damping_ratio": 0.5
+ },
+ "dt": 0.002,
+ "record_interval_steps": 10,
+ "status": "complete",
+ "sim_time_s": 250.98000000047028,
+ "seconds": 730.6269073486328,
+ "payload_mm": 0.5215988267110907,
+ "payload_rms_mm": 0.1461546926355563,
+ "audit_grasp_moment_max": 7.63735439677487,
+ "grasp_moment_bound": 45.0,
+ "saturated_steps": 0,
+ "by_grasp": {
+  "grasp_r1": {
+   "steps": 90260,
+   "moment_max_per_step": 17.703121833134695,
+   "t_of_max": 177.62000000012,
+   "moment_max_20ms_mean": 7.296066246793918,
+   "force_max_per_step": 250.36904985444818,
+   "steps_above_bound": 0,
+   "share_above_bound": 0.0,
+   "moment_p99_per_step": 5.117017920036489
+  },
+  "grasp_r2": {
+   "steps": 96560,
+   "moment_max_per_step": 14.000609037803939,
+   "t_of_max": 179.6320000001296,
+   "moment_max_20ms_mean": 7.637462566349777,
+   "force_max_per_step": 244.97234902614224,
+   "steps_above_bound": 0,
+   "share_above_bound": 0.0,
+   "moment_p99_per_step": 4.593073213895086
+  }
+ },
+ "moment_max_per_step": 17.703121833134695,
+ "moment_max_20ms_mean": 7.637462566349777,
+ "steps_above_bound": 0
+}

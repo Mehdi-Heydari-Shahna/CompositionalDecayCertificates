@@ -1,0 +1,12 @@
+husky3: 30 cases over 6 configurations
+  acceleration                                     3.64e-11
+  inverse:balance                                  7.77e-11
+  inverse:efforts                                  7.37e-11
+  pinocchio constraintDynamics: acceleration       2.85e-12
+  reaction                                         1.12e-09
+  reaction (grasp)                                 1.12e-09
+  reaction (ground)                                1.86e-11
+  reaction (rest)                                  9.33e-11
+  reaction (wheels)                                4.01e-11
+  smallest dependent-block rcond 3.948e-03
+PASS (tolerance 1e-07) -> results/pinocchio_husky3/interfaces.json

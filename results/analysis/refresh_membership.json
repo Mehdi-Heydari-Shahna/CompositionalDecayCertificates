@@ -1,0 +1,98 @@
+{
+ "refresh": {
+  "team2": {
+   "target": 14.055202372932557,
+   "all_feasible": true,
+   "max_stale_change": 0.09947088353931705,
+   "interface_vs_global_rel": 1.1910852433510543e-08
+  },
+  "team3": {
+   "target": 14.737383714848294,
+   "all_feasible": true,
+   "max_stale_change": 0.09119324207467884,
+   "interface_vs_global_rel": 1.3491174466774717e-08
+  },
+  "ridgeback2": {
+   "target": 25.992465312674316,
+   "all_feasible": true,
+   "max_stale_change": 0.15481028310467027,
+   "interface_vs_global_rel": 1.6514042479543804e-10
+  },
+  "ridgeback3": {
+   "target": 26.221366993653323,
+   "all_feasible": true,
+   "max_stale_change": 0.16185041370611372,
+   "interface_vs_global_rel": 1.2275532851009523e-10
+  }
+ },
+ "membership": {
+  "team3": {
+   "r1": {
+    "max_rate_without": 11.632648037111485,
+    "target": 15.556212730490856,
+    "retained": false,
+    "lmin_remove": -4.9112362415866855
+   },
+   "r2": {
+    "max_rate_without": 7.802702669387555,
+    "target": 15.556212730490856,
+    "retained": false,
+    "lmin_remove": -9.039427427203673
+   },
+   "r3": {
+    "max_rate_without": 12.084552795640693,
+    "target": 15.556212730490856,
+    "retained": false,
+    "lmin_remove": -4.354441611166017
+   }
+  },
+  "ridgeback3": {
+   "r1": {
+    "max_rate_without": 27.0511439023173,
+    "target": 27.67820596069809,
+    "retained": false,
+    "lmin_remove": -3.9219815635649127
+   },
+   "r2": {
+    "max_rate_without": 15.25658860306277,
+    "target": 27.67820596069809,
+    "retained": false,
+    "lmin_remove": -20.245844926999695
+   },
+   "r3": {
+    "max_rate_without": 28.326786349889296,
+    "target": 27.67820596069809,
+    "retained": true,
+    "lmin_remove": 5.534445089665841
+   }
+  },
+  "team2": {
+   "r1": {
+    "max_rate_without": 0.20626933863484986,
+    "target": 14.83624313050413,
+    "retained": false,
+    "lmin_remove": -14.644605841897345
+   },
+   "r2": {
+    "max_rate_without": 0.20625714075169724,
+    "target": 14.83624313050413,
+    "retained": false,
+    "lmin_remove": -14.644532160055537
+   }
+  },
+  "ridgeback2": {
+   "r1": {
+    "max_rate_without": 0.42536093713329914,
+    "target": 27.43658306999505,
+    "retained": false,
+    "lmin_remove": -27.06899820253478
+   },
+   "r2": {
+    "max_rate_without": 0.4253974428715308,
+    "target": 27.43658306999505,
+    "retained": false,
+    "lmin_remove": -27.06462581708054
+   }
+  }
+ }
+}

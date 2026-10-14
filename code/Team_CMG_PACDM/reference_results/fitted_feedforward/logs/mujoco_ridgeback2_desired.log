@@ -1,0 +1,71 @@
+  t    5.0 s  approach      carried  0.000  l   0.00 m  wall   17.2 s
+  t   10.0 s  approach      carried  0.000  l   0.00 m  wall   33.9 s
+  t   15.0 s  approach      carried  0.000  l   0.00 m  wall   51.2 s
+  t   20.0 s  dock          carried  0.000  l   0.00 m  wall   67.5 s
+  t   25.0 s  pregrasp      carried  0.000  l   0.00 m  wall   86.0 s
+  t   30.0 s  over          carried  0.000  l   0.00 m  wall  104.4 s
+  t   35.0 s  descend       carried  0.000  l   0.00 m  wall  130.5 s
+  t   40.0 s  take_weight   carried  0.335  l   0.00 m  wall  158.2 s
+  t   45.0 s  raise         carried  0.996  l   0.00 m  wall  185.6 s
+  t   50.0 s  extract       carried  0.999  l   0.00 m  wall  213.3 s
+  t   55.0 s  stow          carried  1.001  l   0.00 m  wall  240.7 s
+  t   60.0 s  navigate      carried  0.990  l   0.92 m  wall  269.7 s
+  t   65.0 s  navigate      carried  1.005  l   3.17 m  wall  299.8 s
+  t   70.0 s  navigate      carried  1.004  l   5.42 m  wall  327.3 s
+  t   75.0 s  navigate      carried  1.005  l   7.00 m  wall  355.9 s
+  t   80.0 s  navigate      carried  1.002  l   8.40 m  wall  386.5 s
+  t   85.0 s  navigate      carried  1.010  l   9.80 m  wall  416.0 s
+  t   90.0 s  navigate      carried  0.990  l  11.20 m  wall  446.6 s
+  t   95.0 s  navigate      carried  0.994  l  12.60 m  wall  474.8 s
+  t  100.0 s  navigate      carried  1.003  l  14.08 m  wall  502.3 s
+  t  105.0 s  navigate      carried  1.008  l  15.58 m  wall  529.3 s
+  t  110.0 s  navigate      carried  1.001  l  17.00 m  wall  555.8 s
+  t  115.0 s  navigate      carried  1.000  l  17.20 m  wall  581.2 s
+  t  120.0 s  navigate      carried  1.000  l  17.20 m  wall  607.0 s
+  t  125.0 s  navigate      carried  1.004  l  18.39 m  wall  633.8 s
+  t  130.0 s  navigate      carried  1.001  l  20.06 m  wall  663.6 s
+  t  135.0 s  navigate      carried  1.004  l  21.56 m  wall  694.6 s
+  t  140.0 s  navigate      carried  0.997  l  23.06 m  wall  723.9 s
+  t  145.0 s  navigate      carried  1.000  l  24.56 m  wall  753.9 s
+  t  150.0 s  navigate      carried  1.003  l  26.06 m  wall  782.1 s
+  t  155.0 s  navigate      carried  1.006  l  27.56 m  wall  811.3 s
+  t  160.0 s  navigate      carried  1.018  l  28.93 m  wall  841.9 s
+  t  165.0 s  navigate      carried  1.000  l  30.33 m  wall  873.0 s
+  t  170.0 s  navigate      carried  0.989  l  31.67 m  wall  902.6 s
+  t  175.0 s  navigate      carried  0.975  l  33.67 m  wall  932.2 s
+  t  180.0 s  navigate      carried  1.000  l  35.10 m  wall  957.8 s
+  t  185.0 s  navigate      carried  0.999  l  35.81 m  wall  972.2 s
+  t  190.0 s  present       carried  1.001  l  35.91 m  wall  985.8 s
+  t  195.0 s  present       carried  0.998  l  35.91 m  wall  999.9 s
+  t  200.0 s  insert        carried  1.003  l  35.91 m  wall 1013.7 s
+  t  205.0 s  lower         carried  1.000  l  35.91 m  wall 1027.0 s
+  t  210.0 s  transfer      carried  0.863  l  35.91 m  wall 1041.0 s
+  t  215.0 s  verify        carried -0.001  l  35.91 m  wall 1054.4 s
+  t  220.0 s  retract_back  carried  0.000  l  35.91 m  wall 1066.9 s
+  t  225.0 s  fold          carried -0.001  l  35.91 m  wall 1079.9 s
+  t  230.0 s  retract_up    carried  0.000  l  35.91 m  wall 1091.4 s
+  t  235.0 s  retract_back  carried  0.000  l  35.91 m  wall 1102.6 s
+  t  240.0 s  fold          carried  0.000  l  35.91 m  wall 1111.3 s
+  t  245.0 s  retreat       carried  0.000  l  35.91 m  wall 1119.4 s
+status: complete  (simulated 246.6 s)
+payload while carried: position error max 0.5 mm, tilt max 1.0 mrad, yaw error max 0.3 mrad
+base tracking: r1 5.3 mm / 2.0 mrad, r2 10.2 mm / 1.9 mrad
+internal wrench while carried: force max 27.0 N (rms 5.4), moment max 5.9 N m (rms 1.3)
+  grasp_r1: force max 63.4 N, moment max 7.0 N m, vertical share 0.500 [0.488, 0.513]
+  grasp_r2: force max 65.8 N, moment max 7.4 N m, vertical share 0.500 [0.485, 0.518]
+  wrist sensor readings, largest: r1 74.7 N / 4.1 N m, r2 77.1 N / 4.5 N m (declared range 100 N / 10 N m)
+actuator demand: max ratio 0.66 (r1_arm_elbow_motor), saturated steps 0
+loops, feedforward of the desired motion: error energy against their fitted reference median 4.5e-03 J, 99 % below 3.9e-01 J, largest 5.0e-01 J (navigate, t = 174.9 s); rates of the stability statement 24.0 to 365 1/s; loop effort that moves nothing at most 0.023 of an actuator bound
+  r1: min wheel load 353 N, traction utilization max 0.167 (p99 0.111), tipping margin min 0.077 m, base height vs rigid wheels -0.06 mm [-0.11, -0.00], front_rocker [-0.5, +0.3] mrad of +-87
+  r2: min wheel load 353 N, traction utilization max 0.135 (p99 0.109), tipping margin min 0.077 m, base height vs rigid wheels -0.06 mm [-0.11, -0.00], front_rocker [-0.4, +0.4] mrad of +-87
+smallest clearance 0.050 m; by category: payload:door 0.419, payload:guide 0.006, payload:mount 0.030, payload:neighbour 0.090, payload:pad 0.000, payload:rack 0.060, payload:wall 0.363, robot:door 0.334, robot:guide 0.160, robot:mount 0.184, robot:neighbour 0.060, robot:pad 0.151, robot:payload 0.050, robot:rack 0.151, robot:wall 0.326, team:obstacle 0.607
+forbidden contacts reported by the plant: 0 []
+  compiled reaction recovery vs wrist sensor grasp_r1: force max 0.6 N (rms 0.1), moment max 0.2 N m (rms 0.0)
+  compiled reaction recovery vs wrist sensor grasp_r2: force max 0.6 N (rms 0.1), moment max 0.2 N m (rms 0.0)
+  compiled ground loads vs plant contacts: total normal max 1.4 N (rms 0.0), each wheel normal max 36.8 N (rms 12.8), wheel traction max 125.7 N (rms 18.9)
+    r1 mean wheel loads (N): model [566.0, 566.0, 677.0, 482.0] plant [567.0, 564.0, 675.0, 483.0]
+    r2 mean wheel loads (N): model [566.0, 566.0, 681.0, 477.0] plant [568.0, 564.0, 676.0, 482.0]
+  displacement vs summed rates per 20 ms: floating bodies max 0.00 um / 0.04 urad, joints max 0.00 u(rad|m)
+supports verified: True  checks {'grasps_unloaded': True, 'payload_at_rest': True, 'pads_loaded': True, 'placed_within_tolerance': True}  placement error 0.04 mm, 0.00 mrad
+declared bounds: all met
+written to results/v7/mujoco_ridgeback2_desired

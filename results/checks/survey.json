@@ -1,0 +1,603 @@
+{
+ "team2": {
+  "n": 40,
+  "nf": 22,
+  "d": 14,
+  "rows": 26,
+  "chart": 0,
+  "rank_dep": 26,
+  "redundant_lift": 0,
+  "rankL": 14,
+  "dim_kerLT": 8,
+  "ident_rank": 26,
+  "ident_red": 0,
+  "residual": 1.337041588556073e-11,
+  "blocks": [
+   [
+    "grasp_r1",
+    "grasp",
+    6,
+    false
+   ],
+   [
+    "grasp_r2",
+    "grasp",
+    6,
+    false
+   ],
+   [
+    "r1:ground",
+    "ground",
+    3,
+    false
+   ],
+   [
+    "r1:wheels",
+    "wheels",
+    4,
+    false
+   ],
+   [
+    "r2:ground",
+    "ground",
+    3,
+    false
+   ],
+   [
+    "r2:wheels",
+    "wheels",
+    4,
+    false
+   ]
+  ],
+  "determinate": {
+   "grasp_r1": true,
+   "grasp_r2": true,
+   "r1:ground": true,
+   "r1:wheels": true,
+   "r2:ground": true,
+   "r2:wheels": true
+  },
+  "ground": {
+   "r1": "fit",
+   "r2": "fit"
+  },
+  "drive": {
+   "r1": "rolling",
+   "r2": "rolling"
+  },
+  "independent": [
+   "r1_base_x",
+   "r1_base_y",
+   "r1_base_yaw",
+   "r1_lift_top_joint",
+   "r2_base_x",
+   "r2_base_y",
+   "r2_base_yaw",
+   "r2_lift_top_joint",
+   "beam_base_x",
+   "beam_base_y",
+   "beam_base_z",
+   "beam_base_yaw",
+   "beam_base_pitch",
+   "beam_base_roll"
+  ],
+  "seconds": 0.2
+ },
+ "team3": {
+  "n": 57,
+  "nf": 33,
+  "d": 18,
+  "rows": 39,
+  "chart": 0,
+  "rank_dep": 39,
+  "redundant_lift": 0,
+  "rankL": 18,
+  "dim_kerLT": 15,
+  "ident_rank": 39,
+  "ident_red": 0,
+  "residual": 1.3370193840955803e-11,
+  "blocks": [
+   [
+    "grasp_r1",
+    "grasp",
+    6,
+    false
+   ],
+   [
+    "grasp_r2",
+    "grasp",
+    6,
+    false
+   ],
+   [
+    "grasp_r3",
+    "grasp",
+    6,
+    false
+   ],
+   [
+    "r1:ground",
+    "ground",
+    3,
+    false
+   ],
+   [
+    "r1:wheels",
+    "wheels",
+    4,
+    false
+   ],
+   [
+    "r2:ground",
+    "ground",
+    3,
+    false
+   ],
+   [
+    "r2:wheels",
+    "wheels",
+    4,
+    false
+   ],
+   [
+    "r3:ground",
+    "ground",
+    3,
+    false
+   ],
+   [
+    "r3:wheels",
+    "wheels",
+    4,
+    false
+   ]
+  ],
+  "determinate": {
+   "grasp_r1": true,
+   "grasp_r2": true,
+   "grasp_r3": true,
+   "r1:ground": true,
+   "r1:wheels": true,
+   "r2:ground": true,
+   "r2:wheels": true,
+   "r3:ground": true,
+   "r3:wheels": true
+  },
+  "ground": {
+   "r1": "fit",
+   "r2": "fit",
+   "r3": "fit"
+  },
+  "drive": {
+   "r1": "rolling",
+   "r2": "rolling",
+   "r3": "rolling"
+  },
+  "independent": [
+   "r1_base_x",
+   "r1_base_y",
+   "r1_base_yaw",
+   "r1_lift_top_joint",
+   "r2_base_x",
+   "r2_base_y",
+   "r2_base_yaw",
+   "r2_lift_top_joint",
+   "r3_base_x",
+   "r3_base_y",
+   "r3_base_yaw",
+   "r3_lift_top_joint",
+   "beam_base_x",
+   "beam_base_y",
+   "beam_base_z",
+   "beam_base_yaw",
+   "beam_base_pitch",
+   "beam_base_roll"
+  ],
+  "seconds": 0.4
+ },
+ "ridgeback2": {
+  "n": 40,
+  "nf": 20,
+  "d": 12,
+  "rows": 28,
+  "chart": 0,
+  "rank_dep": 28,
+  "redundant_lift": 0,
+  "rankL": 12,
+  "dim_kerLT": 8,
+  "ident_rank": 28,
+  "ident_red": 0,
+  "residual": 4.440892098500626e-16,
+  "blocks": [
+   [
+    "grasp_r1",
+    "grasp",
+    6,
+    false
+   ],
+   [
+    "grasp_r2",
+    "grasp",
+    6,
+    false
+   ],
+   [
+    "r1:ground",
+    "ground",
+    4,
+    false
+   ],
+   [
+    "r1:wheels",
+    "wheels",
+    4,
+    false
+   ],
+   [
+    "r2:ground",
+    "ground",
+    4,
+    false
+   ],
+   [
+    "r2:wheels",
+    "wheels",
+    4,
+    false
+   ]
+  ],
+  "determinate": {
+   "grasp_r1": true,
+   "grasp_r2": true,
+   "r1:ground": true,
+   "r1:wheels": true,
+   "r2:ground": true,
+   "r2:wheels": true
+  },
+  "ground": {
+   "r1": "contact",
+   "r2": "contact"
+  },
+  "drive": {
+   "r1": "rolling",
+   "r2": "rolling"
+  },
+  "independent": [
+   "r1_base_x",
+   "r1_base_y",
+   "r1_base_yaw",
+   "r2_base_x",
+   "r2_base_y",
+   "r2_base_yaw",
+   "beam_base_x",
+   "beam_base_y",
+   "beam_base_z",
+   "beam_base_yaw",
+   "beam_base_pitch",
+   "beam_base_roll"
+  ],
+  "seconds": 0.6
+ },
+ "ridgeback3": {
+  "n": 57,
+  "nf": 30,
+  "d": 15,
+  "rows": 42,
+  "chart": 0,
+  "rank_dep": 42,
+  "redundant_lift": 0,
+  "rankL": 15,
+  "dim_kerLT": 15,
+  "ident_rank": 42,
+  "ident_red": 0,
+  "residual": 8.881784197001252e-16,
+  "blocks": [
+   [
+    "grasp_r1",
+    "grasp",
+    6,
+    false
+   ],
+   [
+    "grasp_r2",
+    "grasp",
+    6,
+    false
+   ],
+   [
+    "grasp_r3",
+    "grasp",
+    6,
+    false
+   ],
+   [
+    "r1:ground",
+    "ground",
+    4,
+    false
+   ],
+   [
+    "r1:wheels",
+    "wheels",
+    4,
+    false
+   ],
+   [
+    "r2:ground",
+    "ground",
+    4,
+    false
+   ],
+   [
+    "r2:wheels",
+    "wheels",
+    4,
+    false
+   ],
+   [
+    "r3:ground",
+    "ground",
+    4,
+    false
+   ],
+   [
+    "r3:wheels",
+    "wheels",
+    4,
+    false
+   ]
+  ],
+  "determinate": {
+   "grasp_r1": true,
+   "grasp_r2": true,
+   "grasp_r3": true,
+   "r1:ground": true,
+   "r1:wheels": true,
+   "r2:ground": true,
+   "r2:wheels": true,
+   "r3:ground": true,
+   "r3:wheels": true
+  },
+  "ground": {
+   "r1": "contact",
+   "r2": "contact",
+   "r3": "contact"
+  },
+  "drive": {
+   "r1": "rolling",
+   "r2": "rolling",
+   "r3": "rolling"
+  },
+  "independent": [
+   "r1_base_x",
+   "r1_base_y",
+   "r1_base_yaw",
+   "r2_base_x",
+   "r2_base_y",
+   "r2_base_yaw",
+   "r3_base_x",
+   "r3_base_y",
+   "r3_base_yaw",
+   "beam_base_x",
+   "beam_base_y",
+   "beam_base_z",
+   "beam_base_yaw",
+   "beam_base_pitch",
+   "beam_base_roll"
+  ],
+  "seconds": 0.8
+ },
+ "husky2": {
+  "n": 38,
+  "nf": 20,
+  "d": 20,
+  "rows": 34,
+  "chart": 0,
+  "rank_dep": 18,
+  "redundant_lift": 0,
+  "rankL": 17,
+  "dim_kerLT": 3,
+  "ident_rank": 30,
+  "ident_red": 4,
+  "residual": 8.881784197001252e-16,
+  "blocks": [
+   [
+    "grasp_r1",
+    "grasp",
+    6,
+    false
+   ],
+   [
+    "grasp_r2",
+    "grasp",
+    6,
+    false
+   ],
+   [
+    "r1:ground",
+    "ground",
+    3,
+    false
+   ],
+   [
+    "r1:wheels",
+    "wheels",
+    8,
+    true
+   ],
+   [
+    "r2:ground",
+    "ground",
+    3,
+    false
+   ],
+   [
+    "r2:wheels",
+    "wheels",
+    8,
+    true
+   ]
+  ],
+  "determinate": {
+   "grasp_r1": true,
+   "grasp_r2": true,
+   "r1:ground": true,
+   "r1:wheels": false,
+   "r2:ground": true,
+   "r2:wheels": false
+  },
+  "ground": {
+   "r1": "fit",
+   "r2": "fit"
+  },
+  "drive": {
+   "r1": "friction",
+   "r2": "friction"
+  },
+  "independent": [
+   "r1_base_x",
+   "r1_base_y",
+   "r1_base_yaw",
+   "r1_front_left_wheel_joint",
+   "r1_front_right_wheel_joint",
+   "r1_rear_left_wheel_joint",
+   "r1_rear_right_wheel_joint",
+   "r2_base_x",
+   "r2_base_y",
+   "r2_base_yaw",
+   "r2_front_left_wheel_joint",
+   "r2_front_right_wheel_joint",
+   "r2_rear_left_wheel_joint",
+   "r2_rear_right_wheel_joint",
+   "beam_base_x",
+   "beam_base_y",
+   "beam_base_z",
+   "beam_base_yaw",
+   "beam_base_pitch",
+   "beam_base_roll"
+  ],
+  "seconds": 0.2
+ },
+ "husky3": {
+  "n": 54,
+  "nf": 30,
+  "d": 27,
+  "rows": 51,
+  "chart": 0,
+  "rank_dep": 27,
+  "redundant_lift": 0,
+  "rankL": 24,
+  "dim_kerLT": 6,
+  "ident_rank": 45,
+  "ident_red": 6,
+  "residual": 7.771561172376096e-16,
+  "blocks": [
+   [
+    "grasp_r1",
+    "grasp",
+    6,
+    false
+   ],
+   [
+    "grasp_r2",
+    "grasp",
+    6,
+    false
+   ],
+   [
+    "grasp_r3",
+    "grasp",
+    6,
+    false
+   ],
+   [
+    "r1:ground",
+    "ground",
+    3,
+    false
+   ],
+   [
+    "r1:wheels",
+    "wheels",
+    8,
+    true
+   ],
+   [
+    "r2:ground",
+    "ground",
+    3,
+    false
+   ],
+   [
+    "r2:wheels",
+    "wheels",
+    8,
+    true
+   ],
+   [
+    "r3:ground",
+    "ground",
+    3,
+    false
+   ],
+   [
+    "r3:wheels",
+    "wheels",
+    8,
+    true
+   ]
+  ],
+  "determinate": {
+   "grasp_r1": true,
+   "grasp_r2": true,
+   "grasp_r3": true,
+   "r1:ground": true,
+   "r1:wheels": false,
+   "r2:ground": true,
+   "r2:wheels": false,
+   "r3:ground": true,
+   "r3:wheels": false
+  },
+  "ground": {
+   "r1": "fit",
+   "r2": "fit",
+   "r3": "fit"
+  },
+  "drive": {
+   "r1": "friction",
+   "r2": "friction",
+   "r3": "friction"
+  },
+  "independent": [
+   "r1_base_x",
+   "r1_base_y",
+   "r1_base_yaw",
+   "r1_front_left_wheel_joint",
+   "r1_front_right_wheel_joint",
+   "r1_rear_left_wheel_joint",
+   "r1_rear_right_wheel_joint",
+   "r2_base_x",
+   "r2_base_y",
+   "r2_base_yaw",
+   "r2_front_left_wheel_joint",
+   "r2_front_right_wheel_joint",
+   "r2_rear_left_wheel_joint",
+   "r2_rear_right_wheel_joint",
+   "r3_base_x",
+   "r3_base_y",
+   "r3_base_yaw",
+   "r3_front_left_wheel_joint",
+   "r3_front_right_wheel_joint",
+   "r3_rear_left_wheel_joint",
+   "r3_rear_right_wheel_joint",
+   "beam_base_x",
+   "beam_base_y",
+   "beam_base_z",
+   "beam_base_yaw",
+   "beam_base_pitch",
+   "beam_base_roll"
+  ],
+  "seconds": 0.3
+ }
+}

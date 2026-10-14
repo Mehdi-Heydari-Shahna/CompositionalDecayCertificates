@@ -1,0 +1,38 @@
+[
+ {
+  "team": "team3",
+  "kind": "fitted05",
+  "steps": 3000,
+  "samples": 9000,
+  "moment_max": 6.444402744444681,
+  "largest_difference_Nm": 0.0013062747551604303,
+  "largest_difference_relative": 0.00020269911843832054
+ },
+ {
+  "team": "ridgeback3",
+  "kind": "fitted05",
+  "steps": 3000,
+  "samples": 9000,
+  "moment_max": 15.277821362996479,
+  "largest_difference_Nm": 0.0017576920443307387,
+  "largest_difference_relative": 0.00011504860559424672
+ },
+ {
+  "team": "husky2",
+  "kind": "desired",
+  "steps": 3000,
+  "samples": 6000,
+  "moment_max": 3.1016417812261126,
+  "largest_difference_Nm": 0.0003498311412344357,
+  "largest_difference_relative": 0.00011278902139890044
+ },
+ {
+  "team": "husky3",
+  "kind": "desired",
+  "steps": 3000,
+  "samples": 9000,
+  "moment_max": 3.38720863361345,
+  "largest_difference_Nm": 0.00040285146935326033,
+  "largest_difference_relative": 0.0001189331726884214
+ }
+]

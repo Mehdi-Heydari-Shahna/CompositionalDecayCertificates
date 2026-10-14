@@ -1,0 +1,4 @@
+# Only for regenerating the robot record from the upstream xacro files (tools/build_robot.py).
+-r requirements-linux.txt
+xacro==2.1.1
+PyYAML==6.0.3

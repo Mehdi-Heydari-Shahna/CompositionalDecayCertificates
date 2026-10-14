@@ -1,0 +1,12 @@
+team2: 30 cases over 6 configurations
+  acceleration                                     1.45e-09
+  inverse:acceleration                             1.46e-09
+  inverse:grasp_wrenches                           3.23e-09
+  pinocchio constraintDynamics: acceleration       1.61e-12
+  reaction                                         2.73e-09
+  reaction (grasp)                                 2.73e-09
+  reaction (ground)                                6.57e-12
+  reaction (rest)                                  4.83e-10
+  reaction (wheels)                                1.21e-10
+  smallest dependent-block rcond 6.042e-03
+PASS (tolerance 1e-07) -> results/pinocchio_team2/interfaces.json

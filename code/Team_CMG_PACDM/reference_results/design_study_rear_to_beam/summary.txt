@@ -1,0 +1,19 @@
+status: complete  (simulated 246.0 s)
+payload while carried: position error max 1.6 mm, tilt max 1.0 mrad, yaw error max 0.5 mrad
+base tracking: r1 18.3 mm / 4.5 mrad, r2 16.1 mm / 4.4 mrad
+internal wrench while carried: force max 89.3 N (rms 10.9), moment max 21.1 N m (rms 2.7)
+  grasp_r1: force max 84.3 N, moment max 14.6 N m, vertical share 0.500 [0.439, 0.572]
+  grasp_r2: force max 96.5 N, moment max 19.0 N m, vertical share 0.500 [0.416, 0.590]
+actuator demand: max ratio 0.78 (r2_arm_elbow_motor), saturated steps 0
+  r1: min wheel load 341 N, traction utilization max 0.308 (p99 0.176), tipping margin min 0.078 m, base height vs rigid wheels -0.05 mm [-0.11, +0.76], front_rocker [-2.2, +2.1] mrad of +-87
+  r2: min wheel load 238 N, traction utilization max 0.340 (p99 0.158), tipping margin min 0.049 m, base height vs rigid wheels -0.05 mm [-0.11, +0.62], front_rocker [-2.3, +2.4] mrad of +-87
+smallest clearance 0.050 m; by category: payload:door 0.344, payload:guide 0.006, payload:mount 0.030, payload:neighbour 0.090, payload:pad 0.000, payload:rack 0.060, payload:wall 0.279, robot:door 0.286, robot:guide 0.160, robot:mount 0.184, robot:neighbour 0.059, robot:pad 0.151, robot:payload 0.050, robot:rack 0.151, robot:wall 0.326, team:obstacle 0.610
+forbidden contacts reported by the plant: 0 []
+  compiled reaction recovery vs wrist sensor grasp_r1: force max 5.2 N (rms 0.3), moment max 2.0 N m (rms 0.1)
+  compiled reaction recovery vs wrist sensor grasp_r2: force max 5.6 N (rms 0.3), moment max 2.2 N m (rms 0.1)
+  compiled ground loads vs plant contacts: total normal max 6.3 N (rms 0.3), each wheel normal max 70.9 N (rms 13.3), wheel traction max 176.0 N (rms 24.4)
+    r1 mean wheel loads (N): model [541.0, 542.0, 562.0, 644.0] plant [547.0, 537.0, 564.0, 642.0]
+    r2 mean wheel loads (N): model [539.0, 540.0, 564.0, 644.0] plant [538.0, 541.0, 562.0, 646.0]
+  displacement vs summed rates per 20 ms: floating bodies max 0.00 um / 0.14 urad, joints max 0.00 u(rad|m)
+supports verified: True  checks {'grasps_unloaded': True, 'payload_at_rest': True, 'pads_loaded': True, 'placed_within_tolerance': True}  placement error 0.03 mm, 0.02 mrad
+declared bounds: NOT met: grasp_force (96.51777724803917 vs 85.0), grasp_moment (19.01775798069593 vs 10.0), tipping (0.04874829808157721 vs 0.06)

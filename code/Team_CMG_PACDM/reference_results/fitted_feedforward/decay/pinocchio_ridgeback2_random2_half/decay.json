@@ -1,0 +1,41 @@
+[
+ {
+  "team": "ridgeback2",
+  "plant": "pinocchio",
+  "feedforward": "fitted",
+  "feedforward_rate": "slow",
+  "timestep": 0.002,
+  "velocity_filter_hz": 0.0,
+  "advance": "positions",
+  "arm_damping_ratio": 0.5,
+  "lift_damping_ratio": 0.5,
+  "options": {
+   "arm_damping_ratio": 0.5,
+   "lift_damping_ratio": 0.5
+  },
+  "start": {
+   "form_min": -51.14013338762287,
+   "form_max": 119.97164735124252,
+   "rate": [
+    20.532494569327206,
+    128.48326639691612
+   ],
+   "d": 12,
+   "W_before": 2.079698694818771e-26
+  },
+  "W0": 0.005000000000000538,
+  "W_max_ratio": 1.0,
+  "t_of_max": 0.0,
+  "W_end_ratio": 4.240100981357344e-08,
+  "largest_rise_between_steps": -1.8900734619386814e-10,
+  "above_upper_bound": 0.0,
+  "time_to_floor": 0.10800000000000008,
+  "floor": 0.001,
+  "rate_fitted": 31.675764451752052,
+  "balance": -0.053923780190160135,
+  "max_effort_ratio": 0.6128060530028421,
+  "max_internal_ratio": 0.0012114059362848626,
+  "largest_displacement": 0.0023491133193892662,
+  "seconds": 2.7
+ }
+]

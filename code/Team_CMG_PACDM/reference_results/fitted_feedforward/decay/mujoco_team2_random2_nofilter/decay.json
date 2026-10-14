@@ -1,0 +1,38 @@
+[
+ {
+  "team": "team2",
+  "plant": "mujoco",
+  "feedforward": "desired",
+  "feedforward_rate": "slow",
+  "timestep": 0.002,
+  "velocity_filter_hz": 0.0,
+  "advance": "positions",
+  "arm_damping_ratio": 1.0,
+  "lift_damping_ratio": 1.0,
+  "options": {},
+  "start": {
+   "form_min": -9.765880759426715,
+   "form_max": 292.47443944899834,
+   "rate": [
+    15.615193825053913,
+    309.39811797513494
+   ],
+   "d": 14,
+   "W_before": 0.002453681874866824
+  },
+  "W0": 0.17539010641749891,
+  "W_max_ratio": 1.0,
+  "t_of_max": 0.0,
+  "W_end_ratio": 0.004581201967911812,
+  "largest_rise_between_steps": 0.00636186644150359,
+  "above_upper_bound": 0.0,
+  "time_to_floor": 0.05399999999999405,
+  "floor": 0.05,
+  "rate_fitted": 27.232396910144402,
+  "balance": 0.05509131882029486,
+  "max_effort_ratio": 0.7810115912859584,
+  "max_internal_ratio": 0.012862104865616005,
+  "largest_displacement": 0.004188629721696019,
+  "seconds": 5.0
+ }
+]

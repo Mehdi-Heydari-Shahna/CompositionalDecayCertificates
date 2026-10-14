@@ -1,0 +1,12 @@
+ridgeback2: 30 cases over 6 configurations
+  acceleration                                     1.42e-09
+  inverse:acceleration                             1.46e-09
+  inverse:grasp_wrenches                           3.27e-09
+  pinocchio constraintDynamics: acceleration       3.04e-13
+  reaction                                         1.92e-09
+  reaction (grasp)                                 1.92e-09
+  reaction (ground)                                6.40e-11
+  reaction (rest)                                  8.85e-10
+  reaction (wheels)                                6.22e-10
+  smallest dependent-block rcond 7.473e-03
+PASS (tolerance 1e-07) -> results/pinocchio_ridgeback2/interfaces.json

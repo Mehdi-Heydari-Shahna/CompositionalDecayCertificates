@@ -1,0 +1,405 @@
+<mujoco model="Three Husky A300 / UR10e in line and a 5.5 m beam">
+  <compiler angle="radian" autolimits="true" boundmass="0" boundinertia="0" />
+  <option timestep="0.002" gravity="0 0 -9.81" integrator="implicitfast" cone="elliptic" impratio="10" solver="Newton" iterations="60" tolerance="1e-10" />
+  <size memory="200M" />
+  <visual>
+    <global offwidth="1920" offheight="1440" azimuth="120" elevation="-25" />
+    <headlight ambient=".35 .35 .35" diffuse=".55 .55 .55" specular=".1 .1 .1" />
+    <quality shadowsize="4096" />
+    <map znear="0.02" zfar="80" />
+  </visual>
+  <default>
+    <geom condim="3" solref="0.005 1" solimp="0.9 0.95 0.001" margin="0" />
+    <joint limited="false" />
+    <motor ctrllimited="true" />
+  </default>
+  <asset>
+    <texture name="grid" type="2d" builtin="checker" rgb1=".78 .79 .80" rgb2=".72 .73 .74" width="512" height="512" />
+    <material name="grid" texture="grid" texrepeat="20 20" reflectance="0" />
+    <texture name="sky" type="skybox" builtin="gradient" rgb1=".85 .9 .95" rgb2=".55 .65 .8" width="256" height="256" />
+  </asset>
+  <worldbody>
+    <light name="sun" pos="4 8 12" dir="-.2 -.3 -1" directional="true" diffuse=".5 .5 .5" castshadow="true" />
+    <geom name="floor" type="plane" size="40 40 .1" material="grid" contype="17" conaffinity="230" friction="0.8 0.005 0.0001" />
+    <geom name="rack_upright_a" type="box" rgba="0.2 0.33 0.55 1" pos="-1.5 3.35 1.1" quat="1 0 0 0" size="0.05 0.05 1.1" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="rack_arm_low_a" type="box" rgba="0.2 0.33 0.55 1" pos="-1.5 3.075 0.06" quat="1 0 0 0" size="0.04 0.225 0.03" contype="1" conaffinity="226" group="0" friction="0.5 0.005 0.0001" />
+    <geom name="rack_lip_low_a" type="box" rgba="0.2 0.33 0.55 1" pos="-1.5 2.86 0.1" quat="1 0 0 0" size="0.04 0.01 0.01" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="rack_arm_mid_a" type="box" rgba="0.2 0.33 0.55 1" pos="-1.5 3.075 0.81" quat="1 0 0 0" size="0.04 0.225 0.03" contype="1" conaffinity="226" group="0" friction="0.5 0.005 0.0001" />
+    <geom name="rack_lip_mid_a" type="box" rgba="0.2 0.33 0.55 1" pos="-1.5 2.86 0.85" quat="1 0 0 0" size="0.04 0.01 0.01" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="rack_arm_high_a" type="box" rgba="0.2 0.33 0.55 1" pos="-1.5 3.075 1.56" quat="1 0 0 0" size="0.04 0.225 0.03" contype="1" conaffinity="226" group="0" friction="0.5 0.005 0.0001" />
+    <geom name="rack_lip_high_a" type="box" rgba="0.2 0.33 0.55 1" pos="-1.5 2.86 1.6" quat="1 0 0 0" size="0.04 0.01 0.01" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="rack_upright_b" type="box" rgba="0.2 0.33 0.55 1" pos="1.5 3.35 1.1" quat="1 0 0 0" size="0.05 0.05 1.1" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="rack_arm_low_b" type="box" rgba="0.2 0.33 0.55 1" pos="1.5 3.075 0.06" quat="1 0 0 0" size="0.04 0.225 0.03" contype="1" conaffinity="226" group="0" friction="0.5 0.005 0.0001" />
+    <geom name="rack_lip_low_b" type="box" rgba="0.2 0.33 0.55 1" pos="1.5 2.86 0.1" quat="1 0 0 0" size="0.04 0.01 0.01" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="rack_arm_mid_b" type="box" rgba="0.2 0.33 0.55 1" pos="1.5 3.075 0.81" quat="1 0 0 0" size="0.04 0.225 0.03" contype="1" conaffinity="226" group="0" friction="0.5 0.005 0.0001" />
+    <geom name="rack_lip_mid_b" type="box" rgba="0.2 0.33 0.55 1" pos="1.5 2.86 0.85" quat="1 0 0 0" size="0.04 0.01 0.01" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="rack_arm_high_b" type="box" rgba="0.2 0.33 0.55 1" pos="1.5 3.075 1.56" quat="1 0 0 0" size="0.04 0.225 0.03" contype="1" conaffinity="226" group="0" friction="0.5 0.005 0.0001" />
+    <geom name="rack_lip_high_b" type="box" rgba="0.2 0.33 0.55 1" pos="1.5 2.86 1.6" quat="1 0 0 0" size="0.04 0.01 0.01" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="neighbour_low" type="box" rgba="0.45 0.22 0.14 1" pos="0 3 0.15" quat="1 0 0 0" size="2.75 0.025 0.06" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="neighbour_high" type="box" rgba="0.45 0.22 0.14 1" pos="0 3 1.65" quat="1 0 0 0" size="2.75 0.025 0.06" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="neighbour_behind" type="box" rgba="0.45 0.22 0.14 1" pos="0 3.14 0.9" quat="1 0 0 0" size="2.75 0.025 0.06" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_rack" type="box" rgba="0.8 0.82 0.84 1" pos="-0.8 3.45 1.3" quat="1 0 0 0" size="5.8 0.05 1.3" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_hall_west" type="box" rgba="0.8 0.82 0.84 1" pos="-6.55 0.15 1.3" quat="1 0 0 0" size="0.05 3.25 1.3" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_hall_south" type="box" rgba="0.8 0.82 0.84 1" pos="-0.75 -3.05 1.3" quat="1 0 0 0" size="5.75 0.05 1.3" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_hall_east" type="box" rgba="0.8 0.82 0.84 1" pos="5.05 -1.55 1.3" quat="1 0 0 0" size="0.05 1.55 1.3" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_aisle1_south" type="box" rgba="0.8 0.82 0.84 1" pos="8.1 -0.05 1.3" quat="1 0 0 0" size="3.1 0.05 1.3" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_aisle1_north" type="box" rgba="0.8 0.82 0.84 1" pos="6.55 3.25 1.3" quat="1 0 0 0" size="1.55 0.25 1.3" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_aisle2_east_a" type="box" rgba="0.8 0.82 0.84 1" pos="11.15 6.1 1.3" quat="1 0 0 0" size="0.05 6.1 1.3" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_aisle2_east_b" type="box" rgba="0.8 0.82 0.84 1" pos="11.15 15.5 1.3785" quat="1 0 0 0" size="0.05 1.7 1.3785" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_aisle2_west_a" type="box" rgba="0.8 0.82 0.84 1" pos="8.05 7.6 1.3" quat="1 0 0 0" size="0.05 4.6 1.3" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_aisle2_west_b" type="box" rgba="0.8 0.82 0.84 1" pos="8.05 15.5 1.3785" quat="1 0 0 0" size="0.05 1.7 1.3785" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_cross_west_s" type="box" rgba="0.74 0.76 0.78 1" pos="6.95 12.15 1.3" quat="1 0 0 0" size="1.05 0.05 1.3" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_cross_west_n" type="box" rgba="0.74 0.76 0.78 1" pos="6.95 13.85 1.3" quat="1 0 0 0" size="1.05 0.05 1.3" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_cross_east_s" type="box" rgba="0.74 0.76 0.78 1" pos="12.25 12.15 1.3" quat="1 0 0 0" size="1.05 0.05 1.3" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_cross_east_n" type="box" rgba="0.74 0.76 0.78 1" pos="12.25 13.85 1.3" quat="1 0 0 0" size="1.05 0.05 1.3" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="door_jamb_west" type="box" rgba="0.8 0.82 0.84 1" pos="8.425 6.8 1.3" quat="1 0 0 0" size="0.325 0.1 1.3" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="door_jamb_east" type="box" rgba="0.8 0.82 0.84 1" pos="10.775 6.8 1.3" quat="1 0 0 0" size="0.325 0.1 1.3" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="door_lintel" type="box" rgba="0.8 0.82 0.84 1" pos="9.6 6.8 2.4" quat="1 0 0 0" size="0.85 0.1 0.2" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="ramp" type="box" rgba="0.5 0.52 0.55 1" pos="9.6 15.70261309 0.02856832912" quat="0.999658296 0.02613983985 0 0" size="1.5 1.502052679 0.05" contype="17" conaffinity="230" group="0" friction="0.8 0.005 0.0001" />
+    <geom name="plateau" type="box" rgba="0.5 0.52 0.55 1" pos="8.8 22.1 0.107" quat="1 0 0 0" size="4.2 4.9 0.05" contype="17" conaffinity="230" group="0" friction="0.8 0.005 0.0001" />
+    <geom name="wall_plateau_south_w" type="box" rgba="0.8 0.82 0.84 1" pos="6.25 17.15 1.3785" quat="1 0 0 0" size="1.75 0.05 1.3785" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_plateau_south_e" type="box" rgba="0.8 0.82 0.84 1" pos="12.15 17.15 1.3785" quat="1 0 0 0" size="0.95 0.05 1.3785" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_plateau_west" type="box" rgba="0.8 0.82 0.84 1" pos="4.55 22.1 1.3785" quat="1 0 0 0" size="0.05 4.9 1.3785" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_plateau_east" type="box" rgba="0.8 0.82 0.84 1" pos="13.05 22.1 1.3785" quat="1 0 0 0" size="0.05 4.9 1.3785" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="wall_plateau_north" type="box" rgba="0.8 0.82 0.84 1" pos="8.8 27.05 1.3785" quat="1 0 0 0" size="4.3 0.05 1.3785" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="mount_post_a" type="box" rgba="0.62 0.64 0.68 1" pos="7.414597897 25.09124035 0.612" quat="0.9975640503 0 0 0.06975647374" size="0.06 0.06 0.455" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="mount_pad_a" type="box" rgba="0.85 0.65 0.1 1" pos="7.414597897 25.09124035 1.082" quat="0.9975640503 0 0 0.06975647374" size="0.08 0.1 0.015" contype="1" conaffinity="226" group="0" friction="0.5 0.005 0.0001" />
+    <geom name="mount_guide_a_s" type="box" rgba="0.85 0.65 0.1 1" pos="7.420303994 25.05063936 1.117" quat="0.9975640503 0 0 0.06975647374" size="0.08 0.01 0.02" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="mount_guide_a_n" type="box" rgba="0.85 0.65 0.1 1" pos="7.4088918 25.13184134 1.117" quat="0.9975640503 0 0 0.06975647374" size="0.08 0.01 0.02" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="mount_post_b" type="box" rgba="0.62 0.64 0.68 1" pos="10.3854021 25.50875965 0.612" quat="0.9975640503 0 0 0.06975647374" size="0.06 0.06 0.455" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="mount_pad_b" type="box" rgba="0.85 0.65 0.1 1" pos="10.3854021 25.50875965 1.082" quat="0.9975640503 0 0 0.06975647374" size="0.08 0.1 0.015" contype="1" conaffinity="226" group="0" friction="0.5 0.005 0.0001" />
+    <geom name="mount_guide_b_s" type="box" rgba="0.85 0.65 0.1 1" pos="10.3911082 25.46815866 1.117" quat="0.9975640503 0 0 0.06975647374" size="0.08 0.01 0.02" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <geom name="mount_guide_b_n" type="box" rgba="0.85 0.65 0.1 1" pos="10.37969601 25.54936064 1.117" quat="0.9975640503 0 0 0.06975647374" size="0.08 0.01 0.02" contype="1" conaffinity="226" group="0" friction="0.6 0.005 0.0001" />
+    <body name="cart" mocap="true" pos="6.5 13 0.45">
+      <geom name="cart" type="box" size="0.45 0.3 0.45" rgba="0.15 0.55 0.25 1" contype="8" conaffinity="226" />
+    </body>
+    <body name="r1_chassis_link" pos="-2.2 2.2 0.13597" quat="1 0 0 0">
+      <freejoint name="r1_free" />
+      <inertial pos="-0.04698540146 0.003437956204 0.07596642336" mass="68.5" fullinertia="1.116443451 4.522697284 5.037512833 0 0 0" />
+      <geom name="r1/chassis" type="box" rgba="0.85 0.72 0.12 1" pos="-0.00175 0 0.1148" quat="1 0 0 0" size="0.44925 0.2305 0.1148" contype="32" conaffinity="203" group="0" />
+      <geom name="r1/top_plate" type="box" rgba="0.16 0.17 0.19 1" pos="0 0 0.23595" quat="1 0 0 0" size="0.37 0.21 0.00635" contype="32" conaffinity="203" group="0" />
+      <geom name="r1/front_bumper" type="box" rgba="0.16 0.17 0.19 1" pos="0.4337 0 0.03385" quat="1 0 0 0" size="0.064 0.1889 0.01625" contype="32" conaffinity="203" group="0" />
+      <geom name="r1/rear_bumper" type="box" rgba="0.16 0.17 0.19 1" pos="-0.4337 0 0.03385" quat="1 0 0 0" size="0.064 0.1889 0.01625" contype="32" conaffinity="203" group="0" />
+      <geom name="r1/wheels_left" type="box" rgba="0.16 0.17 0.19 1" pos="0 0.289 0.0455" quat="1 0 0 0" size="0.424 0.06 0.1515" contype="32" conaffinity="203" group="0" />
+      <geom name="r1/wheels_right" type="box" rgba="0.16 0.17 0.19 1" pos="0 -0.289 0.0455" quat="1 0 0 0" size="0.424 0.06 0.1515" contype="32" conaffinity="203" group="0" />
+      <body name="r1_arm_base_link_inertia" pos="0 0 0.242259" quat="6.123233996e-17 0 0 1">
+        <inertial pos="0 0 0" mass="4" fullinertia="0.006106330891 0.006106330891 0.01125 0 0 0" />
+        <geom name="r1/arm_base" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0.05" quat="1 0 0 0" size="0.095 0.05" contype="32" conaffinity="203" group="0" />
+        <body name="r1_arm_shoulder_link" pos="0 0 0.1807" quat="1 0 0 0">
+          <joint name="r1_arm_shoulder_pan_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="1.2" damping="5" limited="true" range="-6.283185307 6.283185307" />
+          <inertial pos="0.021 -0.027 0" mass="7.369" fullinertia="0.03408 0.02156 0.03529 0.00425 2e-05 -8e-05" />
+          <geom name="r1/shoulder" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0" quat="1 0 0 0" size="0.09 0.1" contype="32" conaffinity="203" group="0" />
+          <body name="r1_arm_upper_arm_link" pos="0 0 0" quat="0.7071067811 0.7071067813 0 0">
+            <joint name="r1_arm_shoulder_lift_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="1.2" damping="5" limited="true" range="-6.283185307 6.283185307" />
+            <inertial pos="-0.2327 0 0.158" mass="13.051" fullinertia="0.02814 0.77068 0.76943 5e-05 -0.01561 2e-05" />
+            <geom name="r1/upper_arm" type="capsule" rgba="0.36 0.55 0.78 1" pos="-0.30635 0 0.1762" quat="-0.7071067812 0 0.7071067812 0" size="0.065 0.30635" contype="32" conaffinity="203" group="0" />
+            <geom name="r1/shoulder_cap" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0.09" quat="1 0 0 0" size="0.085 0.11" contype="0" conaffinity="0" group="1" />
+            <body name="r1_arm_forearm_link" pos="-0.6127 0 0" quat="1 0 0 0">
+              <joint name="r1_arm_elbow_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="0.6" damping="3" limited="true" range="-3.141592654 3.141592654" />
+              <inertial pos="-0.33155 0 0.068" mass="3.989" fullinertia="0.01014 0.30928 0.30646 8e-05 0.00916 0" />
+              <geom name="r1/forearm" type="capsule" rgba="0.36 0.55 0.78 1" pos="-0.285775 0 0.0393" quat="-0.7071067812 0 0.7071067812 0" size="0.05 0.285775" contype="32" conaffinity="203" group="0" />
+              <geom name="r1/elbow_cap" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0.075" quat="1 0 0 0" size="0.065 0.095" contype="0" conaffinity="0" group="1" />
+              <body name="r1_arm_wrist_1_link" pos="-0.57155 0 0.17415" quat="1 0 0 0">
+                <joint name="r1_arm_wrist_1_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="0.12" damping="1" limited="true" range="-6.283185307 6.283185307" />
+                <inertial pos="0 -0.018 0.007" mass="2.1" fullinertia="0.00296 0.00258 0.00222 4.440892099e-21 -1e-05 0.00024" />
+                <geom name="r1/wrist_1" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0" quat="1 0 0 0" size="0.047 0.065" contype="32" conaffinity="203" group="0" />
+                <body name="r1_arm_wrist_2_link" pos="0 -0.11985 -2.458164591e-11" quat="0.7071067811 0.7071067813 0 0">
+                  <joint name="r1_arm_wrist_2_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="0.12" damping="1" limited="true" range="-6.283185307 6.283185307" />
+                  <inertial pos="0 0.018 -0.007" mass="1.98" fullinertia="0.00296 0.00258 0.00222 4.440892099e-21 1e-05 0.00024" />
+                  <geom name="r1/wrist_2" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0" quat="1 0 0 0" size="0.047 0.065" contype="32" conaffinity="203" group="0" />
+                  <body name="r1_arm_wrist_3_link" pos="0 0.11655 -2.390480459e-11" quat="-0.7071067811 0.7071067813 -8.659560562e-17 -8.880535509e-27">
+                    <joint name="r1_arm_wrist_3_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="0.12" damping="1" limited="true" range="-6.283185307 6.283185307" />
+                    <inertial pos="0 0 -0.026" mass="0.615" fullinertia="0.0004 0.00041 0.00034 0 0 0" />
+                    <geom name="r1/wrist_3" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 -0.03" quat="1 0 0 0" size="0.045 0.03" contype="32" conaffinity="203" group="0" />
+                    <body name="r1_clamp" pos="0 0 0" quat="1 0 -5.551115123e-17 5.551115123e-17">
+                      <inertial pos="0 0 0.055" mass="1.2" fullinertia="0.0031264 0.0034 0.0026064 0 0 0" />
+                      <geom name="r1/clamp_top" type="box" rgba="0.95 0.55 0.12 1" pos="0 0 0.015" quat="1 0 0 0" size="0.06 0.054 0.015" contype="32" conaffinity="203" group="0" />
+                      <geom name="r1/clamp_jaw_a" type="box" rgba="0.95 0.55 0.12 1" pos="0 -0.0415 0.085" quat="1 0 0 0" size="0.06 0.0125 0.055" contype="32" conaffinity="203" group="0" />
+                      <geom name="r1/clamp_jaw_b" type="box" rgba="0.95 0.55 0.12 1" pos="0 0.0415 0.085" quat="1 0 0 0" size="0.06 0.0125 0.055" contype="32" conaffinity="203" group="0" />
+                      <site name="r1_tool" size=".012" rgba="0 1 0 1" pos="0 0 0.1" quat="1 0 0 0" />
+                      <site name="r1_ft" size=".012" rgba="1 1 0 1" pos="0 0 0" quat="1 0 0 0" />
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="r1_front_left_wheel_link" pos="0.256 0.2829 0.02913" quat="1 0 0 0">
+        <joint name="r1_front_left_wheel_joint" type="hinge" pos="0 0 0" axis="0 1 0" armature="0.1" damping="0.05" />
+        <inertial pos="0 0 0" mass="2.5" fullinertia="0.019758025 0.0340725125 0.019758025 0 0 0" />
+        <geom name="r1/front_left_tyre_contact" type="sphere" size="0.1651" pos="0 0 0" rgba=".12 .12 .13 .25" contype="0" conaffinity="0" group="3" />
+        <geom name="r1/front_left_tyre" type="cylinder" rgba="0.1 0.1 0.11 1" pos="0 0 0" quat="-0.5 0.5 0.5 0.5" size="0.1651 0.05715" contype="0" conaffinity="0" group="1" />
+      </body>
+      <body name="r1_front_right_wheel_link" pos="0.256 -0.2829 0.02913" quat="1 0 0 0">
+        <joint name="r1_front_right_wheel_joint" type="hinge" pos="0 0 0" axis="0 1 0" armature="0.1" damping="0.05" />
+        <inertial pos="0 0 0" mass="2.5" fullinertia="0.019758025 0.0340725125 0.019758025 0 0 0" />
+        <geom name="r1/front_right_tyre_contact" type="sphere" size="0.1651" pos="0 0 0" rgba=".12 .12 .13 .25" contype="0" conaffinity="0" group="3" />
+        <geom name="r1/front_right_tyre" type="cylinder" rgba="0.1 0.1 0.11 1" pos="0 0 0" quat="-0.5 0.5 0.5 0.5" size="0.1651 0.05715" contype="0" conaffinity="0" group="1" />
+      </body>
+      <body name="r1_rear_left_wheel_link" pos="-0.256 0.2829 0.02913" quat="1 0 0 0">
+        <joint name="r1_rear_left_wheel_joint" type="hinge" pos="0 0 0" axis="0 1 0" armature="0.1" damping="0.05" />
+        <inertial pos="0 0 0" mass="2.5" fullinertia="0.019758025 0.0340725125 0.019758025 0 0 0" />
+        <geom name="r1/rear_left_tyre_contact" type="sphere" size="0.1651" pos="0 0 0" rgba=".12 .12 .13 .25" contype="0" conaffinity="0" group="3" />
+        <geom name="r1/rear_left_tyre" type="cylinder" rgba="0.1 0.1 0.11 1" pos="0 0 0" quat="-0.5 0.5 0.5 0.5" size="0.1651 0.05715" contype="0" conaffinity="0" group="1" />
+      </body>
+      <body name="r1_rear_right_wheel_link" pos="-0.256 -0.2829 0.02913" quat="1 0 0 0">
+        <joint name="r1_rear_right_wheel_joint" type="hinge" pos="0 0 0" axis="0 1 0" armature="0.1" damping="0.05" />
+        <inertial pos="0 0 0" mass="2.5" fullinertia="0.019758025 0.0340725125 0.019758025 0 0 0" />
+        <geom name="r1/rear_right_tyre_contact" type="sphere" size="0.1651" pos="0 0 0" rgba=".12 .12 .13 .25" contype="0" conaffinity="0" group="3" />
+        <geom name="r1/rear_right_tyre" type="cylinder" rgba="0.1 0.1 0.11 1" pos="0 0 0" quat="-0.5 0.5 0.5 0.5" size="0.1651 0.05715" contype="0" conaffinity="0" group="1" />
+      </body>
+    </body>
+    <body name="r2_chassis_link" pos="2.2 2.2 0.13597" quat="1 0 0 0">
+      <freejoint name="r2_free" />
+      <inertial pos="-0.04698540146 0.003437956204 0.07596642336" mass="68.5" fullinertia="1.116443451 4.522697284 5.037512833 0 0 0" />
+      <geom name="r2/chassis" type="box" rgba="0.85 0.72 0.12 1" pos="-0.00175 0 0.1148" quat="1 0 0 0" size="0.44925 0.2305 0.1148" contype="64" conaffinity="171" group="0" />
+      <geom name="r2/top_plate" type="box" rgba="0.16 0.17 0.19 1" pos="0 0 0.23595" quat="1 0 0 0" size="0.37 0.21 0.00635" contype="64" conaffinity="171" group="0" />
+      <geom name="r2/front_bumper" type="box" rgba="0.16 0.17 0.19 1" pos="0.4337 0 0.03385" quat="1 0 0 0" size="0.064 0.1889 0.01625" contype="64" conaffinity="171" group="0" />
+      <geom name="r2/rear_bumper" type="box" rgba="0.16 0.17 0.19 1" pos="-0.4337 0 0.03385" quat="1 0 0 0" size="0.064 0.1889 0.01625" contype="64" conaffinity="171" group="0" />
+      <geom name="r2/wheels_left" type="box" rgba="0.16 0.17 0.19 1" pos="0 0.289 0.0455" quat="1 0 0 0" size="0.424 0.06 0.1515" contype="64" conaffinity="171" group="0" />
+      <geom name="r2/wheels_right" type="box" rgba="0.16 0.17 0.19 1" pos="0 -0.289 0.0455" quat="1 0 0 0" size="0.424 0.06 0.1515" contype="64" conaffinity="171" group="0" />
+      <body name="r2_arm_base_link_inertia" pos="0 0 0.242259" quat="6.123233996e-17 0 0 1">
+        <inertial pos="0 0 0" mass="4" fullinertia="0.006106330891 0.006106330891 0.01125 0 0 0" />
+        <geom name="r2/arm_base" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0.05" quat="1 0 0 0" size="0.095 0.05" contype="64" conaffinity="171" group="0" />
+        <body name="r2_arm_shoulder_link" pos="0 0 0.1807" quat="1 0 0 0">
+          <joint name="r2_arm_shoulder_pan_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="1.2" damping="5" limited="true" range="-6.283185307 6.283185307" />
+          <inertial pos="0.021 -0.027 0" mass="7.369" fullinertia="0.03408 0.02156 0.03529 0.00425 2e-05 -8e-05" />
+          <geom name="r2/shoulder" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0" quat="1 0 0 0" size="0.09 0.1" contype="64" conaffinity="171" group="0" />
+          <body name="r2_arm_upper_arm_link" pos="0 0 0" quat="0.7071067811 0.7071067813 0 0">
+            <joint name="r2_arm_shoulder_lift_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="1.2" damping="5" limited="true" range="-6.283185307 6.283185307" />
+            <inertial pos="-0.2327 0 0.158" mass="13.051" fullinertia="0.02814 0.77068 0.76943 5e-05 -0.01561 2e-05" />
+            <geom name="r2/upper_arm" type="capsule" rgba="0.36 0.55 0.78 1" pos="-0.30635 0 0.1762" quat="-0.7071067812 0 0.7071067812 0" size="0.065 0.30635" contype="64" conaffinity="171" group="0" />
+            <geom name="r2/shoulder_cap" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0.09" quat="1 0 0 0" size="0.085 0.11" contype="0" conaffinity="0" group="1" />
+            <body name="r2_arm_forearm_link" pos="-0.6127 0 0" quat="1 0 0 0">
+              <joint name="r2_arm_elbow_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="0.6" damping="3" limited="true" range="-3.141592654 3.141592654" />
+              <inertial pos="-0.33155 0 0.068" mass="3.989" fullinertia="0.01014 0.30928 0.30646 8e-05 0.00916 0" />
+              <geom name="r2/forearm" type="capsule" rgba="0.36 0.55 0.78 1" pos="-0.285775 0 0.0393" quat="-0.7071067812 0 0.7071067812 0" size="0.05 0.285775" contype="64" conaffinity="171" group="0" />
+              <geom name="r2/elbow_cap" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0.075" quat="1 0 0 0" size="0.065 0.095" contype="0" conaffinity="0" group="1" />
+              <body name="r2_arm_wrist_1_link" pos="-0.57155 0 0.17415" quat="1 0 0 0">
+                <joint name="r2_arm_wrist_1_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="0.12" damping="1" limited="true" range="-6.283185307 6.283185307" />
+                <inertial pos="0 -0.018 0.007" mass="2.1" fullinertia="0.00296 0.00258 0.00222 4.440892099e-21 -1e-05 0.00024" />
+                <geom name="r2/wrist_1" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0" quat="1 0 0 0" size="0.047 0.065" contype="64" conaffinity="171" group="0" />
+                <body name="r2_arm_wrist_2_link" pos="0 -0.11985 -2.458164591e-11" quat="0.7071067811 0.7071067813 0 0">
+                  <joint name="r2_arm_wrist_2_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="0.12" damping="1" limited="true" range="-6.283185307 6.283185307" />
+                  <inertial pos="0 0.018 -0.007" mass="1.98" fullinertia="0.00296 0.00258 0.00222 4.440892099e-21 1e-05 0.00024" />
+                  <geom name="r2/wrist_2" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0" quat="1 0 0 0" size="0.047 0.065" contype="64" conaffinity="171" group="0" />
+                  <body name="r2_arm_wrist_3_link" pos="0 0.11655 -2.390480459e-11" quat="-0.7071067811 0.7071067813 -8.659560562e-17 -8.880535509e-27">
+                    <joint name="r2_arm_wrist_3_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="0.12" damping="1" limited="true" range="-6.283185307 6.283185307" />
+                    <inertial pos="0 0 -0.026" mass="0.615" fullinertia="0.0004 0.00041 0.00034 0 0 0" />
+                    <geom name="r2/wrist_3" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 -0.03" quat="1 0 0 0" size="0.045 0.03" contype="64" conaffinity="171" group="0" />
+                    <body name="r2_clamp" pos="0 0 0" quat="1 0 -5.551115123e-17 5.551115123e-17">
+                      <inertial pos="0 0 0.055" mass="1.2" fullinertia="0.0031264 0.0034 0.0026064 0 0 0" />
+                      <geom name="r2/clamp_top" type="box" rgba="0.95 0.55 0.12 1" pos="0 0 0.015" quat="1 0 0 0" size="0.06 0.054 0.015" contype="64" conaffinity="171" group="0" />
+                      <geom name="r2/clamp_jaw_a" type="box" rgba="0.95 0.55 0.12 1" pos="0 -0.0415 0.085" quat="1 0 0 0" size="0.06 0.0125 0.055" contype="64" conaffinity="171" group="0" />
+                      <geom name="r2/clamp_jaw_b" type="box" rgba="0.95 0.55 0.12 1" pos="0 0.0415 0.085" quat="1 0 0 0" size="0.06 0.0125 0.055" contype="64" conaffinity="171" group="0" />
+                      <site name="r2_tool" size=".012" rgba="0 1 0 1" pos="0 0 0.1" quat="1 0 0 0" />
+                      <site name="r2_ft" size=".012" rgba="1 1 0 1" pos="0 0 0" quat="1 0 0 0" />
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="r2_front_left_wheel_link" pos="0.256 0.2829 0.02913" quat="1 0 0 0">
+        <joint name="r2_front_left_wheel_joint" type="hinge" pos="0 0 0" axis="0 1 0" armature="0.1" damping="0.05" />
+        <inertial pos="0 0 0" mass="2.5" fullinertia="0.019758025 0.0340725125 0.019758025 0 0 0" />
+        <geom name="r2/front_left_tyre_contact" type="sphere" size="0.1651" pos="0 0 0" rgba=".12 .12 .13 .25" contype="0" conaffinity="0" group="3" />
+        <geom name="r2/front_left_tyre" type="cylinder" rgba="0.1 0.1 0.11 1" pos="0 0 0" quat="-0.5 0.5 0.5 0.5" size="0.1651 0.05715" contype="0" conaffinity="0" group="1" />
+      </body>
+      <body name="r2_front_right_wheel_link" pos="0.256 -0.2829 0.02913" quat="1 0 0 0">
+        <joint name="r2_front_right_wheel_joint" type="hinge" pos="0 0 0" axis="0 1 0" armature="0.1" damping="0.05" />
+        <inertial pos="0 0 0" mass="2.5" fullinertia="0.019758025 0.0340725125 0.019758025 0 0 0" />
+        <geom name="r2/front_right_tyre_contact" type="sphere" size="0.1651" pos="0 0 0" rgba=".12 .12 .13 .25" contype="0" conaffinity="0" group="3" />
+        <geom name="r2/front_right_tyre" type="cylinder" rgba="0.1 0.1 0.11 1" pos="0 0 0" quat="-0.5 0.5 0.5 0.5" size="0.1651 0.05715" contype="0" conaffinity="0" group="1" />
+      </body>
+      <body name="r2_rear_left_wheel_link" pos="-0.256 0.2829 0.02913" quat="1 0 0 0">
+        <joint name="r2_rear_left_wheel_joint" type="hinge" pos="0 0 0" axis="0 1 0" armature="0.1" damping="0.05" />
+        <inertial pos="0 0 0" mass="2.5" fullinertia="0.019758025 0.0340725125 0.019758025 0 0 0" />
+        <geom name="r2/rear_left_tyre_contact" type="sphere" size="0.1651" pos="0 0 0" rgba=".12 .12 .13 .25" contype="0" conaffinity="0" group="3" />
+        <geom name="r2/rear_left_tyre" type="cylinder" rgba="0.1 0.1 0.11 1" pos="0 0 0" quat="-0.5 0.5 0.5 0.5" size="0.1651 0.05715" contype="0" conaffinity="0" group="1" />
+      </body>
+      <body name="r2_rear_right_wheel_link" pos="-0.256 -0.2829 0.02913" quat="1 0 0 0">
+        <joint name="r2_rear_right_wheel_joint" type="hinge" pos="0 0 0" axis="0 1 0" armature="0.1" damping="0.05" />
+        <inertial pos="0 0 0" mass="2.5" fullinertia="0.019758025 0.0340725125 0.019758025 0 0 0" />
+        <geom name="r2/rear_right_tyre_contact" type="sphere" size="0.1651" pos="0 0 0" rgba=".12 .12 .13 .25" contype="0" conaffinity="0" group="3" />
+        <geom name="r2/rear_right_tyre" type="cylinder" rgba="0.1 0.1 0.11 1" pos="0 0 0" quat="-0.5 0.5 0.5 0.5" size="0.1651 0.05715" contype="0" conaffinity="0" group="1" />
+      </body>
+    </body>
+    <body name="r3_chassis_link" pos="-0.6 2.2 0.13597" quat="1 0 0 0">
+      <freejoint name="r3_free" />
+      <inertial pos="-0.04698540146 0.003437956204 0.07596642336" mass="68.5" fullinertia="1.116443451 4.522697284 5.037512833 0 0 0" />
+      <geom name="r3/chassis" type="box" rgba="0.85 0.72 0.12 1" pos="-0.00175 0 0.1148" quat="1 0 0 0" size="0.44925 0.2305 0.1148" contype="128" conaffinity="107" group="0" />
+      <geom name="r3/top_plate" type="box" rgba="0.16 0.17 0.19 1" pos="0 0 0.23595" quat="1 0 0 0" size="0.37 0.21 0.00635" contype="128" conaffinity="107" group="0" />
+      <geom name="r3/front_bumper" type="box" rgba="0.16 0.17 0.19 1" pos="0.4337 0 0.03385" quat="1 0 0 0" size="0.064 0.1889 0.01625" contype="128" conaffinity="107" group="0" />
+      <geom name="r3/rear_bumper" type="box" rgba="0.16 0.17 0.19 1" pos="-0.4337 0 0.03385" quat="1 0 0 0" size="0.064 0.1889 0.01625" contype="128" conaffinity="107" group="0" />
+      <geom name="r3/wheels_left" type="box" rgba="0.16 0.17 0.19 1" pos="0 0.289 0.0455" quat="1 0 0 0" size="0.424 0.06 0.1515" contype="128" conaffinity="107" group="0" />
+      <geom name="r3/wheels_right" type="box" rgba="0.16 0.17 0.19 1" pos="0 -0.289 0.0455" quat="1 0 0 0" size="0.424 0.06 0.1515" contype="128" conaffinity="107" group="0" />
+      <body name="r3_arm_base_link_inertia" pos="0 0 0.242259" quat="6.123233996e-17 0 0 1">
+        <inertial pos="0 0 0" mass="4" fullinertia="0.006106330891 0.006106330891 0.01125 0 0 0" />
+        <geom name="r3/arm_base" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0.05" quat="1 0 0 0" size="0.095 0.05" contype="128" conaffinity="107" group="0" />
+        <body name="r3_arm_shoulder_link" pos="0 0 0.1807" quat="1 0 0 0">
+          <joint name="r3_arm_shoulder_pan_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="1.2" damping="5" limited="true" range="-6.283185307 6.283185307" />
+          <inertial pos="0.021 -0.027 0" mass="7.369" fullinertia="0.03408 0.02156 0.03529 0.00425 2e-05 -8e-05" />
+          <geom name="r3/shoulder" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0" quat="1 0 0 0" size="0.09 0.1" contype="128" conaffinity="107" group="0" />
+          <body name="r3_arm_upper_arm_link" pos="0 0 0" quat="0.7071067811 0.7071067813 0 0">
+            <joint name="r3_arm_shoulder_lift_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="1.2" damping="5" limited="true" range="-6.283185307 6.283185307" />
+            <inertial pos="-0.2327 0 0.158" mass="13.051" fullinertia="0.02814 0.77068 0.76943 5e-05 -0.01561 2e-05" />
+            <geom name="r3/upper_arm" type="capsule" rgba="0.36 0.55 0.78 1" pos="-0.30635 0 0.1762" quat="-0.7071067812 0 0.7071067812 0" size="0.065 0.30635" contype="128" conaffinity="107" group="0" />
+            <geom name="r3/shoulder_cap" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0.09" quat="1 0 0 0" size="0.085 0.11" contype="0" conaffinity="0" group="1" />
+            <body name="r3_arm_forearm_link" pos="-0.6127 0 0" quat="1 0 0 0">
+              <joint name="r3_arm_elbow_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="0.6" damping="3" limited="true" range="-3.141592654 3.141592654" />
+              <inertial pos="-0.33155 0 0.068" mass="3.989" fullinertia="0.01014 0.30928 0.30646 8e-05 0.00916 0" />
+              <geom name="r3/forearm" type="capsule" rgba="0.36 0.55 0.78 1" pos="-0.285775 0 0.0393" quat="-0.7071067812 0 0.7071067812 0" size="0.05 0.285775" contype="128" conaffinity="107" group="0" />
+              <geom name="r3/elbow_cap" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0.075" quat="1 0 0 0" size="0.065 0.095" contype="0" conaffinity="0" group="1" />
+              <body name="r3_arm_wrist_1_link" pos="-0.57155 0 0.17415" quat="1 0 0 0">
+                <joint name="r3_arm_wrist_1_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="0.12" damping="1" limited="true" range="-6.283185307 6.283185307" />
+                <inertial pos="0 -0.018 0.007" mass="2.1" fullinertia="0.00296 0.00258 0.00222 4.440892099e-21 -1e-05 0.00024" />
+                <geom name="r3/wrist_1" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0" quat="1 0 0 0" size="0.047 0.065" contype="128" conaffinity="107" group="0" />
+                <body name="r3_arm_wrist_2_link" pos="0 -0.11985 -2.458164591e-11" quat="0.7071067811 0.7071067813 0 0">
+                  <joint name="r3_arm_wrist_2_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="0.12" damping="1" limited="true" range="-6.283185307 6.283185307" />
+                  <inertial pos="0 0.018 -0.007" mass="1.98" fullinertia="0.00296 0.00258 0.00222 4.440892099e-21 1e-05 0.00024" />
+                  <geom name="r3/wrist_2" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 0" quat="1 0 0 0" size="0.047 0.065" contype="128" conaffinity="107" group="0" />
+                  <body name="r3_arm_wrist_3_link" pos="0 0.11655 -2.390480459e-11" quat="-0.7071067811 0.7071067813 -8.659560562e-17 -8.880535509e-27">
+                    <joint name="r3_arm_wrist_3_joint" type="hinge" pos="0 0 0" axis="0 0 1" armature="0.12" damping="1" limited="true" range="-6.283185307 6.283185307" />
+                    <inertial pos="0 0 -0.026" mass="0.615" fullinertia="0.0004 0.00041 0.00034 0 0 0" />
+                    <geom name="r3/wrist_3" type="cylinder" rgba="0.36 0.55 0.78 1" pos="0 0 -0.03" quat="1 0 0 0" size="0.045 0.03" contype="128" conaffinity="107" group="0" />
+                    <body name="r3_clamp" pos="0 0 0" quat="1 0 -5.551115123e-17 5.551115123e-17">
+                      <inertial pos="0 0 0.055" mass="1.2" fullinertia="0.0031264 0.0034 0.0026064 0 0 0" />
+                      <geom name="r3/clamp_top" type="box" rgba="0.95 0.55 0.12 1" pos="0 0 0.015" quat="1 0 0 0" size="0.06 0.054 0.015" contype="128" conaffinity="107" group="0" />
+                      <geom name="r3/clamp_jaw_a" type="box" rgba="0.95 0.55 0.12 1" pos="0 -0.0415 0.085" quat="1 0 0 0" size="0.06 0.0125 0.055" contype="128" conaffinity="107" group="0" />
+                      <geom name="r3/clamp_jaw_b" type="box" rgba="0.95 0.55 0.12 1" pos="0 0.0415 0.085" quat="1 0 0 0" size="0.06 0.0125 0.055" contype="128" conaffinity="107" group="0" />
+                      <site name="r3_tool" size=".012" rgba="0 1 0 1" pos="0 0 0.1" quat="1 0 0 0" />
+                      <site name="r3_ft" size=".012" rgba="1 1 0 1" pos="0 0 0" quat="1 0 0 0" />
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="r3_front_left_wheel_link" pos="0.256 0.2829 0.02913" quat="1 0 0 0">
+        <joint name="r3_front_left_wheel_joint" type="hinge" pos="0 0 0" axis="0 1 0" armature="0.1" damping="0.05" />
+        <inertial pos="0 0 0" mass="2.5" fullinertia="0.019758025 0.0340725125 0.019758025 0 0 0" />
+        <geom name="r3/front_left_tyre_contact" type="sphere" size="0.1651" pos="0 0 0" rgba=".12 .12 .13 .25" contype="0" conaffinity="0" group="3" />
+        <geom name="r3/front_left_tyre" type="cylinder" rgba="0.1 0.1 0.11 1" pos="0 0 0" quat="-0.5 0.5 0.5 0.5" size="0.1651 0.05715" contype="0" conaffinity="0" group="1" />
+      </body>
+      <body name="r3_front_right_wheel_link" pos="0.256 -0.2829 0.02913" quat="1 0 0 0">
+        <joint name="r3_front_right_wheel_joint" type="hinge" pos="0 0 0" axis="0 1 0" armature="0.1" damping="0.05" />
+        <inertial pos="0 0 0" mass="2.5" fullinertia="0.019758025 0.0340725125 0.019758025 0 0 0" />
+        <geom name="r3/front_right_tyre_contact" type="sphere" size="0.1651" pos="0 0 0" rgba=".12 .12 .13 .25" contype="0" conaffinity="0" group="3" />
+        <geom name="r3/front_right_tyre" type="cylinder" rgba="0.1 0.1 0.11 1" pos="0 0 0" quat="-0.5 0.5 0.5 0.5" size="0.1651 0.05715" contype="0" conaffinity="0" group="1" />
+      </body>
+      <body name="r3_rear_left_wheel_link" pos="-0.256 0.2829 0.02913" quat="1 0 0 0">
+        <joint name="r3_rear_left_wheel_joint" type="hinge" pos="0 0 0" axis="0 1 0" armature="0.1" damping="0.05" />
+        <inertial pos="0 0 0" mass="2.5" fullinertia="0.019758025 0.0340725125 0.019758025 0 0 0" />
+        <geom name="r3/rear_left_tyre_contact" type="sphere" size="0.1651" pos="0 0 0" rgba=".12 .12 .13 .25" contype="0" conaffinity="0" group="3" />
+        <geom name="r3/rear_left_tyre" type="cylinder" rgba="0.1 0.1 0.11 1" pos="0 0 0" quat="-0.5 0.5 0.5 0.5" size="0.1651 0.05715" contype="0" conaffinity="0" group="1" />
+      </body>
+      <body name="r3_rear_right_wheel_link" pos="-0.256 -0.2829 0.02913" quat="1 0 0 0">
+        <joint name="r3_rear_right_wheel_joint" type="hinge" pos="0 0 0" axis="0 1 0" armature="0.1" damping="0.05" />
+        <inertial pos="0 0 0" mass="2.5" fullinertia="0.019758025 0.0340725125 0.019758025 0 0 0" />
+        <geom name="r3/rear_right_tyre_contact" type="sphere" size="0.1651" pos="0 0 0" rgba=".12 .12 .13 .25" contype="0" conaffinity="0" group="3" />
+        <geom name="r3/rear_right_tyre" type="cylinder" rgba="0.1 0.1 0.11 1" pos="0 0 0" quat="-0.5 0.5 0.5 0.5" size="0.1651 0.05715" contype="0" conaffinity="0" group="1" />
+      </body>
+    </body>
+    <body name="beam_beam" pos="0 3 0.9" quat="1 0 0 0">
+      <freejoint name="beam_free" />
+      <inertial pos="0 0 0" mass="14.6124" fullinertia="0.0327950964 36.86167493 36.84197017 0 0 0" />
+      <geom name="beam/beam" type="box" rgba="0.86 0.3 0.12 1" pos="0 0 0" quat="1 0 0 0" size="2.75 0.025 0.06" contype="2" conaffinity="9" group="0" friction="0.5 0.005 0.0001" />
+    </body>
+  </worldbody>
+  <equality>
+    <connect name="grasp_r1#0" body1="r1_clamp" body2="beam_beam" anchor="0.06 0.0415 0.1" active="false" solref="0.004 1" solimp="0.95 0.99 0.001" />
+    <connect name="grasp_r1#1" body1="r1_clamp" body2="beam_beam" anchor="-0.06 0.0415 0.1" active="false" solref="0.004 1" solimp="0.95 0.99 0.001" />
+    <connect name="grasp_r1#2" body1="r1_clamp" body2="beam_beam" anchor="0 -0.0415 0.1" active="false" solref="0.004 1" solimp="0.95 0.99 0.001" />
+    <connect name="grasp_r2#0" body1="r2_clamp" body2="beam_beam" anchor="0.06 0.0415 0.1" active="false" solref="0.004 1" solimp="0.95 0.99 0.001" />
+    <connect name="grasp_r2#1" body1="r2_clamp" body2="beam_beam" anchor="-0.06 0.0415 0.1" active="false" solref="0.004 1" solimp="0.95 0.99 0.001" />
+    <connect name="grasp_r2#2" body1="r2_clamp" body2="beam_beam" anchor="0 -0.0415 0.1" active="false" solref="0.004 1" solimp="0.95 0.99 0.001" />
+    <connect name="grasp_r3#0" body1="r3_clamp" body2="beam_beam" anchor="0.06 0.0415 0.1" active="false" solref="0.004 1" solimp="0.95 0.99 0.001" />
+    <connect name="grasp_r3#1" body1="r3_clamp" body2="beam_beam" anchor="-0.06 0.0415 0.1" active="false" solref="0.004 1" solimp="0.95 0.99 0.001" />
+    <connect name="grasp_r3#2" body1="r3_clamp" body2="beam_beam" anchor="0 -0.0415 0.1" active="false" solref="0.004 1" solimp="0.95 0.99 0.001" />
+  </equality>
+  <contact>
+    <pair geom1="floor" geom2="r1/front_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="ramp" geom2="r1/front_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="plateau" geom2="r1/front_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="floor" geom2="r1/front_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="ramp" geom2="r1/front_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="plateau" geom2="r1/front_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="floor" geom2="r1/rear_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="ramp" geom2="r1/rear_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="plateau" geom2="r1/rear_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="floor" geom2="r1/rear_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="ramp" geom2="r1/rear_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="plateau" geom2="r1/rear_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="floor" geom2="r2/front_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="ramp" geom2="r2/front_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="plateau" geom2="r2/front_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="floor" geom2="r2/front_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="ramp" geom2="r2/front_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="plateau" geom2="r2/front_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="floor" geom2="r2/rear_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="ramp" geom2="r2/rear_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="plateau" geom2="r2/rear_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="floor" geom2="r2/rear_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="ramp" geom2="r2/rear_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="plateau" geom2="r2/rear_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="floor" geom2="r3/front_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="ramp" geom2="r3/front_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="plateau" geom2="r3/front_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="floor" geom2="r3/front_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="ramp" geom2="r3/front_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="plateau" geom2="r3/front_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="floor" geom2="r3/rear_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="ramp" geom2="r3/rear_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="plateau" geom2="r3/rear_left_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="floor" geom2="r3/rear_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="ramp" geom2="r3/rear_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+    <pair geom1="plateau" geom2="r3/rear_right_tyre_contact" solref="0.015 1" solimp="0.9 0.95 0.001" condim="1" />
+  </contact>
+  <actuator>
+    <motor name="r1_arm_elbow_motor" joint="r1_arm_elbow_joint" gear="1" ctrlrange="-150 150" />
+    <motor name="r1_arm_shoulder_lift_motor" joint="r1_arm_shoulder_lift_joint" gear="1" ctrlrange="-330 330" />
+    <motor name="r1_arm_shoulder_pan_motor" joint="r1_arm_shoulder_pan_joint" gear="1" ctrlrange="-330 330" />
+    <motor name="r1_arm_wrist_1_motor" joint="r1_arm_wrist_1_joint" gear="1" ctrlrange="-54 54" />
+    <motor name="r1_arm_wrist_2_motor" joint="r1_arm_wrist_2_joint" gear="1" ctrlrange="-54 54" />
+    <motor name="r1_arm_wrist_3_motor" joint="r1_arm_wrist_3_joint" gear="1" ctrlrange="-54 54" />
+    <motor name="r1_front_left_wheel_motor" joint="r1_front_left_wheel_joint" gear="1" ctrlrange="-52.5 52.5" />
+    <motor name="r1_front_right_wheel_motor" joint="r1_front_right_wheel_joint" gear="1" ctrlrange="-52.5 52.5" />
+    <motor name="r1_rear_left_wheel_motor" joint="r1_rear_left_wheel_joint" gear="1" ctrlrange="-52.5 52.5" />
+    <motor name="r1_rear_right_wheel_motor" joint="r1_rear_right_wheel_joint" gear="1" ctrlrange="-52.5 52.5" />
+    <motor name="r2_arm_elbow_motor" joint="r2_arm_elbow_joint" gear="1" ctrlrange="-150 150" />
+    <motor name="r2_arm_shoulder_lift_motor" joint="r2_arm_shoulder_lift_joint" gear="1" ctrlrange="-330 330" />
+    <motor name="r2_arm_shoulder_pan_motor" joint="r2_arm_shoulder_pan_joint" gear="1" ctrlrange="-330 330" />
+    <motor name="r2_arm_wrist_1_motor" joint="r2_arm_wrist_1_joint" gear="1" ctrlrange="-54 54" />
+    <motor name="r2_arm_wrist_2_motor" joint="r2_arm_wrist_2_joint" gear="1" ctrlrange="-54 54" />
+    <motor name="r2_arm_wrist_3_motor" joint="r2_arm_wrist_3_joint" gear="1" ctrlrange="-54 54" />
+    <motor name="r2_front_left_wheel_motor" joint="r2_front_left_wheel_joint" gear="1" ctrlrange="-52.5 52.5" />
+    <motor name="r2_front_right_wheel_motor" joint="r2_front_right_wheel_joint" gear="1" ctrlrange="-52.5 52.5" />
+    <motor name="r2_rear_left_wheel_motor" joint="r2_rear_left_wheel_joint" gear="1" ctrlrange="-52.5 52.5" />
+    <motor name="r2_rear_right_wheel_motor" joint="r2_rear_right_wheel_joint" gear="1" ctrlrange="-52.5 52.5" />
+    <motor name="r3_arm_elbow_motor" joint="r3_arm_elbow_joint" gear="1" ctrlrange="-150 150" />
+    <motor name="r3_arm_shoulder_lift_motor" joint="r3_arm_shoulder_lift_joint" gear="1" ctrlrange="-330 330" />
+    <motor name="r3_arm_shoulder_pan_motor" joint="r3_arm_shoulder_pan_joint" gear="1" ctrlrange="-330 330" />
+    <motor name="r3_arm_wrist_1_motor" joint="r3_arm_wrist_1_joint" gear="1" ctrlrange="-54 54" />
+    <motor name="r3_arm_wrist_2_motor" joint="r3_arm_wrist_2_joint" gear="1" ctrlrange="-54 54" />
+    <motor name="r3_arm_wrist_3_motor" joint="r3_arm_wrist_3_joint" gear="1" ctrlrange="-54 54" />
+    <motor name="r3_front_left_wheel_motor" joint="r3_front_left_wheel_joint" gear="1" ctrlrange="-52.5 52.5" />
+    <motor name="r3_front_right_wheel_motor" joint="r3_front_right_wheel_joint" gear="1" ctrlrange="-52.5 52.5" />
+    <motor name="r3_rear_left_wheel_motor" joint="r3_rear_left_wheel_joint" gear="1" ctrlrange="-52.5 52.5" />
+    <motor name="r3_rear_right_wheel_motor" joint="r3_rear_right_wheel_joint" gear="1" ctrlrange="-52.5 52.5" />
+  </actuator>
+  <sensor>
+    <force name="r1_ft_force" site="r1_ft" />
+    <torque name="r1_ft_torque" site="r1_ft" />
+    <force name="r2_ft_force" site="r2_ft" />
+    <torque name="r2_ft_torque" site="r2_ft" />
+    <force name="r3_ft_force" site="r3_ft" />
+    <torque name="r3_ft_torque" site="r3_ft" />
+  </sensor>
+</mujoco>

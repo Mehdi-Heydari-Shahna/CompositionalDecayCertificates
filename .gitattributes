@@ -1,0 +1,4 @@
+# The tests of the framework package check SHA-256 hashes of its vendored and upstream files
+# (code/Team_CMG_PACDM/upstream/PROVENANCE.json, code/Team_CMG_PACDM/THIRD_PARTY_NOTICES.md).
+# Turn off end-of-line conversion for every file, so that each platform checks out exactly the committed bytes.
+* -text

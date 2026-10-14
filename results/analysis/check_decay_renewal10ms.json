@@ -1,0 +1,329 @@
+{
+ "protocol": "references, requests and fitted feedforward renewed every 10 ms (feedforward_rate=slow), plant steps 2, 1, 0.5 ms; P1/P2 gains of synth_tables.json",
+ "records": [
+  {
+   "team": "team2",
+   "gains": "mission",
+   "dt": 0.002,
+   "time_to_1e3": 0.21800000000000014,
+   "rate_fitted": 15.897210152220858,
+   "rate_at_jump": 15.617098032109775,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "team2",
+   "gains": "mission",
+   "dt": 0.001,
+   "time_to_1e3": 0.21900000000000014,
+   "rate_fitted": 15.732509390827154,
+   "rate_at_jump": 15.61709803210965,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "team2",
+   "gains": "mission",
+   "dt": 0.0005,
+   "time_to_1e3": 0.22050000000000014,
+   "rate_fitted": 15.653083812616273,
+   "rate_at_jump": 15.617098032109604,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "team2",
+   "gains": "P1",
+   "dt": 0.002,
+   "time_to_1e3": 0.21600000000000014,
+   "rate_fitted": 15.885810478574477,
+   "rate_at_jump": 15.815307757331686,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "team2",
+   "gains": "P1",
+   "dt": 0.001,
+   "time_to_1e3": 0.22000000000000014,
+   "rate_fitted": 15.692327112727193,
+   "rate_at_jump": 15.815307757331668,
+   "excess_over_upper": 0.027497394372013817
+  },
+  {
+   "team": "team2",
+   "gains": "P1",
+   "dt": 0.0005,
+   "time_to_1e3": 0.22200000000000014,
+   "rate_fitted": 15.602350142572508,
+   "rate_at_jump": 15.81530775733163,
+   "excess_over_upper": 0.11018897737060396
+  },
+  {
+   "team": "team2",
+   "gains": "P2",
+   "dt": 0.002,
+   "time_to_1e3": 0.15000000000000008,
+   "rate_fitted": 23.072289958240408,
+   "rate_at_jump": 22.37624772025937,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "team2",
+   "gains": "P2",
+   "dt": 0.001,
+   "time_to_1e3": 0.15300000000000008,
+   "rate_fitted": 22.69832288988361,
+   "rate_at_jump": 22.376247720259414,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "team2",
+   "gains": "P2",
+   "dt": 0.0005,
+   "time_to_1e3": 0.15400000000000008,
+   "rate_fitted": 22.52001759331276,
+   "rate_at_jump": 22.376247720259332,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "team3",
+   "gains": "mission",
+   "dt": 0.002,
+   "time_to_1e3": 0.20600000000000013,
+   "rate_fitted": 16.702101476159967,
+   "rate_at_jump": 16.374960768937783,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "team3",
+   "gains": "mission",
+   "dt": 0.001,
+   "time_to_1e3": 0.20900000000000013,
+   "rate_fitted": 16.50636746719652,
+   "rate_at_jump": 16.374960768937676,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "team3",
+   "gains": "mission",
+   "dt": 0.0005,
+   "time_to_1e3": 0.21050000000000013,
+   "rate_fitted": 16.416589090057123,
+   "rate_at_jump": 16.374960768937896,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "team3",
+   "gains": "P1",
+   "dt": 0.002,
+   "time_to_1e3": 0.20600000000000013,
+   "rate_fitted": 16.714221101885784,
+   "rate_at_jump": 16.550958129981737,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "team3",
+   "gains": "P1",
+   "dt": 0.001,
+   "time_to_1e3": 0.20900000000000013,
+   "rate_fitted": 16.505720856347573,
+   "rate_at_jump": 16.550958129981655,
+   "excess_over_upper": 0.002817934823185375
+  },
+  {
+   "team": "team3",
+   "gains": "P1",
+   "dt": 0.0005,
+   "time_to_1e3": 0.21100000000000013,
+   "rate_fitted": 16.406691673285337,
+   "rate_at_jump": 16.55095812998168,
+   "excess_over_upper": 0.07959749665801041
+  },
+  {
+   "team": "team3",
+   "gains": "P2",
+   "dt": 0.002,
+   "time_to_1e3": 0.14800000000000013,
+   "rate_fitted": 23.588918160144015,
+   "rate_at_jump": 22.86703731855431,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "team3",
+   "gains": "P2",
+   "dt": 0.001,
+   "time_to_1e3": 0.14900000000000013,
+   "rate_fitted": 23.21107529021756,
+   "rate_at_jump": 22.86703731855414,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "team3",
+   "gains": "P2",
+   "dt": 0.0005,
+   "time_to_1e3": 0.15050000000000008,
+   "rate_fitted": 23.02649036298099,
+   "rate_at_jump": 22.867037318554285,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback2",
+   "gains": "mission",
+   "dt": 0.002,
+   "time_to_1e3": 0.11600000000000009,
+   "rate_fitted": 30.04306428541265,
+   "rate_at_jump": 28.88061375788949,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback2",
+   "gains": "mission",
+   "dt": 0.001,
+   "time_to_1e3": 0.11800000000000009,
+   "rate_fitted": 29.445482950921285,
+   "rate_at_jump": 28.88061375788951,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback2",
+   "gains": "mission",
+   "dt": 0.0005,
+   "time_to_1e3": 0.11850000000000009,
+   "rate_fitted": 29.159460262499532,
+   "rate_at_jump": 28.880613757889485,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback2",
+   "gains": "P1",
+   "dt": 0.002,
+   "time_to_1e3": 0.11800000000000009,
+   "rate_fitted": 29.60625303689369,
+   "rate_at_jump": 28.49896133320752,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback2",
+   "gains": "P1",
+   "dt": 0.001,
+   "time_to_1e3": 0.11900000000000009,
+   "rate_fitted": 29.032766121694756,
+   "rate_at_jump": 28.498961333207546,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback2",
+   "gains": "P1",
+   "dt": 0.0005,
+   "time_to_1e3": 0.1205000000000001,
+   "rate_fitted": 28.76070329253724,
+   "rate_at_jump": 28.498961333207507,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback2",
+   "gains": "P2",
+   "dt": 0.002,
+   "time_to_1e3": 0.11400000000000009,
+   "rate_fitted": 30.831124666916775,
+   "rate_at_jump": 29.669687731741845,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback2",
+   "gains": "P2",
+   "dt": 0.001,
+   "time_to_1e3": 0.11500000000000009,
+   "rate_fitted": 30.23301060264503,
+   "rate_at_jump": 29.669687731741814,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback2",
+   "gains": "P2",
+   "dt": 0.0005,
+   "time_to_1e3": 0.11550000000000009,
+   "rate_fitted": 29.94481777862938,
+   "rate_at_jump": 29.669687731741828,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback3",
+   "gains": "mission",
+   "dt": 0.002,
+   "time_to_1e3": 0.11400000000000009,
+   "rate_fitted": 30.31351280387344,
+   "rate_at_jump": 29.134953642840102,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback3",
+   "gains": "mission",
+   "dt": 0.001,
+   "time_to_1e3": 0.11700000000000009,
+   "rate_fitted": 29.70661304649912,
+   "rate_at_jump": 29.13495364284009,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback3",
+   "gains": "mission",
+   "dt": 0.0005,
+   "time_to_1e3": 0.11750000000000009,
+   "rate_fitted": 29.41683799652713,
+   "rate_at_jump": 29.134953642840095,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback3",
+   "gains": "P1",
+   "dt": 0.002,
+   "time_to_1e3": 0.11600000000000009,
+   "rate_fitted": 29.67079584222376,
+   "rate_at_jump": 28.560410557444115,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback3",
+   "gains": "P1",
+   "dt": 0.001,
+   "time_to_1e3": 0.11900000000000009,
+   "rate_fitted": 29.0882715753957,
+   "rate_at_jump": 28.560410557444282,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback3",
+   "gains": "P1",
+   "dt": 0.0005,
+   "time_to_1e3": 0.12000000000000009,
+   "rate_fitted": 28.824553699117235,
+   "rate_at_jump": 28.560410557444353,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback3",
+   "gains": "P2",
+   "dt": 0.002,
+   "time_to_1e3": 0.11200000000000009,
+   "rate_fitted": 30.922887705793297,
+   "rate_at_jump": 29.758129829030523,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback3",
+   "gains": "P2",
+   "dt": 0.001,
+   "time_to_1e3": 0.11400000000000009,
+   "rate_fitted": 30.322919328172244,
+   "rate_at_jump": 29.758129829030537,
+   "excess_over_upper": 0.0
+  },
+  {
+   "team": "ridgeback3",
+   "gains": "P2",
+   "dt": 0.0005,
+   "time_to_1e3": 0.11500000000000009,
+   "rate_fitted": 30.034495888804205,
+   "rate_at_jump": 29.758129829030533,
+   "excess_over_upper": 0.0
+  }
+ ]
+}

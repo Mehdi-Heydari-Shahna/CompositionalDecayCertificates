@@ -1,0 +1,71 @@
+  t    5.0 s  approach      carried  0.000  l   0.00 m  wall   18.7 s
+  t   10.0 s  approach      carried  0.000  l   0.00 m  wall   36.8 s
+  t   15.0 s  approach      carried  0.000  l   0.00 m  wall   54.5 s
+  t   20.0 s  dock          carried  0.000  l   0.00 m  wall   73.4 s
+  t   25.0 s  pregrasp      carried  0.000  l   0.00 m  wall   91.6 s
+  t   30.0 s  over          carried  0.000  l   0.00 m  wall  110.5 s
+  t   35.0 s  descend       carried  0.000  l   0.00 m  wall  135.9 s
+  t   40.0 s  take_weight   carried  0.333  l   0.00 m  wall  163.8 s
+  t   45.0 s  raise         carried  0.995  l   0.00 m  wall  191.3 s
+  t   50.0 s  extract       carried  1.000  l   0.00 m  wall  218.5 s
+  t   55.0 s  stow          carried  1.001  l   0.00 m  wall  245.9 s
+  t   60.0 s  navigate      carried  1.010  l   0.92 m  wall  273.6 s
+  t   65.0 s  navigate      carried  0.996  l   3.17 m  wall  301.9 s
+  t   70.0 s  navigate      carried  1.005  l   5.42 m  wall  329.2 s
+  t   75.0 s  navigate      carried  0.997  l   7.00 m  wall  358.1 s
+  t   80.0 s  navigate      carried  1.003  l   8.40 m  wall  397.3 s
+  t   85.0 s  navigate      carried  0.999  l   9.80 m  wall  430.9 s
+  t   90.0 s  navigate      carried  0.995  l  11.20 m  wall  462.6 s
+  t   95.0 s  navigate      carried  1.000  l  12.60 m  wall  492.2 s
+  t  100.0 s  navigate      carried  0.998  l  14.08 m  wall  520.0 s
+  t  105.0 s  navigate      carried  0.999  l  15.58 m  wall  547.8 s
+  t  110.0 s  navigate      carried  1.000  l  17.00 m  wall  575.9 s
+  t  115.0 s  navigate      carried  0.999  l  17.20 m  wall  604.5 s
+  t  120.0 s  navigate      carried  1.000  l  17.20 m  wall  632.3 s
+  t  125.0 s  navigate      carried  1.002  l  18.39 m  wall  659.8 s
+  t  130.0 s  navigate      carried  1.007  l  20.06 m  wall  688.4 s
+  t  135.0 s  navigate      carried  1.002  l  21.56 m  wall  718.0 s
+  t  140.0 s  navigate      carried  1.004  l  23.06 m  wall  747.5 s
+  t  145.0 s  navigate      carried  1.004  l  24.56 m  wall  777.2 s
+  t  150.0 s  navigate      carried  0.994  l  26.06 m  wall  806.8 s
+  t  155.0 s  navigate      carried  1.005  l  27.56 m  wall  836.8 s
+  t  160.0 s  navigate      carried  0.996  l  28.93 m  wall  868.6 s
+  t  165.0 s  navigate      carried  0.998  l  30.33 m  wall  900.9 s
+  t  170.0 s  navigate      carried  1.004  l  31.67 m  wall  932.4 s
+  t  175.0 s  navigate      carried  1.008  l  33.67 m  wall  963.7 s
+  t  180.0 s  navigate      carried  0.997  l  35.10 m  wall  995.0 s
+  t  185.0 s  navigate      carried  1.002  l  35.81 m  wall 1028.0 s
+  t  190.0 s  present       carried  1.001  l  35.91 m  wall 1056.6 s
+  t  195.0 s  present       carried  0.997  l  35.91 m  wall 1086.5 s
+  t  200.0 s  insert        carried  1.000  l  35.91 m  wall 1116.7 s
+  t  205.0 s  lower         carried  0.999  l  35.91 m  wall 1147.2 s
+  t  210.0 s  transfer      carried  0.844  l  35.91 m  wall 1178.1 s
+  t  215.0 s  verify        carried -0.001  l  35.91 m  wall 1208.9 s
+  t  220.0 s  retract_back  carried  0.001  l  35.91 m  wall 1237.4 s
+  t  225.0 s  fold          carried  0.000  l  35.91 m  wall 1267.0 s
+  t  230.0 s  retract_up    carried  0.000  l  35.91 m  wall 1291.9 s
+  t  235.0 s  retract_back  carried  0.000  l  35.91 m  wall 1315.4 s
+  t  240.0 s  fold          carried  0.000  l  35.91 m  wall 1336.1 s
+  t  245.0 s  retreat       carried  0.000  l  35.91 m  wall 1356.5 s
+status: complete  (simulated 246.6 s)
+payload while carried: position error max 0.4 mm, tilt max 0.5 mrad, yaw error max 0.3 mrad
+base tracking: r1 5.0 mm / 1.9 mrad, r2 10.4 mm / 2.1 mrad
+internal wrench while carried: force max 25.0 N (rms 4.6), moment max 5.9 N m (rms 1.1)
+  grasp_r1: force max 61.0 N, moment max 5.3 N m, vertical share 0.500 [0.489, 0.510]
+  grasp_r2: force max 62.3 N, moment max 4.7 N m, vertical share 0.500 [0.486, 0.513]
+  wrist sensor readings, largest: r1 73.2 N / 3.3 N m, r2 74.1 N / 2.9 N m (declared range 100 N / 10 N m)
+actuator demand: max ratio 0.70 (r1_arm_elbow_motor), saturated steps 0
+loops, feedforward of the fitted reference (rates of the damping term low-passed at 15 Hz): error energy against their fitted reference median 4.8e-03 J, 99 % below 3.8e-01 J, largest 5.2e-01 J (navigate, t = 172.4 s); rates of the stability statement 24.0 to 365 1/s; loop effort that moves nothing at most 0.023 of an actuator bound
+  r1: min wheel load 353 N, traction utilization max 0.155 (p99 0.111), tipping margin min 0.077 m, base height vs rigid wheels -0.06 mm [-0.11, -0.02], front_rocker [-0.4, +0.4] mrad of +-87
+  r2: min wheel load 354 N, traction utilization max 0.147 (p99 0.109), tipping margin min 0.078 m, base height vs rigid wheels -0.06 mm [-0.10, -0.01], front_rocker [-0.3, +0.4] mrad of +-87
+smallest clearance 0.050 m; by category: payload:door 0.419, payload:guide 0.006, payload:mount 0.030, payload:neighbour 0.090, payload:pad 0.000, payload:rack 0.060, payload:wall 0.363, robot:door 0.334, robot:guide 0.160, robot:mount 0.184, robot:neighbour 0.059, robot:pad 0.151, robot:payload 0.050, robot:rack 0.151, robot:wall 0.326, team:obstacle 0.607
+forbidden contacts reported by the plant: 0 []
+  compiled reaction recovery vs wrist sensor grasp_r1: force max 0.5 N (rms 0.1), moment max 0.2 N m (rms 0.0)
+  compiled reaction recovery vs wrist sensor grasp_r2: force max 0.5 N (rms 0.1), moment max 0.2 N m (rms 0.0)
+  compiled ground loads vs plant contacts: total normal max 0.6 N (rms 0.0), each wheel normal max 37.4 N (rms 11.7), wheel traction max 129.0 N (rms 18.9)
+    r1 mean wheel loads (N): model [566.0, 566.0, 676.0, 482.0] plant [567.0, 564.0, 675.0, 483.0]
+    r2 mean wheel loads (N): model [566.0, 566.0, 680.0, 477.0] plant [564.0, 568.0, 678.0, 480.0]
+  displacement vs summed rates per 20 ms: floating bodies max 0.00 um / 0.03 urad, joints max 0.00 u(rad|m)
+supports verified: True  checks {'grasps_unloaded': True, 'payload_at_rest': True, 'pads_loaded': True, 'placed_within_tolerance': True}  placement error 0.06 mm, 0.00 mrad
+declared bounds: all met
+written to results/v7/mujoco_ridgeback2_fitted15

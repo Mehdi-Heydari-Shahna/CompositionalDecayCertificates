@@ -1,0 +1,78 @@
+  t    5.0 s  approach      carried  0.000  l   0.00 m  wall   15.8 s
+  t   10.0 s  approach      carried  0.000  l   0.00 m  wall   31.0 s
+  t   15.0 s  approach      carried  0.000  l   0.00 m  wall   45.6 s
+  t   20.0 s  approach      carried  0.000  l   0.00 m  wall   59.3 s
+  t   25.0 s  approach      carried  0.000  l   0.00 m  wall   73.0 s
+  t   30.0 s  approach      carried  0.000  l   0.00 m  wall   87.6 s
+  t   35.0 s  approach      carried  0.000  l   0.00 m  wall  101.4 s
+  t   40.0 s  approach      carried  0.000  l   0.00 m  wall  115.2 s
+  t   45.0 s  dock          carried  0.000  l   0.00 m  wall  129.7 s
+  t   50.0 s  dock          carried  0.000  l   0.00 m  wall  143.4 s
+  t   55.0 s  pregrasp      carried  0.000  l   0.00 m  wall  157.1 s
+  t   60.0 s  descend       carried  0.000  l   0.00 m  wall  175.7 s
+  t   65.0 s  take_weight   carried  0.023  l   0.00 m  wall  195.6 s
+  t   70.0 s  raise         carried  1.006  l   0.00 m  wall  216.8 s
+  t   75.0 s  extract       carried  1.000  l   0.00 m  wall  238.2 s
+  t   80.0 s  stow          carried  1.000  l   0.00 m  wall  259.8 s
+  t   85.0 s  navigate      carried  1.000  l   0.33 m  wall  280.7 s
+  t   90.0 s  navigate      carried  1.000  l   2.57 m  wall  302.7 s
+  t   95.0 s  navigate      carried  1.000  l   4.79 m  wall  323.2 s
+  t  100.0 s  navigate      carried  1.000  l   6.44 m  wall  344.2 s
+  t  105.0 s  navigate      carried  1.000  l   7.84 m  wall  368.1 s
+  t  110.0 s  navigate      carried  1.000  l   9.24 m  wall  390.5 s
+  t  115.0 s  navigate      carried  0.999  l  10.63 m  wall  411.9 s
+  t  120.0 s  navigate      carried  1.000  l  12.03 m  wall  435.1 s
+  t  125.0 s  navigate      carried  1.000  l  13.42 m  wall  459.3 s
+  t  130.0 s  navigate      carried  1.000  l  14.92 m  wall  480.2 s
+  t  135.0 s  navigate      carried  1.000  l  16.42 m  wall  500.6 s
+  t  140.0 s  navigate      carried  1.000  l  17.08 m  wall  520.2 s
+  t  145.0 s  navigate      carried  1.000  l  17.09 m  wall  541.1 s
+  t  150.0 s  navigate      carried  1.000  l  17.50 m  wall  561.1 s
+  t  155.0 s  navigate      carried  1.000  l  19.40 m  wall  580.7 s
+  t  160.0 s  navigate      carried  1.000  l  20.90 m  wall  602.9 s
+  t  165.0 s  navigate      carried  1.000  l  22.40 m  wall  623.1 s
+  t  170.0 s  navigate      carried  1.000  l  23.90 m  wall  646.6 s
+  t  175.0 s  navigate      carried  1.000  l  25.41 m  wall  666.8 s
+  t  180.0 s  navigate      carried  1.000  l  26.81 m  wall  688.9 s
+  t  185.0 s  navigate      carried  1.000  l  28.21 m  wall  711.0 s
+  t  190.0 s  navigate      carried  1.000  l  29.56 m  wall  734.0 s
+  t  195.0 s  navigate      carried  1.000  l  30.96 m  wall  759.0 s
+  t  200.0 s  navigate      carried  1.000  l  32.36 m  wall  783.5 s
+  t  205.0 s  navigate      carried  1.000  l  33.34 m  wall  811.5 s
+  t  210.0 s  navigate      carried  1.000  l  33.70 m  wall  842.5 s
+  t  215.0 s  present       carried  1.000  l  33.71 m  wall  872.7 s
+  t  220.0 s  insert        carried  1.000  l  33.71 m  wall  902.6 s
+  t  225.0 s  lower         carried  1.000  l  33.71 m  wall  923.1 s
+  t  230.0 s  lower         carried  1.000  l  33.71 m  wall  943.1 s
+  t  235.0 s  transfer      carried  0.155  l  33.71 m  wall  963.9 s
+  t  240.0 s  retract_up    carried  0.000  l  33.71 m  wall  984.0 s
+  t  245.0 s  retract_back  carried  0.000  l  33.71 m  wall 1003.3 s
+  t  250.0 s  fold          carried  0.000  l  33.71 m  wall 1021.6 s
+  t  255.0 s  retract_back  carried  0.000  l  33.71 m  wall 1037.9 s
+  t  260.0 s  fold          carried  0.000  l  33.71 m  wall 1054.3 s
+  t  265.0 s  retreat       carried  0.000  l  33.71 m  wall 1068.4 s
+status: complete  (simulated 268.7 s)
+payload while carried: position error max 1.0 mm, tilt max 0.4 mrad, yaw error max 0.1 mrad
+base tracking: r1 3.9 mm / 7.7 mrad, r2 3.8 mm / 5.2 mrad
+internal wrench while carried: force max 8.1 N (rms 0.7), moment max 0.7 N m (rms 0.1)
+  grasp_r1: force max 59.9 N, moment max 0.6 N m, vertical share 0.500 [0.429, 0.512]
+  grasp_r2: force max 59.6 N, moment max 0.6 N m, vertical share 0.500 [0.430, 0.509]
+  wrist sensor readings, largest: r1 71.5 N / 0.7 N m, r2 71.3 N / 0.7 N m (declared range 100 N / 10 N m)
+actuator demand: max ratio 0.68 (r2_arm_elbow_motor), saturated steps 0
+  r1: min wheel load 173 N, net traction utilization max 0.073 (p99 0.065), tipping margin min 0.180 m, base height vs rigid wheels -0.18 mm [-0.19, -0.05]
+    r1 skid steering: turned 6.3 rad in all, wheel slip up to 95 mm/s, friction power max 77 W, energy 2.05 kJ; against the skid model: yaw rate ratio 1.000, error max 12.9 mrad/s (rms 2.5), sideways max 10.1 mm/s (rms 2.0)
+  r2: min wheel load 173 N, net traction utilization max 0.103 (p99 0.065), tipping margin min 0.180 m, base height vs rigid wheels -0.18 mm [-0.19, -0.02]
+    r2 skid steering: turned 8.3 rad in all, wheel slip up to 95 mm/s, friction power max 77 W, energy 2.70 kJ; against the skid model: yaw rate ratio 1.000, error max 22.1 mrad/s (rms 4.1), sideways max 12.0 mm/s (rms 2.5)
+smallest clearance 0.050 m; by category: payload:door 0.441, payload:guide 0.006, payload:mount 0.030, payload:neighbour 0.090, payload:pad 0.000, payload:rack 0.060, payload:wall 0.350, robot:door 0.389, robot:guide 0.160, robot:mount 0.184, robot:neighbour 0.060, robot:pad 0.145, robot:payload 0.050, robot:rack 0.145, robot:wall 0.326, team:obstacle 0.612
+forbidden contacts reported by the plant: 0 []
+  compiled reaction recovery vs wrist sensor grasp_r1: force max 6.8 N (rms 0.2), moment max 2.5 N m (rms 0.1)
+  compiled reaction recovery vs wrist sensor grasp_r2: force max 5.7 N (rms 0.1), moment max 1.9 N m (rms 0.0)
+  compiled ground loads vs plant contacts: total normal max 6.7 N (rms 0.1), friction of sliding wheels max 43.3 N (rms 3.6)
+    r1 mean wheel loads (N): model [316.0, 260.0, 312.0, 256.0] plant [320.0, 255.0, 307.0, 260.0]
+    r2 mean wheel loads (N): model [318.0, 266.0, 305.0, 253.0] plant [323.0, 262.0, 300.0, 258.0]
+  displacement vs summed rates per 20 ms: floating bodies max 0.00 um / 0.01 urad, joints max 0.00 u(rad|m)
+supports verified: True  checks {'grasps_unloaded': True, 'payload_at_rest': True, 'pads_loaded': True, 'placed_within_tolerance': True}  placement error 0.11 mm, 0.00 mrad
+declared bounds: all met
+written to results/mujoco_husky2_compliant_clamp
+compliant clamps: stability ratio 0.31
+tyre model: stability ratio 0.44

@@ -1,0 +1,20 @@
+Largest grasp force and moment of a robot, from every 20 ms record interval (means of the wrist sensor over the
+interval, tool-side inertia removed).  'Across an edge': the wheel centres of a base are on two terrain planes.
+
+Rejected run: bases with their rear to the beam (this folder)
+part of the mission                                         time s  force N  moment N m
+carried, standing (raise, extract, stow, present, insert, lower)    33.6     57.6         0.9
+route before the ramp zone (l < 18.9 m)                       69.3     65.7         8.1
+ramp zone (l 18.9 to 27.5 m), a base across an edge of the ramp     7.4    130.8        25.8
+ramp zone, no base across an edge                             21.1     91.6        18.7
+route after the ramp zone (l > 27.5 m)                        34.8     61.0         4.5
+whole time carried                                           166.2    130.8        25.8
+
+Shipped team: bases in line with the beam (reference_results/mujoco_ridgeback2)
+part of the mission                                         time s  force N  moment N m
+carried, standing (raise, extract, stow, present, insert, lower)    33.6     57.8         1.0
+route before the ramp zone (l < 19.0 m)                       69.6     60.2         3.6
+ramp zone (l 19.0 to 27.6 m), a base across an edge of the ramp     8.4     59.9         6.0
+ramp zone, no base across an edge                             20.1     59.9         3.2
+route after the ramp zone (l > 27.6 m)                        34.7     65.8         7.4
+whole time carried                                           166.4     65.8         7.4

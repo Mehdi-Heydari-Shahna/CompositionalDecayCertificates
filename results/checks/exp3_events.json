@@ -1,0 +1,122 @@
+{
+ "team2": {
+  "dims": {
+   "n": 40,
+   "d_grasped": 14,
+   "d_released": 20
+  },
+  "worst": {
+   "nested": 2.6645352591003757e-14,
+   "projector_AG": 6.661338147750939e-16,
+   "impulse": 6.644881433799462e-13,
+   "carnot": 9.782903230626354e-14,
+   "reset": 4.3193203922106585e-16,
+   "attach_projected": 3.2473961422110123e-14,
+   "attach_continuous": 2.274207374391843e-13,
+   "release_projected": 1.0356172261416654e-13,
+   "nonexpansive": 0.7481046124059485
+  },
+  "rate_grasped": 2.9559428276394035,
+  "rate_released": 0.04580597363548258
+ },
+ "team3": {
+  "dims": {
+   "n": 57,
+   "d_grasped": 18,
+   "d_released": 24
+  },
+  "worst": {
+   "nested": 1.5987211554602254e-14,
+   "projector_AG": 8.326672684688674e-16,
+   "impulse": 8.609242548523247e-13,
+   "carnot": 5.4554453940209586e-14,
+   "reset": 4.456318225516287e-16,
+   "attach_projected": 7.551767342800544e-13,
+   "attach_continuous": 1.5575691922058261e-13,
+   "release_projected": 7.59931728392644e-14,
+   "nonexpansive": 0.6726804429733669
+  },
+  "rate_grasped": 2.246598070788646,
+  "rate_released": 1.8936258309706064
+ },
+ "ridgeback2": {
+  "dims": {
+   "n": 40,
+   "d_grasped": 12,
+   "d_released": 18
+  },
+  "worst": {
+   "nested": 7.53563877964325e-15,
+   "projector_AG": 4.760250141086567e-16,
+   "impulse": 1.6387539923438763e-14,
+   "carnot": 1.1586235417638086e-13,
+   "reset": 4.906839720208682e-16,
+   "attach_projected": 6.482157741184058e-14,
+   "attach_continuous": 2.0060739037394528e-13,
+   "release_projected": 6.483276438179153e-13,
+   "nonexpansive": 0.7845197539197731
+  },
+  "rate_grasped": 3.3054881753704355,
+  "rate_released": 0.07937698372597503
+ },
+ "ridgeback3": {
+  "dims": {
+   "n": 57,
+   "d_grasped": 15,
+   "d_released": 21
+  },
+  "worst": {
+   "nested": 1.4210854715202004e-14,
+   "projector_AG": 4.440892098500626e-16,
+   "impulse": 5.371185858479707e-13,
+   "carnot": 4.507711983441767e-14,
+   "reset": 6.046412168281347e-16,
+   "attach_projected": 1.0635539077274013e-13,
+   "attach_continuous": 9.034360511703837e-14,
+   "release_projected": 4.034740981862745e-14,
+   "nonexpansive": 0.7219375820002618
+  },
+  "rate_grasped": 2.4650365812405166,
+  "rate_released": 2.2758019101323446
+ },
+ "husky2": {
+  "dims": {
+   "n": 38,
+   "d_grasped": 20,
+   "d_released": 26
+  },
+  "worst": {
+   "nested": 3.941291737419306e-15,
+   "projector_AG": 5.010160488016462e-16,
+   "impulse": 1.1396636799494515e-13,
+   "carnot": 5.149710721701918e-14,
+   "reset": 7.990648776343217e-16,
+   "attach_projected": 3.437364459006884e-14,
+   "attach_continuous": 5.0764609689729476e-14,
+   "release_projected": 4.3564594621796554e-14,
+   "nonexpansive": 0.7225159068638635
+  },
+  "rate_grasped": -7.497495777666973e-16,
+  "rate_released": -1.7828019314225037e-15
+ },
+ "husky3": {
+  "dims": {
+   "n": 54,
+   "d_grasped": 27,
+   "d_released": 33
+  },
+  "worst": {
+   "nested": 8.548717289613705e-15,
+   "projector_AG": 4.440892098500626e-16,
+   "impulse": 1.334184647040469e-13,
+   "carnot": 1.565398735623253e-14,
+   "reset": 5.976634536377842e-16,
+   "attach_projected": 1.3171360203282375e-14,
+   "attach_continuous": 5.475690891618152e-14,
+   "release_projected": 1.0081643966343659e-13,
+   "nonexpansive": 0.6809076889815785
+  },
+  "rate_grasped": -1.2267174456035439e-15,
+  "rate_released": -6.581929471110312e-16
+ }
+}

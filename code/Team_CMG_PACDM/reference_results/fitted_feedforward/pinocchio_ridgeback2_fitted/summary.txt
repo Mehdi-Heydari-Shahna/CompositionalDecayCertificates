@@ -1,0 +1,18 @@
+status: complete  (simulated 246.5 s)
+payload while carried: position error max 0.1 mm, tilt max 0.2 mrad, yaw error max 0.0 mrad
+base tracking: r1 0.3 mm / 0.1 mrad, r2 0.3 mm / 0.1 mrad
+internal wrench while carried: force max 1.7 N (rms 0.1), moment max 0.5 N m (rms 0.0)
+  grasp_r1: force max 60.7 N, moment max 1.9 N m, vertical share 0.500 [0.497, 0.503]
+  grasp_r2: force max 60.8 N, moment max 2.0 N m, vertical share 0.500 [0.497, 0.503]
+  wrist sensor readings, largest: r1 72.9 N / 1.3 N m, r2 73.1 N / 1.3 N m (declared range 100 N / 10 N m)
+actuator demand: max ratio 0.67 (r1_arm_elbow_motor), saturated steps 0
+loops, feedforward of the fitted reference: error energy against their fitted reference median 1.1e-08 J, 99 % below 7.8e-06 J, largest 5.5e-03 J (navigate, t = 142.9 s); rates of the stability statement 24.0 to 365 1/s; loop effort that moves nothing at most 0.007 of an actuator bound
+  r1: min wheel load 354 N, traction utilization max 0.121 (p99 0.103), tipping margin min 0.078 m, base height vs rigid wheels +0.00 mm [-0.00, +0.00], front_rocker [-0.0, +0.0] mrad of +-87
+  r2: min wheel load 354 N, traction utilization max 0.107 (p99 0.103), tipping margin min 0.078 m, base height vs rigid wheels +0.00 mm [-0.00, +0.00], front_rocker [-0.0, +0.0] mrad of +-87
+smallest clearance 0.050 m; by category: payload:door 0.419, payload:guide 0.006, payload:mount 0.030, payload:neighbour 0.090, payload:pad 0.000, payload:rack 0.060, payload:wall 0.363, robot:door 0.335, robot:guide 0.160, robot:mount 0.184, robot:neighbour 0.059, robot:pad 0.151, robot:payload 0.050, robot:rack 0.151, robot:wall 0.326, team:obstacle 0.607
+forbidden contacts reported by the plant: 0 []
+  compiled reaction recovery vs wrist sensor grasp_r1: force max 0.1 N (rms 0.0), moment max 0.0 N m (rms 0.0)
+  compiled reaction recovery vs wrist sensor grasp_r2: force max 0.1 N (rms 0.0), moment max 0.1 N m (rms 0.0)
+  displacement vs summed rates per 20 ms: floating bodies max 18.74 um / 85.89 urad, joints max 146.51 u(rad|m)
+supports verified: True  checks {'grasps_unloaded': True, 'payload_at_rest': True, 'pads_loaded': True, 'placed_within_tolerance': True}  placement error 0.00 mm, 0.00 mrad
+declared bounds: all met

@@ -1,0 +1,21 @@
+{
+ "team": "team2",
+ "rows": 28,
+ "rank": 26,
+ "d": 14,
+ "kernel_defect": 1.4788678642604444e-15,
+ "projector_defect": 4.059599878480924e-14,
+ "identifiable_rows": 20,
+ "not_identifiable": [
+  "contact"
+ ],
+ "not_identifiable_count": 8,
+ "contact_rows": 8,
+ "worst": {
+  "identity_consistent": 3.1953625954887844e-15,
+  "identity_inconsistent": 3.924388901854155e-15,
+  "reaction_force_two_selections": 8.94635049204209e-16,
+  "identity_two_selections": 2.224803854035262e-16,
+  "impulse": 1.4950685174144158e-13
+ }
+}

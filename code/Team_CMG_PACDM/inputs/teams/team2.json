@@ -1,0 +1,142 @@
+{
+ "schema": "cmg.physical-team-graph/1.0",
+ "name": "Two RB-ROBOUT+ / UR30 and a 5 m beam",
+ "gravity_m_s2": [
+  0.0,
+  0.0,
+  -9.81
+ ],
+ "files": {
+  "payload": "payloads/beam_rhs_100x60_5m.json",
+  "scene": "scenes/hall2.json",
+  "robots": {
+   "rbrobout_ur30": "robots/rbrobout_ur30.json"
+  }
+ },
+ "robots": [
+  {
+   "id": "r1",
+   "model": "rbrobout_ur30",
+   "commanded": [
+    "lift_top_joint"
+   ]
+  },
+  {
+   "id": "r2",
+   "model": "rbrobout_ur30",
+   "commanded": [
+    "lift_top_joint"
+   ]
+  }
+ ],
+ "payload": {
+  "id": "beam"
+ },
+ "grasps": [
+  {
+   "id": "grasp_r1",
+   "robot": "r1",
+   "tool_frame": "tool",
+   "payload_frame": "grasp_r1",
+   "type": "weld",
+   "share": 1.0
+  },
+  {
+   "id": "grasp_r2",
+   "robot": "r2",
+   "tool_frame": "tool",
+   "payload_frame": "grasp_r2",
+   "type": "weld",
+   "share": 1.0
+  }
+ ],
+ "rests": [
+  {
+   "id": "rack",
+   "payload_frame": "rest",
+   "scene_frame": "rack_rest",
+   "pads": [
+    {
+     "id": "rack_pad_a",
+     "scene_frame": "rack_pad_a",
+     "friction": 0.5,
+     "half_width_m": 0.03
+    },
+    {
+     "id": "rack_pad_b",
+     "scene_frame": "rack_pad_b",
+     "friction": 0.5,
+     "half_width_m": 0.03
+    }
+   ]
+  },
+  {
+   "id": "mount",
+   "payload_frame": "rest",
+   "scene_frame": "mount_rest",
+   "pads": [
+    {
+     "id": "mount_pad_a",
+     "scene_frame": "mount_pad_a",
+     "friction": 0.5,
+     "half_width_m": 0.03
+    },
+    {
+     "id": "mount_pad_b",
+     "scene_frame": "mount_pad_b",
+     "friction": 0.5,
+     "half_width_m": 0.03
+    }
+   ]
+  }
+ ],
+ "seed": {
+  "beam": [
+   0.0,
+   3.0,
+   1.25,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "r1": {
+   "base": [
+    -1.24,
+    2.05,
+    0.127,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "joints": {
+    "arm_shoulder_pan_joint": 1.36,
+    "arm_shoulder_lift_joint": -0.7,
+    "arm_elbow_joint": 1.68,
+    "arm_wrist_1_joint": -2.54,
+    "arm_wrist_2_joint": -1.5708,
+    "arm_wrist_3_joint": -0.21,
+    "lift_top_joint": 0.3
+   }
+  },
+  "r2": {
+   "base": [
+    1.24,
+    2.05,
+    0.127,
+    3.141592653589793,
+    0.0,
+    0.0
+   ],
+   "joints": {
+    "arm_shoulder_pan_joint": -1.78,
+    "arm_shoulder_lift_joint": -0.7,
+    "arm_elbow_joint": 1.68,
+    "arm_wrist_1_joint": -2.54,
+    "arm_wrist_2_joint": -1.5708,
+    "arm_wrist_3_joint": -0.21,
+    "lift_top_joint": 0.3
+   }
+  }
+ },
+ "declared": "Seeds are the station configurations at the rack (bases beside the rack, tools on the beam)."
+}

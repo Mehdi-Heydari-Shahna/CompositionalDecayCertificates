@@ -1,0 +1,41 @@
+[
+ {
+  "team": "team2",
+  "plant": "pinocchio",
+  "feedforward": "fitted",
+  "feedforward_rate": "slow",
+  "timestep": 0.002,
+  "velocity_filter_hz": 0.0,
+  "advance": "positions",
+  "arm_damping_ratio": 0.5,
+  "lift_damping_ratio": 0.5,
+  "options": {
+   "arm_damping_ratio": 0.5,
+   "lift_damping_ratio": 0.5
+  },
+  "start": {
+   "form_min": -54.0514615569455,
+   "form_max": 129.23549386648432,
+   "rate": [
+    8.258958679649961,
+    156.56053424079587
+   ],
+   "d": 14,
+   "W_before": 1.5133510725464034e-25
+  },
+  "W0": 0.0049999999999845,
+  "W_max_ratio": 1.0,
+  "t_of_max": 0.0,
+  "W_end_ratio": 0.00019780305341414312,
+  "largest_rise_between_steps": -6.509212777572473e-06,
+  "above_upper_bound": 0.0,
+  "time_to_floor": 0.20200000000000012,
+  "floor": 0.001,
+  "rate_fitted": 15.621645404363981,
+  "balance": -0.061855826491442605,
+  "max_effort_ratio": 0.5954914781045286,
+  "max_internal_ratio": 0.0007886278487277657,
+  "largest_displacement": 0.001059093052935882,
+  "seconds": 2.6
+ }
+]

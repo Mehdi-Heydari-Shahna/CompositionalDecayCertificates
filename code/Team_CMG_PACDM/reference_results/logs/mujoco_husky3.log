@@ -1,0 +1,90 @@
+rendering with the MuJoCo OpenGL backend: osmesa
+IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=8, resizing from (960, 540) to (960, 544) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+  t    5.0 s  approach      carried  0.000  l   0.00 m  wall   32.8 s
+  t   10.0 s  approach      carried  0.000  l   0.00 m  wall   61.8 s
+  t   15.0 s  approach      carried  0.000  l   0.00 m  wall   94.7 s
+  t   20.0 s  approach      carried  0.000  l   0.00 m  wall  125.1 s
+  t   25.0 s  approach      carried  0.000  l   0.00 m  wall  164.1 s
+  t   30.0 s  approach      carried  0.000  l   0.00 m  wall  193.2 s
+  t   35.0 s  approach      carried  0.000  l   0.00 m  wall  222.5 s
+  t   40.0 s  approach      carried  0.000  l   0.00 m  wall  253.1 s
+  t   45.0 s  dock          carried  0.000  l   0.00 m  wall  283.9 s
+  t   50.0 s  dock          carried  0.000  l   0.00 m  wall  313.2 s
+  t   55.0 s  dock          carried  0.000  l   0.00 m  wall  342.5 s
+  t   60.0 s  pregrasp      carried  0.000  l   0.00 m  wall  371.3 s
+  t   65.0 s  over          carried  0.000  l   0.00 m  wall  406.0 s
+  t   70.0 s  descend       carried  0.000  l   0.00 m  wall  442.7 s
+  t   75.0 s  take_weight   carried  0.848  l   0.00 m  wall  480.9 s
+  t   80.0 s  extract       carried  1.001  l   0.00 m  wall  518.9 s
+  t   85.0 s  stow          carried  0.999  l   0.00 m  wall  557.3 s
+  t   90.0 s  stow          carried  1.001  l   0.00 m  wall  596.6 s
+  t   95.0 s  navigate      carried  1.000  l   1.57 m  wall  636.2 s
+  t  100.0 s  navigate      carried  1.000  l   3.79 m  wall  675.9 s
+  t  105.0 s  navigate      carried  1.000  l   5.82 m  wall  715.0 s
+  t  110.0 s  navigate      carried  1.000  l   7.13 m  wall  755.6 s
+  t  115.0 s  navigate      carried  1.000  l   8.36 m  wall  795.7 s
+  t  120.0 s  navigate      carried  1.000  l   9.70 m  wall  836.5 s
+  t  125.0 s  navigate      carried  1.000  l  11.10 m  wall  876.3 s
+  t  130.0 s  navigate      carried  1.000  l  12.10 m  wall  918.0 s
+  t  135.0 s  navigate      carried  1.000  l  13.22 m  wall  958.7 s
+  t  140.0 s  navigate      carried  1.000  l  14.72 m  wall  997.9 s
+  t  145.0 s  navigate      carried  1.000  l  16.22 m  wall 1036.3 s
+  t  150.0 s  navigate      carried  1.000  l  17.35 m  wall 1074.0 s
+  t  155.0 s  navigate      carried  1.000  l  17.41 m  wall 1111.5 s
+  t  160.0 s  navigate      carried  1.000  l  17.42 m  wall 1148.6 s
+  t  165.0 s  navigate      carried  1.000  l  18.97 m  wall 1185.2 s
+  t  170.0 s  navigate      carried  1.000  l  20.53 m  wall 1223.7 s
+  t  175.0 s  navigate      carried  1.000  l  22.03 m  wall 1261.2 s
+  t  180.0 s  navigate      carried  1.000  l  23.53 m  wall 1301.6 s
+  t  185.0 s  navigate      carried  1.000  l  25.03 m  wall 1340.7 s
+  t  190.0 s  navigate      carried  1.000  l  26.54 m  wall 1381.5 s
+  t  195.0 s  navigate      carried  1.000  l  27.55 m  wall 1423.7 s
+  t  200.0 s  navigate      carried  1.000  l  28.89 m  wall 1466.8 s
+  t  205.0 s  navigate      carried  1.000  l  29.89 m  wall 1511.6 s
+  t  210.0 s  navigate      carried  1.000  l  31.29 m  wall 1553.3 s
+  t  215.0 s  navigate      carried  1.000  l  32.69 m  wall 1593.6 s
+  t  220.0 s  navigate      carried  1.000  l  33.93 m  wall 1632.5 s
+  t  225.0 s  navigate      carried  1.000  l  34.56 m  wall 1669.8 s
+  t  230.0 s  present       carried  1.003  l  34.61 m  wall 1707.5 s
+  t  235.0 s  insert        carried  1.000  l  34.61 m  wall 1745.6 s
+  t  240.0 s  lower         carried  0.998  l  34.61 m  wall 1785.4 s
+  t  245.0 s  lower         carried  1.000  l  34.61 m  wall 1825.1 s
+  t  250.0 s  transfer      carried  0.737  l  34.61 m  wall 1863.5 s
+  t  255.0 s  release       carried -0.000  l  34.61 m  wall 1903.4 s
+  t  260.0 s  retract_back  carried -0.000  l  34.61 m  wall 1941.5 s
+  t  265.0 s  fold          carried -0.000  l  34.61 m  wall 1979.1 s
+  t  270.0 s  retract_up    carried  0.000  l  34.61 m  wall 2013.9 s
+  t  275.0 s  retract_back  carried -0.000  l  34.61 m  wall 2049.2 s
+  t  280.0 s  release       carried  0.000  l  34.61 m  wall 2081.9 s
+  t  285.0 s  retract_back  carried  0.000  l  34.61 m  wall 2115.5 s
+  t  290.0 s  fold          carried  0.000  l  34.61 m  wall 2146.5 s
+  t  295.0 s  retreat       carried  0.000  l  34.61 m  wall 2177.4 s
+status: complete  (simulated 298.3 s)
+payload while carried: position error max 0.7 mm, tilt max 0.6 mrad, yaw error max 0.1 mrad
+base tracking: r1 5.6 mm / 7.3 mrad, r2 3.8 mm / 5.2 mrad, r3 3.1 mm / 8.6 mrad
+internal wrench while carried: force max 30.7 N (rms 2.5), moment max 6.9 N m (rms 0.6)
+  grasp_r1: force max 50.3 N, moment max 6.3 N m, vertical share 0.293 [0.270, 0.311]
+  grasp_r2: force max 61.5 N, moment max 5.7 N m, vertical share 0.382 [0.372, 0.389]
+  grasp_r3: force max 61.2 N, moment max 9.1 N m, vertical share 0.325 [0.283, 0.352]
+  wrist sensor readings, largest: r1 61.2 N / 3.6 N m, r2 72.1 N / 3.0 N m, r3 72.1 N / 5.1 N m (declared range 100 N / 10 N m)
+actuator demand: max ratio 0.69 (r2_rear_left_wheel_motor), saturated steps 0
+  r1: min wheel load 180 N, net traction utilization max 0.074 (p99 0.065), tipping margin min 0.189 m, base height vs rigid wheels -0.18 mm [-0.18, -0.02]
+    r1 skid steering: turned 6.7 rad in all, wheel slip up to 95 mm/s, friction power max 77 W, energy 2.16 kJ; against the skid model: yaw rate ratio 1.000, error max 15.1 mrad/s (rms 3.0), sideways max 16.6 mm/s (rms 2.2)
+  r2: min wheel load 175 N, net traction utilization max 0.075 (p99 0.065), tipping margin min 0.181 m, base height vs rigid wheels -0.18 mm [-0.18, -0.05]
+    r2 skid steering: turned 9.0 rad in all, wheel slip up to 95 mm/s, friction power max 77 W, energy 2.90 kJ; against the skid model: yaw rate ratio 1.001, error max 22.0 mrad/s (rms 3.9), sideways max 17.3 mm/s (rms 2.9)
+  r3: min wheel load 178 N, net traction utilization max 0.071 (p99 0.065), tipping margin min 0.186 m, base height vs rigid wheels -0.18 mm [-0.18, +0.00]
+    r3 skid steering: turned 7.1 rad in all, wheel slip up to 95 mm/s, friction power max 77 W, energy 2.30 kJ; against the skid model: yaw rate ratio 1.000, error max 15.3 mrad/s (rms 3.2), sideways max 10.7 mm/s (rms 2.2)
+smallest clearance 0.040 m; by category: payload:door 0.465, payload:guide 0.006, payload:mount 0.030, payload:neighbour 0.090, payload:pad 0.000, payload:rack 0.060, payload:wall 0.323, robot:door 0.401, robot:guide 0.454, robot:mount 0.429, robot:neighbour 0.060, robot:pad 0.144, robot:payload 0.040, robot:rack 0.142, robot:robot 0.390, robot:wall 0.326, team:obstacle 0.604
+forbidden contacts reported by the plant: 0 []
+  compiled reaction recovery vs wrist sensor grasp_r1: force max 1.4 N (rms 0.0), moment max 0.4 N m (rms 0.0)
+  compiled reaction recovery vs wrist sensor grasp_r2: force max 0.5 N (rms 0.0), moment max 0.1 N m (rms 0.0)
+  compiled reaction recovery vs wrist sensor grasp_r3: force max 0.9 N (rms 0.0), moment max 0.2 N m (rms 0.0)
+  compiled ground loads vs plant contacts: total normal max 0.9 N (rms 0.0), friction of sliding wheels max 47.0 N (rms 3.7)
+    r1 mean wheel loads (N): model [308.0, 257.0, 309.0, 258.0] plant [312.0, 253.0, 304.0, 262.0]
+    r2 mean wheel loads (N): model [316.0, 265.0, 305.0, 254.0] plant [320.0, 260.0, 300.0, 259.0]
+    r3 mean wheel loads (N): model [311.0, 265.0, 302.0, 256.0] plant [316.0, 261.0, 297.0, 260.0]
+  displacement vs summed rates per 20 ms: floating bodies max 0.00 um / 0.01 urad, joints max 0.00 u(rad|m)
+supports verified: True  checks {'grasps_unloaded': True, 'payload_at_rest': True, 'pads_loaded': True, 'placed_within_tolerance': True}  placement error 0.04 mm, 0.00 mrad
+declared bounds: all met
+written to results/mujoco_husky3
+tyre model: stability ratio 0.44

@@ -1,0 +1,21 @@
+status: complete  (simulated 266.0 s)
+payload while carried: position error max 0.5 mm, tilt max 0.4 mrad, yaw error max 0.0 mrad
+base tracking: r1 1.0 mm / 0.3 mrad, r2 1.1 mm / 0.3 mrad, r3 0.9 mm / 0.3 mrad
+internal wrench while carried: force max 43.2 N (rms 1.5), moment max 13.4 N m (rms 0.5)
+  grasp_r1: force max 189.7 N, moment max 12.5 N m, vertical share 0.291 [0.254, 0.295]
+  grasp_r2: force max 237.9 N, moment max 12.2 N m, vertical share 0.385 [0.363, 0.405]
+  grasp_r3: force max 225.8 N, moment max 11.3 N m, vertical share 0.324 [0.316, 0.345]
+  wrist sensor readings, largest: r1 222.1 N / 10.3 N m, r2 270.3 N / 10.1 N m, r3 258.0 N / 10.2 N m (declared range 600 N / 60 N m)
+actuator demand: max ratio 0.63 (r2_lift_motor), saturated steps 0
+loops, feedforward of the desired motion: error energy against their fitted reference median 3.1e-06 J, 99 % below 2.8e-03 J, largest 4.1e-02 J (navigate, t = 132.2 s); rates of the stability statement 13.4 to 354 1/s; loop effort that moves nothing at most 0.009 of an actuator bound
+  r1: min wheel load 608 N, traction utilization max 0.205 (p99 0.151), tipping margin min 0.213 m, base height vs rigid wheels -0.00 mm [-0.00, +0.00]
+  r2: min wheel load 616 N, traction utilization max 0.152 (p99 0.138), tipping margin min 0.204 m, base height vs rigid wheels +0.00 mm [-0.00, +0.01]
+  r3: min wheel load 610 N, traction utilization max 0.163 (p99 0.154), tipping margin min 0.210 m, base height vs rigid wheels -0.00 mm [-0.00, +0.00]
+smallest clearance 0.044 m; by category: payload:door 0.329, payload:guide 0.006, payload:mount 0.030, payload:neighbour 0.080, payload:pad 0.000, payload:rack 0.060, payload:wall 0.188, robot:door 0.207, robot:guide 0.590, robot:mount 0.423, robot:neighbour 0.044, robot:pad 0.310, robot:payload 0.095, robot:rack 0.309, robot:robot 0.109, robot:wall 0.189, team:obstacle 0.648
+forbidden contacts reported by the plant: 0 []
+  compiled reaction recovery vs wrist sensor grasp_r1: force max 4.8 N (rms 0.2), moment max 1.8 N m (rms 0.1)
+  compiled reaction recovery vs wrist sensor grasp_r2: force max 3.0 N (rms 0.1), moment max 1.2 N m (rms 0.0)
+  compiled reaction recovery vs wrist sensor grasp_r3: force max 2.1 N (rms 0.1), moment max 0.6 N m (rms 0.0)
+  displacement vs summed rates per 20 ms: floating bodies max 168.15 um / 297.20 urad, joints max 568.22 u(rad|m)
+supports verified: True  checks {'grasps_unloaded': True, 'payload_at_rest': True, 'pads_loaded': True, 'placed_within_tolerance': True}  placement error 0.09 mm, 0.00 mrad
+declared bounds: all met

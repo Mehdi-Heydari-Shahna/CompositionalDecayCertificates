@@ -1,0 +1,321 @@
+{
+  "note": "Files copied unchanged from the repositories below at the given commits. The robot records inputs/robots/rbrobout_ur30.json, inputs/robots/ridgeback_ur10e.json and inputs/robots/husky_a300_ur10e.json are generated from them by tools/build_robot.py.",
+  "sources": [
+    {
+      "directory": "robotnik_description",
+      "repository": "https://github.com/RobotnikAutomation/robotnik_description",
+      "commit": "4bc73425d090ead4591a7091e7ef7e7dc4fe862a",
+      "license": "BSD-3-Clause",
+      "files": [
+        {
+          "path": "robotnik_description/LICENSE",
+          "git_blob": "b499653219525f7f0cee0afdbcac5301b94ea32a",
+          "size_bytes": 1502,
+          "sha256": "3fdabe419eb56e254a6d48f19785c7a226cb3bcd5d6c86dab31ea65e7a931109"
+        },
+        {
+          "path": "robotnik_description/robots/rbrobout/rbrobout_plus.urdf.xacro",
+          "git_blob": "6ff631191fe972b700955508bf2b023485d5f6f1",
+          "size_bytes": 3067,
+          "sha256": "4b529c0eef6cda0cac280e66358f7ab1f4aceef643f64a4295730815be70e425"
+        },
+        {
+          "path": "robotnik_description/simulators/gazebo_ignition/rbrobout/rbrobout_control.urdf.xacro",
+          "git_blob": "f980f3c93e472f10b5f53552cc28749dcad9ffed",
+          "size_bytes": 2086,
+          "sha256": "43b3a97dcbf6d28c68099f98c2dadf623aa03a1d3c2b3f308faaf02830b62e13"
+        },
+        {
+          "path": "robotnik_description/urdf/arms/ur_macro.urdf.xacro",
+          "git_blob": "aca8e47edce800dd53da83baf459708a4a4e4492",
+          "size_bytes": 1895,
+          "sha256": "c719e5fb428c1e19052e07345d77b5c29a4346dfe56a636b6fad08ee7c18b1d0"
+        },
+        {
+          "path": "robotnik_description/urdf/bases/rbrobout/rbrobout_base.urdf.xacro",
+          "git_blob": "34640a27999a905ea53fc8b73d1719e7d068b04d",
+          "size_bytes": 2152,
+          "sha256": "becd2d991786c23c8bcb2e416de31452ea409e7caab0a82adf1f4b692fd104a9"
+        },
+        {
+          "path": "robotnik_description/urdf/bases/rbrobout/rbrobout_top_cover.urdf.xacro",
+          "git_blob": "0850f1b7bb9d9ceda4eea3364f630043a4d7b39d",
+          "size_bytes": 1360,
+          "sha256": "ab61f4d93647fd01fae5dba30112e5a4a7601db95d6ca24f1bc33a650046506c"
+        },
+        {
+          "path": "robotnik_description/urdf/bodies/rbrobout/rbrobout_body.urdf.xacro",
+          "git_blob": "6a9d180588cdca9fce150708fdf3695ce121a3b4",
+          "size_bytes": 2113,
+          "sha256": "dc2128e3d74be9ed93a8f457859298638554072b24cdf62fc89369417b9b091a"
+        },
+        {
+          "path": "robotnik_description/urdf/structures/ewellix/ewellix_lift_900mm.urdf.xacro",
+          "git_blob": "a1ddec5cc53386544fdff3080a9af55b8de84f5e",
+          "size_bytes": 4270,
+          "sha256": "8864a8a86e39f0c42662b5868d41687c5ea48c7ebe23a5ab54252740f058f4d0"
+        },
+        {
+          "path": "robotnik_description/urdf/wheels/mecanum_wheel/rbrobout_mecanum_wheel.urdf.xacro",
+          "git_blob": "3376a82e71b050e09c5a8787d7f4d6845d4274ea",
+          "size_bytes": 3679,
+          "sha256": "ac7b2f51d522202ba40c53716a0aed6c733946693898482308722c1e6046a31a"
+        }
+      ]
+    },
+    {
+      "directory": "ur_description",
+      "repository": "https://github.com/UniversalRobots/Universal_Robots_ROS2_Description",
+      "commit": "6662e15f32c23c12ece57d0050aee9a716e4fc41",
+      "license": "BSD-3-Clause",
+      "files": [
+        {
+          "path": "ur_description/LICENSE",
+          "git_blob": "574ef07902908574cba9a471d7e5eb0b684691e4",
+          "size_bytes": 1459,
+          "sha256": "143077f9f6a8de5a99f78c2c2472801fb53cf240277ef661642f079b9acdfff8"
+        },
+        {
+          "path": "ur_description/config/ur10e/default_kinematics.yaml",
+          "git_blob": "fca697c0d73cab3f2cbb6c9a3c46a646569136ef",
+          "size_bytes": 640,
+          "sha256": "4bf9a0dfdeb73d7a8b43171fd8a2cedffa9eaf6e342857df44229380e4ad2e49"
+        },
+        {
+          "path": "ur_description/config/ur10e/joint_limits.yaml",
+          "git_blob": "44be1f4a512c3b6a3ccb4e17022e24dbd4647cfb",
+          "size_bytes": 2871,
+          "sha256": "de6b27680ef8ca8930d1902fc6869f49b9295dabbb40048eaa538f9d4796bc4b"
+        },
+        {
+          "path": "ur_description/config/ur10e/physical_parameters.yaml",
+          "git_blob": "e8745d26aeb8a09eec1f90ebfa1496c7a8f0dee2",
+          "size_bytes": 2294,
+          "sha256": "677931caf9cbaec19eedf7671b8070f345ca409de9ab4a99a4c11b75f918655a"
+        },
+        {
+          "path": "ur_description/config/ur10e/visual_parameters.yaml",
+          "git_blob": "a320a99441885d629bc9c93914373ae35d99a0ab",
+          "size_bytes": 2407,
+          "sha256": "0e58b93fdce20ef92bf7321d6eb5eaf17aacdf8c146a7b0bf96deb37e0f68cdc"
+        },
+        {
+          "path": "ur_description/config/ur30/default_kinematics.yaml",
+          "git_blob": "1b732b95705fe8bfaa474311d131fa6b7bed5a47",
+          "size_bytes": 715,
+          "sha256": "744f2e8e0c1a352aab29061f9c104927444854fe8f5958f0738f98242fce09fe"
+        },
+        {
+          "path": "ur_description/config/ur30/joint_limits.yaml",
+          "git_blob": "0d4b0fbd5f465b9fdc8eb92fd44a5e45e5e2fb40",
+          "size_bytes": 2689,
+          "sha256": "ba2be7ecf42ee235d83aa572ca3743532c45577affef0d75b65d9f0cd40aed66"
+        },
+        {
+          "path": "ur_description/config/ur30/physical_parameters.yaml",
+          "git_blob": "4903cd185cbe7b28019235dd13f0a4511afd1d50",
+          "size_bytes": 2208,
+          "sha256": "0f3c5522edef7feee142ef87cba9dd21eccb4974c048f4bf53a13772f09e5c4e"
+        },
+        {
+          "path": "ur_description/config/ur30/visual_parameters.yaml",
+          "git_blob": "1bebf2d2fb7ed7c2b81f6c0a22f30c44d5bac487",
+          "size_bytes": 2388,
+          "sha256": "9f207e694a9247c3d7d1f0ac21470a64bb244c4004d254a6cf798f9912aef84e"
+        },
+        {
+          "path": "ur_description/urdf/inc/ur_common.xacro",
+          "git_blob": "b5b46cf640f5c56558136de2847211fb525eb302",
+          "size_bytes": 19909,
+          "sha256": "91b5a8c55c3a0b04ff0d8abe74fbaf7635966e903e9e978cec473bf88234f9fd"
+        },
+        {
+          "path": "ur_description/urdf/ur_macro.xacro",
+          "git_blob": "470507fd1a38a4faa4610589becc7cf5624e1513",
+          "size_bytes": 18813,
+          "sha256": "2683ddcc2db392116d69ac775e4d6dd1c7b3d420f9eca926bd10cf43a1ce8b35"
+        }
+      ]
+    },
+    {
+      "directory": "ridgeback_description",
+      "repository": "https://github.com/ridgeback/ridgeback",
+      "commit": "7f2489993f1369906e808402e8f45e4c2aebf5b3",
+      "license": "BSD-3-Clause",
+      "note": "LICENSE is the licence file at the root of the repository; the other files are from its package ridgeback_description (version 0.3.5)",
+      "files": [
+        {
+          "path": "ridgeback_description/LICENSE",
+          "git_blob": "3fd3245a3b1409e83dc8e6d5073513cd3ec02977",
+          "size_bytes": 1468,
+          "sha256": "1e72e132d03bf81cd784cafe84fd5e1bf3012f1bc9e0807b188fd98ec720014f"
+        },
+        {
+          "path": "ridgeback_description/urdf/accessories/hokuyo_ust-10lx_mount.urdf.xacro",
+          "git_blob": "68112da2787de01a686fd993506e4a7b7340b8d8",
+          "size_bytes": 2364,
+          "sha256": "0cb043fe6c7aa42aa962c60418449cc43e687172bc870583391a5de0ddfc9430"
+        },
+        {
+          "path": "ridgeback_description/urdf/accessories/microstrain_imu.urdf.xacro",
+          "git_blob": "bb87a7261a485496ed6216bde2a5d5022bdf4fca",
+          "size_bytes": 1432,
+          "sha256": "28ccd3d91b4d50e65d1f3a305a122824e79e971c246b9f514629e4fc83071361"
+        },
+        {
+          "path": "ridgeback_description/urdf/accessories/sick_lms1xx_mount.urdf.xacro",
+          "git_blob": "238b4a199b653ea9a52737bac5ddd3cebbd2ce77",
+          "size_bytes": 2153,
+          "sha256": "0346b7d8ce886e52a287baf1dc076bab8679c3541bdacad9ca8da480217447c4"
+        },
+        {
+          "path": "ridgeback_description/urdf/accessories/sick_s300_mount.urdf.xacro",
+          "git_blob": "1b4909ef0923caca53959ecd283f7d49bf2b7d91",
+          "size_bytes": 2170,
+          "sha256": "35748aa3408ca3cb06319b81b5f4ce96a4ff45a8fb646df1aa224e0152ad5a84"
+        },
+        {
+          "path": "ridgeback_description/urdf/accessories.urdf.xacro",
+          "git_blob": "40d6539b573ad6ba6997c723dff720286bdbc8ff",
+          "size_bytes": 4081,
+          "sha256": "adf7b7f64e18312100fc29befaf0272d2ff903e25897ac3117811ac103bbec0a"
+        },
+        {
+          "path": "ridgeback_description/urdf/empty.urdf",
+          "git_blob": "92fc69b4a647e3621a994aeab96b2d996ebd2691",
+          "size_bytes": 298,
+          "sha256": "ac58ab4c87eac404b996e0470be815118f4a20ce81730d0a6ae318b877ad25a1"
+        },
+        {
+          "path": "ridgeback_description/urdf/ridgeback.gazebo",
+          "git_blob": "4f6e0aee6032a907190b54ed84e2507ec2e2d47e",
+          "size_bytes": 4472,
+          "sha256": "0a6802a96208a0973ff6cd44d16b38f65f82359b1ae1ae9dd64662e655a017ee"
+        },
+        {
+          "path": "ridgeback_description/urdf/ridgeback.urdf.xacro",
+          "git_blob": "240134b25b1f38f326e652763d1fb17b65a061ef",
+          "size_bytes": 10794,
+          "sha256": "2561770d296ce7c1951e92e767984c7f08628473dc65f62f731713cb4989c32e"
+        }
+      ]
+    },
+    {
+      "directory": "clearpath_platform_description",
+      "repository": "https://github.com/clearpathrobotics/clearpath_common",
+      "commit": "726d7fba367f18e53899d3ac03f0b276380ae847",
+      "license": "BSD-3-Clause",
+      "note": "LICENSE is the licence file at the root of the repository; the other files are from its package clearpath_platform_description (version 2.9.17)",
+      "files": [
+        {
+          "path": "clearpath_platform_description/LICENSE",
+          "git_blob": "6080cef2f56b73d44611824fcc29dd336d63b3f9",
+          "size_bytes": 1504,
+          "sha256": "c5b036522ecf21b207daad625d10aff273d170b5cb46e3cae89129f67a6603c7"
+        },
+        {
+          "path": "clearpath_platform_description/urdf/a300/a300.urdf.xacro",
+          "git_blob": "ff18239864305231883ee6a3ad13213459df9ba9",
+          "size_bytes": 7344,
+          "sha256": "ab0227cc053e85fae9bf2d8f9f7338939f5db02f5c98523e6ba1cf1578ba375d"
+        },
+        {
+          "path": "clearpath_platform_description/urdf/a300/attachments/bumper.urdf.xacro",
+          "git_blob": "71c3fb86f28dff8559152257f5a654a103c87814",
+          "size_bytes": 952,
+          "sha256": "1191a86456bbfae3406e041f9694ca33ad5dd383fa0804c37cd569d4e96b980e"
+        },
+        {
+          "path": "clearpath_platform_description/urdf/a300/attachments/top_plate.urdf.xacro",
+          "git_blob": "885b3da436e9b66b8c2ce58281b41ab1067a1047",
+          "size_bytes": 2685,
+          "sha256": "889d594746c1f179f3468836eafa8422b264e0fa67e65c493bf309a024ce9769"
+        },
+        {
+          "path": "clearpath_platform_description/urdf/a300/drivetrain/caster_flange.urdf.xacro",
+          "git_blob": "2700dde7fbba091b06e90c63ec2dafa3152b95f2",
+          "size_bytes": 1471,
+          "sha256": "254114aa06dfd05784228c86f2fd366daea15d308e1ed0a1d3e6d4fe6c3febf6"
+        },
+        {
+          "path": "clearpath_platform_description/urdf/a300/drivetrain/motor.urdf.xacro",
+          "git_blob": "56d048bcd21650818cdc71b3cfc9c24800b4581f",
+          "size_bytes": 1349,
+          "sha256": "674d6128b164c2d57a72dec770e213547401fd780a97acaa47b1713870513e5b"
+        },
+        {
+          "path": "clearpath_platform_description/urdf/a300/drivetrain/suspension_beam.urdf.xacro",
+          "git_blob": "11ec391c4d64160ab400b1bdcf3eb23e58ced300",
+          "size_bytes": 2546,
+          "sha256": "6044589c3b3be7951174820b779cd9f551eaafbe892d1da4c84e1957fbb9e5d6"
+        },
+        {
+          "path": "clearpath_platform_description/urdf/a300/drivetrain/wheels/caster.urdf.xacro",
+          "git_blob": "a1be6a46e1ef57724906daec74a784420be318f3",
+          "size_bytes": 5113,
+          "sha256": "880aad6dcc370ed5a4d61c4117c110b294f38a13b5b37aff6fc7642dc55b6c7a"
+        },
+        {
+          "path": "clearpath_platform_description/urdf/a300/drivetrain/wheels/indoor.urdf.xacro",
+          "git_blob": "d7d22d05940249f89680b6abf2a5f2e48e213743",
+          "size_bytes": 2128,
+          "sha256": "19a97c4447b3fcfe267bff1cb3c32e4de44ef550b43ed4775f8420d9bea371c1"
+        },
+        {
+          "path": "clearpath_platform_description/urdf/a300/drivetrain/wheels/mecanum.urdf.xacro",
+          "git_blob": "b508f18bbca54fa896446b146f3ee7abb09d967e",
+          "size_bytes": 2793,
+          "sha256": "a7b13ba04464786909a5aa182bac8018550d4e8040c4db46aaea836665a4332c"
+        },
+        {
+          "path": "clearpath_platform_description/urdf/a300/drivetrain/wheels/outdoor.urdf.xacro",
+          "git_blob": "02217442b736ca56557848a5508e6d64c9209a88",
+          "size_bytes": 2156,
+          "sha256": "347137347c2da84c7cdeb71c13de426b547981dea5942ccf2654bd32c089952e"
+        },
+        {
+          "path": "clearpath_platform_description/urdf/a300/drivetrain/wheels.urdf.xacro",
+          "git_blob": "3e93131f53e8f8521a2bf065bb2e8fc088b9b2d7",
+          "size_bytes": 5301,
+          "sha256": "fcc5208248820f81a78acb526c9d82fe6656fbb89d7164c78f6cd4f3aee1834a"
+        },
+        {
+          "path": "clearpath_platform_description/urdf/common.urdf.xacro",
+          "git_blob": "9dc28ea124212586bfb299bb68854bd9508d04c2",
+          "size_bytes": 5805,
+          "sha256": "e80ec4b350fa7ac2beb766b8bd09a426fae8d6ad02e167f45c6342755ee8409d"
+        },
+        {
+          "path": "clearpath_platform_description/urdf/generic/drivetrain/control/diff_4wd.urdf.xacro",
+          "git_blob": "5223dfd8a124f8a522300b0326a545fbd48efef2",
+          "size_bytes": 537,
+          "sha256": "e9593821140cac19106c47a316575e1aedaa29e8620d706702d2433e22c4eeff"
+        },
+        {
+          "path": "clearpath_platform_description/urdf/generic/drivetrain/control/diff_fwd.urdf.xacro",
+          "git_blob": "2b74f75e212729e238459204437392e3031eeb64",
+          "size_bytes": 968,
+          "sha256": "a4876b8f727681308960496c27733303cb62b1f6c4eb0c5d6f6f9aa21f603e58"
+        },
+        {
+          "path": "clearpath_platform_description/urdf/generic/drivetrain/control/diff_rwd.urdf.xacro",
+          "git_blob": "091ebdb6d02fa04b811a3e7dcbe852bd6eb771dd",
+          "size_bytes": 966,
+          "sha256": "b204e5dd9a0d1e6eaba0e4346aeae3ef0e10667fab12068ad0a6a35b440a3e95"
+        },
+        {
+          "path": "clearpath_platform_description/urdf/generic/drivetrain/control/omni_4wd.urdf.xacro",
+          "git_blob": "c6b4384a272302425fb4649dfdc3abc346d1be99",
+          "size_bytes": 1347,
+          "sha256": "586af5c810893c597b7a19f6647dccf7803d101aae4e2bdcb69b297ab2ae518e"
+        },
+        {
+          "path": "clearpath_platform_description/urdf/generic/drivetrain/drivetrain.urdf.xacro",
+          "git_blob": "3d15a054064c69666861cc13ecd2b3b59a94c9bc",
+          "size_bytes": 1567,
+          "sha256": "5125ee3d83e76ec15f1ec3eb0f9df9f6d622c088e87769d34652bfeaa4c24e55"
+        }
+      ]
+    }
+  ]
+}

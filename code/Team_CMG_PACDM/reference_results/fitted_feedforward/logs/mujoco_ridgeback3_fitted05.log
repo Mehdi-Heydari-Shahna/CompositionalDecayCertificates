@@ -1,0 +1,78 @@
+  t    5.0 s  approach      carried  0.000  l   0.00 m  wall   35.5 s
+  t   10.0 s  approach      carried  0.000  l   0.00 m  wall   63.2 s
+  t   15.0 s  approach      carried  0.000  l   0.00 m  wall   89.7 s
+  t   20.0 s  dock          carried  0.000  l   0.00 m  wall  114.9 s
+  t   25.0 s  pregrasp      carried  0.000  l   0.00 m  wall  139.3 s
+  t   30.0 s  over          carried  0.000  l   0.00 m  wall  164.5 s
+  t   35.0 s  descend       carried  0.000  l   0.00 m  wall  201.2 s
+  t   40.0 s  take_weight   carried  0.353  l   0.00 m  wall  240.6 s
+  t   45.0 s  raise         carried  0.994  l   0.00 m  wall  282.2 s
+  t   50.0 s  extract       carried  0.999  l   0.00 m  wall  322.1 s
+  t   55.0 s  stow          carried  1.001  l   0.00 m  wall  362.2 s
+  t   60.0 s  navigate      carried  0.995  l   0.94 m  wall  403.8 s
+  t   65.0 s  navigate      carried  0.996  l   3.19 m  wall  447.2 s
+  t   70.0 s  navigate      carried  0.999  l   5.44 m  wall  488.5 s
+  t   75.0 s  navigate      carried  1.000  l   7.05 m  wall  531.8 s
+  t   80.0 s  navigate      carried  1.000  l   8.45 m  wall  574.2 s
+  t   85.0 s  navigate      carried  0.992  l   9.85 m  wall  618.2 s
+  t   90.0 s  navigate      carried  0.999  l  11.25 m  wall  664.7 s
+  t   95.0 s  navigate      carried  1.003  l  12.60 m  wall  707.8 s
+  t  100.0 s  navigate      carried  1.001  l  14.08 m  wall  749.3 s
+  t  105.0 s  navigate      carried  1.001  l  15.58 m  wall  790.3 s
+  t  110.0 s  navigate      carried  1.001  l  17.08 m  wall  831.5 s
+  t  115.0 s  navigate      carried  1.000  l  17.70 m  wall  870.8 s
+  t  120.0 s  navigate      carried  1.000  l  17.71 m  wall  909.9 s
+  t  125.0 s  navigate      carried  1.000  l  18.15 m  wall  949.0 s
+  t  130.0 s  navigate      carried  1.002  l  19.90 m  wall  989.2 s
+  t  135.0 s  navigate      carried  1.005  l  21.40 m  wall 1032.3 s
+  t  140.0 s  navigate      carried  0.999  l  22.90 m  wall 1078.3 s
+  t  145.0 s  navigate      carried  0.999  l  24.40 m  wall 1119.9 s
+  t  150.0 s  navigate      carried  0.994  l  25.90 m  wall 1162.1 s
+  t  155.0 s  navigate      carried  0.999  l  27.40 m  wall 1191.9 s
+  t  160.0 s  navigate      carried  0.999  l  28.91 m  wall 1219.2 s
+  t  165.0 s  navigate      carried  1.003  l  30.25 m  wall 1249.7 s
+  t  170.0 s  navigate      carried  1.007  l  31.65 m  wall 1278.5 s
+  t  175.0 s  navigate      carried  0.997  l  32.98 m  wall 1309.6 s
+  t  180.0 s  navigate      carried  0.974  l  34.96 m  wall 1342.0 s
+  t  185.0 s  navigate      carried  0.999  l  36.27 m  wall 1374.4 s
+  t  190.0 s  navigate      carried  0.999  l  36.95 m  wall 1406.2 s
+  t  195.0 s  present       carried  1.003  l  37.03 m  wall 1434.6 s
+  t  200.0 s  present       carried  0.997  l  37.03 m  wall 1463.5 s
+  t  205.0 s  insert        carried  1.000  l  37.03 m  wall 1493.7 s
+  t  210.0 s  lower         carried  1.000  l  37.03 m  wall 1524.3 s
+  t  215.0 s  transfer      carried  0.832  l  37.03 m  wall 1553.9 s
+  t  220.0 s  verify        carried -0.003  l  37.03 m  wall 1583.6 s
+  t  225.0 s  retract_back  carried  0.000  l  37.03 m  wall 1612.1 s
+  t  230.0 s  fold          carried -0.001  l  37.03 m  wall 1647.0 s
+  t  235.0 s  retract_up    carried  0.001  l  37.03 m  wall 1678.1 s
+  t  240.0 s  retract_back  carried -0.000  l  37.03 m  wall 1703.5 s
+  t  245.0 s  fold          carried  0.001  l  37.03 m  wall 1726.9 s
+  t  250.0 s  retract_back  carried  0.000  l  37.03 m  wall 1748.0 s
+  t  255.0 s  fold          carried  0.000  l  37.03 m  wall 1769.5 s
+  t  260.0 s  retreat       carried  0.000  l  37.03 m  wall 1788.8 s
+status: complete  (simulated 263.8 s)
+payload while carried: position error max 0.2 mm, tilt max 0.3 mrad, yaw error max 0.1 mrad
+base tracking: r1 5.4 mm / 2.1 mrad, r2 10.5 mm / 2.0 mrad, r3 5.6 mm / 2.6 mrad
+internal wrench while carried: force max 46.8 N (rms 8.1), moment max 11.2 N m (rms 1.9)
+  grasp_r1: force max 55.8 N, moment max 8.4 N m, vertical share 0.293 [0.250, 0.309]
+  grasp_r2: force max 60.9 N, moment max 6.4 N m, vertical share 0.382 [0.335, 0.398]
+  grasp_r3: force max 59.5 N, moment max 8.2 N m, vertical share 0.325 [0.286, 0.356]
+  wrist sensor readings, largest: r1 65.7 N / 5.0 N m, r2 72.0 N / 4.3 N m, r3 70.0 N / 4.7 N m (declared range 100 N / 10 N m)
+actuator demand: max ratio 0.65 (r2_arm_elbow_motor), saturated steps 0
+loops, feedforward of the fitted reference: error energy against their fitted reference median 8.5e-03 J, 99 % below 5.5e-01 J, largest 7.6e-01 J (navigate, t = 180.0 s); rates of the stability statement 13.7 to 179 1/s; loop effort that moves nothing at most 0.028 of an actuator bound
+  r1: min wheel load 372 N, traction utilization max 0.190 (p99 0.118), tipping margin min 0.082 m, base height vs rigid wheels -0.05 mm [-0.10, -0.01], front_rocker [-0.3, +0.4] mrad of +-87
+  r2: min wheel load 359 N, traction utilization max 0.182 (p99 0.116), tipping margin min 0.079 m, base height vs rigid wheels -0.06 mm [-0.10, -0.01], front_rocker [-0.3, +0.4] mrad of +-87
+  r3: min wheel load 369 N, traction utilization max 0.151 (p99 0.114), tipping margin min 0.081 m, base height vs rigid wheels -0.05 mm [-0.10, -0.01], front_rocker [-0.4, +0.4] mrad of +-87
+smallest clearance 0.040 m; by category: payload:door 0.442, payload:guide 0.006, payload:mount 0.030, payload:neighbour 0.090, payload:pad 0.000, payload:rack 0.060, payload:wall 0.292, robot:door 0.374, robot:guide 0.524, robot:mount 0.386, robot:neighbour 0.060, robot:pad 0.214, robot:payload 0.040, robot:rack 0.213, robot:robot 0.654, robot:wall 0.292, team:obstacle 0.604
+forbidden contacts reported by the plant: 0 []
+  compiled reaction recovery vs wrist sensor grasp_r1: force max 4.5 N (rms 0.2), moment max 1.5 N m (rms 0.1)
+  compiled reaction recovery vs wrist sensor grasp_r2: force max 5.6 N (rms 0.2), moment max 2.0 N m (rms 0.1)
+  compiled reaction recovery vs wrist sensor grasp_r3: force max 4.8 N (rms 0.3), moment max 1.6 N m (rms 0.1)
+  compiled ground loads vs plant contacts: total normal max 5.6 N (rms 0.1), each wheel normal max 37.3 N (rms 11.8), wheel traction max 129.5 N (rms 18.3)
+    r1 mean wheel loads (N): model [563.0, 563.0, 661.0, 491.0] plant [560.0, 565.0, 661.0, 491.0]
+    r2 mean wheel loads (N): model [565.0, 565.0, 675.0, 481.0] plant [567.0, 564.0, 670.0, 486.0]
+    r3 mean wheel loads (N): model [564.0, 564.0, 673.0, 480.0] plant [566.0, 562.0, 672.0, 481.0]
+  displacement vs summed rates per 20 ms: floating bodies max 0.00 um / 0.03 urad, joints max 0.00 u(rad|m)
+supports verified: True  checks {'grasps_unloaded': True, 'payload_at_rest': True, 'pads_loaded': True, 'placed_within_tolerance': True}  placement error 0.04 mm, 0.01 mrad
+declared bounds: all met
+written to results/v7/mujoco_ridgeback3_fitted05

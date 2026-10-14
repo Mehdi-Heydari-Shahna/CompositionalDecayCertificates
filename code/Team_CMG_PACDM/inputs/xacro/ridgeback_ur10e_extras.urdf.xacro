@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+  UR10e on the Ridgeback, included by the unchanged upstream ridgeback.urdf.xacro through its
+  RIDGEBACK_URDF_EXTRAS mechanism (the way Clearpath's own arm packages are added).
+
+  This reproduces ridgeback_ur_description/urdf/ridgeback_ur10_e_description.urdf.xacro of
+  https://github.com/ridgeback/ridgeback_manipulation (commit 748d284978610bab37984847700497ca35a71575):
+  the arm base on the link mid_mount with the default offset 0 0 0.  That file includes the UR10e
+  macro of the ROS 1 universal_robot repository; here the UR macro of the Universal Robots ROS 2
+  description (already in upstream/ur_description) is called with its UR10e configuration, and the
+  links are prefixed arm_ as in the other robot record of this package.
+-->
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find ur_description)/urdf/ur_macro.xacro"/>
+
+  <xacro:ur_robot name="ur10e" tf_prefix="arm_" parent="mid_mount"
+                  joint_limits_parameters_file="$(find ur_description)/config/ur10e/joint_limits.yaml"
+                  kinematics_parameters_file="$(find ur_description)/config/ur10e/default_kinematics.yaml"
+                  physical_parameters_file="$(find ur_description)/config/ur10e/physical_parameters.yaml"
+                  visual_parameters_file="$(find ur_description)/config/ur10e/visual_parameters.yaml">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </xacro:ur_robot>
+</robot>

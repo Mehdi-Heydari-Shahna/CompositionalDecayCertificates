@@ -1,0 +1,112 @@
+{
+ "team2": {
+  "recorded": {
+   "payload_mm": 0.41206006557566205,
+   "payload_rms_mm": 0.14721142720267674,
+   "grasp_moment_max": 9.253978221364319
+  },
+  "repeated": {
+   "payload_mm": 0.5215988267110907,
+   "payload_rms_mm": 0.1461546926355563,
+   "grasp_moment_max": 7.63735439677487,
+   "grasp_moment_max_20ms_vector_mean": 7.637462566349777
+  },
+  "change": {
+   "payload_peak": 0.2658320237424592,
+   "payload_rms": -0.0071783460509866615,
+   "grasp_moment_max": -0.17469501072060112
+  },
+  "per_step": {
+   "moment_max": 17.703121833134695,
+   "bound": 45.0,
+   "share_of_latched_grasp_steps_above_bound": 0.0,
+   "ratio_to_20ms_max": 2.317965215888166
+  }
+ },
+ "team3": {
+  "recorded": {
+   "payload_mm": 0.4001469799689344,
+   "payload_rms_mm": 0.13974772773752614,
+   "grasp_moment_max": 11.924707806542022
+  },
+  "repeated": {
+   "payload_mm": 0.40191050392000893,
+   "payload_rms_mm": 0.13994764482351638,
+   "grasp_moment_max": 12.645707726550853,
+   "grasp_moment_max_20ms_vector_mean": 12.645932168516829
+  },
+  "change": {
+   "payload_peak": 0.004407190455895549,
+   "payload_rms": 0.0014305569702408594,
+   "grasp_moment_max": 0.06046269071794641
+  },
+  "per_step": {
+   "moment_max": 25.282644003594374,
+   "bound": 45.0,
+   "share_of_latched_grasp_steps_above_bound": 0.0,
+   "ratio_to_20ms_max": 1.9993063694261322
+  }
+ },
+ "ridgeback2": {
+  "recorded": {
+   "payload_mm": 0.2676273578717833,
+   "payload_rms_mm": 0.07027116388391344,
+   "grasp_moment_max": 6.806980786698231
+  },
+  "repeated": {
+   "payload_mm": 0.2671532744143734,
+   "payload_rms_mm": 0.06868066155958723,
+   "grasp_moment_max": 7.229083536752621,
+   "grasp_moment_max_20ms_vector_mean": 7.22913498268228
+  },
+  "change": {
+   "payload_peak": -0.0017714312213067407,
+   "payload_rms": -0.022633783708971844,
+   "grasp_moment_max": 0.06201027493411404
+  },
+  "per_step": {
+   "moment_max": 31.14614343132548,
+   "bound": 10.0,
+   "share_of_latched_grasp_steps_above_bound": 0.008441840277777777,
+   "ratio_to_20ms_max": 4.3084497879957615
+  }
+ },
+ "ridgeback3": {
+  "recorded": {
+   "payload_mm": 0.20635298084723847,
+   "payload_rms_mm": 0.05928607809030066,
+   "grasp_moment_max": 8.374377246853202
+  },
+  "repeated": {
+   "payload_mm": 0.19817556398318437,
+   "payload_rms_mm": 0.06005238647213666,
+   "grasp_moment_max": 10.094108996317422,
+   "grasp_moment_max_20ms_vector_mean": 10.09421991717074
+  },
+  "change": {
+   "payload_peak": -0.039628295314559914,
+   "payload_rms": 0.012925604231550203,
+   "grasp_moment_max": 0.2053563744229978
+  },
+  "per_step": {
+   "moment_max": 32.39667981097352,
+   "bound": 10.0,
+   "share_of_latched_grasp_steps_above_bound": 0.010091805740418416,
+   "ratio_to_20ms_max": 3.2094640371718413
+  }
+ },
+ "ranges": {
+  "change_payload_peak": [
+   -0.039628295314559914,
+   0.2658320237424592
+  ],
+  "change_payload_rms": [
+   -0.022633783708971844,
+   0.012925604231550203
+  ],
+  "change_grasp_moment_max": [
+   -0.17469501072060112,
+   0.2053563744229978
+  ]
+ }
+}
