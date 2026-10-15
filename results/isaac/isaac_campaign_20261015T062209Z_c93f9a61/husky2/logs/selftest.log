@@ -1,0 +1,11 @@
+Command: ["%USERPROFILE%\\AppData\\Local\\miniforge3\\envs\\isaac61\\python.exe", "%USERPROFILE%\\Downloads\\Team_CMG_PACDM\\workflows\\isaac\\run_isaac.py", "--worker", "--stage", "selftest", "--team", "husky2", "--output", "%USERPROFILE%\\Downloads\\Team_CMG_PACDM\\results\\isaac_campaign_20261015T062209Z_c93f9a61\\husky2", "--run-id", "20261015T063124Z_4d2e8536", "--dt", "0.002", "--solver", "PGS", "--position-iterations", "64", "--velocity-iterations", "8", "--contact", "auto", "--roller-hull", "21", "30", "--max-time", "400.0", "--render-hz", "25.0", "--shutdown-mode", "auto", "--headless"]
+  PASS  PACDM kernel unchanged (sha256): bbd1fb482e7529d70e05be3c3533d6d1076dada79f6b121e70424d138a9be8de
+  PASS  coordinates: 0.0
+  PASS  ports: 0.0
+  PASS  q_start: 0.0
+  PASS  mass_diagonal: 4.033392116600369e-16
+  PASS  mass_frobenius: 0.0
+  PASS  bias: 0.0
+  PASS  efforts: 1.8920254094674126e-12
+  PASS  q_carry: 8.881784197001252e-16
+  PASS  total_mass_kg: 0.0

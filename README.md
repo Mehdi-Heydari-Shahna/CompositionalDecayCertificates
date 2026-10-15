@@ -4,9 +4,10 @@
 
 Mehdi Heydari Shahna · Soyi Jung · Soohyun Park · Joongheon Kim · Jouni Mattila
 
-This repository is the supplementary material of the paper: the source code of every numerical result, the recorded
-results of the runs behind its figures and tables, the trajectories of the 40 complete missions, and the scripts that
-draw the figures from the recorded results.
+This repository is the supplementary material of the paper (submitted to Automatica): the source code of every
+numerical result, the recorded results of the runs behind its figures and tables, the trajectories of the 40 complete
+missions, the scripts that draw the figures from the recorded results, and the supplementary video. It also holds the
+Isaac Sim workflow of the team package with a recorded campaign of the six teams in Isaac Sim.
 
 Robots carrying a shared payload form a constrained mechanical system whose velocity-error decay rate depends on all
 robots and constraints. The paper studies when this rate can be certified, and gains achieving it designed, from
@@ -17,19 +18,22 @@ reference, including events, sampled renewal and skid-steered bases driven throu
 evaluated on six compiled mobile-manipulator teams (two and three RB-ROBOUT+/UR30, Ridgeback/UR10e and Husky
 A300/UR10e robots carrying a beam) on a Pinocchio-based plant with ideal constraints and on MuJoCo 3.3.7.
 [RoboCompiler](https://github.com/Mehdi-Heydari-Shahna/RoboCompiler) supplies the compiled team graphs; its package for
-robot teams, `Team_CMG_PACDM`, is included in `code/`.
+robot teams, `Team_CMG_PACDM`, is included in `code/`, together with its Isaac Sim workflow (`Team_CMG_PACDM_Isaac`).
 
 ## Repository contents
 
 | Path | Content |
 |---|---|
 | `code/Team_CMG_PACDM/` | Team compiler, mission controller (desired-motion and fitted feedforward), MuJoCo and Pinocchio plants, mission workflows, tools and tests, with the reports of its reference runs (`reference_results/`); see its `README.md` and `DESIGN.md` |
+| `code/Team_CMG_PACDM_Isaac/` | Isaac Sim / PhysX workflow of the team package, self-contained: compiler, mission controller and audit, the Isaac Sim plant and the staged workflow (`workflows/isaac/`); see "Isaac Sim campaign" below |
 | `code/checks/` | Numerical checks of the statements on the compiled teams: identity, events, redundant rows, fitted reference, friction-driven bases, decay tests, missions, robustness |
 | `code/analysis/` | Payload-space test, refresh and membership, synthetic assemblies, gain synthesis, decay runs, carrying segment, per-step grasp loads, friction-driven teams |
 | `code/figures/` | Scripts of Figs. 3 and 5-12 |
 | `results/checks/`, `results/analysis/` | Recorded results of the scripts in `code/checks/` and `code/analysis/` |
 | `results/trajectories/` | Trajectories of the 40 missions at 10 Hz (CSV) |
 | `results/figures/` | Figures drawn from the recorded results (PDF, with PNG previews), and the video frames used in Figs. 5 and 12 |
+| `results/isaac/` | Records of the Isaac Sim campaign of the six teams; see "Isaac Sim campaign" below |
+| `video/Supplementary_Video.mp4` | Supplementary video of the paper |
 | `reproduce.sh` | Regenerates the results and figures into `results/` |
 | `requirements.txt` | Pinned Python packages |
 
@@ -170,6 +174,7 @@ and three random admissible directions per team and plant. Their records are in
   workflow's `report.json` and `summary.txt`; their records (29 to 47 MB each) are not included.
 - `results/trajectories/`: the 40 missions at 10 Hz, one folder per run (see the README there).
 - `results/figures/`: the figures drawn from these results; `frames/` holds the video frames of Figs. 5 and 12.
+- `results/isaac/`: the Isaac Sim campaign (see "Isaac Sim campaign").
 - `code/Team_CMG_PACDM/reference_results/`: the reports, summaries, figures and console logs of the framework's
   reference runs: the missions of the six teams with the default controller on both plants, the runs with the fitted
   feedforward and the decay tests (`fitted_feedforward/`), and the studies its `README.md` describes.
@@ -200,17 +205,62 @@ and three random admissible directions per team and plant. Their records are in
   frames per second at four times real time), at simulated time t with
   `ffmpeg -ss <t/4> -i mission.mp4 -frames:v 1 <frame>.png`.
 
-## Videos
+## Supplementary video
 
-The mission videos accompany the paper separately. The MuJoCo workflow renders the video of a run with
-`--frames 6.25 --video`, and `code/Team_CMG_PACDM/tools/replay_video.py` draws one from the record of any run.
+`video/Supplementary_Video.mp4` (1 min 28 s, 1920×1080, no sound) presents the paper: the question it answers, its
+three results, the six compiled teams, their complete MuJoCo missions side by side at the mission events, the
+friction-driven teams on both plants, and the results of Section 7. The MuJoCo workflow renders the video of a single
+run with `--frames 6.25 --video`, and `code/Team_CMG_PACDM/tools/replay_video.py` draws one from the record of any run.
+
+## Isaac Sim campaign
+
+Beyond the two plants of the paper, the missions of the six teams were run in Isaac Sim 6.1.0.0 (omni.physx 110.3.2,
+2 ms steps) with `code/Team_CMG_PACDM_Isaac/`, a self-contained version of the team package with an Isaac Sim plant
+and the default mission controller (desired-motion feedforward with the 15 Hz rate filter; the fitted feedforward is
+not part of it). The workflow runs in stages, each in its own process: `selftest` (the controller stack reproduces its
+reference numbers, without Isaac Sim), `preflight` (what PhysX uses, read back and compared with the compiled graph),
+`settle` (the first seconds of the mission), `carry` (a stretch of the route with the beam in the clamps) and `mission`
+(the complete mission, audited like the MuJoCo and Pinocchio runs). In the recorded campaign every team passed every
+stage with every declared bound met; the missions took 247 to 298 s of simulated time. The Husky bases stand on the
+declared springs of their tyres, the other bases on rigid wheel contacts.
+
+The workflow needs the Python of an Isaac Sim installation with NumPy and SciPy
+(`code/Team_CMG_PACDM_Isaac/workflows/isaac/requirements-isaac.txt`). From the repository folder:
+
+```bash
+# with the Python of Isaac Sim (or add --isaac-python <path to it>)
+python code/Team_CMG_PACDM_Isaac/workflows/isaac/run_isaac.py --team team2 --headless   # one team, all stages
+python code/Team_CMG_PACDM_Isaac/workflows/isaac/run_campaign.py --headless              # the six teams and the assessment
+
+# any Python 3: assessment of the recorded campaign
+python code/Team_CMG_PACDM_Isaac/workflows/isaac/assess_results.py results/isaac/isaac_campaign_20261015T062209Z_c93f9a61 --output <folder>
+```
+
+`workflows/isaac/run_linux.sh`, `run_windows.bat` and the `run_campaign_*` scripts run the same with the Python of the
+active Isaac Sim environment. New runs are written to `code/Team_CMG_PACDM_Isaac/results/` (not tracked by Git).
+Without `--output`, `assess_results.py` rewrites the assessment inside the campaign folder; with it, it reproduces the
+recorded `ASSESSMENT.md`.
+
+`results/isaac/isaac_campaign_20261015T062209Z_c93f9a61/` is the recorded campaign: `campaign.json`, `campaign.log`,
+the assessment (`ASSESSMENT.md`, `assessment.json`) and one folder per team with its manifest, the console log of every
+stage and the `case.json` of every stage. The `case.json` files hold the SHA-256 of every source file of the run; all
+equal those of `code/Team_CMG_PACDM_Isaac/`. The preflight folders hold the checks against the compiled graph; the
+`settle`, `carry` and `mission` folders hold the reports, summaries, figures and audits, and the records of `settle` and
+`carry`. Left out:
+- the records of the missions (25 to 41 MB each); every mission folder has its trajectory at 10 Hz instead
+  (`trajectory.csv`, `trajectory_columns.txt`), written by `code/Team_CMG_PACDM/tools/export_trajectory.py` as for the
+  40 missions of the paper;
+- the scene exports of the preflight (`scene.usda`);
+- `campaign_bundle.zip`, which repeats the folder.
+
+In the logs and manifests, the user folder of the computer that ran the campaign is written as `%USERPROFILE%`.
 
 ## Paper and citation
 
 Please cite the paper when using this work:
 
 Mehdi Heydari Shahna, Soyi Jung, Soohyun Park, Joongheon Kim, and Jouni Mattila. **Robot Teams Sharing a Load:
-Compositional Decay Certificates.** 2026.
+Compositional Decay Certificates.** Submitted to Automatica, 2026. A preprint is not yet available.
 
 This work builds on RoboCompiler: Mehdi Heydari Shahna, Joongheon Kim, and Jouni Mattila. **RoboCompiler: Graph-Native
 Compilation of Closed-Chain Robots for Consistent Modeling, Control, and Simulation.** 2026.
@@ -225,4 +275,5 @@ through the Mechanical Equipment Industry Technology Development Program adminis
 
 Released under the Apache License 2.0; see [LICENSE](LICENSE). The robot description files in
 `code/Team_CMG_PACDM/upstream/` and the records derived from them keep their BSD-3-Clause licences, and the PACDM kernel
-in `code/Team_CMG_PACDM/vendor/` is included unchanged; see `code/Team_CMG_PACDM/THIRD_PARTY_NOTICES.md`.
+in `code/Team_CMG_PACDM/vendor/` is included unchanged; see `code/Team_CMG_PACDM/THIRD_PARTY_NOTICES.md`. The same
+holds for the robot records and the PACDM kernel in `code/Team_CMG_PACDM_Isaac/`; see its `THIRD_PARTY_NOTICES.txt`.

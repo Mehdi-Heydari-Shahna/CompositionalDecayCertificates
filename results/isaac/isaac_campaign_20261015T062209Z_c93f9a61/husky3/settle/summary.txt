@@ -1,0 +1,23 @@
+status: running  (simulated 3.0 s)
+payload while carried: position error max - mm, tilt max - mrad, yaw error max - mrad
+base tracking: r1 0.1 mm / 1.9 mrad, r2 0.1 mm / 1.8 mrad, r3 0.1 mm / 1.9 mrad
+internal wrench while carried: force max - N (rms -), moment max - N m (rms -)
+  grasp_r1: force max - N, moment max - N m, not carrying
+  grasp_r2: force max - N, moment max - N m, not carrying
+  grasp_r3: force max - N, moment max - N m, not carrying
+  wrist sensor readings, largest: r1 11.8 N / 0.0 N m, r2 11.8 N / 0.0 N m, r3 11.8 N / 0.0 N m (declared range 100 N / 10 N m)
+actuator demand: max ratio 0.50 (r1_rear_left_wheel_motor), saturated steps 0
+  r1: min wheel load 246 N, net traction utilization max 0.007 (p99 0.006), tipping margin min 0.251 m, base height vs rigid wheels -1.38 mm [-1.38, -1.38]
+    r1 skid steering: turned 0.3 rad in all, wheel slip up to 95 mm/s, friction power max 77 W, energy 0.09 kJ; against the skid model: yaw rate ratio 1.001, error max 0.0 mrad/s (rms 0.6), sideways max 0.1 mm/s (rms 0.1)
+  r2: min wheel load 249 N, net traction utilization max 0.001 (p99 0.001), tipping margin min 0.252 m, base height vs rigid wheels -1.38 mm [-1.38, -1.38]
+    r2 skid steering: turned 0.0 rad in all, wheel slip up to 16 mm/s, friction power max 13 W, energy 0.01 kJ; against the skid model: yaw rate ratio 1.008, error max 0.3 mrad/s (rms 0.3), sideways max 0.0 mm/s (rms 0.0)
+  r3: min wheel load 247 N, net traction utilization max 0.004 (p99 0.004), tipping margin min 0.251 m, base height vs rigid wheels -1.38 mm [-1.38, -1.38]
+    r3 skid steering: turned 0.1 rad in all, wheel slip up to 56 mm/s, friction power max 45 W, energy 0.03 kJ; against the skid model: yaw rate ratio 1.004, error max -0.3 mrad/s (rms 0.5), sideways max 0.0 mm/s (rms 0.1)
+smallest clearance 0.090 m; by category: payload:neighbour 0.090, payload:pad 0.000, payload:rack 0.105, payload:wall 0.375, robot:wall 0.566
+forbidden contacts reported by the plant: 0 []
+  compiled ground loads vs plant contacts: total normal max 0.0 N (rms 0.0), friction of sliding wheels max 0.3 N (rms 0.1)
+    r1 mean wheel loads (N): model [297.0, 248.0, 305.0, 257.0] plant [297.0, 248.0, 305.0, 257.0]
+    r2 mean wheel loads (N): model [297.0, 249.0, 304.0, 257.0] plant [297.0, 249.0, 304.0, 256.0]
+    r3 mean wheel loads (N): model [297.0, 249.0, 305.0, 257.0] plant [297.0, 249.0, 305.0, 257.0]
+  displacement vs summed rates per 20 ms: floating bodies max 6.00 um / 0.70 urad, joints max 1.03 u(rad|m)
+declared bounds: NOT met: mission_complete (running vs complete), supports_verified (False vs True)

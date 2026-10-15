@@ -1,0 +1,5 @@
+# For an EXISTING Isaac Sim Python environment.  Do not reinstall Isaac, Torch, CUDA or usd-core here.
+# The workflow needs NumPy (already part of Isaac Sim) and SciPy only.
+scipy>=1.12,<2
+# optional, for figures inside the Isaac environment (otherwise: tools/make_report.py elsewhere)
+# matplotlib>=3.8,<4

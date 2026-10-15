@@ -1,0 +1,55 @@
+Third-party notices
+
+Robot description sources
+
+The included JSON robot records are derived from the following description
+packages. Their source, declared engineering parameters and provenance fields
+are preserved unchanged in inputs/robots/. Raw upstream description files,
+URDF, xacro files and meshes are not included in this runtime package.
+
+inputs/robots/rbrobout_ur30.json:
+- Robotnik description: https://github.com/RobotnikAutomation/robotnik_description
+  Commit: 4bc73425d090ead4591a7091e7ef7e7dc4fe862a
+  Copyright (c) 2025 Robotnik Automation S.L.; BSD-3-Clause.
+  License: upstream/robotnik_description/LICENSE
+- Universal Robots ROS 2 description:
+  https://github.com/UniversalRobots/Universal_Robots_ROS2_Description
+  Commit: 6662e15f32c23c12ece57d0050aee9a716e4fc41; BSD-3-Clause.
+  License: upstream/ur_description/LICENSE
+
+inputs/robots/ridgeback_ur10e.json:
+- Clearpath Ridgeback description, package ridgeback_description 0.3.5:
+  https://github.com/ridgeback/ridgeback
+  Commit: 7f2489993f1369906e808402e8f45e4c2aebf5b3
+  Copyright 2021 Clearpath Robotics Inc.; BSD-3-Clause.
+  License: upstream/ridgeback_description/LICENSE
+- Universal Robots ROS 2 description listed above.
+
+inputs/robots/husky_a300_ur10e.json:
+- Clearpath platform description, package clearpath_platform_description 2.9.17:
+  https://github.com/clearpathrobotics/clearpath_common
+  Commit: 726d7fba367f18e53899d3ac03f0b276380ae847
+  Copyright (c) 2023, clearpathrobotics; BSD-3-Clause.
+  License: upstream/clearpath_platform_description/LICENSE
+- Universal Robots ROS 2 description listed above.
+
+Values not contained in upstream descriptions are listed under declared in the
+records and are synthetic engineering values, not manufacturer data. Preserve
+these notices and the supplied license texts when redistributing these records.
+RB-ROBOUT+, Ridgeback, Husky, UR10e, UR30 and Ewellix are product names of their
+owners. The robot records are not manufacturer models.
+
+PACDM
+
+The PACDM implementation attributed in the original package to M. Dastranj and
+J. Mattila, arXiv:2609.11338, is included unchanged in
+vendor/pacdm_original.py. SHA-256:
+bbd1fb482e7529d70e05be3c3533d6d1076dada79f6b121e70424d138a9be8de
+This notice preserves the original attribution and does not assign a new license
+to that implementation.
+
+Software dependencies
+
+Isaac Sim, NumPy, SciPy, Matplotlib and OpenUSD are separately installed software
+under their own license terms. This package contains integration code for Isaac
+Sim, not an Isaac Sim distribution or bundled third-party runtime binaries.

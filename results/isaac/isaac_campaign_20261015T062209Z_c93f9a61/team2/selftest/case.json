@@ -1,0 +1,166 @@
+{
+ "schema_version": 1,
+ "stage": "selftest",
+ "team": "team2",
+ "run_id": "20261015T062232Z_d018266f",
+ "started_utc": "2026-10-15T06:22:32.753436+00:00",
+ "engine": "none (controller self-test)",
+ "settings": {
+  "dt": 0.002,
+  "solver": "PGS",
+  "position_iterations": 64,
+  "velocity_iterations": 8,
+  "contact": "auto",
+  "roller_hull": [
+   21,
+   30
+  ],
+  "clamp": null,
+  "headless": true,
+  "physx_threads": null
+ },
+ "execution_phase": "initialization",
+ "passed": true,
+ "failure": null,
+ "source_sha256": {
+  "vendor/pacdm_original.py": "bbd1fb482e7529d70e05be3c3533d6d1076dada79f6b121e70424d138a9be8de",
+  "workflows/isaac/run_isaac.py": "e121f68e551a3aae2f0eec374c563effc299eeb1f5d67642eff321787bea65a6",
+  "teamc/__init__.py": "0654515e04e6dfec0cddcae5fa37d847432006b8c23eb7dde4a03eb0f6dd1b29",
+  "teamc/chords.py": "37391eccfbfc9b56bf1a99f51555dd646c970f622d60bbd22f512eda60281621",
+  "teamc/compiler.py": "f0d0c26d8e0e1f7e3ff3e6e8a7395284d9d98701891fe4bdd603852901657d4f",
+  "teamc/geometry.py": "45ffc1f40b697ce2351f6257d2ab151f51c498d9f0f0a195f7bd9cc1ae93a2f7",
+  "teamc/interfaces.py": "c7636d650a852783f6724f5203e1b81a69529d7fd1a9bacf9eb8613de81ccc14",
+  "teamc/io.py": "762134b501cab07a607adf9293f777edb4bf83887e5a7fcbc31c3cff058f694b",
+  "teamc/loads.py": "4f07367f4177a6e331b1a83f544de217a4b533176a2221a5da8b1fd22d35e266",
+  "teamc/se3.py": "d9569d782fac8e6102bf220e21e02a9e8b99b60c0e26fb8a854a500c6fc228f2",
+  "teamc/skid.py": "23ec6218a998ccedcf1a8eea79f060dfbd05c66bd6e4e192ae5eb2c4a559054d",
+  "teamc/stability.py": "3bb53f7654ae71f63ec49e7633847694a82fc2eeb71b7d16bf3eeff693bdc4bf",
+  "teamc/terrain.py": "2c213df5b4fe3116452bb6629420312ebf381bb2aa466b131372fe8b2efb724d",
+  "teamc/tree.py": "6e7125bf77c1a1859b403fbd38a315bc4083f398b063b9c5f3b25bdc5739abfa",
+  "mission/__init__.py": "25d3b1285a522000e42614fc9d9921609be39ae8304dc075a7d9f6928fda4c07",
+  "mission/audit.py": "e0759fdbcc66e753cfa4980726094096b578fccd211a6749e85a75e29980bb9d",
+  "mission/controller.py": "c53dd6eb59df433f9b25cf162872497c759ec9fa28109ea99a2b9897dd0f44e8",
+  "mission/report.py": "1e62194be98f9cc98bf8499f76d2479daf0e3b1c20ade065413b80ff6330991c",
+  "mission/route.py": "9f4440da5d5b4ecef7f5db20df0ee1c3583fb9d714bc259da8913d1ae6b80847",
+  "mission/runner.py": "849252c651ecea0835a4ef9e4e395d76ff273d201f7c6003eb378bb883a4267d",
+  "mission/timing.py": "76eb04a34d7a152ab67087e419c97d1222f261a4166492ee07fc6625fa668460",
+  "mission/workflow.py": "da4c5afe05014e44bcd9addd6976262bcb875fe47c99a6a2c1ff7bb15652497d",
+  "backends/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "backends/isaac_plant.py": "2b9a41eab6d4721d27d478a20b2c3202ad734e0bb21f3f8f1ba83bbe728f42f7",
+  "backends/latch.py": "3a5281406bc0b571ce7483b4782a5e6bb5271e5b02e3656622f4032496b96ddb",
+  "backends/plantspec.py": "79c4c9173145d2f711c3ed2823fbc3841ef9730d287df2c099e385f31347f600",
+  "backends/tyre.py": "ac4de72b71b2209b20a871d8f917d58fcf3d25924e30d6db512a0f757a0b8448",
+  "backends/usd_export.py": "93e3a0ab8d58e86a5400fd4cea6b4e6e516bc9d0849c5470f077a670dd096b06",
+  "workflows/isaac/isaac_team/__init__.py": "a565b47f26b5ad4f3214baafca44f2b31a69f667ca9826a52e45fd7a50fb5269",
+  "workflows/isaac/isaac_team/environment.py": "692e1a59068b9cdf53691610f171f41d0362eae0cba7b07a7216211eff18f616",
+  "workflows/isaac/isaac_team/native.py": "7ff069bfd4f3bddf079453b45e3b72e037294d666c54a47a896ca7bc6d7a62f6",
+  "workflows/isaac/isaac_team/preflight.py": "ab17ba23472654ad7714ff78871c912a439f780af6c9df2969a53fc4f165febe",
+  "workflows/isaac/isaac_team/runtime.py": "c88891ede5d1f0cadc7225a575b631860a6ca86b0f4c076fbeb05f04ce3b5829",
+  "inputs/missions/husky2.json": "d5b2975c9af4619205471aeeb805434fd5b82352689ffd936d1add909d000c45",
+  "inputs/missions/husky3.json": "457f86f7540276d2d618f028b2c513339ed61b050c973c086b615821d4f39b29",
+  "inputs/missions/ridgeback2.json": "1c94acdd33bf91b402b158a062e7fa44194156e3a520474d4508d524a0fa4c55",
+  "inputs/missions/ridgeback3.json": "55c5aa039980dedcf71ec5ff1a6203203006b48ad5e81725c2709724a7523c23",
+  "inputs/missions/team2.json": "5d0185feb7a0f896dbcff632b0625f95b782d6eb5b6d6f45c04a36d2187262e4",
+  "inputs/missions/team3.json": "b5b67d033253ba8f36db6067bc6231fb48755659de1ce4caa6d6190948db7f22",
+  "inputs/payloads/beam_al_rhs_100x50_5m.json": "1ffcd3364440a980d7356e8c202a3428ec456411661d618908089e802883b5a5",
+  "inputs/payloads/beam_al_rhs_120x50_5p5m.json": "fd84936dff438a11ada5ff0c5ca943e4c943959afaa499590b4c89e5f76530a3",
+  "inputs/payloads/beam_rhs_100x60_5m.json": "1504a3f4210ed9fa714e62c865579b9eaa247dfa49e0fe39834e005e75fd0b72",
+  "inputs/payloads/beam_rhs_120x60_5p5m.json": "67b50c3ec2b822997ee4042732c58719e9a12bca3b1fa85b548c10a6cf935c28",
+  "inputs/robots/husky_a300_ur10e.json": "5bb08a6b26968d7dd0772e8fa1fd8daad5b08c8dab04efdb9286e9b712045a2b",
+  "inputs/robots/rbrobout_ur30.json": "4f114d948b1b77e407eec67efeb6726ed661f1bfb11916112d770d2ef570253a",
+  "inputs/robots/ridgeback_ur10e.json": "d9347477b6d056cc14e2a6b34bf86a6aa4b39384c76cf3b6d2b4e45855af6e9b",
+  "inputs/scenes/hall2.json": "a722583af5071e0579f1a5fd1f42ff6ef5d97f10786310d2a433070d173dbb37",
+  "inputs/scenes/hall2_husky.json": "cf717c194161460645019ec1fb9223e30e9819c024296d1b7bbc20d4a1936941",
+  "inputs/scenes/hall2_ridgeback.json": "9a458397b35aad78fcf8bdc5d189f65ea39caf4f295157fbea116436aab3c189",
+  "inputs/scenes/hall3.json": "8074f8b4a7141b429e6b5c3edfa62a3b2feccea5c064d060a406781087fcfdce",
+  "inputs/scenes/hall3_husky.json": "653db4194eb30e0c874d1dd413d4fe770d0f249c07c397355585687bccf346eb",
+  "inputs/scenes/hall3_ridgeback.json": "03f2b7b5265913be887f2e7adbe9604a292dbe4a36e79ae978d944086dd14f4b",
+  "inputs/teams/husky2.json": "56ba02b7b34d372bfba72570ee6ea5ac2c493d045e746135369647ab8b16496d",
+  "inputs/teams/husky3.json": "5a6f3ebdf3395e5ab139504d574b768d91f57bdea1259ae069e491914466204d",
+  "inputs/teams/ridgeback2.json": "20d7699819b343856b14c99dafc26f4ac4eeaeeae9d32e60cfef573ec9a19a48",
+  "inputs/teams/ridgeback3.json": "8e6c70550226931481d80731ddd0957382deb6997e2b5357e4d155e1ded8c0d8",
+  "inputs/teams/team2.json": "cc8e5820f663aa1fc89058a27ec2ed5605e09ce4328d27e65706e5d2e3afebff",
+  "inputs/teams/team3.json": "dc330981dfe4514d5076b4bfd65039ca87f9da0e21df6a5b0e770be18626b68e",
+  "workflows/isaac/reference/husky2.json": "bfffb9fa029775f20a0cd51de5f049ee85642792bae8b329876c6258348e7caa",
+  "workflows/isaac/reference/husky3.json": "838d284be9b9d0cb572917c6c64aa79f256a47643101952aa8cd7530614f4d42",
+  "workflows/isaac/reference/ridgeback2.json": "792808713ba2b149cbfa5c363902865459b4555b9554b23bc3f849de2c7a4397",
+  "workflows/isaac/reference/ridgeback3.json": "cc4375dd2fa325b085ac82f5759bdd350874f64a60d120c346d27b4fa37d0c46",
+  "workflows/isaac/reference/team2.json": "cabcdf738c9e4634ca2c83770d5ce9cae9df683a7602fc32a2f3b27fe8dd160c",
+  "workflows/isaac/reference/team3.json": "88e83915c28b44c647705181c258d4a9b1108177b38755f5f9683e605a903857"
+ },
+ "versions": {
+  "python": "3.12.14",
+  "numpy": "2.3.1",
+  "scipy": "1.17.0",
+  "platform": "Windows-11-10.0.26100-SP0"
+ },
+ "checks": [
+  {
+   "name": "PACDM kernel unchanged (sha256)",
+   "passed": true,
+   "value": "bbd1fb482e7529d70e05be3c3533d6d1076dada79f6b121e70424d138a9be8de"
+  },
+  {
+   "name": "coordinates",
+   "passed": true,
+   "value": 0.0,
+   "limit": 1e-07
+  },
+  {
+   "name": "ports",
+   "passed": true,
+   "value": 0.0,
+   "limit": 1e-07
+  },
+  {
+   "name": "q_start",
+   "passed": true,
+   "value": 0.0,
+   "limit": 1e-07
+  },
+  {
+   "name": "mass_diagonal",
+   "passed": true,
+   "value": 7.023569064749658e-16,
+   "limit": 1e-07
+  },
+  {
+   "name": "mass_frobenius",
+   "passed": true,
+   "value": 0.0,
+   "limit": 1e-07
+  },
+  {
+   "name": "bias",
+   "passed": true,
+   "value": 0.0,
+   "limit": 1e-07
+  },
+  {
+   "name": "efforts",
+   "passed": true,
+   "value": 4.2062414949342095e-12,
+   "limit": 1e-07
+  },
+  {
+   "name": "q_carry",
+   "passed": true,
+   "value": 9.43689570931383e-16,
+   "limit": 1e-07
+  },
+  {
+   "name": "total_mass_kg",
+   "passed": true,
+   "value": 0.0,
+   "limit": 1e-07
+  }
+ ],
+ "reference": {
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "python": "3.12.3"
+ },
+ "scope": "the compiled model and the controller reproduce the reference numbers of the package in this Python",
+ "finished_utc": "2026-10-15T06:22:35.149346+00:00",
+ "execution_exit_code": 0
+}

@@ -1,0 +1,790 @@
+{
+ "status": "running",
+ "sim_time_s": 14.0,
+ "phases": [
+  {
+   "index": 11,
+   "name": "navigate",
+   "start": 0.0,
+   "end": 13.96
+  }
+ ],
+ "events": [
+  {
+   "t": 0.0,
+   "phase": "settle",
+   "event": "latched",
+   "id": "grasp_r1",
+   "T2": [
+    [
+     0.9999999974696818,
+     -8.99399190250118e-08,
+     7.113809366391676e-05,
+     -2.2000543339346343
+    ],
+    [
+     -4.9870300728137995e-08,
+     -0.9999998413662093,
+     -0.000563265083471719,
+     0.00043034179153003015
+    ],
+    [
+     7.113813303902756e-05,
+     0.0005632650784988058,
+     -0.9999998388358958,
+     -0.0016368212196314208
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  {
+   "t": 0.0,
+   "phase": "settle",
+   "event": "latched",
+   "id": "grasp_r2",
+   "T2": [
+    [
+     0.9999999974654074,
+     -8.789721222917229e-08,
+     7.119815451458936e-05,
+     2.1999454762067066
+    ],
+    [
+     -4.782425732238174e-08,
+     -0.999999841607356,
+     -0.0005628367976063664,
+     0.0004300146767841532
+    ],
+    [
+     7.119819270915803e-05,
+     0.0005628367927748662,
+     -0.9999998390727682,
+     -0.0016366283100368584
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  {
+   "t": 0.0,
+   "phase": "settle",
+   "event": "latched",
+   "id": "grasp_r3",
+   "T2": [
+    [
+     0.9999999974680225,
+     -1.053555228663382e-07,
+     7.116139418902882e-05,
+     -0.6000543805626986
+    ],
+    [
+     -6.528458349878818e-08,
+     -0.9999998414596403,
+     -0.0005630991832043264,
+     0.00043021508078951696
+    ],
+    [
+     7.116144223268772e-05,
+     0.0005630991771328139,
+     -0.9999998389276701,
+     -0.001636746493882596
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ]
+  },
+  {
+   "t": 0.0,
+   "phase": "settle",
+   "event": "start"
+  }
+ ],
+ "verification": {},
+ "tracking": {
+  "payload_position_error_m": {
+   "max": 0.000933582687055763,
+   "rms": 0.000611659161293912
+  },
+  "payload_yaw_error_rad": {
+   "max": 2.2859988819963484e-05,
+   "rms": 6.585368397259631e-06
+  },
+  "payload_tilt_rad": {
+   "max": 0.0005157811222704801,
+   "rms": 9.359762313949074e-05
+  },
+  "base": {
+   "r1": {
+    "position_error_m": {
+     "max": 0.0011559092488176606,
+     "rms": 0.0005946503131844194
+    },
+    "yaw_error_rad": {
+     "max": 0.0035668627245696305,
+     "rms": 0.001369376676524291
+    }
+   },
+   "r2": {
+    "position_error_m": {
+     "max": 0.0011786918727770543,
+     "rms": 0.0005952868873534239
+    },
+    "yaw_error_rad": {
+     "max": 0.003522185050293447,
+     "rms": 0.0014330928571100767
+    }
+   },
+   "r3": {
+    "position_error_m": {
+     "max": 0.0011572459351195824,
+     "rms": 0.0005250593045970137
+    },
+    "yaw_error_rad": {
+     "max": 0.00353170329848157,
+     "rms": 0.0013589943836533774
+    }
+   }
+  }
+ },
+ "efforts": {
+  "max_ratio": 0.6536323180300381,
+  "by_port": {
+   "r1_arm_elbow_motor": 0.5498690230555083,
+   "r1_arm_shoulder_lift_motor": 0.09679018515807183,
+   "r1_arm_shoulder_pan_motor": 0.013763648758816556,
+   "r1_arm_wrist_1_motor": 0.1876857288096404,
+   "r1_arm_wrist_2_motor": 0.020212241625274466,
+   "r1_arm_wrist_3_motor": 0.009236540253785695,
+   "r1_front_left_wheel_motor": 0.46750215987522814,
+   "r1_front_right_wheel_motor": 0.4700802422759459,
+   "r1_rear_left_wheel_motor": 0.6415109991306328,
+   "r1_rear_right_wheel_motor": 0.5680012998080101,
+   "r2_arm_elbow_motor": 0.6210654565071612,
+   "r2_arm_shoulder_lift_motor": 0.11660916885761238,
+   "r2_arm_shoulder_pan_motor": 0.015290408267504127,
+   "r2_arm_wrist_1_motor": 0.22014281364389093,
+   "r2_arm_wrist_2_motor": 0.012988032489819544,
+   "r2_arm_wrist_3_motor": 0.0097161555795634,
+   "r2_front_left_wheel_motor": 0.5450691793005348,
+   "r2_front_right_wheel_motor": 0.5285106203748896,
+   "r2_rear_left_wheel_motor": 0.6536323180300381,
+   "r2_rear_right_wheel_motor": 0.5743065116703416,
+   "r3_arm_elbow_motor": 0.5755188065696148,
+   "r3_arm_shoulder_lift_motor": 0.10401423017171028,
+   "r3_arm_shoulder_pan_motor": 0.014189860570435642,
+   "r3_arm_wrist_1_motor": 0.19950589927925047,
+   "r3_arm_wrist_2_motor": 0.017489991800729267,
+   "r3_arm_wrist_3_motor": 0.00940500341843198,
+   "r3_front_left_wheel_motor": 0.4663710483874919,
+   "r3_front_right_wheel_motor": 0.4717099892588069,
+   "r3_rear_left_wheel_motor": 0.6461001824806386,
+   "r3_rear_right_wheel_motor": 0.5699012846119118
+  },
+  "saturated_steps": 0,
+  "worst": {
+   "port": "r2_rear_left_wheel_motor",
+   "t": 1.52
+  }
+ },
+ "grasp": {
+  "internal_force_N": {
+   "max": 3.0937912499114653,
+   "rms": 0.6997409131273716
+  },
+  "internal_moment_Nm": {
+   "max": 0.5151358598377467,
+   "rms": 0.11503477973498138
+  },
+  "by_grasp": {
+   "grasp_r1": {
+    "force_N": {
+     "max": 43.51924868310483,
+     "rms": 42.016059882402224
+    },
+    "moment_Nm": {
+     "max": 0.4092004574247584,
+     "rms": 0.07269190436091647
+    },
+    "share_while_carrying": {
+     "mean": 0.2930133528284144,
+     "min": 0.28270406632562767,
+     "max": 0.29443493539206217
+    }
+   },
+   "grasp_r2": {
+    "force_N": {
+     "max": 56.84368386039226,
+     "rms": 54.71641040755966
+    },
+    "moment_Nm": {
+     "max": 0.43388289772988936,
+     "rms": 0.07361196850464911
+    },
+    "share_while_carrying": {
+     "mean": 0.3815006577143244,
+     "min": 0.3576449014419026,
+     "max": 0.3825771938292048
+    }
+   },
+   "grasp_r3": {
+    "force_N": {
+     "max": 48.35178884672995,
+     "rms": 46.629993065737864
+    },
+    "moment_Nm": {
+     "max": 0.418264885060177,
+     "rms": 0.07351068817360518
+    },
+    "share_while_carrying": {
+     "mean": 0.3251691046711742,
+     "min": 0.309938598816442,
+     "max": 0.3263143343675688
+    }
+   }
+  },
+  "note": "force and moment of each grasp: all record intervals with the clamp closed (interval means of the wrist sensor, tool-side inertia removed); internal wrench and shares: every 5th interval",
+  "sensor_reading": {
+   "by_robot": {
+    "r1": {
+     "force_N": 55.398046311632875,
+     "moment_Nm": 0.49635110139537064,
+     "range": {
+      "force_N": 100.0,
+      "torque_Nm": 10.0
+     },
+     "within_range": true
+    },
+    "r2": {
+     "force_N": 68.7971594697581,
+     "moment_Nm": 0.4599506577292883,
+     "range": {
+      "force_N": 100.0,
+      "torque_Nm": 10.0
+     },
+     "within_range": true
+    },
+    "r3": {
+     "force_N": 60.25837705038991,
+     "moment_Nm": 0.4787977845178248,
+     "range": {
+      "force_N": 100.0,
+      "torque_Nm": 10.0
+     },
+     "within_range": true
+    }
+   },
+   "note": "largest norm of the force and of the moment read by each wrist sensor over the whole run (means over one record interval), with the range declared in the robot record; reported, not a declared bound"
+  }
+ },
+ "ground": {
+  "r1": {
+   "min_wheel_load_N": 208.00301785678403,
+   "net_traction_utilization_max": 0.03523850142447297,
+   "net_traction_utilization_p99": 0.032568187210158805,
+   "min_tipping_margin_m": 0.22810835542389965,
+   "mean_wheel_loads_N": [
+    318.96436078077426,
+    232.31584363386324,
+    341.9953063654583,
+    255.34678921854712
+   ],
+   "at": {
+    "min_wheel_load": 1.5,
+    "traction": 0.5,
+    "tipping": 1.5
+   },
+   "against_rigid_wheels": {
+    "height_m": {
+     "mean": -0.001435804051469881,
+     "min": -0.0014362668704986647,
+     "max": -0.0014351045799255446
+    },
+    "tilt_rad_max": 0.0008837493640691219
+   },
+   "skid": {
+    "max_slip_speed_m_s": 0.06649747118147466,
+    "friction_power_W": {
+     "max": 52.1910909742347,
+     "mean": 18.411029126768042
+    },
+    "friction_energy_J": 246.85903086758668,
+    "turned_rad": 0.7636509740240472,
+    "against_skid_model": {
+     "yaw_rate_ratio": 1.001122142278965,
+     "yaw_rate_rad_s": {
+      "max": 0.0018888548891664997,
+      "rms": 0.0008936025167124277
+     },
+     "forward_m_s": {
+      "max": 0.0030071383608182845,
+      "rms": 0.0009767949434326476
+     },
+     "sideways_m_s": {
+      "max": 0.0007462706244693435,
+      "rms": 0.0006444162267000702
+     },
+     "share_of_time": 0.6888888888888889,
+     "note": "measured twist of the base less the twist the quasi-static skid model gives for the measured wheel rates and the compiled wheel loads, while that model turns the base faster than 0.02 rad/s; ratio: least-squares ratio of the measured to the modelled yaw rate"
+    }
+   }
+  },
+  "r2": {
+   "min_wheel_load_N": 204.32805654696722,
+   "net_traction_utilization_max": 0.034917398827106774,
+   "net_traction_utilization_p99": 0.03227636550348934,
+   "min_tipping_margin_m": 0.22675693860707205,
+   "mean_wheel_loads_N": [
+    327.2629764980889,
+    234.71283555239992,
+    345.94907721274967,
+    253.39893626706046
+   ],
+   "at": {
+    "min_wheel_load": 1.5,
+    "traction": 0.5,
+    "tipping": 1.5
+   },
+   "against_rigid_wheels": {
+    "height_m": {
+     "mean": -0.0014516926629455076,
+     "min": -0.001452181310653694,
+     "max": -0.0014511680316925124
+    },
+    "tilt_rad_max": 0.0009632626037468732
+   },
+   "skid": {
+    "max_slip_speed_m_s": 0.06900699063763176,
+    "friction_power_W": {
+     "max": 54.97924664356799,
+     "mean": 21.651735246146387
+    },
+    "friction_energy_J": 289.2987546703708,
+    "turned_rad": 0.8852365074307889,
+    "against_skid_model": {
+     "yaw_rate_ratio": 1.0025720816127088,
+     "yaw_rate_rad_s": {
+      "max": 0.0034154167660106587,
+      "rms": 0.0009588236610287776
+     },
+     "forward_m_s": {
+      "max": 0.003300142110124915,
+      "rms": 0.0009087728439379743
+     },
+     "sideways_m_s": {
+      "max": 0.0010692862474643737,
+      "rms": 0.0007157477037026405
+     },
+     "share_of_time": 0.7037037037037037,
+     "note": "measured twist of the base less the twist the quasi-static skid model gives for the measured wheel rates and the compiled wheel loads, while that model turns the base faster than 0.02 rad/s; ratio: least-squares ratio of the measured to the modelled yaw rate"
+    }
+   }
+  },
+  "r3": {
+   "min_wheel_load_N": 206.63325470061696,
+   "net_traction_utilization_max": 0.035097580864988376,
+   "net_traction_utilization_p99": 0.03244794032202722,
+   "min_tipping_margin_m": 0.22760253463228186,
+   "mean_wheel_loads_N": [
+    322.1464581106168,
+    233.0964845071414,
+    343.5223146670369,
+    254.47234106356163
+   ],
+   "at": {
+    "min_wheel_load": 1.5,
+    "traction": 0.5,
+    "tipping": 1.5
+   },
+   "against_rigid_wheels": {
+    "height_m": {
+     "mean": -0.0014415752160107723,
+     "min": -0.001441914410591133,
+     "max": -0.0014409160327911452
+    },
+    "tilt_rad_max": 0.0009133148494297344
+   },
+   "skid": {
+    "max_slip_speed_m_s": 0.06719992774211427,
+    "friction_power_W": {
+     "max": 52.58741064196662,
+     "mean": 13.58092428307301
+    },
+    "friction_energy_J": 182.78307588078286,
+    "turned_rad": 0.5636513939661013,
+    "against_skid_model": {
+     "yaw_rate_ratio": 1.0012880555576869,
+     "yaw_rate_rad_s": {
+      "max": 0.0019958640744745584,
+      "rms": 0.0009024138013606058
+     },
+     "forward_m_s": {
+      "max": 0.003113871980973515,
+      "rms": 0.0007078162157155519
+     },
+     "sideways_m_s": {
+      "max": 0.0007936024668117295,
+      "rms": 0.000796491670799236
+     },
+     "share_of_time": 0.43703703703703706,
+     "note": "measured twist of the base less the twist the quasi-static skid model gives for the measured wheel rates and the compiled wheel loads, while that model turns the base faster than 0.02 rad/s; ratio: least-squares ratio of the measured to the modelled yaw rate"
+    }
+   }
+  },
+  "note_friction_drive": "bases on conventional wheels turn by sliding them: the friction of a wheel is at its limit whenever it slides, so the traction reported and bounded for these bases is the resultant ground force of their wheels over their friction capacity; friction power and energy are those of the declared Coulomb law at the measured slip",
+  "note": "wheel loads use the declared equal-stiffness distribution of the recovered ground wrench; values are means over one record interval, the first 0.5 s is excluded"
+ },
+ "clearance": {
+  "by_category": {
+   "payload:neighbour": {
+    "min_m": 0.5643337179357125,
+    "pair": [
+     "beam/beam",
+     "neighbour_behind"
+    ],
+    "t": 0.1,
+    "phase": "navigate"
+   },
+   "payload:pad": {
+    "min_m": 0.29939756129773043,
+    "pair": [
+     "beam/beam",
+     "rack_arm_mid_b"
+    ],
+    "t": 0.1,
+    "phase": "navigate"
+   },
+   "payload:rack": {
+    "min_m": 0.29938937281922384,
+    "pair": [
+     "beam/beam",
+     "rack_lip_mid_b"
+    ],
+    "t": 0.1,
+    "phase": "navigate"
+   },
+   "payload:wall": {
+    "min_m": 0.8493213753412987,
+    "pair": [
+     "beam/beam",
+     "wall_rack"
+    ],
+    "t": 0.1,
+    "phase": "navigate"
+   },
+   "robot:neighbour": {
+    "min_m": 0.4485267670676646,
+    "pair": [
+     "r1/wheels_left",
+     "neighbour_low"
+    ],
+    "t": 0.1,
+    "phase": "navigate"
+   },
+   "robot:pad": {
+    "min_m": 0.32980035917462097,
+    "pair": [
+     "r1/clamp_jaw_a",
+     "rack_arm_mid_a"
+    ],
+    "t": 0.0,
+    "phase": "navigate"
+   },
+   "robot:payload": {
+    "min_m": 0.03834666549299594,
+    "pair": [
+     "r1/wrist_3",
+     "beam/beam"
+    ],
+    "t": 0.0,
+    "phase": "navigate"
+   },
+   "robot:rack": {
+    "min_m": 0.3236254165703514,
+    "pair": [
+     "r1/wheels_left",
+     "rack_lip_low_a"
+    ],
+    "t": 0.1,
+    "phase": "navigate"
+   },
+   "robot:robot": {
+    "min_m": 0.5353303458863463,
+    "pair": [
+     "r1/front_bumper",
+     "r3/rear_bumper"
+    ],
+    "t": 1.8,
+    "phase": "navigate"
+   },
+   "robot:wall": {
+    "min_m": 0.795591488483705,
+    "pair": [
+     "r2/wrist_2",
+     "wall_rack"
+    ],
+    "t": 0.1,
+    "phase": "navigate"
+   }
+  },
+  "smallest_m": 0.03834666549299594,
+  "note": "the smallest value excludes the payload against its own supports and guides (pad, guide, mount); the clamp against the payload is excluded by construction",
+  "forbidden_contacts": {
+   "count": 0,
+   "first": [],
+   "pairs": []
+  },
+  "guide_contact_max_N": 0.0
+ },
+ "transfer": {},
+ "consistency": {
+  "unbalanced_generalized_force": {
+   "max": 0.033748700412186694,
+   "rms": 0.0035557116197799626
+  },
+  "payload_wrench_balance_N": {
+   "max": 0.0668930648113528,
+   "rms": 0.007693056348207807
+  },
+  "connection_gap_m": {
+   "max": 0.0006893674651784945,
+   "rms": 0.0006815263450824313
+  },
+  "recovered_vs_sensor": {
+   "grasp_r1": {
+    "force_N": {
+     "max": 0.018435068014714902,
+     "rms": 0.0033665482234012975
+    },
+    "moment_Nm": {
+     "max": 0.024871920945979887,
+     "rms": 0.0028969732096345785
+    }
+   },
+   "grasp_r2": {
+    "force_N": {
+     "max": 0.04127469220521519,
+     "rms": 0.004731721003967144
+    },
+    "moment_Nm": {
+     "max": 0.026074710866516325,
+     "rms": 0.0027928198928265807
+    }
+   },
+   "grasp_r3": {
+    "force_N": {
+     "max": 0.023056101344787847,
+     "rms": 0.002878642566562439
+    },
+    "moment_Nm": {
+     "max": 0.02527737761454017,
+     "rms": 0.002808418181029909
+    }
+   }
+  },
+  "total_normal_load_vs_plant_N": {
+   "max": 0.0020361879371648683,
+   "rms": 0.0003169928875107415
+  },
+  "wheel_traction_vs_plant_N": null,
+  "sliding_friction_vs_plant_N": {
+   "max": 46.11240925484873,
+   "rms": 3.7347636361644114
+  },
+  "mean_wheel_normal_load_N": {
+   "model": {
+    "r1": [
+     318.96436078077426,
+     232.31584363386324,
+     341.9953063654583,
+     255.34678921854712
+    ],
+    "r2": [
+     327.2629764980889,
+     234.71283555239992,
+     345.94907721274967,
+     253.39893626706046
+    ],
+    "r3": [
+     322.1464581106168,
+     233.0964845071414,
+     343.5223146670369,
+     254.47234106356163
+    ]
+   },
+   "plant": {
+    "r1": [
+     319.09030819558194,
+     232.18517292430082,
+     342.12599601842544,
+     255.2208607471444
+    ],
+    "r2": [
+     327.40965603317443,
+     234.60269587043436,
+     346.0592213961862,
+     253.25226123344538
+    ],
+    "r3": [
+     322.2821552690605,
+     232.97173696121695,
+     343.64706370149264,
+     254.336645393649
+    ]
+   }
+  },
+  "note": "rigid-body mechanics determines the total ground force and its centre, not the load of each wheel; the model distributes it with the declared equal-stiffness rule, so wheel loads are compared in the mean",
+  "sensor_vs_solver_latch": {
+   "force_N": {
+    "max": 0.02854892387108384,
+    "rms": 0.0019798561766761237
+   },
+   "moment_Nm": {
+    "max": 0.034478017248501726,
+    "rms": 0.007239773866533274
+   }
+  },
+  "state_integration": {
+   "floating_translation_m": {
+    "max": 7.978488455996635e-06,
+    "rms": 1.924357063021936e-06
+   },
+   "floating_rotation_rad": {
+    "max": 5.023161987977796e-07,
+    "rms": 1.5133932612949256e-07
+   },
+   "joints": {
+    "max": 1.948118210554073e-06,
+    "rms": 7.047124144903358e-07
+   },
+   "interval_s": 0.01999999999999999,
+   "note": "largest |q(t+T) - q(t) - T mean(v after each step)| over the coordinates, per record interval T"
+  }
+ },
+ "bounds": {
+  "checks": {
+   "grasp_force": {
+    "value": 56.84368386039226,
+    "bound": 85.0,
+    "ok": true
+   },
+   "grasp_moment": {
+    "value": 0.43388289772988936,
+    "bound": 10.0,
+    "ok": true
+   },
+   "effort_ratio": {
+    "value": 0.6536323180300381,
+    "bound": 0.9,
+    "ok": true
+   },
+   "traction": {
+    "value": 0.03523850142447297,
+    "bound": 0.6,
+    "ok": true
+   },
+   "tipping": {
+    "value": 0.22675693860707205,
+    "bound": 0.1,
+    "ok": true
+   },
+   "wheel_load": {
+    "value": 204.32805654696722,
+    "bound": 100.0,
+    "ok": true
+   },
+   "clearance": {
+    "value": 0.03834666549299594,
+    "bound": 0.02,
+    "ok": true
+   },
+   "payload_tilt": {
+    "value": 0.0005157811222704801,
+    "bound": 0.012,
+    "ok": true
+   },
+   "payload_position": {
+    "value": 0.000933582687055763,
+    "bound": 0.02,
+    "ok": true
+   },
+   "no_forbidden_contact": {
+    "value": 0,
+    "bound": 0,
+    "ok": true
+   },
+   "mission_complete": {
+    "value": "running",
+    "bound": "complete",
+    "ok": false
+   },
+   "supports_verified": {
+    "value": false,
+    "bound": true,
+    "ok": false
+   }
+  },
+  "all_ok": false
+ },
+ "timing": {
+  "control": 19.846963502233848,
+  "plant": 41.78864849510137,
+  "total": 62.50795640004799
+ },
+ "plant": {
+  "name": "isaac",
+  "timestep": 0.002,
+  "engine": "Isaac Sim / PhysX",
+  "solver": {
+   "solver": "PGS",
+   "position_iterations": 64,
+   "velocity_iterations": 8,
+   "scene": "/physicsScene",
+   "scene_created_by": "World",
+   "after_reset": {
+    "physics:gravityDirection": [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    "physics:gravityMagnitude": 9.8100004196167,
+    "physxScene:broadphaseType": "MBP",
+    "physxScene:enableCCD": true,
+    "physxScene:enableEnhancedDeterminism": true,
+    "physxScene:enableGPUDynamics": false,
+    "physxScene:enableStabilization": false,
+    "physxScene:maxPositionIterationCount": 64,
+    "physxScene:maxVelocityIterationCount": 8,
+    "physxScene:minPositionIterationCount": 64,
+    "physxScene:minVelocityIterationCount": 8,
+    "physxScene:solverType": "PGS",
+    "physxScene:timeStepsPerSecond": 500
+   },
+   "changed_by_reset": {}
+  },
+  "contact": "tyre",
+  "roller_hull": [
+   21,
+   30
+  ],
+  "clamp": {
+   "stiffness_N_m": 80000.0,
+   "damping_N_s_m": 300.0,
+   "rot_stiffness_Nm_rad": 400.0,
+   "rot_damping_Nm_s_rad": 2.5
+  }
+ },
+ "team": "husky3"
+}

@@ -1,0 +1,97 @@
+{
+ "schema_version": 1,
+ "run_id": "20261015T063346Z_65fbb29a",
+ "team": "team3",
+ "started_utc": "2026-10-15T06:33:46.857579+00:00",
+ "folder": "%USERPROFILE%\\Downloads\\Team_CMG_PACDM\\results\\isaac_campaign_20261015T062209Z_c93f9a61\\team3",
+ "package": "%USERPROFILE%\\Downloads\\Team_CMG_PACDM",
+ "runtime": "%USERPROFILE%\\AppData\\Local\\miniforge3\\envs\\isaac61\\python.exe",
+ "coordinator_python": "%USERPROFILE%\\AppData\\Local\\miniforge3\\envs\\isaac61\\python.exe",
+ "platform": "Windows-11-10.0.26100-SP0",
+ "requested_stages": [
+  "selftest",
+  "preflight",
+  "settle",
+  "carry",
+  "mission"
+ ],
+ "headless": true,
+ "stages": [
+  {
+   "stage": "selftest",
+   "started_utc": "2026-10-15T06:33:46.973489+00:00",
+   "status": "passed",
+   "log": "logs/selftest.log",
+   "process_exit_code": 0,
+   "problems": [],
+   "closing_problems": [],
+   "other_error_lines_in_log": 0,
+   "finished_utc": "2026-10-15T06:33:48.220343+00:00"
+  },
+  {
+   "stage": "preflight",
+   "started_utc": "2026-10-15T06:33:48.220343+00:00",
+   "status": "passed",
+   "log": "logs/preflight.log",
+   "process_exit_code": 0,
+   "problems": [],
+   "closing_problems": [],
+   "other_error_lines_in_log": 0,
+   "finished_utc": "2026-10-15T06:34:26.540868+00:00"
+  },
+  {
+   "stage": "settle",
+   "started_utc": "2026-10-15T06:34:26.542874+00:00",
+   "status": "passed",
+   "log": "logs/settle.log",
+   "process_exit_code": 0,
+   "problems": [],
+   "closing_problems": [],
+   "other_error_lines_in_log": 0,
+   "finished_utc": "2026-10-15T06:35:34.712430+00:00"
+  },
+  {
+   "stage": "carry",
+   "started_utc": "2026-10-15T06:35:34.714435+00:00",
+   "status": "passed",
+   "log": "logs/carry.log",
+   "process_exit_code": 0,
+   "problems": [],
+   "closing_problems": [],
+   "other_error_lines_in_log": 0,
+   "finished_utc": "2026-10-15T06:38:53.874892+00:00"
+  },
+  {
+   "stage": "mission",
+   "started_utc": "2026-10-15T08:22:45.753163+00:00",
+   "status": "passed",
+   "log": "logs/mission.log",
+   "process_exit_code": 0,
+   "problems": [],
+   "closing_problems": [],
+   "other_error_lines_in_log": 0,
+   "finished_utc": "2026-10-15T10:02:51.424790+00:00"
+  }
+ ],
+ "status": "passed",
+ "invocations": [
+  {
+   "started_utc": "2026-10-15T06:33:46.971484+00:00",
+   "requested_stages": [
+    "selftest",
+    "preflight",
+    "settle",
+    "carry"
+   ],
+   "runtime": "%USERPROFILE%\\AppData\\Local\\miniforge3\\envs\\isaac61\\python.exe"
+  },
+  {
+   "started_utc": "2026-10-15T08:22:45.753163+00:00",
+   "requested_stages": [
+    "mission"
+   ],
+   "runtime": "%USERPROFILE%\\AppData\\Local\\miniforge3\\envs\\isaac61\\python.exe"
+  }
+ ],
+ "finished_utc": "2026-10-15T10:02:51.426797+00:00"
+}

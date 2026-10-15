@@ -1,0 +1,317 @@
+{
+ "required": [
+  {
+   "module": "isaacsim",
+   "name": "SimulationApp",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "isaacsim.core.api",
+   "name": "World",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "isaacsim.core.simulation_manager",
+   "name": "SimulationManager",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "omni.usd",
+   "name": "get_context",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "omni.physics.tensors",
+   "name": "create_simulation_view",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "omni.physx",
+   "name": "get_physx_simulation_interface",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "pxr",
+   "name": "Usd",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "pxr",
+   "name": "UsdGeom",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "pxr",
+   "name": "UsdPhysics",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "pxr",
+   "name": "UsdShade",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "pxr",
+   "name": "UsdLux",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "pxr",
+   "name": "Gf",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "pxr",
+   "name": "Sdf",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "pxr",
+   "name": "Vt",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "pxr",
+   "name": "PhysicsSchemaTools",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "numpy",
+   "name": null,
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "scipy",
+   "name": null,
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "scipy.linalg",
+   "name": "qr",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "scipy.linalg",
+   "name": "lu_factor",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "scipy.linalg",
+   "name": "lu_solve",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "scipy.linalg",
+   "name": "expm",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "scipy.spatial",
+   "name": "ConvexHull",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "scipy.spatial.transform",
+   "name": "Rotation",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "scipy.interpolate",
+   "name": "CubicSpline",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "scipy.interpolate",
+   "name": "PchipInterpolator",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "scipy.ndimage",
+   "name": "gaussian_filter1d",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "scipy.optimize",
+   "name": "minimize",
+   "available": true,
+   "error": null
+  },
+  {
+   "module": "scipy.signal",
+   "name": "savgol_filter",
+   "available": true,
+   "error": null
+  }
+ ],
+ "optional": [
+  {
+   "module": "omni.physx",
+   "name": "get_physx_interface",
+   "available": true,
+   "error": null,
+   "without_it": "PhysX error events are not collected"
+  },
+  {
+   "module": "omni.physx",
+   "name": "get_physx_cooking_interface",
+   "available": true,
+   "error": null,
+   "without_it": "the preflight cannot compare the cooked roller hulls"
+  },
+  {
+   "module": "omni.kit.app",
+   "name": "get_app",
+   "available": true,
+   "error": null,
+   "without_it": "Kit and extension versions are not recorded"
+  },
+  {
+   "module": "isaacsim.core.version",
+   "name": "get_version",
+   "available": true,
+   "error": null,
+   "without_it": "the Isaac Sim version is not recorded"
+  },
+  {
+   "module": "isaacsim.core.utils.viewports",
+   "name": "set_camera_view",
+   "available": true,
+   "error": null,
+   "without_it": "no camera placement in a run with a window"
+  },
+  {
+   "module": "pxr",
+   "name": "PhysxSchema",
+   "available": true,
+   "error": null,
+   "without_it": "PhysX API schemas are applied as their tokens instead of through the bindings"
+  },
+  {
+   "module": "matplotlib",
+   "name": null,
+   "available": true,
+   "error": null,
+   "without_it": "no figures in the Isaac environment (tools/make_report.py draws them elsewhere)"
+  }
+ ],
+ "attributes": {
+  "World": {
+   "get_physics_context": true,
+   "reset": true,
+   "step": true,
+   "is_playing": true,
+   "stop": true,
+   "clear_instance": true,
+   "current_time": true,
+   "current_time_step_index": true,
+   "physics_sim_view": true
+  },
+  "SimulationManager": {
+   "get_active_physics_engine": true,
+   "switch_physics_engine": true,
+   "get_physics_simulation_view": true,
+   "get_physics_sim_view": true
+  },
+  "SimulationView": {
+   "set_subspace_roots": true,
+   "create_articulation_view": true,
+   "create_rigid_body_view": true,
+   "update_articulations_kinematic": true,
+   "get_gravity": true,
+   "found_in": "omni.physics.tensors"
+  },
+  "ArticulationView": {
+   "get_root_transforms": true,
+   "get_root_velocities": true,
+   "set_root_transforms": true,
+   "set_root_velocities": true,
+   "get_dof_positions": true,
+   "get_dof_velocities": true,
+   "set_dof_positions": true,
+   "set_dof_velocities": true,
+   "set_dof_actuation_forces": true,
+   "apply_forces_and_torques_at_position": true,
+   "get_link_transforms": true,
+   "get_coms": true,
+   "get_masses": true,
+   "get_inertias": true,
+   "get_dof_armatures": true,
+   "get_dof_stiffnesses": true,
+   "get_dof_dampings": true,
+   "get_dof_limits": true,
+   "get_dof_friction_properties": true,
+   "get_dof_friction_coefficients": true,
+   "get_link_incoming_joint_force": true,
+   "found_in": "omni.physics.tensors.api"
+  },
+  "RigidBodyView": {
+   "get_transforms": true,
+   "get_velocities": true,
+   "set_transforms": true,
+   "set_velocities": true,
+   "apply_forces_and_torques_at_position": true,
+   "get_coms": true,
+   "get_masses": true,
+   "get_inertias": true,
+   "set_kinematic_targets": true,
+   "found_in": "omni.physics.tensors.api"
+  },
+  "physx simulation interface": {
+   "subscribe_full_contact_report_events": true,
+   "subscribe_contact_report_events": true
+  },
+  "PhysicsSchemaTools": {
+   "sdfPathToInt": true,
+   "intToSdfPath": true
+  },
+  "PhysxSchema": {
+   "PhysxSceneAPI": true,
+   "PhysxArticulationAPI": true,
+   "PhysxRigidBodyAPI": true,
+   "PhysxJointAPI": true,
+   "PhysxCollisionAPI": true,
+   "PhysxConvexHullCollisionAPI": true,
+   "PhysxMaterialAPI": true,
+   "PhysxContactReportAPI": true
+  }
+ },
+ "notes": [],
+ "create_simulation_view_parameters": [
+  "frontend_name",
+  "stage_id",
+  "backend"
+ ],
+ "usd_context": {
+  "get_stage": true,
+  "get_stage_id": true
+ },
+ "missing_required": [],
+ "missing_optional": [],
+ "passed": true
+}

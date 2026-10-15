@@ -1,0 +1,870 @@
+{
+ "schema_version": 1,
+ "stage": "mission",
+ "team": "team2",
+ "run_id": "20261015T062232Z_d018266f",
+ "started_utc": "2026-10-15T06:47:01.355397+00:00",
+ "engine": "Isaac Sim / PhysX",
+ "settings": {
+  "dt": 0.002,
+  "solver": "PGS",
+  "position_iterations": 64,
+  "velocity_iterations": 8,
+  "contact": "auto",
+  "roller_hull": [
+   21,
+   30
+  ],
+  "clamp": null,
+  "headless": true,
+  "physx_threads": null,
+  "contact_used": "rigid"
+ },
+ "execution_phase": "finished",
+ "passed": true,
+ "failure": null,
+ "source_sha256": {
+  "vendor/pacdm_original.py": "bbd1fb482e7529d70e05be3c3533d6d1076dada79f6b121e70424d138a9be8de",
+  "workflows/isaac/run_isaac.py": "e121f68e551a3aae2f0eec374c563effc299eeb1f5d67642eff321787bea65a6",
+  "teamc/__init__.py": "0654515e04e6dfec0cddcae5fa37d847432006b8c23eb7dde4a03eb0f6dd1b29",
+  "teamc/chords.py": "37391eccfbfc9b56bf1a99f51555dd646c970f622d60bbd22f512eda60281621",
+  "teamc/compiler.py": "f0d0c26d8e0e1f7e3ff3e6e8a7395284d9d98701891fe4bdd603852901657d4f",
+  "teamc/geometry.py": "45ffc1f40b697ce2351f6257d2ab151f51c498d9f0f0a195f7bd9cc1ae93a2f7",
+  "teamc/interfaces.py": "c7636d650a852783f6724f5203e1b81a69529d7fd1a9bacf9eb8613de81ccc14",
+  "teamc/io.py": "762134b501cab07a607adf9293f777edb4bf83887e5a7fcbc31c3cff058f694b",
+  "teamc/loads.py": "4f07367f4177a6e331b1a83f544de217a4b533176a2221a5da8b1fd22d35e266",
+  "teamc/se3.py": "d9569d782fac8e6102bf220e21e02a9e8b99b60c0e26fb8a854a500c6fc228f2",
+  "teamc/skid.py": "23ec6218a998ccedcf1a8eea79f060dfbd05c66bd6e4e192ae5eb2c4a559054d",
+  "teamc/stability.py": "3bb53f7654ae71f63ec49e7633847694a82fc2eeb71b7d16bf3eeff693bdc4bf",
+  "teamc/terrain.py": "2c213df5b4fe3116452bb6629420312ebf381bb2aa466b131372fe8b2efb724d",
+  "teamc/tree.py": "6e7125bf77c1a1859b403fbd38a315bc4083f398b063b9c5f3b25bdc5739abfa",
+  "mission/__init__.py": "25d3b1285a522000e42614fc9d9921609be39ae8304dc075a7d9f6928fda4c07",
+  "mission/audit.py": "e0759fdbcc66e753cfa4980726094096b578fccd211a6749e85a75e29980bb9d",
+  "mission/controller.py": "c53dd6eb59df433f9b25cf162872497c759ec9fa28109ea99a2b9897dd0f44e8",
+  "mission/report.py": "1e62194be98f9cc98bf8499f76d2479daf0e3b1c20ade065413b80ff6330991c",
+  "mission/route.py": "9f4440da5d5b4ecef7f5db20df0ee1c3583fb9d714bc259da8913d1ae6b80847",
+  "mission/runner.py": "849252c651ecea0835a4ef9e4e395d76ff273d201f7c6003eb378bb883a4267d",
+  "mission/timing.py": "76eb04a34d7a152ab67087e419c97d1222f261a4166492ee07fc6625fa668460",
+  "mission/workflow.py": "da4c5afe05014e44bcd9addd6976262bcb875fe47c99a6a2c1ff7bb15652497d",
+  "backends/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "backends/isaac_plant.py": "2b9a41eab6d4721d27d478a20b2c3202ad734e0bb21f3f8f1ba83bbe728f42f7",
+  "backends/latch.py": "3a5281406bc0b571ce7483b4782a5e6bb5271e5b02e3656622f4032496b96ddb",
+  "backends/plantspec.py": "79c4c9173145d2f711c3ed2823fbc3841ef9730d287df2c099e385f31347f600",
+  "backends/tyre.py": "ac4de72b71b2209b20a871d8f917d58fcf3d25924e30d6db512a0f757a0b8448",
+  "backends/usd_export.py": "93e3a0ab8d58e86a5400fd4cea6b4e6e516bc9d0849c5470f077a670dd096b06",
+  "workflows/isaac/isaac_team/__init__.py": "a565b47f26b5ad4f3214baafca44f2b31a69f667ca9826a52e45fd7a50fb5269",
+  "workflows/isaac/isaac_team/environment.py": "692e1a59068b9cdf53691610f171f41d0362eae0cba7b07a7216211eff18f616",
+  "workflows/isaac/isaac_team/native.py": "7ff069bfd4f3bddf079453b45e3b72e037294d666c54a47a896ca7bc6d7a62f6",
+  "workflows/isaac/isaac_team/preflight.py": "ab17ba23472654ad7714ff78871c912a439f780af6c9df2969a53fc4f165febe",
+  "workflows/isaac/isaac_team/runtime.py": "c88891ede5d1f0cadc7225a575b631860a6ca86b0f4c076fbeb05f04ce3b5829",
+  "inputs/missions/husky2.json": "d5b2975c9af4619205471aeeb805434fd5b82352689ffd936d1add909d000c45",
+  "inputs/missions/husky3.json": "457f86f7540276d2d618f028b2c513339ed61b050c973c086b615821d4f39b29",
+  "inputs/missions/ridgeback2.json": "1c94acdd33bf91b402b158a062e7fa44194156e3a520474d4508d524a0fa4c55",
+  "inputs/missions/ridgeback3.json": "55c5aa039980dedcf71ec5ff1a6203203006b48ad5e81725c2709724a7523c23",
+  "inputs/missions/team2.json": "5d0185feb7a0f896dbcff632b0625f95b782d6eb5b6d6f45c04a36d2187262e4",
+  "inputs/missions/team3.json": "b5b67d033253ba8f36db6067bc6231fb48755659de1ce4caa6d6190948db7f22",
+  "inputs/payloads/beam_al_rhs_100x50_5m.json": "1ffcd3364440a980d7356e8c202a3428ec456411661d618908089e802883b5a5",
+  "inputs/payloads/beam_al_rhs_120x50_5p5m.json": "fd84936dff438a11ada5ff0c5ca943e4c943959afaa499590b4c89e5f76530a3",
+  "inputs/payloads/beam_rhs_100x60_5m.json": "1504a3f4210ed9fa714e62c865579b9eaa247dfa49e0fe39834e005e75fd0b72",
+  "inputs/payloads/beam_rhs_120x60_5p5m.json": "67b50c3ec2b822997ee4042732c58719e9a12bca3b1fa85b548c10a6cf935c28",
+  "inputs/robots/husky_a300_ur10e.json": "5bb08a6b26968d7dd0772e8fa1fd8daad5b08c8dab04efdb9286e9b712045a2b",
+  "inputs/robots/rbrobout_ur30.json": "4f114d948b1b77e407eec67efeb6726ed661f1bfb11916112d770d2ef570253a",
+  "inputs/robots/ridgeback_ur10e.json": "d9347477b6d056cc14e2a6b34bf86a6aa4b39384c76cf3b6d2b4e45855af6e9b",
+  "inputs/scenes/hall2.json": "a722583af5071e0579f1a5fd1f42ff6ef5d97f10786310d2a433070d173dbb37",
+  "inputs/scenes/hall2_husky.json": "cf717c194161460645019ec1fb9223e30e9819c024296d1b7bbc20d4a1936941",
+  "inputs/scenes/hall2_ridgeback.json": "9a458397b35aad78fcf8bdc5d189f65ea39caf4f295157fbea116436aab3c189",
+  "inputs/scenes/hall3.json": "8074f8b4a7141b429e6b5c3edfa62a3b2feccea5c064d060a406781087fcfdce",
+  "inputs/scenes/hall3_husky.json": "653db4194eb30e0c874d1dd413d4fe770d0f249c07c397355585687bccf346eb",
+  "inputs/scenes/hall3_ridgeback.json": "03f2b7b5265913be887f2e7adbe9604a292dbe4a36e79ae978d944086dd14f4b",
+  "inputs/teams/husky2.json": "56ba02b7b34d372bfba72570ee6ea5ac2c493d045e746135369647ab8b16496d",
+  "inputs/teams/husky3.json": "5a6f3ebdf3395e5ab139504d574b768d91f57bdea1259ae069e491914466204d",
+  "inputs/teams/ridgeback2.json": "20d7699819b343856b14c99dafc26f4ac4eeaeeae9d32e60cfef573ec9a19a48",
+  "inputs/teams/ridgeback3.json": "8e6c70550226931481d80731ddd0957382deb6997e2b5357e4d155e1ded8c0d8",
+  "inputs/teams/team2.json": "cc8e5820f663aa1fc89058a27ec2ed5605e09ce4328d27e65706e5d2e3afebff",
+  "inputs/teams/team3.json": "dc330981dfe4514d5076b4bfd65039ca87f9da0e21df6a5b0e770be18626b68e",
+  "workflows/isaac/reference/husky2.json": "bfffb9fa029775f20a0cd51de5f049ee85642792bae8b329876c6258348e7caa",
+  "workflows/isaac/reference/husky3.json": "838d284be9b9d0cb572917c6c64aa79f256a47643101952aa8cd7530614f4d42",
+  "workflows/isaac/reference/ridgeback2.json": "792808713ba2b149cbfa5c363902865459b4555b9554b23bc3f849de2c7a4397",
+  "workflows/isaac/reference/ridgeback3.json": "cc4375dd2fa325b085ac82f5759bdd350874f64a60d120c346d27b4fa37d0c46",
+  "workflows/isaac/reference/team2.json": "cabcdf738c9e4634ca2c83770d5ce9cae9df683a7602fc32a2f3b27fe8dd160c",
+  "workflows/isaac/reference/team3.json": "88e83915c28b44c647705181c258d4a9b1108177b38755f5f9683e605a903857"
+ },
+ "shutdown_policy": {
+  "requested": "auto",
+  "selected": "fast",
+  "fast_shutdown": true,
+  "supports_exit_code": true
+ },
+ "simulation_app_config": {
+  "headless": true,
+  "width": 1280,
+  "height": 720,
+  "renderer": "RayTracedLighting",
+  "sync_loads": true,
+  "anti_aliasing": 0,
+  "fast_shutdown": true,
+  "disable_viewport_updates": true
+ },
+ "versions": {
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "isaacsim": "6.1.0.0",
+  "isaacsim-kernel": "6.1.0.0",
+  "numpy": "2.3.1",
+  "scipy": "1.17.0",
+  "isaac_version": [
+   "6.1.0",
+   "rc.26",
+   "6",
+   "1",
+   "0",
+   "rc",
+   "26",
+   "release.49347.2d230af4.gl"
+  ],
+  "kit_version": "110.3.0+feature.371399.00c488ae.gl",
+  "physx_extension": "omni.physx-110.3.2",
+  "tensors_extension": "omni.physics.tensors-110.3.2",
+  "physx_tensors_extension": "omni.physx.tensors-110.3.2"
+ },
+ "physics_runtime": {
+  "engine": "physx",
+  "engine_selection": "SimulationManager",
+  "previous_engine": "physx",
+  "stage_id": 9223001,
+  "tensor_route": "omni.physics.tensors.create_simulation_view(numpy, explicit stage id)",
+  "device": "cpu"
+ },
+ "physx_error_stream": "subscribed",
+ "solver": {
+  "solver": "PGS",
+  "position_iterations": 64,
+  "velocity_iterations": 8,
+  "scene": "/physicsScene",
+  "scene_created_by": "World",
+  "after_reset": {
+   "physics:gravityDirection": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "physics:gravityMagnitude": 9.8100004196167,
+   "physxScene:broadphaseType": "MBP",
+   "physxScene:enableCCD": true,
+   "physxScene:enableEnhancedDeterminism": true,
+   "physxScene:enableGPUDynamics": false,
+   "physxScene:enableStabilization": false,
+   "physxScene:maxPositionIterationCount": 64,
+   "physxScene:maxVelocityIterationCount": 8,
+   "physxScene:minPositionIterationCount": 64,
+   "physxScene:minVelocityIterationCount": 8,
+   "physxScene:solverType": "PGS",
+   "physxScene:timeStepsPerSecond": 500
+  },
+  "changed_by_reset": {}
+ },
+ "scene": {
+  "counts": {
+   "bodies": 114,
+   "joints": 110,
+   "colliders": 1680,
+   "hulls": 1600
+  },
+  "roller": {
+   "rings": 21,
+   "around": 30,
+   "staggered": true,
+   "pieces": 20,
+   "vertices_per_piece": 60,
+   "damping": 0.0002,
+   "armature": 2e-05,
+   "mass": 0.12,
+   "inertia": [
+    0.0001474075,
+    0.0001474075,
+    1.6335000000000002e-05
+   ],
+   "mesh_unit_m": 0.001,
+   "max_radius_m": 0.021999999999999995,
+   "piece_radius_m": [
+    0.015841369749269116,
+    0.017078374201006916,
+    0.018193074702101054,
+    0.019177615543740353,
+    0.020024654730211325,
+    0.020727558486735343,
+    0.02128059025833122,
+    0.02167908414022189,
+    0.021919592691229058,
+    0.021999999999999995,
+    0.021999999999999995,
+    0.021919592691229058,
+    0.02167908414022189,
+    0.02128059025833122,
+    0.020727558486735343,
+    0.020024654730211325,
+    0.019177615543740353,
+    0.018193074702101054,
+    0.017078374201006916,
+    0.01584136974926913
+   ]
+  },
+  "physx_schema_bindings": true,
+  "physx_schemas_applied_by_bindings": [
+   "PhysxSceneAPI",
+   "PhysxArticulationAPI",
+   "PhysxRigidBodyAPI",
+   "PhysxJointAPI",
+   "PhysxCollisionAPI",
+   "PhysxConvexHullCollisionAPI",
+   "PhysxMaterialAPI",
+   "PhysxContactReportAPI"
+  ],
+  "limitations": [
+   "PhysX contacts are not MuJoCo contacts: rigid Coulomb contacts with the max friction of the pair.  With contact='compliant' the roller/terrain pair becomes a PhysX compliant contact with the declared roller stiffness and damping per contact point; that option has not been exercised on any PhysX.",
+   "A roller is the union of convex hulls of neighbouring profile rings (PhysX limits a hull to 64 vertices).  The hull points are authored in millimetres under a 0.001 scale: PhysX convex cooking drops points closer than 0.0007 mesh units (0.7 mm on a mesh in metres) to the hull built so far, which would coarsen a 22 mm roller.",
+   "A compliant roller stiffness acts per contact point, so the wheel as a whole is stiffer than one such spring; every run reports the base height against rigid wheels.",
+   "There is no latch constraint and no force/torque sensor in the scene: the clamp is the compliant clamp of backends/latch.py applied by the runner, and the wrist sensor is the Newton-Euler balance of the tool-side body.",
+   "No joint drives, no PhysX joint friction and no rigid-body damping are authored; the declared joint damping is applied by the runner as an explicit effort.",
+   "Authored mass properties and joint frames are audited offline; what PhysX does with them is checked by the preflight of the Isaac Sim workflow (property readback, kinematics, free-flight dynamics)."
+  ]
+ },
+ "native": {
+  "r1": {
+   "links": 56,
+   "dofs": 51,
+   "dof_order": [
+    "r1_back_left_wheel_joint",
+    "r1_back_right_wheel_joint",
+    "r1_front_left_wheel_joint",
+    "r1_front_right_wheel_joint",
+    "r1_lift_top_joint",
+    "r1_back_left_wheel_link_roller_0_joint",
+    "r1_back_left_wheel_link_roller_1_joint",
+    "r1_back_left_wheel_link_roller_2_joint",
+    "r1_back_left_wheel_link_roller_3_joint",
+    "r1_back_left_wheel_link_roller_4_joint",
+    "r1_back_left_wheel_link_roller_5_joint",
+    "r1_back_left_wheel_link_roller_6_joint",
+    "r1_back_left_wheel_link_roller_7_joint",
+    "r1_back_left_wheel_link_roller_8_joint",
+    "r1_back_left_wheel_link_roller_9_joint",
+    "r1_back_right_wheel_link_roller_0_joint",
+    "r1_back_right_wheel_link_roller_1_joint",
+    "r1_back_right_wheel_link_roller_2_joint",
+    "r1_back_right_wheel_link_roller_3_joint",
+    "r1_back_right_wheel_link_roller_4_joint",
+    "r1_back_right_wheel_link_roller_5_joint",
+    "r1_back_right_wheel_link_roller_6_joint",
+    "r1_back_right_wheel_link_roller_7_joint",
+    "r1_back_right_wheel_link_roller_8_joint",
+    "r1_back_right_wheel_link_roller_9_joint",
+    "r1_front_left_wheel_link_roller_0_joint",
+    "r1_front_left_wheel_link_roller_1_joint",
+    "r1_front_left_wheel_link_roller_2_joint",
+    "r1_front_left_wheel_link_roller_3_joint",
+    "r1_front_left_wheel_link_roller_4_joint",
+    "r1_front_left_wheel_link_roller_5_joint",
+    "r1_front_left_wheel_link_roller_6_joint",
+    "r1_front_left_wheel_link_roller_7_joint",
+    "r1_front_left_wheel_link_roller_8_joint",
+    "r1_front_left_wheel_link_roller_9_joint",
+    "r1_front_right_wheel_link_roller_0_joint",
+    "r1_front_right_wheel_link_roller_1_joint",
+    "r1_front_right_wheel_link_roller_2_joint",
+    "r1_front_right_wheel_link_roller_3_joint",
+    "r1_front_right_wheel_link_roller_4_joint",
+    "r1_front_right_wheel_link_roller_5_joint",
+    "r1_front_right_wheel_link_roller_6_joint",
+    "r1_front_right_wheel_link_roller_7_joint",
+    "r1_front_right_wheel_link_roller_8_joint",
+    "r1_front_right_wheel_link_roller_9_joint",
+    "r1_arm_shoulder_pan_joint",
+    "r1_arm_shoulder_lift_joint",
+    "r1_arm_elbow_joint",
+    "r1_arm_wrist_1_joint",
+    "r1_arm_wrist_2_joint",
+    "r1_arm_wrist_3_joint"
+   ],
+   "link_order": [
+    "r1_base_link",
+    "r1_back_left_wheel_link",
+    "r1_back_right_wheel_link",
+    "r1_front_left_wheel_link",
+    "r1_front_right_wheel_link",
+    "r1_lift_top_link",
+    "r1_top_cover_base_link",
+    "r1_back_left_wheel_link_roller_0",
+    "r1_back_left_wheel_link_roller_1",
+    "r1_back_left_wheel_link_roller_2",
+    "r1_back_left_wheel_link_roller_3",
+    "r1_back_left_wheel_link_roller_4",
+    "r1_back_left_wheel_link_roller_5",
+    "r1_back_left_wheel_link_roller_6",
+    "r1_back_left_wheel_link_roller_7",
+    "r1_back_left_wheel_link_roller_8",
+    "r1_back_left_wheel_link_roller_9",
+    "r1_back_right_wheel_link_roller_0",
+    "r1_back_right_wheel_link_roller_1",
+    "r1_back_right_wheel_link_roller_2",
+    "r1_back_right_wheel_link_roller_3",
+    "r1_back_right_wheel_link_roller_4",
+    "r1_back_right_wheel_link_roller_5",
+    "r1_back_right_wheel_link_roller_6",
+    "r1_back_right_wheel_link_roller_7",
+    "r1_back_right_wheel_link_roller_8",
+    "r1_back_right_wheel_link_roller_9",
+    "r1_front_left_wheel_link_roller_0",
+    "r1_front_left_wheel_link_roller_1",
+    "r1_front_left_wheel_link_roller_2",
+    "r1_front_left_wheel_link_roller_3",
+    "r1_front_left_wheel_link_roller_4",
+    "r1_front_left_wheel_link_roller_5",
+    "r1_front_left_wheel_link_roller_6",
+    "r1_front_left_wheel_link_roller_7",
+    "r1_front_left_wheel_link_roller_8",
+    "r1_front_left_wheel_link_roller_9",
+    "r1_front_right_wheel_link_roller_0",
+    "r1_front_right_wheel_link_roller_1",
+    "r1_front_right_wheel_link_roller_2",
+    "r1_front_right_wheel_link_roller_3",
+    "r1_front_right_wheel_link_roller_4",
+    "r1_front_right_wheel_link_roller_5",
+    "r1_front_right_wheel_link_roller_6",
+    "r1_front_right_wheel_link_roller_7",
+    "r1_front_right_wheel_link_roller_8",
+    "r1_front_right_wheel_link_roller_9",
+    "r1_arm_base_link_inertia",
+    "r1_arm_shoulder_link",
+    "r1_arm_upper_arm_link",
+    "r1_arm_forearm_link",
+    "r1_arm_wrist_1_link",
+    "r1_arm_wrist_2_link",
+    "r1_arm_wrist_3_link",
+    "r1_ft_sensor",
+    "r1_clamp"
+   ]
+  },
+  "r2": {
+   "links": 56,
+   "dofs": 51,
+   "dof_order": [
+    "r2_back_left_wheel_joint",
+    "r2_back_right_wheel_joint",
+    "r2_front_left_wheel_joint",
+    "r2_front_right_wheel_joint",
+    "r2_lift_top_joint",
+    "r2_back_left_wheel_link_roller_0_joint",
+    "r2_back_left_wheel_link_roller_1_joint",
+    "r2_back_left_wheel_link_roller_2_joint",
+    "r2_back_left_wheel_link_roller_3_joint",
+    "r2_back_left_wheel_link_roller_4_joint",
+    "r2_back_left_wheel_link_roller_5_joint",
+    "r2_back_left_wheel_link_roller_6_joint",
+    "r2_back_left_wheel_link_roller_7_joint",
+    "r2_back_left_wheel_link_roller_8_joint",
+    "r2_back_left_wheel_link_roller_9_joint",
+    "r2_back_right_wheel_link_roller_0_joint",
+    "r2_back_right_wheel_link_roller_1_joint",
+    "r2_back_right_wheel_link_roller_2_joint",
+    "r2_back_right_wheel_link_roller_3_joint",
+    "r2_back_right_wheel_link_roller_4_joint",
+    "r2_back_right_wheel_link_roller_5_joint",
+    "r2_back_right_wheel_link_roller_6_joint",
+    "r2_back_right_wheel_link_roller_7_joint",
+    "r2_back_right_wheel_link_roller_8_joint",
+    "r2_back_right_wheel_link_roller_9_joint",
+    "r2_front_left_wheel_link_roller_0_joint",
+    "r2_front_left_wheel_link_roller_1_joint",
+    "r2_front_left_wheel_link_roller_2_joint",
+    "r2_front_left_wheel_link_roller_3_joint",
+    "r2_front_left_wheel_link_roller_4_joint",
+    "r2_front_left_wheel_link_roller_5_joint",
+    "r2_front_left_wheel_link_roller_6_joint",
+    "r2_front_left_wheel_link_roller_7_joint",
+    "r2_front_left_wheel_link_roller_8_joint",
+    "r2_front_left_wheel_link_roller_9_joint",
+    "r2_front_right_wheel_link_roller_0_joint",
+    "r2_front_right_wheel_link_roller_1_joint",
+    "r2_front_right_wheel_link_roller_2_joint",
+    "r2_front_right_wheel_link_roller_3_joint",
+    "r2_front_right_wheel_link_roller_4_joint",
+    "r2_front_right_wheel_link_roller_5_joint",
+    "r2_front_right_wheel_link_roller_6_joint",
+    "r2_front_right_wheel_link_roller_7_joint",
+    "r2_front_right_wheel_link_roller_8_joint",
+    "r2_front_right_wheel_link_roller_9_joint",
+    "r2_arm_shoulder_pan_joint",
+    "r2_arm_shoulder_lift_joint",
+    "r2_arm_elbow_joint",
+    "r2_arm_wrist_1_joint",
+    "r2_arm_wrist_2_joint",
+    "r2_arm_wrist_3_joint"
+   ],
+   "link_order": [
+    "r2_base_link",
+    "r2_back_left_wheel_link",
+    "r2_back_right_wheel_link",
+    "r2_front_left_wheel_link",
+    "r2_front_right_wheel_link",
+    "r2_lift_top_link",
+    "r2_top_cover_base_link",
+    "r2_back_left_wheel_link_roller_0",
+    "r2_back_left_wheel_link_roller_1",
+    "r2_back_left_wheel_link_roller_2",
+    "r2_back_left_wheel_link_roller_3",
+    "r2_back_left_wheel_link_roller_4",
+    "r2_back_left_wheel_link_roller_5",
+    "r2_back_left_wheel_link_roller_6",
+    "r2_back_left_wheel_link_roller_7",
+    "r2_back_left_wheel_link_roller_8",
+    "r2_back_left_wheel_link_roller_9",
+    "r2_back_right_wheel_link_roller_0",
+    "r2_back_right_wheel_link_roller_1",
+    "r2_back_right_wheel_link_roller_2",
+    "r2_back_right_wheel_link_roller_3",
+    "r2_back_right_wheel_link_roller_4",
+    "r2_back_right_wheel_link_roller_5",
+    "r2_back_right_wheel_link_roller_6",
+    "r2_back_right_wheel_link_roller_7",
+    "r2_back_right_wheel_link_roller_8",
+    "r2_back_right_wheel_link_roller_9",
+    "r2_front_left_wheel_link_roller_0",
+    "r2_front_left_wheel_link_roller_1",
+    "r2_front_left_wheel_link_roller_2",
+    "r2_front_left_wheel_link_roller_3",
+    "r2_front_left_wheel_link_roller_4",
+    "r2_front_left_wheel_link_roller_5",
+    "r2_front_left_wheel_link_roller_6",
+    "r2_front_left_wheel_link_roller_7",
+    "r2_front_left_wheel_link_roller_8",
+    "r2_front_left_wheel_link_roller_9",
+    "r2_front_right_wheel_link_roller_0",
+    "r2_front_right_wheel_link_roller_1",
+    "r2_front_right_wheel_link_roller_2",
+    "r2_front_right_wheel_link_roller_3",
+    "r2_front_right_wheel_link_roller_4",
+    "r2_front_right_wheel_link_roller_5",
+    "r2_front_right_wheel_link_roller_6",
+    "r2_front_right_wheel_link_roller_7",
+    "r2_front_right_wheel_link_roller_8",
+    "r2_front_right_wheel_link_roller_9",
+    "r2_arm_base_link_inertia",
+    "r2_arm_shoulder_link",
+    "r2_arm_upper_arm_link",
+    "r2_arm_forearm_link",
+    "r2_arm_wrist_1_link",
+    "r2_arm_wrist_2_link",
+    "r2_arm_wrist_3_link",
+    "r2_ft_sensor",
+    "r2_clamp"
+   ]
+  },
+  "cart": "kinematic_targets"
+ },
+ "clamp": {
+  "stiffness_N_m": 200000.0,
+  "damping_N_s_m": 800.0,
+  "rot_stiffness_Nm_rad": 1500.0,
+  "rot_damping_Nm_s_rad": 10.0
+ },
+ "positive_control": {
+  "of": "wheel contacts",
+  "unmet": []
+ },
+ "unmet_bounds": [],
+ "status": "complete",
+ "simulated_s": 251.022,
+ "steps": 125511,
+ "wall_s": 2135.9670823999913,
+ "saturated_steps": 0,
+ "events": [
+  {
+   "t": 0.0,
+   "phase": "settle",
+   "event": "start"
+  },
+  {
+   "t": 1.0,
+   "phase": "approach",
+   "event": "phase"
+  },
+  {
+   "t": 18.240000000000002,
+   "phase": "dock",
+   "event": "phase"
+  },
+  {
+   "t": 26.25,
+   "phase": "pregrasp",
+   "event": "phase"
+  },
+  {
+   "t": 31.25,
+   "phase": "over",
+   "event": "phase"
+  },
+  {
+   "t": 35.25,
+   "phase": "descend",
+   "event": "phase"
+  },
+  {
+   "t": 39.25,
+   "phase": "latch",
+   "event": "phase"
+  },
+  {
+   "t": 39.25,
+   "phase": "latch",
+   "event": "latched"
+  },
+  {
+   "t": 39.25,
+   "phase": "latch",
+   "event": "latched"
+  },
+  {
+   "t": 39.85,
+   "phase": "take_weight",
+   "event": "phase"
+  },
+  {
+   "t": 44.85,
+   "phase": "take_weight",
+   "event": "weight_taken"
+  },
+  {
+   "t": 44.85,
+   "phase": "raise",
+   "event": "phase"
+  },
+  {
+   "t": 44.85,
+   "phase": "raise",
+   "event": "mode"
+  },
+  {
+   "t": 47.85,
+   "phase": "extract",
+   "event": "phase"
+  },
+  {
+   "t": 52.85,
+   "phase": "stow",
+   "event": "phase"
+  },
+  {
+   "t": 58.85,
+   "phase": "navigate",
+   "event": "phase"
+  },
+  {
+   "t": 119.0,
+   "phase": "navigate",
+   "event": "pause"
+  },
+  {
+   "t": 125.4,
+   "phase": "navigate",
+   "event": "resume"
+  },
+  {
+   "t": 194.13,
+   "phase": "present",
+   "event": "phase"
+  },
+  {
+   "t": 200.13,
+   "phase": "insert",
+   "event": "phase"
+  },
+  {
+   "t": 205.13,
+   "phase": "lower",
+   "event": "phase"
+  },
+  {
+   "t": 213.8,
+   "phase": "lower",
+   "event": "touchdown"
+  },
+  {
+   "t": 213.8,
+   "phase": "transfer",
+   "event": "phase"
+  },
+  {
+   "t": 213.8,
+   "phase": "transfer",
+   "event": "mode"
+  },
+  {
+   "t": 218.8,
+   "phase": "verify",
+   "event": "phase"
+  },
+  {
+   "t": 219.8,
+   "phase": "verify",
+   "event": "verification"
+  },
+  {
+   "t": 219.8,
+   "phase": "release",
+   "event": "phase"
+  },
+  {
+   "t": 219.8,
+   "phase": "release",
+   "event": "unlatched"
+  },
+  {
+   "t": 220.41,
+   "phase": "release",
+   "event": "released"
+  },
+  {
+   "t": 220.41,
+   "phase": "retract_up",
+   "event": "phase"
+  },
+  {
+   "t": 224.41,
+   "phase": "retract_back",
+   "event": "phase"
+  },
+  {
+   "t": 228.41,
+   "phase": "fold",
+   "event": "phase"
+  },
+  {
+   "t": 232.41,
+   "phase": "release",
+   "event": "phase"
+  },
+  {
+   "t": 232.41,
+   "phase": "release",
+   "event": "unlatched"
+  },
+  {
+   "t": 233.02,
+   "phase": "release",
+   "event": "released"
+  },
+  {
+   "t": 233.02,
+   "phase": "retract_up",
+   "event": "phase"
+  },
+  {
+   "t": 237.02,
+   "phase": "retract_back",
+   "event": "phase"
+  },
+  {
+   "t": 241.02,
+   "phase": "fold",
+   "event": "phase"
+  },
+  {
+   "t": 245.02,
+   "phase": "retreat",
+   "event": "phase"
+  },
+  {
+   "t": 250.02,
+   "phase": "done",
+   "event": "phase"
+  }
+ ],
+ "consistency": {
+  "unbalanced_generalized_force": {
+   "max": 26.64564055958614,
+   "rms": 9.316972594265781
+  },
+  "payload_wrench_balance_N": {
+   "max": 48.77319516570497,
+   "rms": 1.1884518666822375
+  },
+  "connection_gap_m": {
+   "max": 0.001152702838103883,
+   "rms": 0.0010054656845076648
+  },
+  "recovered_vs_sensor": {
+   "grasp_r1": {
+    "force_N": {
+     "max": 13.7763571579883,
+     "rms": 0.7867622031579843
+    },
+    "moment_Nm": {
+     "max": 3.3417116151843067,
+     "rms": 0.406259354965852
+    }
+   },
+   "grasp_r2": {
+    "force_N": {
+     "max": 14.438619665106577,
+     "rms": 0.8251665548590462
+    },
+    "moment_Nm": {
+     "max": 4.35661242332025,
+     "rms": 0.43904751351045834
+    }
+   }
+  },
+  "total_normal_load_vs_plant_N": {
+   "max": 14.031123387359912,
+   "rms": 0.48535925059601254
+  },
+  "wheel_traction_vs_plant_N": {
+   "max": 272.63355201490145,
+   "rms": 64.59792418474198
+  },
+  "mean_wheel_normal_load_N": {
+   "model": {
+    "r1": [
+     1736.632286326594,
+     1369.3715308503058,
+     1130.2454243789161,
+     762.9846689026263
+    ],
+    "r2": [
+     1315.389231936713,
+     1694.6443469035921,
+     804.5410019936269,
+     1183.7961169605064
+    ]
+   },
+   "plant": {
+    "r1": [
+     1836.4167394752221,
+     1271.397955544318,
+     1018.469035130058,
+     872.9871225085292
+    ],
+    "r2": [
+     1260.7018775012962,
+     1747.5565983855565,
+     878.8872504105054,
+     1111.2580697369135
+    ]
+   }
+  },
+  "note": "rigid-body mechanics determines the total ground force and its centre, not the load of each wheel; the model distributes it with the declared equal-stiffness rule, so wheel loads are compared in the mean",
+  "sensor_vs_solver_latch": {
+   "force_N": {
+    "max": 0.1103752730924338,
+    "rms": 0.025774120275563944
+   },
+   "moment_Nm": {
+    "max": 0.45105033993312643,
+    "rms": 0.15056675769890654
+   }
+  },
+  "state_integration": {
+   "floating_translation_m": {
+    "max": 5.443314340739306e-05,
+    "rms": 8.115048797794985e-06
+   },
+   "floating_rotation_rad": {
+    "max": 3.887483124500075e-05,
+    "rms": 4.8524585720365475e-06
+   },
+   "joints": {
+    "max": 0.0009694333076035108,
+    "rms": 8.146890392768185e-05
+   },
+   "interval_s": 0.019999999999999574,
+   "note": "largest |q(t+T) - q(t) - T mean(v after each step)| over the coordinates, per record interval T"
+  }
+ },
+ "verification": {
+  "checks": {
+   "grasps_unloaded": true,
+   "payload_at_rest": true,
+   "pads_loaded": true,
+   "placed_within_tolerance": true
+  },
+  "carried_fraction": 0.0007510679217801383,
+  "position_error_m": 0.00016180850995367496,
+  "rotation_error_rad": 5.552509281638459e-06,
+  "error_in_support_frame": [
+   1.1995834196367612e-07,
+   6.5492423709544486e-09,
+   5.551209456172495e-06,
+   3.435700086955503e-05,
+   0.0001581188928236274,
+   -7.821066522363298e-08
+  ],
+  "pad_normal_N": {
+   "mount_pad_a": 211.75793503439633,
+   "mount_pad_b": 211.74897075516623
+  },
+  "accepted": true
+ },
+ "clamp_stability_ratio": 0.3215741081460076,
+ "clamp_max_deflection_m": 0.0012343291855899316,
+ "cart_follows": true,
+ "cart_mode": "kinematic_targets",
+ "state_writes": 4,
+ "contact_report": {
+  "callbacks": 125511,
+  "points": 38415457,
+  "wheels_in_contact": 8,
+  "pads_in_contact": 4,
+  "wheel_collider": true,
+  "clamp_contact_steps_unsigned": 0,
+  "friction_reported": true,
+  "friction_note": null,
+  "impulse_on_first_collider": 1.0
+ },
+ "sensor_reference": {
+  "r1": {
+   "available": true,
+   "steps": 125511,
+   "native_sign": 1,
+   "moment_rms_Nm": 0.0006507708775481866,
+   "force_rms_N": 0.008797777139277653,
+   "sensor_moment_rms_Nm": 0.46115035987792347,
+   "sensor_force_rms_N": 202.54822118555563
+  },
+  "r2": {
+   "available": true,
+   "steps": 125511,
+   "native_sign": 1,
+   "moment_rms_Nm": 0.0006055412383784514,
+   "force_rms_N": 0.007523222423331895,
+   "sensor_moment_rms_Nm": 0.424350040851984,
+   "sensor_force_rms_N": 202.53572513235227
+  }
+ },
+ "world_steps": 125511,
+ "physx_errors": [],
+ "resource_cleanup": {
+  "passed": true,
+  "steps": [
+   {
+    "name": "contact_monitor.close",
+    "passed": true
+   },
+   {
+    "name": "tensor_views.close",
+    "passed": true
+   },
+   {
+    "name": "world.stop",
+    "passed": true
+   },
+   {
+    "name": "world.clear_instance",
+    "passed": true
+   }
+  ],
+  "errors": []
+ },
+ "finished_utc": "2026-10-15T07:23:04.532509+00:00",
+ "execution_exit_code": 0
+}

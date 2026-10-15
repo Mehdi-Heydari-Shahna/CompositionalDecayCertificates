@@ -1,0 +1,959 @@
+{
+ "robots": {
+  "r1": {
+   "root": "/World/r1/r1_chassis_link",
+   "path": "/World/r1",
+   "bodies": {
+    "r1_chassis_link": "/World/r1/r1_chassis_link",
+    "r1_arm_base_link_inertia": "/World/r1/r1_arm_base_link_inertia",
+    "r1_front_left_wheel_link": "/World/r1/r1_front_left_wheel_link",
+    "r1_front_right_wheel_link": "/World/r1/r1_front_right_wheel_link",
+    "r1_rear_left_wheel_link": "/World/r1/r1_rear_left_wheel_link",
+    "r1_rear_right_wheel_link": "/World/r1/r1_rear_right_wheel_link",
+    "r1_arm_shoulder_link": "/World/r1/r1_arm_shoulder_link",
+    "r1_arm_upper_arm_link": "/World/r1/r1_arm_upper_arm_link",
+    "r1_arm_forearm_link": "/World/r1/r1_arm_forearm_link",
+    "r1_arm_wrist_1_link": "/World/r1/r1_arm_wrist_1_link",
+    "r1_arm_wrist_2_link": "/World/r1/r1_arm_wrist_2_link",
+    "r1_arm_wrist_3_link": "/World/r1/r1_arm_wrist_3_link",
+    "r1_clamp": "/World/r1/r1_clamp"
+   },
+   "links": [
+    "r1_chassis_link",
+    "r1_arm_base_link_inertia",
+    "r1_front_left_wheel_link",
+    "r1_front_right_wheel_link",
+    "r1_rear_left_wheel_link",
+    "r1_rear_right_wheel_link",
+    "r1_arm_shoulder_link",
+    "r1_arm_upper_arm_link",
+    "r1_arm_forearm_link",
+    "r1_arm_wrist_1_link",
+    "r1_arm_wrist_2_link",
+    "r1_arm_wrist_3_link",
+    "r1_clamp"
+   ],
+   "joints": {
+    "r1_front_left_wheel_joint": {
+     "dof": "r1_front_left_wheel_joint",
+     "index": 12,
+     "type": "revolute"
+    },
+    "r1_front_right_wheel_joint": {
+     "dof": "r1_front_right_wheel_joint",
+     "index": 13,
+     "type": "revolute"
+    },
+    "r1_rear_left_wheel_joint": {
+     "dof": "r1_rear_left_wheel_joint",
+     "index": 14,
+     "type": "revolute"
+    },
+    "r1_rear_right_wheel_joint": {
+     "dof": "r1_rear_right_wheel_joint",
+     "index": 15,
+     "type": "revolute"
+    },
+    "r1_arm_shoulder_pan_joint": {
+     "dof": "r1_arm_shoulder_pan_joint",
+     "index": 6,
+     "type": "revolute"
+    },
+    "r1_arm_shoulder_lift_joint": {
+     "dof": "r1_arm_shoulder_lift_joint",
+     "index": 7,
+     "type": "revolute"
+    },
+    "r1_arm_elbow_joint": {
+     "dof": "r1_arm_elbow_joint",
+     "index": 8,
+     "type": "revolute"
+    },
+    "r1_arm_wrist_1_joint": {
+     "dof": "r1_arm_wrist_1_joint",
+     "index": 9,
+     "type": "revolute"
+    },
+    "r1_arm_wrist_2_joint": {
+     "dof": "r1_arm_wrist_2_joint",
+     "index": 10,
+     "type": "revolute"
+    },
+    "r1_arm_wrist_3_joint": {
+     "dof": "r1_arm_wrist_3_joint",
+     "index": 11,
+     "type": "revolute"
+    }
+   },
+   "dofs": [
+    "r1_front_left_wheel_joint",
+    "r1_front_right_wheel_joint",
+    "r1_rear_left_wheel_joint",
+    "r1_rear_right_wheel_joint",
+    "r1_arm_shoulder_pan_joint",
+    "r1_arm_shoulder_lift_joint",
+    "r1_arm_elbow_joint",
+    "r1_arm_wrist_1_joint",
+    "r1_arm_wrist_2_joint",
+    "r1_arm_wrist_3_joint"
+   ],
+   "rollers": [],
+   "wheels": {
+    "front_left": {
+     "joint": "r1_front_left_wheel_joint",
+     "rollers": [],
+     "body": "r1_front_left_wheel_link",
+     "radius": 0.1651,
+     "tyre": "/World/r1/r1_front_left_wheel_link/tyre",
+     "friction": 0.8,
+     "collider": false
+    },
+    "front_right": {
+     "joint": "r1_front_right_wheel_joint",
+     "rollers": [],
+     "body": "r1_front_right_wheel_link",
+     "radius": 0.1651,
+     "tyre": "/World/r1/r1_front_right_wheel_link/tyre",
+     "friction": 0.8,
+     "collider": false
+    },
+    "rear_left": {
+     "joint": "r1_rear_left_wheel_joint",
+     "rollers": [],
+     "body": "r1_rear_left_wheel_link",
+     "radius": 0.1651,
+     "tyre": "/World/r1/r1_rear_left_wheel_link/tyre",
+     "friction": 0.8,
+     "collider": false
+    },
+    "rear_right": {
+     "joint": "r1_rear_right_wheel_joint",
+     "rollers": [],
+     "body": "r1_rear_right_wheel_link",
+     "radius": 0.1651,
+     "tyre": "/World/r1/r1_rear_right_wheel_link/tyre",
+     "friction": 0.8,
+     "collider": false
+    }
+   },
+   "base": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "armature": {
+    "r1_front_left_wheel_joint": 0.1,
+    "r1_front_right_wheel_joint": 0.1,
+    "r1_rear_left_wheel_joint": 0.1,
+    "r1_rear_right_wheel_joint": 0.1,
+    "r1_arm_shoulder_pan_joint": 1.2,
+    "r1_arm_shoulder_lift_joint": 1.2,
+    "r1_arm_elbow_joint": 0.6,
+    "r1_arm_wrist_1_joint": 0.12,
+    "r1_arm_wrist_2_joint": 0.12,
+    "r1_arm_wrist_3_joint": 0.12
+   },
+   "damping": {
+    "r1_front_left_wheel_joint": 0.05,
+    "r1_front_right_wheel_joint": 0.05,
+    "r1_rear_left_wheel_joint": 0.05,
+    "r1_rear_right_wheel_joint": 0.05,
+    "r1_arm_shoulder_pan_joint": 5.0,
+    "r1_arm_shoulder_lift_joint": 5.0,
+    "r1_arm_elbow_joint": 3.0,
+    "r1_arm_wrist_1_joint": 1.0,
+    "r1_arm_wrist_2_joint": 1.0,
+    "r1_arm_wrist_3_joint": 1.0
+   },
+   "limits": {
+    "r1_front_left_wheel_joint": null,
+    "r1_front_right_wheel_joint": null,
+    "r1_rear_left_wheel_joint": null,
+    "r1_rear_right_wheel_joint": null,
+    "r1_arm_shoulder_pan_joint": [
+     -6.283185307179586,
+     6.283185307179586
+    ],
+    "r1_arm_shoulder_lift_joint": [
+     -6.283185307179586,
+     6.283185307179586
+    ],
+    "r1_arm_elbow_joint": [
+     -3.141592653589793,
+     3.141592653589793
+    ],
+    "r1_arm_wrist_1_joint": [
+     -6.283185307179586,
+     6.283185307179586
+    ],
+    "r1_arm_wrist_2_joint": [
+     -6.283185307179586,
+     6.283185307179586
+    ],
+    "r1_arm_wrist_3_joint": [
+     -6.283185307179586,
+     6.283185307179586
+    ]
+   },
+   "fixed": {
+    "r1_arm_base_link-base_link_inertia": "r1_arm_base_link_base_link_inertia",
+    "r1_sensor_joint": "r1_sensor_joint"
+   },
+   "tool": {
+    "body": "r1_clamp",
+    "T": [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.1
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   },
+   "sensor": {
+    "body": "r1_clamp",
+    "joint": "r1_sensor_joint",
+    "T": [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   }
+  },
+  "r2": {
+   "root": "/World/r2/r2_chassis_link",
+   "path": "/World/r2",
+   "bodies": {
+    "r2_chassis_link": "/World/r2/r2_chassis_link",
+    "r2_arm_base_link_inertia": "/World/r2/r2_arm_base_link_inertia",
+    "r2_front_left_wheel_link": "/World/r2/r2_front_left_wheel_link",
+    "r2_front_right_wheel_link": "/World/r2/r2_front_right_wheel_link",
+    "r2_rear_left_wheel_link": "/World/r2/r2_rear_left_wheel_link",
+    "r2_rear_right_wheel_link": "/World/r2/r2_rear_right_wheel_link",
+    "r2_arm_shoulder_link": "/World/r2/r2_arm_shoulder_link",
+    "r2_arm_upper_arm_link": "/World/r2/r2_arm_upper_arm_link",
+    "r2_arm_forearm_link": "/World/r2/r2_arm_forearm_link",
+    "r2_arm_wrist_1_link": "/World/r2/r2_arm_wrist_1_link",
+    "r2_arm_wrist_2_link": "/World/r2/r2_arm_wrist_2_link",
+    "r2_arm_wrist_3_link": "/World/r2/r2_arm_wrist_3_link",
+    "r2_clamp": "/World/r2/r2_clamp"
+   },
+   "links": [
+    "r2_chassis_link",
+    "r2_arm_base_link_inertia",
+    "r2_front_left_wheel_link",
+    "r2_front_right_wheel_link",
+    "r2_rear_left_wheel_link",
+    "r2_rear_right_wheel_link",
+    "r2_arm_shoulder_link",
+    "r2_arm_upper_arm_link",
+    "r2_arm_forearm_link",
+    "r2_arm_wrist_1_link",
+    "r2_arm_wrist_2_link",
+    "r2_arm_wrist_3_link",
+    "r2_clamp"
+   ],
+   "joints": {
+    "r2_front_left_wheel_joint": {
+     "dof": "r2_front_left_wheel_joint",
+     "index": 28,
+     "type": "revolute"
+    },
+    "r2_front_right_wheel_joint": {
+     "dof": "r2_front_right_wheel_joint",
+     "index": 29,
+     "type": "revolute"
+    },
+    "r2_rear_left_wheel_joint": {
+     "dof": "r2_rear_left_wheel_joint",
+     "index": 30,
+     "type": "revolute"
+    },
+    "r2_rear_right_wheel_joint": {
+     "dof": "r2_rear_right_wheel_joint",
+     "index": 31,
+     "type": "revolute"
+    },
+    "r2_arm_shoulder_pan_joint": {
+     "dof": "r2_arm_shoulder_pan_joint",
+     "index": 22,
+     "type": "revolute"
+    },
+    "r2_arm_shoulder_lift_joint": {
+     "dof": "r2_arm_shoulder_lift_joint",
+     "index": 23,
+     "type": "revolute"
+    },
+    "r2_arm_elbow_joint": {
+     "dof": "r2_arm_elbow_joint",
+     "index": 24,
+     "type": "revolute"
+    },
+    "r2_arm_wrist_1_joint": {
+     "dof": "r2_arm_wrist_1_joint",
+     "index": 25,
+     "type": "revolute"
+    },
+    "r2_arm_wrist_2_joint": {
+     "dof": "r2_arm_wrist_2_joint",
+     "index": 26,
+     "type": "revolute"
+    },
+    "r2_arm_wrist_3_joint": {
+     "dof": "r2_arm_wrist_3_joint",
+     "index": 27,
+     "type": "revolute"
+    }
+   },
+   "dofs": [
+    "r2_front_left_wheel_joint",
+    "r2_front_right_wheel_joint",
+    "r2_rear_left_wheel_joint",
+    "r2_rear_right_wheel_joint",
+    "r2_arm_shoulder_pan_joint",
+    "r2_arm_shoulder_lift_joint",
+    "r2_arm_elbow_joint",
+    "r2_arm_wrist_1_joint",
+    "r2_arm_wrist_2_joint",
+    "r2_arm_wrist_3_joint"
+   ],
+   "rollers": [],
+   "wheels": {
+    "front_left": {
+     "joint": "r2_front_left_wheel_joint",
+     "rollers": [],
+     "body": "r2_front_left_wheel_link",
+     "radius": 0.1651,
+     "tyre": "/World/r2/r2_front_left_wheel_link/tyre",
+     "friction": 0.8,
+     "collider": false
+    },
+    "front_right": {
+     "joint": "r2_front_right_wheel_joint",
+     "rollers": [],
+     "body": "r2_front_right_wheel_link",
+     "radius": 0.1651,
+     "tyre": "/World/r2/r2_front_right_wheel_link/tyre",
+     "friction": 0.8,
+     "collider": false
+    },
+    "rear_left": {
+     "joint": "r2_rear_left_wheel_joint",
+     "rollers": [],
+     "body": "r2_rear_left_wheel_link",
+     "radius": 0.1651,
+     "tyre": "/World/r2/r2_rear_left_wheel_link/tyre",
+     "friction": 0.8,
+     "collider": false
+    },
+    "rear_right": {
+     "joint": "r2_rear_right_wheel_joint",
+     "rollers": [],
+     "body": "r2_rear_right_wheel_link",
+     "radius": 0.1651,
+     "tyre": "/World/r2/r2_rear_right_wheel_link/tyre",
+     "friction": 0.8,
+     "collider": false
+    }
+   },
+   "base": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+   ],
+   "armature": {
+    "r2_front_left_wheel_joint": 0.1,
+    "r2_front_right_wheel_joint": 0.1,
+    "r2_rear_left_wheel_joint": 0.1,
+    "r2_rear_right_wheel_joint": 0.1,
+    "r2_arm_shoulder_pan_joint": 1.2,
+    "r2_arm_shoulder_lift_joint": 1.2,
+    "r2_arm_elbow_joint": 0.6,
+    "r2_arm_wrist_1_joint": 0.12,
+    "r2_arm_wrist_2_joint": 0.12,
+    "r2_arm_wrist_3_joint": 0.12
+   },
+   "damping": {
+    "r2_front_left_wheel_joint": 0.05,
+    "r2_front_right_wheel_joint": 0.05,
+    "r2_rear_left_wheel_joint": 0.05,
+    "r2_rear_right_wheel_joint": 0.05,
+    "r2_arm_shoulder_pan_joint": 5.0,
+    "r2_arm_shoulder_lift_joint": 5.0,
+    "r2_arm_elbow_joint": 3.0,
+    "r2_arm_wrist_1_joint": 1.0,
+    "r2_arm_wrist_2_joint": 1.0,
+    "r2_arm_wrist_3_joint": 1.0
+   },
+   "limits": {
+    "r2_front_left_wheel_joint": null,
+    "r2_front_right_wheel_joint": null,
+    "r2_rear_left_wheel_joint": null,
+    "r2_rear_right_wheel_joint": null,
+    "r2_arm_shoulder_pan_joint": [
+     -6.283185307179586,
+     6.283185307179586
+    ],
+    "r2_arm_shoulder_lift_joint": [
+     -6.283185307179586,
+     6.283185307179586
+    ],
+    "r2_arm_elbow_joint": [
+     -3.141592653589793,
+     3.141592653589793
+    ],
+    "r2_arm_wrist_1_joint": [
+     -6.283185307179586,
+     6.283185307179586
+    ],
+    "r2_arm_wrist_2_joint": [
+     -6.283185307179586,
+     6.283185307179586
+    ],
+    "r2_arm_wrist_3_joint": [
+     -6.283185307179586,
+     6.283185307179586
+    ]
+   },
+   "fixed": {
+    "r2_arm_base_link-base_link_inertia": "r2_arm_base_link_base_link_inertia",
+    "r2_sensor_joint": "r2_sensor_joint"
+   },
+   "tool": {
+    "body": "r2_clamp",
+    "T": [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.1
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   },
+   "sensor": {
+    "body": "r2_clamp",
+    "joint": "r2_sensor_joint",
+    "T": [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   }
+  },
+  "r3": {
+   "root": "/World/r3/r3_chassis_link",
+   "path": "/World/r3",
+   "bodies": {
+    "r3_chassis_link": "/World/r3/r3_chassis_link",
+    "r3_arm_base_link_inertia": "/World/r3/r3_arm_base_link_inertia",
+    "r3_front_left_wheel_link": "/World/r3/r3_front_left_wheel_link",
+    "r3_front_right_wheel_link": "/World/r3/r3_front_right_wheel_link",
+    "r3_rear_left_wheel_link": "/World/r3/r3_rear_left_wheel_link",
+    "r3_rear_right_wheel_link": "/World/r3/r3_rear_right_wheel_link",
+    "r3_arm_shoulder_link": "/World/r3/r3_arm_shoulder_link",
+    "r3_arm_upper_arm_link": "/World/r3/r3_arm_upper_arm_link",
+    "r3_arm_forearm_link": "/World/r3/r3_arm_forearm_link",
+    "r3_arm_wrist_1_link": "/World/r3/r3_arm_wrist_1_link",
+    "r3_arm_wrist_2_link": "/World/r3/r3_arm_wrist_2_link",
+    "r3_arm_wrist_3_link": "/World/r3/r3_arm_wrist_3_link",
+    "r3_clamp": "/World/r3/r3_clamp"
+   },
+   "links": [
+    "r3_chassis_link",
+    "r3_arm_base_link_inertia",
+    "r3_front_left_wheel_link",
+    "r3_front_right_wheel_link",
+    "r3_rear_left_wheel_link",
+    "r3_rear_right_wheel_link",
+    "r3_arm_shoulder_link",
+    "r3_arm_upper_arm_link",
+    "r3_arm_forearm_link",
+    "r3_arm_wrist_1_link",
+    "r3_arm_wrist_2_link",
+    "r3_arm_wrist_3_link",
+    "r3_clamp"
+   ],
+   "joints": {
+    "r3_front_left_wheel_joint": {
+     "dof": "r3_front_left_wheel_joint",
+     "index": 44,
+     "type": "revolute"
+    },
+    "r3_front_right_wheel_joint": {
+     "dof": "r3_front_right_wheel_joint",
+     "index": 45,
+     "type": "revolute"
+    },
+    "r3_rear_left_wheel_joint": {
+     "dof": "r3_rear_left_wheel_joint",
+     "index": 46,
+     "type": "revolute"
+    },
+    "r3_rear_right_wheel_joint": {
+     "dof": "r3_rear_right_wheel_joint",
+     "index": 47,
+     "type": "revolute"
+    },
+    "r3_arm_shoulder_pan_joint": {
+     "dof": "r3_arm_shoulder_pan_joint",
+     "index": 38,
+     "type": "revolute"
+    },
+    "r3_arm_shoulder_lift_joint": {
+     "dof": "r3_arm_shoulder_lift_joint",
+     "index": 39,
+     "type": "revolute"
+    },
+    "r3_arm_elbow_joint": {
+     "dof": "r3_arm_elbow_joint",
+     "index": 40,
+     "type": "revolute"
+    },
+    "r3_arm_wrist_1_joint": {
+     "dof": "r3_arm_wrist_1_joint",
+     "index": 41,
+     "type": "revolute"
+    },
+    "r3_arm_wrist_2_joint": {
+     "dof": "r3_arm_wrist_2_joint",
+     "index": 42,
+     "type": "revolute"
+    },
+    "r3_arm_wrist_3_joint": {
+     "dof": "r3_arm_wrist_3_joint",
+     "index": 43,
+     "type": "revolute"
+    }
+   },
+   "dofs": [
+    "r3_front_left_wheel_joint",
+    "r3_front_right_wheel_joint",
+    "r3_rear_left_wheel_joint",
+    "r3_rear_right_wheel_joint",
+    "r3_arm_shoulder_pan_joint",
+    "r3_arm_shoulder_lift_joint",
+    "r3_arm_elbow_joint",
+    "r3_arm_wrist_1_joint",
+    "r3_arm_wrist_2_joint",
+    "r3_arm_wrist_3_joint"
+   ],
+   "rollers": [],
+   "wheels": {
+    "front_left": {
+     "joint": "r3_front_left_wheel_joint",
+     "rollers": [],
+     "body": "r3_front_left_wheel_link",
+     "radius": 0.1651,
+     "tyre": "/World/r3/r3_front_left_wheel_link/tyre",
+     "friction": 0.8,
+     "collider": false
+    },
+    "front_right": {
+     "joint": "r3_front_right_wheel_joint",
+     "rollers": [],
+     "body": "r3_front_right_wheel_link",
+     "radius": 0.1651,
+     "tyre": "/World/r3/r3_front_right_wheel_link/tyre",
+     "friction": 0.8,
+     "collider": false
+    },
+    "rear_left": {
+     "joint": "r3_rear_left_wheel_joint",
+     "rollers": [],
+     "body": "r3_rear_left_wheel_link",
+     "radius": 0.1651,
+     "tyre": "/World/r3/r3_rear_left_wheel_link/tyre",
+     "friction": 0.8,
+     "collider": false
+    },
+    "rear_right": {
+     "joint": "r3_rear_right_wheel_joint",
+     "rollers": [],
+     "body": "r3_rear_right_wheel_link",
+     "radius": 0.1651,
+     "tyre": "/World/r3/r3_rear_right_wheel_link/tyre",
+     "friction": 0.8,
+     "collider": false
+    }
+   },
+   "base": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    37
+   ],
+   "armature": {
+    "r3_front_left_wheel_joint": 0.1,
+    "r3_front_right_wheel_joint": 0.1,
+    "r3_rear_left_wheel_joint": 0.1,
+    "r3_rear_right_wheel_joint": 0.1,
+    "r3_arm_shoulder_pan_joint": 1.2,
+    "r3_arm_shoulder_lift_joint": 1.2,
+    "r3_arm_elbow_joint": 0.6,
+    "r3_arm_wrist_1_joint": 0.12,
+    "r3_arm_wrist_2_joint": 0.12,
+    "r3_arm_wrist_3_joint": 0.12
+   },
+   "damping": {
+    "r3_front_left_wheel_joint": 0.05,
+    "r3_front_right_wheel_joint": 0.05,
+    "r3_rear_left_wheel_joint": 0.05,
+    "r3_rear_right_wheel_joint": 0.05,
+    "r3_arm_shoulder_pan_joint": 5.0,
+    "r3_arm_shoulder_lift_joint": 5.0,
+    "r3_arm_elbow_joint": 3.0,
+    "r3_arm_wrist_1_joint": 1.0,
+    "r3_arm_wrist_2_joint": 1.0,
+    "r3_arm_wrist_3_joint": 1.0
+   },
+   "limits": {
+    "r3_front_left_wheel_joint": null,
+    "r3_front_right_wheel_joint": null,
+    "r3_rear_left_wheel_joint": null,
+    "r3_rear_right_wheel_joint": null,
+    "r3_arm_shoulder_pan_joint": [
+     -6.283185307179586,
+     6.283185307179586
+    ],
+    "r3_arm_shoulder_lift_joint": [
+     -6.283185307179586,
+     6.283185307179586
+    ],
+    "r3_arm_elbow_joint": [
+     -3.141592653589793,
+     3.141592653589793
+    ],
+    "r3_arm_wrist_1_joint": [
+     -6.283185307179586,
+     6.283185307179586
+    ],
+    "r3_arm_wrist_2_joint": [
+     -6.283185307179586,
+     6.283185307179586
+    ],
+    "r3_arm_wrist_3_joint": [
+     -6.283185307179586,
+     6.283185307179586
+    ]
+   },
+   "fixed": {
+    "r3_arm_base_link-base_link_inertia": "r3_arm_base_link_base_link_inertia",
+    "r3_sensor_joint": "r3_sensor_joint"
+   },
+   "tool": {
+    "body": "r3_clamp",
+    "T": [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.1
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   },
+   "sensor": {
+    "body": "r3_clamp",
+    "joint": "r3_sensor_joint",
+    "T": [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   }
+  }
+ },
+ "options": {
+  "roller_hull": [
+   21,
+   30,
+   true
+  ],
+  "contact": "tyre",
+  "solver": "PGS",
+  "position_iterations": 64,
+  "velocity_iterations": 8,
+  "contact_offset": {
+   "robot": 0.001,
+   "roller": 0.001,
+   "terrain": 0.001,
+   "payload": 0.001,
+   "scene": 0.0018,
+   "guide": 0.0005,
+   "obstacle": 0.002
+  },
+  "rest_offset": 0.0,
+  "hull_vertex_limit": 64,
+  "hull_min_thickness": 0.0005,
+  "hull_unit_m": 0.001,
+  "max_angular_velocity_deg_s": 100000.0,
+  "max_joint_velocity": 1000000.0,
+  "physics_scene": null,
+  "lights": true
+ },
+ "limitations": [
+  "PhysX contacts are not MuJoCo contacts: rigid Coulomb contacts with the max friction of the pair.  With contact='compliant' the roller/terrain pair becomes a PhysX compliant contact with the declared roller stiffness and damping per contact point; that option has not been exercised on any PhysX.",
+  "A roller is the union of convex hulls of neighbouring profile rings (PhysX limits a hull to 64 vertices).  The hull points are authored in millimetres under a 0.001 scale: PhysX convex cooking drops points closer than 0.0007 mesh units (0.7 mm on a mesh in metres) to the hull built so far, which would coarsen a 22 mm roller.",
+  "A compliant roller stiffness acts per contact point, so the wheel as a whole is stiffer than one such spring; every run reports the base height against rigid wheels.",
+  "There is no latch constraint and no force/torque sensor in the scene: the clamp is the compliant clamp of backends/latch.py applied by the runner, and the wrist sensor is the Newton-Euler balance of the tool-side body.",
+  "No joint drives, no PhysX joint friction and no rigid-body damping are authored; the declared joint damping is applied by the runner as an explicit effort.",
+  "Authored mass properties and joint frames are audited offline; what PhysX does with them is checked by the preflight of the Isaac Sim workflow (property readback, kinematics, free-flight dynamics).",
+  "Conventional wheels: the wheel has no collider.  The tyre model of backends/tyre.py carries it, with the declared normal stiffness and damping of the tyre against the plane of the compiled terrain, and supplies its friction, applied by the runner as one explicit load at the contact point of the wheel.  The wheel loads are those of equal tyre springs under a rigid chassis; PhysX checks neither the friction law nor the normal contact of these wheels.  A wheel meeting anything but the terrain is left to the robot colliders of the base and to the clearance check of the audit."
+ ],
+ "physx_schema_bindings": true,
+ "physx_schemas_applied_by_bindings": [
+  "PhysxSceneAPI",
+  "PhysxArticulationAPI",
+  "PhysxRigidBodyAPI",
+  "PhysxJointAPI",
+  "PhysxCollisionAPI",
+  "PhysxConvexHullCollisionAPI",
+  "PhysxMaterialAPI",
+  "PhysxContactReportAPI"
+ ],
+ "gravity": [
+  0.0,
+  0.0,
+  -9.81
+ ],
+ "counts": {
+  "bodies": 41,
+  "joints": 36,
+  "colliders": 100,
+  "hulls": 0
+ },
+ "tyres": {
+  "carried_by": "tyre model of backends/tyre.py applied by the runner (normal spring and damper)",
+  "friction": "tyre model of backends/tyre.py applied by the runner",
+  "wheel_collider": false,
+  "terrain_friction_authored": 0.8,
+  "terrain_friction_declared": 0.8
+ },
+ "obstacle": {
+  "path": "/World/Cart/cart",
+  "id": "cart",
+  "start": [
+   6.5,
+   13.0,
+   0.45
+  ]
+ },
+ "payload": {
+  "path": "/World/Payload/beam_beam",
+  "body": "beam_beam",
+  "base": [
+   48,
+   49,
+   50,
+   51,
+   52,
+   53
+  ],
+  "id": "beam",
+  "expected": {
+   "mass": 14.612399999999994,
+   "com": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "inertia": [
+    [
+     0.03279509639999999,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     36.86167492920001,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.8419701672
+    ]
+   ]
+  }
+ },
+ "q0": [
+  -5.2,
+  -1.0,
+  0.13597,
+  2.2,
+  0.0,
+  0.0,
+  -1.1734204788279772,
+  -1.1028476361444604,
+  -2.019867060937549,
+  -1.5896742830975095,
+  1.5707963265898375,
+  0.39737584817192134,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  -0.6,
+  -1.6,
+  0.13597,
+  -0.7,
+  0.0,
+  -0.0,
+  -1.173420478827976,
+  -1.1028476361444581,
+  -2.01986706093755,
+  -1.5896742830975101,
+  1.5707963265898375,
+  0.39737584817192245,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  -3.0,
+  -1.9,
+  0.13597,
+  2.6,
+  0.0,
+  0.0,
+  -1.1734204788279776,
+  -1.1028476361444597,
+  -2.0198670609375498,
+  -1.589674283097509,
+  1.5707963265898375,
+  0.397375848171921,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  3.0,
+  0.9,
+  0.0,
+  -0.0,
+  0.0
+ ]
+}

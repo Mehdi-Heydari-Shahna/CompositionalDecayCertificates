@@ -1,0 +1,20 @@
+status: running  (simulated 3.0 s)
+payload while carried: position error max - mm, tilt max - mrad, yaw error max - mrad
+base tracking: r1 6.2 mm / 1.6 mrad, r2 5.8 mm / 1.7 mrad, r3 8.7 mm / 1.6 mrad
+internal wrench while carried: force max - N (rms -), moment max - N m (rms -)
+  grasp_r1: force max - N, moment max - N m, not carrying
+  grasp_r2: force max - N, moment max - N m, not carrying
+  grasp_r3: force max - N, moment max - N m, not carrying
+  wrist sensor readings, largest: r1 12.1 N / 0.1 N m, r2 12.1 N / 0.1 N m, r3 12.1 N / 0.1 N m (declared range 100 N / 10 N m)
+actuator demand: max ratio 0.35 (r3_arm_elbow_motor), saturated steps 0
+  r1: min wheel load 503 N, traction utilization max 0.130 (p99 0.121), tipping margin min 0.112 m, base height vs rigid wheels -0.05 mm [-0.08, -0.00], front_rocker [-0.1, +0.2] mrad of +-87
+  r2: min wheel load 500 N, traction utilization max 0.145 (p99 0.130), tipping margin min 0.110 m, base height vs rigid wheels -0.05 mm [-0.08, -0.01], front_rocker [-0.1, +0.2] mrad of +-87
+  r3: min wheel load 498 N, traction utilization max 0.107 (p99 0.102), tipping margin min 0.112 m, base height vs rigid wheels -0.05 mm [-0.08, -0.00], front_rocker [-0.2, +0.2] mrad of +-87
+smallest clearance 0.090 m; by category: payload:neighbour 0.090, payload:pad 0.000, payload:rack 0.105, payload:wall 0.375, robot:wall 0.930
+forbidden contacts reported by the plant: 0 []
+  compiled ground loads vs plant contacts: total normal max 0.0 N (rms 0.0), each wheel normal max 76.5 N (rms 20.0), wheel traction max 120.8 N (rms 44.4)
+    r1 mean wheel loads (N): model [555.0, 554.0, 618.0, 525.0] plant [559.0, 549.0, 618.0, 525.0]
+    r2 mean wheel loads (N): model [557.0, 556.0, 615.0, 522.0] plant [555.0, 559.0, 616.0, 520.0]
+    r3 mean wheel loads (N): model [552.0, 552.0, 617.0, 526.0] plant [555.0, 550.0, 624.0, 519.0]
+  displacement vs summed rates per 20 ms: floating bodies max 6.46 um / 25.15 urad, joints max 454.39 u(rad|m)
+declared bounds: NOT met: mission_complete (running vs complete), supports_verified (False vs True)

@@ -1,0 +1,22 @@
+{
+ "passed": true,
+ "failures": [],
+ "checks": {
+  "r1_mass_kg": 229.34200075268745,
+  "r2_mass_kg": 229.34200075268745,
+  "r3_mass_kg": 229.34200075268745,
+  "pose": 6.661338147750939e-16,
+  "inertia": 5.048148149932739e-08,
+  "mass": 4.541306272830611e-08,
+  "joint_gap": 1.4495849853801701e-08,
+  "joint_axis": 3.0814279061733e-08,
+  "joint_value": 4.440892098500626e-16
+ },
+ "counts": {
+  "bodies": 167,
+  "joints": 162,
+  "colliders": 2488,
+  "hulls": 2400
+ },
+ "scope": "authored USD against the compiled graph; no PhysX behaviour is checked here"
+}

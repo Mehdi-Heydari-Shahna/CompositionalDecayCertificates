@@ -1,0 +1,11 @@
+Command: ["%USERPROFILE%\\AppData\\Local\\miniforge3\\envs\\isaac61\\python.exe", "%USERPROFILE%\\Downloads\\Team_CMG_PACDM\\workflows\\isaac\\run_isaac.py", "--worker", "--stage", "selftest", "--team", "ridgeback3", "--output", "%USERPROFILE%\\Downloads\\Team_CMG_PACDM\\results\\isaac_campaign_20261015T062209Z_c93f9a61\\ridgeback3", "--run-id", "20261015T063854Z_08d337d0", "--dt", "0.002", "--solver", "PGS", "--position-iterations", "64", "--velocity-iterations", "8", "--contact", "auto", "--roller-hull", "21", "30", "--max-time", "400.0", "--render-hz", "25.0", "--shutdown-mode", "auto", "--headless"]
+  PASS  PACDM kernel unchanged (sha256): bbd1fb482e7529d70e05be3c3533d6d1076dada79f6b121e70424d138a9be8de
+  PASS  coordinates: 0.0
+  PASS  ports: 0.0
+  PASS  q_start: 0.0
+  PASS  mass_diagonal: 1.6234681873019487e-14
+  PASS  mass_frobenius: 1.6085254162236015e-16
+  PASS  bias: 1.9658663491969512e-14
+  PASS  efforts: 2.6938081294558365e-12
+  PASS  q_carry: 4.996003610813204e-16
+  PASS  total_mass_kg: 0.0

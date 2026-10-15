@@ -1,0 +1,1383 @@
+{
+ "passed": true,
+ "checks": [
+  {
+   "name": "r1: link masses, largest relative error",
+   "value": 1.0054829971123434e-07,
+   "limit": 2e-06,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "r1: link centres of mass / m",
+   "value": 7.271766661043344e-09,
+   "limit": 2e-06,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "r1: link inertia tensors, largest relative error",
+   "value": 4.228959615746552e-07,
+   "limit": 5e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "r1: total mass / kg, relative error",
+   "value": 3.565750819106586e-10,
+   "limit": 2e-06,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "r1: joint armature / SI",
+   "value": 4.768371586472142e-08,
+   "limit": 1e-06,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "r1: no drive stiffness",
+   "value": 0.0,
+   "limit": 0.0,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "r1: no drive damping",
+   "value": 0.0,
+   "limit": 0.0,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "r1: no native joint friction",
+   "value": 0.0,
+   "limit": 0.0,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "r1: joint limits / SI",
+   "value": 1.7484556025237907e-07,
+   "limit": 5e-06,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "r2: link masses, largest relative error",
+   "value": 1.0054829971123434e-07,
+   "limit": 2e-06,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "r2: link centres of mass / m",
+   "value": 7.271766661043344e-09,
+   "limit": 2e-06,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "r2: link inertia tensors, largest relative error",
+   "value": 4.228959615746552e-07,
+   "limit": 5e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "r2: total mass / kg, relative error",
+   "value": 3.565750819106586e-10,
+   "limit": 2e-06,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "r2: joint armature / SI",
+   "value": 4.768371586472142e-08,
+   "limit": 1e-06,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "r2: no drive stiffness",
+   "value": 0.0,
+   "limit": 0.0,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "r2: no drive damping",
+   "value": 0.0,
+   "limit": 0.0,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "r2: no native joint friction",
+   "value": 0.0,
+   "limit": 0.0,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "r2: joint limits / SI",
+   "value": 1.7484556025237907e-07,
+   "limit": 5e-06,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "payload: mass, relative error",
+   "value": 3.793766093835749e-08,
+   "limit": 2e-06,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "payload: centre of mass / m",
+   "value": 0.0,
+   "limit": 2e-06,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "payload: inertia tensor, relative error",
+   "value": 3.0817039422446266e-07,
+   "limit": 5e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "gravity / m s-2",
+   "value": 4.196166987213701e-07,
+   "limit": 1e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "roller hulls: authored points left outside the hull PhysX cooked / m",
+   "value": 3.552713678800501e-18,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 0: configuration round trip",
+   "value": 1.5874782899327755e-07,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 0: velocity round trip",
+   "value": 0.0,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 0: link positions against the compiled kinematics / m",
+   "value": 5.300633338683069e-07,
+   "limit": 5e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 0: link orientations against the compiled kinematics / rad",
+   "value": 4.6217627582761526e-07,
+   "limit": 0.0002,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 0: free-flight forward dynamics, floating coordinates",
+   "value": 2.0241502847077743e-05,
+   "limit": 0.02,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 0: free-flight forward dynamics, joints",
+   "value": 2.9541880277994327e-05,
+   "limit": 0.02,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 0: step displacement against the reported rates, floating coordinates / m, rad",
+   "value": 1.7523992230963057e-07,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 0: step displacement against the reported rates, joints / rad, m",
+   "value": 5.89974224567396e-08,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 0: no contact while lifted",
+   "value": 0.0,
+   "limit": 0.0,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 1: configuration round trip",
+   "value": 2.3755659839252985e-07,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 1: velocity round trip",
+   "value": 0.0,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 1: link positions against the compiled kinematics / m",
+   "value": 7.27185067525019e-07,
+   "limit": 5e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 1: link orientations against the compiled kinematics / rad",
+   "value": 3.763833922241677e-07,
+   "limit": 0.0002,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 1: free-flight forward dynamics, floating coordinates",
+   "value": 1.7268793244220663e-05,
+   "limit": 0.02,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 1: free-flight forward dynamics, joints",
+   "value": 3.075356343244131e-05,
+   "limit": 0.02,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 1: step displacement against the reported rates, floating coordinates / m, rad",
+   "value": 4.946562692961958e-07,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 1: step displacement against the reported rates, joints / rad, m",
+   "value": 1.0785087943077096e-07,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 1: no contact while lifted",
+   "value": 0.0,
+   "limit": 0.0,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 2: configuration round trip",
+   "value": 1.2802964421965157e-07,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 2: velocity round trip",
+   "value": 0.0,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 2: link positions against the compiled kinematics / m",
+   "value": 1.0189859043217163e-06,
+   "limit": 5e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 2: link orientations against the compiled kinematics / rad",
+   "value": 5.634924888965275e-07,
+   "limit": 0.0002,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 2: free-flight forward dynamics, floating coordinates",
+   "value": 3.8324176156255924e-05,
+   "limit": 0.02,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 2: free-flight forward dynamics, joints",
+   "value": 3.077708351237113e-05,
+   "limit": 0.02,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 2: step displacement against the reported rates, floating coordinates / m, rad",
+   "value": 1.7295151617407095e-07,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 2: step displacement against the reported rates, joints / rad, m",
+   "value": 5.739927291869911e-08,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 2: no contact while lifted",
+   "value": 0.0,
+   "limit": 0.0,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 3: configuration round trip",
+   "value": 5.722045894884786e-07,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 3: velocity round trip",
+   "value": 1.4235789713712421e-08,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 3: link positions against the compiled kinematics / m",
+   "value": 6.557999942748322e-07,
+   "limit": 5e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 3: link orientations against the compiled kinematics / rad",
+   "value": 5.446573162823108e-07,
+   "limit": 0.0002,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 3: free-flight forward dynamics, floating coordinates",
+   "value": 0.00016311320814838004,
+   "limit": 0.02,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 3: free-flight forward dynamics, joints",
+   "value": 3.2056421265681795e-05,
+   "limit": 0.02,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 3: step displacement against the reported rates, floating coordinates / m, rad",
+   "value": 7.06160432793003e-07,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 3: step displacement against the reported rates, joints / rad, m",
+   "value": 7.769465446472081e-08,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 3: no contact while lifted",
+   "value": 0.0,
+   "limit": 0.0,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 4: configuration round trip",
+   "value": 3.5133361819816855e-07,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 4: velocity round trip",
+   "value": 1.0168376397834411e-08,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 4: link positions against the compiled kinematics / m",
+   "value": 1.2110321554606517e-06,
+   "limit": 5e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 4: link orientations against the compiled kinematics / rad",
+   "value": 6.546343158629294e-07,
+   "limit": 0.0002,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 4: the same state again for the loaded step",
+   "value": 0.0,
+   "limit": 1e-06,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 4: free-flight forward dynamics with an external load, floating coordinates",
+   "value": 0.00023891175773051534,
+   "limit": 0.02,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 4: free-flight forward dynamics with an external load, joints",
+   "value": 2.5157745103943378e-05,
+   "limit": 0.02,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 4: effect of external forces on the accelerations (with minus without), floating coordinates",
+   "value": 0.00023891433621140457,
+   "limit": 0.03,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 4: effect of external forces on the accelerations (with minus without), joints",
+   "value": 3.7920426751572624e-06,
+   "limit": 0.03,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 4: the external forces do not act in the following step, floating coordinates (share of their effect left)",
+   "value": 0.00023863737141779695,
+   "limit": 0.3,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 4: the external forces do not act in the following step, joints (share of their effect left)",
+   "value": 0.00011180209931153118,
+   "limit": 0.3,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 4: step displacement against the reported rates, floating coordinates / m, rad",
+   "value": 2.8447390206464112e-06,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 4: step displacement against the reported rates, joints / rad, m",
+   "value": 4.705786705016266e-08,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 4: no contact while lifted",
+   "value": 0.0,
+   "limit": 0.0,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 5: configuration round trip",
+   "value": 1.1291503909660605e-07,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 5: velocity round trip",
+   "value": 1.416334113879536e-08,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 5: link positions against the compiled kinematics / m",
+   "value": 6.441278666765512e-07,
+   "limit": 5e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 5: link orientations against the compiled kinematics / rad",
+   "value": 5.709303635557972e-07,
+   "limit": 0.0002,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 5: the same state again for the loaded step",
+   "value": 0.0,
+   "limit": 1e-06,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 5: free-flight forward dynamics with an external load, floating coordinates",
+   "value": 1.5164068251933411e-05,
+   "limit": 0.02,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 5: free-flight forward dynamics with an external load, joints",
+   "value": 2.9726530855094962e-05,
+   "limit": 0.02,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 5: effect of external moments on the accelerations (with minus without), floating coordinates",
+   "value": 1.7305668060314733e-06,
+   "limit": 0.03,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 5: effect of external moments on the accelerations (with minus without), joints",
+   "value": 9.248264877510776e-07,
+   "limit": 0.03,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 5: the external moments do not act in the following step, floating coordinates (share of their effect left)",
+   "value": 1.5906744793999596e-05,
+   "limit": 0.3,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 5: the external moments do not act in the following step, joints (share of their effect left)",
+   "value": 0.0004298281385591969,
+   "limit": 0.3,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 5: step displacement against the reported rates, floating coordinates / m, rad",
+   "value": 9.879688781284793e-07,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 5: step displacement against the reported rates, joints / rad, m",
+   "value": 4.1186809539729e-08,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 5: no contact while lifted",
+   "value": 0.0,
+   "limit": 0.0,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 6: configuration round trip",
+   "value": 5.722045894884786e-07,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 6: velocity round trip",
+   "value": 3.717738039643592e-08,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 6: link positions against the compiled kinematics / m",
+   "value": 1.2500387449002438e-06,
+   "limit": 5e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 6: link orientations against the compiled kinematics / rad",
+   "value": 3.908537938774849e-07,
+   "limit": 0.0002,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 6: step displacement against the reported rates, floating coordinates / m, rad",
+   "value": 1.1747036685125635e-06,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 6: step displacement against the reported rates, joints / rad, m",
+   "value": 4.619359970096026e-08,
+   "limit": 2e-05,
+   "relation": "<=",
+   "passed": true
+  },
+  {
+   "name": "sample 6: no contact while lifted",
+   "value": 0.0,
+   "limit": 0.0,
+   "relation": "<=",
+   "passed": true
+  }
+ ],
+ "details": {
+  "unavailable": [],
+  "samples": [
+   {
+    "sample": 0,
+    "dt_s": 0.002,
+    "external_load": null,
+    "purpose": "dynamics",
+    "floating coordinates": {
+     "relative_error": 2.0241502847077743e-05,
+     "expected": [
+      -0.07735557952356648,
+      0.21905486659033588,
+      -9.719634614519592,
+      2.1451219827297763,
+      -1.6706708572047957,
+      3.857668083902392,
+      -0.4126675761403227,
+      -0.2958226562062467,
+      -9.91022164297281,
+      -0.36031060073842697,
+      2.3973481340856124,
+      -7.691446964879724,
+      3.3291905057874077e-28,
+      -2.5362040419914233e-32,
+      -9.81,
+      -1.2340211188824824e-16,
+      2.2611037137700983e-16,
+      2.8153584263840522e-12
+     ],
+     "measured": [
+      -0.07734690227603895,
+      0.21905253754901763,
+      -9.719620315092243,
+      2.145153243228648,
+      -1.6709212869412406,
+      3.8574624210570527,
+      -0.4126708281727799,
+      -0.29582696599279235,
+      -9.910165696912825,
+      -0.3603612925134929,
+      2.3971672274180897,
+      -7.691544662714728,
+      0.0,
+      0.0,
+      -9.810000658035278,
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "joints": {
+     "relative_error": 2.9541880277994327e-05,
+     "expected": [
+      -15.035487623146532,
+      5.242671181316221,
+      5.729884125867416,
+      -0.5164286190911395,
+      -8.717332439172262,
+      -87.95560480402597,
+      -3.6258042113252036,
+      90.76704340624023,
+      62.005807190098075,
+      -81.35704029427774,
+      19.448905126279048,
+      4.752459049325323,
+      -18.0775260459488,
+      -1.6392629039672657,
+      3.240621693039676,
+      -22.31288122058751,
+      17.1412448358094,
+      7.716737366719736,
+      -1.8547311343708508,
+      -113.04279200062655,
+      -13.036588700675821,
+      48.78985709806391
+     ],
+     "measured": [
+      -15.03547839820385,
+      5.242665763944387,
+      5.729883909225464,
+      -0.516433035954833,
+      -8.717331103980541,
+      -87.95560896396637,
+      -3.625802928581834,
+      90.77003598213196,
+      62.007829546928406,
+      -81.35984092950821,
+      19.449494779109955,
+      4.75245900452137,
+      -18.07752065360546,
+      -1.6392598627135158,
+      3.2406230457127094,
+      -22.31287956237793,
+      17.14124344289303,
+      7.7167353592813015,
+      -1.854713074862957,
+      -113.04651200771332,
+      -13.036946766078472,
+      48.79157990217209
+     ]
+    },
+    "step_displacement_gap": {
+     "floating": 1.7523992230963057e-07,
+     "joints": 5.89974224567396e-08
+    }
+   },
+   {
+    "sample": 1,
+    "dt_s": 0.002,
+    "external_load": null,
+    "purpose": "dynamics",
+    "floating coordinates": {
+     "relative_error": 1.7268793244220663e-05,
+     "expected": [
+      0.0759279414108987,
+      -0.18048789886212557,
+      -9.770727836967385,
+      -0.2824312781851516,
+      1.1397259213597892,
+      -3.2471966247657047,
+      -0.023011172697005044,
+      0.08072304366634753,
+      -9.60100734094906,
+      -1.9809825411585817,
+      2.0448255475815635,
+      -1.6856960895983661,
+      0.0,
+      0.0,
+      -9.81,
+      -6.57417939552851e-17,
+      -2.6515252917732238e-17,
+      -7.312899837011238e-18
+     ],
+     "measured": [
+      0.07592762301079523,
+      -0.18048902779939138,
+      -9.770706965390794,
+      -0.2824411054323413,
+      1.139676059520781,
+      -3.247204111354066,
+      -0.023026504835325555,
+      0.08070922601408995,
+      -9.60101481876508,
+      -1.9809775937857208,
+      2.0447298238205933,
+      -1.6859767049203034,
+      0.0,
+      0.0,
+      -9.810000658035278,
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "joints": {
+     "relative_error": 3.075356343244131e-05,
+     "expected": [
+      2.720327288559432,
+      -8.560642690601549,
+      2.839074249572197,
+      4.047875560752194,
+      -3.5538113250774117,
+      81.82630157213252,
+      3.28927252209956,
+      3.0825912753201012,
+      100.86892675743877,
+      -138.49033261160454,
+      90.22819138290589,
+      10.73568794728773,
+      -5.337447201763423,
+      7.642013764136066,
+      22.112904607003664,
+      57.472635142836545,
+      -44.45922496591195,
+      1.6413497439527203,
+      123.37559222895048,
+      -63.52580267926278,
+      45.39457210279701,
+      -72.24012162947133
+     ],
+     "measured": [
+      2.720335265621543,
+      -8.560649119317532,
+      2.839077031239867,
+      4.047886934131384,
+      -3.5538042429834604,
+      81.82630687952042,
+      3.2892744056880474,
+      3.0827310401946306,
+      100.87235271930695,
+      -138.49493861198425,
+      90.2312621474266,
+      10.735689662396908,
+      -5.3374553099274635,
+      7.642014417797327,
+      22.112861275672913,
+      57.47261643409729,
+      -44.45923864841461,
+      1.6413540579378605,
+      123.37981164455414,
+      -63.527874648571014,
+      45.396171510219574,
+      -72.24249094724655
+     ]
+    },
+    "step_displacement_gap": {
+     "floating": 4.946562692961958e-07,
+     "joints": 1.0785087943077096e-07
+    }
+   },
+   {
+    "sample": 2,
+    "dt_s": 0.002,
+    "external_load": null,
+    "purpose": "dynamics",
+    "floating coordinates": {
+     "relative_error": 3.8324176156255924e-05,
+     "expected": [
+      -0.021054032235912686,
+      0.1957972346761347,
+      -9.695050203977958,
+      2.25235337177219,
+      -3.2230382575572545,
+      3.6222198534460315,
+      -0.107381004273515,
+      0.015669433607480923,
+      -9.612723610811178,
+      -1.067396702246206,
+      1.1855993696206095,
+      -3.1162731794107854,
+      -1.2099384082993738e-28,
+      5.533219450385741e-27,
+      -9.81,
+      -7.118271693077034e-16,
+      2.9218825729813147e-16,
+      9.08313413734734e-12
+     ],
+     "measured": [
+      -0.0210295105267045,
+      0.19578105986165656,
+      -9.695045978803725,
+      2.2523637921681017,
+      -3.2233072174648147,
+      3.6216508128798184,
+      -0.1073829920010035,
+      0.015651400501375624,
+      -9.612714574569763,
+      -1.0673268047574185,
+      1.1853735739024704,
+      -3.1164206755341066,
+      0.0,
+      0.0,
+      -9.810000658035278,
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "joints": {
+     "relative_error": 3.077708351237113e-05,
+     "expected": [
+      -18.538971589885954,
+      4.50739215180959,
+      10.038942222451777,
+      -50.66555440222355,
+      -23.191548744807697,
+      27.770195686976084,
+      -3.5943696227946726,
+      31.215668617884592,
+      -36.002727624789564,
+      96.6432367360853,
+      -132.36113596217112,
+      9.134963822430233,
+      -8.77356866138426,
+      9.08830926388874,
+      1.781260656188915,
+      -59.28579418359708,
+      30.112916376354722,
+      3.239994359370764,
+      -75.50008761306161,
+      -64.72160823073663,
+      85.56866271588824,
+      -12.31630805635798
+     ],
+     "measured": [
+      -18.538976088166237,
+      4.507402889430523,
+      10.038940235972404,
+      -50.665564835071564,
+      -23.191533982753754,
+      27.770206332206726,
+      -3.5943712573498487,
+      31.21662139892578,
+      -36.00403666496277,
+      96.64637595415115,
+      -132.36568868160248,
+      9.134963154792786,
+      -8.77357367426157,
+      9.088309481739998,
+      1.781267230398953,
+      -59.28583815693855,
+      30.112912878394127,
+      3.2399934716522694,
+      -75.50258189439774,
+      -64.72374498844147,
+      85.57157218456268,
+      -12.31667771935463
+     ]
+    },
+    "step_displacement_gap": {
+     "floating": 1.7295151617407095e-07,
+     "joints": 5.739927291869911e-08
+    }
+   },
+   {
+    "sample": 3,
+    "dt_s": 0.002,
+    "external_load": null,
+    "purpose": "dynamics",
+    "floating coordinates": {
+     "relative_error": 0.00016311320814838004,
+     "expected": [
+      0.20973060736960183,
+      -0.11963703523481546,
+      -9.897563452110369,
+      3.0166425374363848,
+      -0.6484954791600211,
+      -0.7608327260684558,
+      -0.02369550356860914,
+      0.006351846036943308,
+      -9.822634393050956,
+      -0.5641215450319275,
+      0.36510145497368535,
+      -0.5915708419067544,
+      -1.5668247669127182e-17,
+      1.9278292684087223e-17,
+      -9.81,
+      -1.1723465264463304e-06,
+      -3.489295768927954e-06,
+      0.004492647270154834
+     ],
+     "measured": [
+      0.2099707175386295,
+      -0.11902861933558995,
+      -9.897635161049571,
+      3.0180482523163574,
+      -0.6489829355679627,
+      -0.7585368373890095,
+      -0.02373626406838858,
+      0.006425657267945806,
+      -9.822572753495198,
+      -0.5641045431781476,
+      0.36520122961020485,
+      -0.591864876684875,
+      0.0,
+      0.0,
+      -9.810000658035278,
+      -1.8690670903348527e-06,
+      -6.275107690412174e-06,
+      0.004503852855428092
+     ]
+    },
+    "joints": {
+     "relative_error": 3.2056421265681795e-05,
+     "expected": [
+      -25.845081472712685,
+      -4.976430091062332,
+      -8.807749086175926,
+      49.47111228026923,
+      16.308875991579917,
+      44.81260549987951,
+      1.0322400717985554,
+      -127.92986481694061,
+      112.34956499538002,
+      16.44331282642768,
+      -109.38977919443674,
+      4.279478256693689,
+      0.3958008055178587,
+      -4.6106269197350365,
+      36.85345960706295,
+      -2.818408416596783,
+      13.138775461725315,
+      0.7855751459771028,
+      -123.69699744846822,
+      -28.49067901864266,
+      -76.33832579626686,
+      91.41707166510733
+     ],
+     "measured": [
+      -25.845075026154518,
+      -4.976414144039154,
+      -8.807747159153223,
+      49.47109520435333,
+      16.308870166540146,
+      44.812608510255814,
+      1.0322388261556625,
+      -127.93418765068054,
+      112.35333979129791,
+      16.443848609924316,
+      -109.39346998929977,
+      4.279471933841705,
+      0.39581209421157837,
+      -4.610629752278328,
+      36.85343638062477,
+      -2.818422392010689,
+      13.138778507709503,
+      0.7855705916881561,
+      -123.70113283395767,
+      -28.49161997437477,
+      -76.34087279438972,
+      91.42014477401972
+     ]
+    },
+    "step_displacement_gap": {
+     "floating": 7.06160432793003e-07,
+     "joints": 7.769465446472081e-08
+    }
+   },
+   {
+    "sample": 4,
+    "dt_s": 0.002,
+    "external_load": "forces",
+    "purpose": "dynamics",
+    "floating coordinates": {
+     "relative_error": 0.00023891175773051534,
+     "expected": [
+      -0.07300808204069624,
+      -0.042043577571565176,
+      -9.743299007610647,
+      -2.576172393241383,
+      1.9374576260790903,
+      -1.7430002000711098,
+      -0.15339241814159563,
+      -0.1669554885517859,
+      -9.616998451878562,
+      2.104587919593303,
+      0.01835791943570648,
+      -2.6990679170358245,
+      -0.3066573568859816,
+      -3.4232131571706477,
+      -13.365591947546218,
+      0.07939567027361939,
+      0.6745370443805552,
+      5514.423988797643
+     ],
+     "measured": [
+      -0.07306457287717394,
+      -0.04206707479958299,
+      -9.743456387667777,
+      -2.5747443222737325,
+      1.9375747904324392,
+      -1.7413906454798387,
+      -0.153420091461208,
+      -0.16672784898627557,
+      -9.616964291847669,
+      2.105497722163785,
+      0.017313306399105444,
+      -2.6998383159155015,
+      -0.3066565841436386,
+      -3.4232130274176598,
+      -13.365589082241058,
+      0.0789368615982805,
+      0.6762066757375895,
+      5513.106523213121
+     ]
+    },
+    "joints": {
+     "relative_error": 2.5157745103943378e-05,
+     "expected": [
+      16.26477308131425,
+      -1.8931389240131942,
+      -3.030166712338602,
+      30.646964965362557,
+      -72.82998314254333,
+      83.53481724494867,
+      1.5215105211360622,
+      -5.840521117148857,
+      -56.969227919770816,
+      -98.44558696717957,
+      25.003267790723935,
+      -16.108216130526028,
+      -12.924204676416302,
+      6.939633285800545,
+      -25.901573586013413,
+      52.06191308802147,
+      -74.92447157748782,
+      3.025939511684966,
+      -84.85448199701338,
+      -6.84949333107225,
+      35.719337042225355,
+      89.58735180653765
+     ],
+     "measured": [
+      16.26475900411606,
+      -1.893138512969017,
+      -3.0301581136882305,
+      30.646979808807373,
+      -72.82989472150803,
+      83.53491872549057,
+      1.5215054154396057,
+      -5.840647965669632,
+      -56.971076875925064,
+      -98.44883531332016,
+      25.004174560308456,
+      -16.10821858048439,
+      -12.924202717840672,
+      6.939632818102837,
+      -25.901563465595245,
+      52.062032744288445,
+      -74.92446899414062,
+      3.025941550731659,
+      -84.85733903944492,
+      -6.8497247993946075,
+      35.72054207324982,
+      89.59037065505981
+     ]
+    },
+    "external_load_effect": {
+     "floating coordinates": {
+      "relative_error": 0.00023891433621140457,
+      "size": 5514.402639881159,
+      "left_in_following_step": 0.00023863737141779695
+     },
+     "joints": {
+      "relative_error": 3.7920426751572624e-06,
+      "size": 50.854644173573334,
+      "left_in_following_step": 0.00011180209931153118
+     }
+    },
+    "step_displacement_gap": {
+     "floating": 2.8447390206464112e-06,
+     "joints": 4.705786705016266e-08
+    }
+   },
+   {
+    "sample": 5,
+    "dt_s": 0.002,
+    "external_load": "moments",
+    "purpose": "dynamics",
+    "floating coordinates": {
+     "relative_error": 1.5164068251933411e-05,
+     "expected": [
+      0.15406342060682757,
+      -0.2783018066852837,
+      -9.663821893742341,
+      -1.7486704626639442,
+      2.9957749907785414,
+      -6.17119526210267,
+      0.36420736487668715,
+      0.25313486695710874,
+      -9.811802014182865,
+      1.1038196828114901,
+      -2.4715827595957958,
+      6.725176595413446,
+      9.197842736997905e-15,
+      7.902817676007018e-14,
+      -9.81,
+      -0.0052114958608478305,
+      0.12857123415380597,
+      -129.7214689758059
+     ],
+     "measured": [
+      0.1541287500334554,
+      -0.2783770232658092,
+      -9.663522381339389,
+      -1.7485576333693513,
+      2.9956291762182854,
+      -6.1711813481082345,
+      0.36412713220690396,
+      0.253058324835069,
+      -9.811965218122376,
+      1.1056326663699025,
+      -2.471249057185848,
+      6.725797981748202,
+      0.0,
+      0.0,
+      -9.810000658035278,
+      -0.005198513006093863,
+      0.12854373003916286,
+      -129.72143960931
+     ]
+    },
+    "joints": {
+     "relative_error": 2.9726530855094962e-05,
+     "expected": [
+      12.400934302374173,
+      -17.219542448881104,
+      12.385602880486129,
+      -42.11313305015533,
+      4.914288672452962,
+      -87.99250062950664,
+      6.388526381261366,
+      -42.507790205149895,
+      -140.40192934107858,
+      -110.51676936296238,
+      124.81922270314877,
+      -8.965106265030617,
+      16.367156275624392,
+      -0.8164967845028581,
+      17.199325416128076,
+      55.11667124746675,
+      93.40112913447615,
+      -7.008445280105004,
+      -37.886883319649385,
+      -57.72581746995765,
+      -74.30929598315501,
+      -138.0340241994054
+     ],
+     "measured": [
+      12.400928884744644,
+      -17.21954345703125,
+      12.385607231408358,
+      -42.1131425537169,
+      4.914276301860809,
+      -87.99251168966293,
+      6.388522684574127,
+      -42.50912182033062,
+      -140.40655549615622,
+      -110.520378802903,
+      124.82353299856186,
+      -8.965123444795609,
+      16.36718213558197,
+      -0.8165072649717331,
+      17.199311405420303,
+      55.116645991802216,
+      93.40115636587143,
+      -7.008455693721771,
+      -37.888236343860626,
+      -57.727836072444916,
+      -74.31186269968748,
+      -138.0387395620346
+     ]
+    },
+    "external_load_effect": {
+     "floating coordinates": {
+      "relative_error": 1.7305668060314733e-06,
+      "size": 129.73830125008493,
+      "left_in_following_step": 1.5906744793999596e-05
+     },
+     "joints": {
+      "relative_error": 9.248264877510776e-07,
+      "size": 21.66386234127756,
+      "left_in_following_step": 0.0004298281385591969
+     }
+    },
+    "step_displacement_gap": {
+     "floating": 9.879688781284793e-07,
+     "joints": 4.1186809539729e-08
+    }
+   },
+   {
+    "sample": 6,
+    "dt_s": 0.002,
+    "external_load": null,
+    "purpose": "velocity conventions",
+    "step_displacement_gap": {
+     "floating": 1.1747036685125635e-06,
+     "joints": 4.619359970096026e-08
+    }
+   }
+  ],
+  "load": {
+   "force_N": 28.333333333333332,
+   "moment_Nm": 1.7777777777777777
+  },
+  "cooked_hulls": [
+   {
+    "path": "/World/r1/r1_front_left_wheel_link_roller_0/hull_00",
+    "authored_vertices": 60,
+    "cooked_vertices": 60,
+    "unit_factor": 1.0,
+    "authored_point_outside_cooked_hull_m": 3.552713678800501e-18
+   },
+   {
+    "path": "/World/r1/r1_front_left_wheel_link_roller_0/hull_10",
+    "authored_vertices": 60,
+    "cooked_vertices": 60,
+    "unit_factor": 1.0,
+    "authored_point_outside_cooked_hull_m": 1.7763568394002505e-18
+   },
+   {
+    "path": "/World/r1/r1_front_left_wheel_link_roller_0/hull_19",
+    "authored_vertices": 60,
+    "cooked_vertices": 60,
+    "unit_factor": 1.0,
+    "authored_point_outside_cooked_hull_m": 3.552713678800501e-18
+   }
+  ],
+  "sensor_reference": {
+   "r1": {
+    "available": true,
+    "steps": 11,
+    "native_sign": 1,
+    "moment_rms_Nm": 0.00036575458672340167,
+    "force_rms_N": 0.0045644067342262345,
+    "sensor_moment_rms_Nm": 1.1648777699778483,
+    "sensor_force_rms_N": 12.30547071928347
+   },
+   "r2": {
+    "available": true,
+    "steps": 11,
+    "native_sign": 1,
+    "moment_rms_Nm": 0.0009340180741307783,
+    "force_rms_N": 0.007878605518840414,
+    "sensor_moment_rms_Nm": 1.140429161003965,
+    "sensor_force_rms_N": 13.435587643791601
+   }
+  },
+  "cart": {
+   "mode": "kinematic_targets",
+   "error_m": 2.2919206676304392e-07,
+   "follows": true
+  },
+  "state_writes": 22
+ },
+ "scope": "PhysX property readback, kinematics, velocity conventions and free-flight forward dynamics against the compiled graph; no contact, clamp or sensor behaviour is checked here",
+ "run_id": "20261015T062654Z_676d9e89",
+ "team": "ridgeback2",
+ "generated_utc": "2026-10-15T06:27:40.512325+00:00"
+}

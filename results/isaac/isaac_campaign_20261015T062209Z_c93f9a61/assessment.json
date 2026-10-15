@@ -1,0 +1,1972 @@
+{
+ "schema_version": 1,
+ "inputs": [
+  "isaac_campaign_20261015T062209Z_c93f9a61"
+ ],
+ "campaigns": [
+  {
+   "campaign_id": "20261015T062209Z_c93f9a61",
+   "status": "passed",
+   "started_utc": "2026-10-15T06:22:09.282516+00:00",
+   "finished_utc": "2026-10-15T11:33:43.719641+00:00",
+   "options": {
+    "worker_arguments": []
+   }
+  }
+ ],
+ "environment": [
+  {
+   "folder": "environment",
+   "status": "passed",
+   "engine_kind": "isaac",
+   "engine": "Isaac Sim 6.1.0.0, Kit 110.3.0+feature.371399.00c488ae.gl, omni.physx-110.3.2",
+   "versions": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "isaacsim": "6.1.0.0",
+    "isaacsim-kernel": "6.1.0.0",
+    "numpy": "2.3.1",
+    "scipy": "1.17.0",
+    "isaac_version": [
+     "6.1.0",
+     "rc.26",
+     "6",
+     "1",
+     "0",
+     "rc",
+     "26",
+     "release.49347.2d230af4.gl"
+    ],
+    "kit_version": "110.3.0+feature.371399.00c488ae.gl",
+    "physx_extension": "omni.physx-110.3.2",
+    "tensors_extension": "omni.physics.tensors-110.3.2",
+    "physx_tensors_extension": "omni.physx.tensors-110.3.2"
+   },
+   "missing_required": [],
+   "missing_optional": [],
+   "notes": []
+  }
+ ],
+ "teams": {
+  "team2": {
+   "team": "team2",
+   "platform": "RB-ROBOUT+ / UR30",
+   "folder": "team2",
+   "run_id": "20261015T062232Z_d018266f",
+   "manifest_status": "passed",
+   "stages": {
+    "selftest": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1
+    },
+    "preflight": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1
+    },
+    "settle": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 24.840427599963732,
+     "simulated_s": 3.0,
+     "mission_status": "running"
+    },
+    "carry": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 123.06197330006398,
+     "simulated_s": 14.0,
+     "mission_status": "running"
+    },
+    "mission": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 2135.9670823999913,
+     "simulated_s": 251.022,
+     "mission_status": "complete"
+    }
+   },
+   "problems": [],
+   "notes": [],
+   "engine_kind": "isaac",
+   "engine": "Isaac Sim 6.1.0.0, Kit 110.3.0+feature.371399.00c488ae.gl, omni.physx-110.3.2",
+   "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.1",
+    "scipy": "1.17.0",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "isaacsim": "6.1.0.0",
+    "isaac_version": [
+     "6.1.0",
+     "rc.26",
+     "6",
+     "1",
+     "0",
+     "rc",
+     "26",
+     "release.49347.2d230af4.gl"
+    ],
+    "kit_version": "110.3.0+feature.371399.00c488ae.gl",
+    "physx_extension": "omni.physx-110.3.2",
+    "tensors_extension": "omni.physics.tensors-110.3.2",
+    "physx_tensors_extension": "omni.physx.tensors-110.3.2"
+   },
+   "settings": {
+    "dt": 0.002,
+    "solver": "PGS",
+    "position_iterations": 64,
+    "velocity_iterations": 8,
+    "contact": "auto",
+    "roller_hull": [
+     21,
+     30
+    ],
+    "clamp": null,
+    "headless": true,
+    "physx_threads": null,
+    "contact_used": "rigid"
+   },
+   "contact_used": "rigid",
+   "tyres": false,
+   "physics_runtime": {
+    "engine": "physx",
+    "tensor_route": "omni.physics.tensors.create_simulation_view(numpy, explicit stage id)",
+    "device": "cpu"
+   },
+   "source_identical": true,
+   "preflight": {
+    "checks": 94,
+    "passed": 94,
+    "failed": [],
+    "unavailable": [],
+    "load": {
+     "force_N": 150.0,
+     "moment_Nm": 8.0
+    },
+    "cooked_hull_vertices": [
+     [
+      60,
+      60
+     ]
+    ],
+    "worst": {
+     "link masses": {
+      "value": 8.443991339479595e-08,
+      "limit": 2e-06,
+      "checks": 2
+     },
+     "link centres of mass": {
+      "value": 4.076957715870577e-09,
+      "limit": 2e-06,
+      "checks": 2
+     },
+     "link inertia tensors": {
+      "value": 2.9971914740469245e-07,
+      "limit": 5e-05,
+      "checks": 2
+     },
+     "joint armature": {
+      "value": 4.768371586472142e-08,
+      "limit": 1e-06,
+      "checks": 2
+     },
+     "joint limits": {
+      "value": 1.7484556025237907e-07,
+      "limit": 5e-06,
+      "checks": 2
+     },
+     "payload: inertia": {
+      "value": 2.383758873598624e-07,
+      "limit": 5e-05,
+      "checks": 1
+     },
+     "gravity": {
+      "value": 4.196166987213701e-07,
+      "limit": 1e-05,
+      "checks": 1
+     },
+     "roller hulls": {
+      "value": 3.552713678800501e-18,
+      "limit": 2e-05,
+      "checks": 1
+     },
+     "configuration round trip": {
+      "value": 3.3187866232964325e-07,
+      "limit": 2e-05,
+      "checks": 7
+     },
+     "velocity round trip": {
+      "value": 4.8488861814632855e-08,
+      "limit": 2e-05,
+      "checks": 7
+     },
+     "link positions against": {
+      "value": 1.4384269132829354e-06,
+      "limit": 5e-05,
+      "checks": 7
+     },
+     "link orientations against": {
+      "value": 7.612728938129609e-07,
+      "limit": 0.0002,
+      "checks": 7
+     },
+     "free-flight forward dynamics": {
+      "value": 0.0010522035765248323,
+      "limit": 0.02,
+      "checks": 12
+     },
+     "effect of external": {
+      "value": 0.001052204741524399,
+      "limit": 0.03,
+      "checks": 4
+     },
+     "do not act in the following step": {
+      "value": 0.0012500715633929137,
+      "limit": 0.3,
+      "checks": 4
+     },
+     "step displacement against": {
+      "value": 4.558437270235235e-06,
+      "limit": 2e-05,
+      "checks": 14
+     }
+    },
+    "worst_standin": null
+   },
+   "mission": {
+    "status": "complete",
+    "unmet_bounds": [],
+    "saturated_steps": 0,
+    "steps": 125511,
+    "clamp_stability_ratio": 0.3215741081460076,
+    "clamp_max_deflection_mm": 1.2343291855899317,
+    "tyre_stability_ratio": null,
+    "contact_report": {
+     "callbacks": 125511,
+     "points": 38415457,
+     "wheels_in_contact": 8,
+     "pads_in_contact": 4,
+     "wheel_collider": true,
+     "clamp_contact_steps_unsigned": 0,
+     "friction_reported": true,
+     "friction_note": null,
+     "impulse_on_first_collider": 1.0
+    },
+    "supports_accepted": true,
+    "sensor_balance_vs_physx_joint_force": {
+     "force_rms_N": 0.008797777139277653,
+     "of_N": 202.54822118555563,
+     "native_sign": [
+      1
+     ]
+    },
+    "bounds": {
+     "grasp_force": {
+      "value": 227.35463404970758,
+      "bound": 450.0,
+      "ok": true
+     },
+     "grasp_moment": {
+      "value": 1.746327446844182,
+      "bound": 45.0,
+      "ok": true
+     },
+     "effort_ratio": {
+      "value": 0.6411020749333358,
+      "bound": 0.9,
+      "ok": true
+     },
+     "traction": {
+      "value": 0.2722439205136518,
+      "bound": 0.6,
+      "ok": true
+     },
+     "tipping": {
+      "value": 0.1850608402353959,
+      "bound": 0.1,
+      "ok": true
+     },
+     "wheel_load": {
+      "value": 398.7585729041167,
+      "bound": 150.0,
+      "ok": true
+     },
+     "clearance": {
+      "value": 0.043991360104042254,
+      "bound": 0.02,
+      "ok": true
+     },
+     "payload_tilt": {
+      "value": 0.0009147108349557213,
+      "bound": 0.012,
+      "ok": true
+     },
+     "payload_position": {
+      "value": 0.0015827189032571755,
+      "bound": 0.02,
+      "ok": true
+     },
+     "no_forbidden_contact": {
+      "value": 0,
+      "bound": 0,
+      "ok": true
+     },
+     "mission_complete": {
+      "value": "complete",
+      "bound": "complete",
+      "ok": true
+     },
+     "supports_verified": {
+      "value": true,
+      "bound": true,
+      "ok": true
+     }
+    },
+    "all_bounds_met": true,
+    "metrics": {
+     "sim_time_s": 251.022,
+     "payload_position_error_mm": 1.5827189032571756,
+     "payload_tilt_mrad": 0.9147108349557214,
+     "internal_force_max_N": 12.682567844867581,
+     "internal_force_rms_N": 2.7757764567128502,
+     "grasp_force_max_N": 227.35463404970758,
+     "grasp_moment_max_Nm": 1.746327446844182,
+     "effort_ratio_max": 0.6411020749333358,
+     "min_wheel_load_N": 398.7585729041167,
+     "traction_use_max": 0.2722439205136518,
+     "tipping_margin_min_m": 0.1850608402353959,
+     "base_tracking_max_mm": 33.60875028009523,
+     "base_yaw_error_max_mrad": 7.440825831055875,
+     "clearance_min_m": 0.043991360104042254,
+     "placement_error_mm": 0.16180850995367496,
+     "consistency": {
+      "unbalanced_rms": 9.316972594265781,
+      "payload_balance_rms_N": 1.1884518666822375,
+      "recovered_force_rms_N": 0.8251665548590462,
+      "recovered_moment_rms_Nm": 0.43904751351045834,
+      "normal_load_rms_N": 0.48535925059601254,
+      "integration_um": 54.43314340739306
+     }
+    },
+    "plant_engine": "Isaac Sim / PhysX",
+    "references": {
+     "standin": null,
+     "mujoco_compliant": null,
+     "mujoco": null,
+     "pinocchio": null
+    },
+    "contact": "rigid",
+    "standin_contact": null,
+    "standin_comparable": true,
+    "differs_from_standin": []
+   },
+   "verdict": "confirmed in Isaac Sim"
+  },
+  "ridgeback2": {
+   "team": "ridgeback2",
+   "platform": "Ridgeback / UR10e",
+   "folder": "ridgeback2",
+   "run_id": "20261015T062654Z_676d9e89",
+   "manifest_status": "passed",
+   "stages": {
+    "selftest": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1
+    },
+    "preflight": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1
+    },
+    "settle": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 26.23046869994141,
+     "simulated_s": 3.0,
+     "mission_status": "running"
+    },
+    "carry": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 125.17740819999017,
+     "simulated_s": 14.0,
+     "mission_status": "running"
+    },
+    "mission": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 2396.3432440999895,
+     "simulated_s": 246.582,
+     "mission_status": "complete"
+    }
+   },
+   "problems": [],
+   "notes": [],
+   "engine_kind": "isaac",
+   "engine": "Isaac Sim 6.1.0.0, Kit 110.3.0+feature.371399.00c488ae.gl, omni.physx-110.3.2",
+   "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.1",
+    "scipy": "1.17.0",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "isaacsim": "6.1.0.0",
+    "isaac_version": [
+     "6.1.0",
+     "rc.26",
+     "6",
+     "1",
+     "0",
+     "rc",
+     "26",
+     "release.49347.2d230af4.gl"
+    ],
+    "kit_version": "110.3.0+feature.371399.00c488ae.gl",
+    "physx_extension": "omni.physx-110.3.2",
+    "tensors_extension": "omni.physics.tensors-110.3.2",
+    "physx_tensors_extension": "omni.physx.tensors-110.3.2"
+   },
+   "settings": {
+    "dt": 0.002,
+    "solver": "PGS",
+    "position_iterations": 64,
+    "velocity_iterations": 8,
+    "contact": "auto",
+    "roller_hull": [
+     21,
+     30
+    ],
+    "clamp": null,
+    "headless": true,
+    "physx_threads": null,
+    "contact_used": "rigid"
+   },
+   "contact_used": "rigid",
+   "tyres": false,
+   "physics_runtime": {
+    "engine": "physx",
+    "tensor_route": "omni.physics.tensors.create_simulation_view(numpy, explicit stage id)",
+    "device": "cpu"
+   },
+   "source_identical": true,
+   "preflight": {
+    "checks": 94,
+    "passed": 94,
+    "failed": [],
+    "unavailable": [],
+    "load": {
+     "force_N": 28.333333333333332,
+     "moment_Nm": 1.7777777777777777
+    },
+    "cooked_hull_vertices": [
+     [
+      60,
+      60
+     ]
+    ],
+    "worst": {
+     "link masses": {
+      "value": 1.0054829971123434e-07,
+      "limit": 2e-06,
+      "checks": 2
+     },
+     "link centres of mass": {
+      "value": 7.271766661043344e-09,
+      "limit": 2e-06,
+      "checks": 2
+     },
+     "link inertia tensors": {
+      "value": 4.228959615746552e-07,
+      "limit": 5e-05,
+      "checks": 2
+     },
+     "joint armature": {
+      "value": 4.768371586472142e-08,
+      "limit": 1e-06,
+      "checks": 2
+     },
+     "joint limits": {
+      "value": 1.7484556025237907e-07,
+      "limit": 5e-06,
+      "checks": 2
+     },
+     "payload: inertia": {
+      "value": 3.0817039422446266e-07,
+      "limit": 5e-05,
+      "checks": 1
+     },
+     "gravity": {
+      "value": 4.196166987213701e-07,
+      "limit": 1e-05,
+      "checks": 1
+     },
+     "roller hulls": {
+      "value": 3.552713678800501e-18,
+      "limit": 2e-05,
+      "checks": 1
+     },
+     "configuration round trip": {
+      "value": 5.722045894884786e-07,
+      "limit": 2e-05,
+      "checks": 7
+     },
+     "velocity round trip": {
+      "value": 3.717738039643592e-08,
+      "limit": 2e-05,
+      "checks": 7
+     },
+     "link positions against": {
+      "value": 1.2500387449002438e-06,
+      "limit": 5e-05,
+      "checks": 7
+     },
+     "link orientations against": {
+      "value": 6.546343158629294e-07,
+      "limit": 0.0002,
+      "checks": 7
+     },
+     "free-flight forward dynamics": {
+      "value": 0.00023891175773051534,
+      "limit": 0.02,
+      "checks": 12
+     },
+     "effect of external": {
+      "value": 0.00023891433621140457,
+      "limit": 0.03,
+      "checks": 4
+     },
+     "do not act in the following step": {
+      "value": 0.0004298281385591969,
+      "limit": 0.3,
+      "checks": 4
+     },
+     "step displacement against": {
+      "value": 2.8447390206464112e-06,
+      "limit": 2e-05,
+      "checks": 14
+     }
+    },
+    "worst_standin": null
+   },
+   "mission": {
+    "status": "complete",
+    "unmet_bounds": [],
+    "saturated_steps": 0,
+    "steps": 123291,
+    "clamp_stability_ratio": 0.3107240964417259,
+    "clamp_max_deflection_mm": 0.7746246344122288,
+    "tyre_stability_ratio": null,
+    "contact_report": {
+     "callbacks": 123291,
+     "points": 49066933,
+     "wheels_in_contact": 8,
+     "pads_in_contact": 4,
+     "wheel_collider": true,
+     "clamp_contact_steps_unsigned": 0,
+     "friction_reported": true,
+     "friction_note": null,
+     "impulse_on_first_collider": 1.0
+    },
+    "supports_accepted": true,
+    "sensor_balance_vs_physx_joint_force": {
+     "force_rms_N": 0.0033644880936681515,
+     "of_N": 57.815262157640554,
+     "native_sign": [
+      1
+     ]
+    },
+    "bounds": {
+     "grasp_force": {
+      "value": 60.186412272538384,
+      "bound": 85.0,
+      "ok": true
+     },
+     "grasp_moment": {
+      "value": 0.6161124733255968,
+      "bound": 10.0,
+      "ok": true
+     },
+     "effort_ratio": {
+      "value": 0.6825681178679165,
+      "bound": 0.9,
+      "ok": true
+     },
+     "traction": {
+      "value": 0.2594859370865424,
+      "bound": 0.6,
+      "ok": true
+     },
+     "tipping": {
+      "value": 0.07593241739054175,
+      "bound": 0.06,
+      "ok": true
+     },
+     "wheel_load": {
+      "value": 347.1899640645497,
+      "bound": 100.0,
+      "ok": true
+     },
+     "clearance": {
+      "value": 0.04999521890957042,
+      "bound": 0.02,
+      "ok": true
+     },
+     "payload_tilt": {
+      "value": 0.0011143556884361696,
+      "bound": 0.012,
+      "ok": true
+     },
+     "payload_position": {
+      "value": 0.0017096422354307874,
+      "bound": 0.02,
+      "ok": true
+     },
+     "no_forbidden_contact": {
+      "value": 0,
+      "bound": 0,
+      "ok": true
+     },
+     "mission_complete": {
+      "value": "complete",
+      "bound": "complete",
+      "ok": true
+     },
+     "supports_verified": {
+      "value": true,
+      "bound": true,
+      "ok": true
+     }
+    },
+    "all_bounds_met": true,
+    "metrics": {
+     "sim_time_s": 246.582,
+     "payload_position_error_mm": 1.7096422354307874,
+     "payload_tilt_mrad": 1.1143556884361696,
+     "internal_force_max_N": 12.994691221138641,
+     "internal_force_rms_N": 2.2764521299524154,
+     "grasp_force_max_N": 60.186412272538384,
+     "grasp_moment_max_Nm": 0.6161124733255968,
+     "effort_ratio_max": 0.6825681178679165,
+     "min_wheel_load_N": 347.1899640645497,
+     "traction_use_max": 0.2594859370865424,
+     "tipping_margin_min_m": 0.07593241739054175,
+     "base_tracking_max_mm": 30.780289436913446,
+     "base_yaw_error_max_mrad": 5.576820634991431,
+     "clearance_min_m": 0.04999521890957042,
+     "placement_error_mm": 0.09937269559137439,
+     "consistency": {
+      "unbalanced_rms": 5.554000177790279,
+      "payload_balance_rms_N": 0.45134440496861056,
+      "recovered_force_rms_N": 0.27414641618762314,
+      "recovered_moment_rms_Nm": 0.11088862795784665,
+      "normal_load_rms_N": 0.1485909134155211,
+      "integration_um": 48.193479622263595
+     }
+    },
+    "plant_engine": "Isaac Sim / PhysX",
+    "references": {
+     "standin": null,
+     "mujoco_compliant": null,
+     "mujoco": null,
+     "pinocchio": null
+    },
+    "contact": "rigid",
+    "standin_contact": null,
+    "standin_comparable": true,
+    "differs_from_standin": []
+   },
+   "verdict": "confirmed in Isaac Sim"
+  },
+  "husky2": {
+   "team": "husky2",
+   "platform": "Husky A300 / UR10e",
+   "folder": "husky2",
+   "run_id": "20261015T063124Z_4d2e8536",
+   "manifest_status": "passed",
+   "stages": {
+    "selftest": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1
+    },
+    "preflight": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1
+    },
+    "settle": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 11.282779000001028,
+     "simulated_s": 3.0,
+     "mission_status": "running"
+    },
+    "carry": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 58.55156349996105,
+     "simulated_s": 14.0,
+     "mission_status": "running"
+    },
+    "mission": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 1085.7872091999743,
+     "simulated_s": 268.652,
+     "mission_status": "complete"
+    }
+   },
+   "problems": [],
+   "notes": [],
+   "engine_kind": "isaac",
+   "engine": "Isaac Sim 6.1.0.0, Kit 110.3.0+feature.371399.00c488ae.gl, omni.physx-110.3.2",
+   "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.1",
+    "scipy": "1.17.0",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "isaacsim": "6.1.0.0",
+    "isaac_version": [
+     "6.1.0",
+     "rc.26",
+     "6",
+     "1",
+     "0",
+     "rc",
+     "26",
+     "release.49347.2d230af4.gl"
+    ],
+    "kit_version": "110.3.0+feature.371399.00c488ae.gl",
+    "physx_extension": "omni.physx-110.3.2",
+    "tensors_extension": "omni.physics.tensors-110.3.2",
+    "physx_tensors_extension": "omni.physx.tensors-110.3.2"
+   },
+   "settings": {
+    "dt": 0.002,
+    "solver": "PGS",
+    "position_iterations": 64,
+    "velocity_iterations": 8,
+    "contact": "auto",
+    "roller_hull": [
+     21,
+     30
+    ],
+    "clamp": null,
+    "headless": true,
+    "physx_threads": null,
+    "contact_used": "tyre"
+   },
+   "contact_used": "tyre",
+   "tyres": true,
+   "physics_runtime": {
+    "engine": "physx",
+    "tensor_route": "omni.physics.tensors.create_simulation_view(numpy, explicit stage id)",
+    "device": "cpu"
+   },
+   "source_identical": true,
+   "preflight": {
+    "checks": 107,
+    "passed": 107,
+    "failed": [],
+    "unavailable": [],
+    "load": {
+     "force_N": 28.333333333333332,
+     "moment_Nm": 1.7777777777777777,
+     "tyre_force_N": 110.660724
+    },
+    "worst": {
+     "link masses": {
+      "value": 1.0054829971123434e-07,
+      "limit": 2e-06,
+      "checks": 2
+     },
+     "link centres of mass": {
+      "value": 7.271766661043344e-09,
+      "limit": 2e-06,
+      "checks": 2
+     },
+     "link inertia tensors": {
+      "value": 4.228959615746552e-07,
+      "limit": 5e-05,
+      "checks": 2
+     },
+     "joint armature": {
+      "value": 4.768371586472142e-08,
+      "limit": 1e-06,
+      "checks": 2
+     },
+     "joint limits": {
+      "value": 1.7484556025237907e-07,
+      "limit": 5e-06,
+      "checks": 2
+     },
+     "payload: inertia": {
+      "value": 3.0817039422446266e-07,
+      "limit": 5e-05,
+      "checks": 1
+     },
+     "gravity": {
+      "value": 4.196166987213701e-07,
+      "limit": 1e-05,
+      "checks": 1
+     },
+     "configuration round trip": {
+      "value": 1.1920928955078125e-07,
+      "limit": 2e-05,
+      "checks": 8
+     },
+     "velocity round trip": {
+      "value": 4.683470256061639e-08,
+      "limit": 2e-05,
+      "checks": 8
+     },
+     "link positions against": {
+      "value": 9.490185643836898e-07,
+      "limit": 5e-05,
+      "checks": 8
+     },
+     "link orientations against": {
+      "value": 9.315311675124377e-07,
+      "limit": 0.0002,
+      "checks": 8
+     },
+     "free-flight forward dynamics": {
+      "value": 0.0004371960984860454,
+      "limit": 0.02,
+      "checks": 14
+     },
+     "effect of external": {
+      "value": 0.000447207123339031,
+      "limit": 0.03,
+      "checks": 6
+     },
+     "do not act in the following step": {
+      "value": 0.00022018021252004293,
+      "limit": 0.3,
+      "checks": 6
+     },
+     "step displacement against": {
+      "value": 1.0888006049166723e-06,
+      "limit": 2e-05,
+      "checks": 16
+     }
+    },
+    "worst_standin": null
+   },
+   "mission": {
+    "status": "complete",
+    "unmet_bounds": [],
+    "saturated_steps": 0,
+    "steps": 134326,
+    "clamp_stability_ratio": 0.31073998265843367,
+    "clamp_max_deflection_mm": 0.762989176870693,
+    "tyre_stability_ratio": 0.45430333743257933,
+    "contact_report": {
+     "callbacks": 53631,
+     "points": 429040,
+     "wheels_in_contact": 0,
+     "pads_in_contact": 4,
+     "wheel_collider": false,
+     "clamp_contact_steps_unsigned": 0,
+     "friction_reported": true,
+     "friction_note": null,
+     "impulse_on_first_collider": 1.0
+    },
+    "supports_accepted": true,
+    "sensor_balance_vs_physx_joint_force": {
+     "force_rms_N": 0.0002723623445865056,
+     "of_N": 54.71089448634016,
+     "native_sign": [
+      1
+     ]
+    },
+    "bounds": {
+     "grasp_force": {
+      "value": 60.25643207548978,
+      "bound": 85.0,
+      "ok": true
+     },
+     "grasp_moment": {
+      "value": 0.5521027561354386,
+      "bound": 10.0,
+      "ok": true
+     },
+     "effort_ratio": {
+      "value": 0.6755254336887301,
+      "bound": 0.9,
+      "ok": true
+     },
+     "traction": {
+      "value": 0.09032513671649814,
+      "bound": 0.6,
+      "ok": true
+     },
+     "tipping": {
+      "value": 0.17949187273301992,
+      "bound": 0.1,
+      "ok": true
+     },
+     "wheel_load": {
+      "value": 173.22333215393132,
+      "bound": 100.0,
+      "ok": true
+     },
+     "clearance": {
+      "value": 0.050042935125826415,
+      "bound": 0.02,
+      "ok": true
+     },
+     "payload_tilt": {
+      "value": 0.00041040173979166756,
+      "bound": 0.012,
+      "ok": true
+     },
+     "payload_position": {
+      "value": 0.0008960180724360116,
+      "bound": 0.02,
+      "ok": true
+     },
+     "no_forbidden_contact": {
+      "value": 0,
+      "bound": 0,
+      "ok": true
+     },
+     "mission_complete": {
+      "value": "complete",
+      "bound": "complete",
+      "ok": true
+     },
+     "supports_verified": {
+      "value": true,
+      "bound": true,
+      "ok": true
+     }
+    },
+    "all_bounds_met": true,
+    "metrics": {
+     "sim_time_s": 268.652,
+     "payload_position_error_mm": 0.8960180724360116,
+     "payload_tilt_mrad": 0.41040173979166755,
+     "internal_force_max_N": 6.754022541394085,
+     "internal_force_rms_N": 0.617586231262424,
+     "grasp_force_max_N": 60.25643207548978,
+     "grasp_moment_max_Nm": 0.5521027561354386,
+     "effort_ratio_max": 0.6755254336887301,
+     "min_wheel_load_N": 173.22333215393132,
+     "traction_use_max": 0.09032513671649814,
+     "tipping_margin_min_m": 0.17949187273301992,
+     "base_tracking_max_mm": 3.629530121209429,
+     "base_yaw_error_max_mrad": 8.67130373322772,
+     "clearance_min_m": 0.050042935125826415,
+     "placement_error_mm": 0.13963109298158544,
+     "skid_yaw_rate_ratio": [
+      0.9996759546098335,
+      0.999832525709506
+     ],
+     "consistency": {
+      "unbalanced_rms": 0.07484197560730103,
+      "payload_balance_rms_N": 0.3857202242581408,
+      "recovered_force_rms_N": 0.16864962607386946,
+      "recovered_moment_rms_Nm": 0.06268856999224166,
+      "normal_load_rms_N": 0.12672659674053227,
+      "integration_um": 73.62693451053605
+     }
+    },
+    "plant_engine": "Isaac Sim / PhysX",
+    "references": {
+     "standin": null,
+     "mujoco_compliant": null,
+     "mujoco": null,
+     "pinocchio": null
+    },
+    "contact": "tyre",
+    "standin_contact": null,
+    "standin_comparable": true,
+    "differs_from_standin": []
+   },
+   "verdict": "confirmed in Isaac Sim"
+  },
+  "team3": {
+   "team": "team3",
+   "platform": "RB-ROBOUT+ / UR30",
+   "folder": "team3",
+   "run_id": "20261015T063346Z_65fbb29a",
+   "manifest_status": "passed",
+   "stages": {
+    "selftest": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1
+    },
+    "preflight": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1
+    },
+    "settle": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 32.6612309999764,
+     "simulated_s": 3.0,
+     "mission_status": "running"
+    },
+    "carry": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 163.86630830005743,
+     "simulated_s": 14.0,
+     "mission_status": "running"
+    },
+    "mission": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 5961.143648399971,
+     "simulated_s": 266.022,
+     "mission_status": "complete"
+    }
+   },
+   "problems": [],
+   "notes": [],
+   "engine_kind": "isaac",
+   "engine": "Isaac Sim 6.1.0.0, Kit 110.3.0+feature.371399.00c488ae.gl, omni.physx-110.3.2",
+   "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.1",
+    "scipy": "1.17.0",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "isaacsim": "6.1.0.0",
+    "isaac_version": [
+     "6.1.0",
+     "rc.26",
+     "6",
+     "1",
+     "0",
+     "rc",
+     "26",
+     "release.49347.2d230af4.gl"
+    ],
+    "kit_version": "110.3.0+feature.371399.00c488ae.gl",
+    "physx_extension": "omni.physx-110.3.2",
+    "tensors_extension": "omni.physics.tensors-110.3.2",
+    "physx_tensors_extension": "omni.physx.tensors-110.3.2"
+   },
+   "settings": {
+    "dt": 0.002,
+    "solver": "PGS",
+    "position_iterations": 64,
+    "velocity_iterations": 8,
+    "contact": "auto",
+    "roller_hull": [
+     21,
+     30
+    ],
+    "clamp": null,
+    "headless": true,
+    "physx_threads": null,
+    "contact_used": "rigid"
+   },
+   "contact_used": "rigid",
+   "tyres": false,
+   "physics_runtime": {
+    "engine": "physx",
+    "tensor_route": "omni.physics.tensors.create_simulation_view(numpy, explicit stage id)",
+    "device": "cpu"
+   },
+   "source_identical": true,
+   "preflight": {
+    "checks": 103,
+    "passed": 103,
+    "failed": [],
+    "unavailable": [],
+    "load": {
+     "force_N": 150.0,
+     "moment_Nm": 8.0
+    },
+    "cooked_hull_vertices": [
+     [
+      60,
+      60
+     ]
+    ],
+    "worst": {
+     "link masses": {
+      "value": 8.443991339479595e-08,
+      "limit": 2e-06,
+      "checks": 3
+     },
+     "link centres of mass": {
+      "value": 4.076957715870577e-09,
+      "limit": 2e-06,
+      "checks": 3
+     },
+     "link inertia tensors": {
+      "value": 2.9971914740469245e-07,
+      "limit": 5e-05,
+      "checks": 3
+     },
+     "joint armature": {
+      "value": 4.768371586472142e-08,
+      "limit": 1e-06,
+      "checks": 3
+     },
+     "joint limits": {
+      "value": 1.7484556025237907e-07,
+      "limit": 5e-06,
+      "checks": 3
+     },
+     "payload: inertia": {
+      "value": 2.3836006666276577e-07,
+      "limit": 5e-05,
+      "checks": 1
+     },
+     "gravity": {
+      "value": 4.196166987213701e-07,
+      "limit": 1e-05,
+      "checks": 1
+     },
+     "roller hulls": {
+      "value": 3.552713678800501e-18,
+      "limit": 2e-05,
+      "checks": 1
+     },
+     "configuration round trip": {
+      "value": 3.3187866232964325e-07,
+      "limit": 2e-05,
+      "checks": 7
+     },
+     "velocity round trip": {
+      "value": 5.236512845563368e-08,
+      "limit": 2e-05,
+      "checks": 7
+     },
+     "link positions against": {
+      "value": 1.498385728293554e-06,
+      "limit": 5e-05,
+      "checks": 7
+     },
+     "link orientations against": {
+      "value": 7.968987200928504e-07,
+      "limit": 0.0002,
+      "checks": 7
+     },
+     "free-flight forward dynamics": {
+      "value": 0.00017352149754510242,
+      "limit": 0.02,
+      "checks": 12
+     },
+     "effect of external": {
+      "value": 3.3194492591123376e-05,
+      "limit": 0.03,
+      "checks": 4
+     },
+     "do not act in the following step": {
+      "value": 0.0008819230596173361,
+      "limit": 0.3,
+      "checks": 4
+     },
+     "step displacement against": {
+      "value": 1.7537691379240403e-06,
+      "limit": 2e-05,
+      "checks": 14
+     }
+    },
+    "worst_standin": null
+   },
+   "mission": {
+    "status": "complete",
+    "unmet_bounds": [],
+    "saturated_steps": 0,
+    "steps": 133011,
+    "clamp_stability_ratio": 0.30234769773701436,
+    "clamp_max_deflection_mm": 1.2277788131297285,
+    "tyre_stability_ratio": null,
+    "contact_report": {
+     "callbacks": 133011,
+     "points": 61681177,
+     "wheels_in_contact": 12,
+     "pads_in_contact": 4,
+     "wheel_collider": true,
+     "clamp_contact_steps_unsigned": 0,
+     "friction_reported": true,
+     "friction_note": null,
+     "impulse_on_first_collider": 1.0
+    },
+    "supports_accepted": true,
+    "sensor_balance_vs_physx_joint_force": {
+     "force_rms_N": 0.0077136269535541535,
+     "of_N": 208.86150113043013,
+     "native_sign": [
+      1
+     ]
+    },
+    "bounds": {
+     "grasp_force": {
+      "value": 240.76513511416766,
+      "bound": 450.0,
+      "ok": true
+     },
+     "grasp_moment": {
+      "value": 2.0282171304031027,
+      "bound": 45.0,
+      "ok": true
+     },
+     "effort_ratio": {
+      "value": 0.646338126061476,
+      "bound": 0.9,
+      "ok": true
+     },
+     "traction": {
+      "value": 0.27832208157875127,
+      "bound": 0.6,
+      "ok": true
+     },
+     "tipping": {
+      "value": 0.16047664184929875,
+      "bound": 0.1,
+      "ok": true
+     },
+     "wheel_load": {
+      "value": 380.7947243652448,
+      "bound": 150.0,
+      "ok": true
+     },
+     "clearance": {
+      "value": 0.044068091430969236,
+      "bound": 0.02,
+      "ok": true
+     },
+     "payload_tilt": {
+      "value": 0.0006050905294682364,
+      "bound": 0.012,
+      "ok": true
+     },
+     "payload_position": {
+      "value": 0.0014399391953288131,
+      "bound": 0.02,
+      "ok": true
+     },
+     "no_forbidden_contact": {
+      "value": 0,
+      "bound": 0,
+      "ok": true
+     },
+     "mission_complete": {
+      "value": "complete",
+      "bound": "complete",
+      "ok": true
+     },
+     "supports_verified": {
+      "value": true,
+      "bound": true,
+      "ok": true
+     }
+    },
+    "all_bounds_met": true,
+    "metrics": {
+     "sim_time_s": 266.022,
+     "payload_position_error_mm": 1.4399391953288132,
+     "payload_tilt_mrad": 0.6050905294682364,
+     "internal_force_max_N": 43.38177130787997,
+     "internal_force_rms_N": 9.56677181757864,
+     "grasp_force_max_N": 240.76513511416766,
+     "grasp_moment_max_Nm": 2.0282171304031027,
+     "effort_ratio_max": 0.646338126061476,
+     "min_wheel_load_N": 380.7947243652448,
+     "traction_use_max": 0.27832208157875127,
+     "tipping_margin_min_m": 0.16047664184929875,
+     "base_tracking_max_mm": 36.935714053037124,
+     "base_yaw_error_max_mrad": 6.888374386514684,
+     "clearance_min_m": 0.044068091430969236,
+     "placement_error_mm": 0.11854446697943008,
+     "consistency": {
+      "unbalanced_rms": 10.24178746121354,
+      "payload_balance_rms_N": 1.6107975062174977,
+      "recovered_force_rms_N": 2.3595096732439935,
+      "recovered_moment_rms_Nm": 0.9347209046135205,
+      "normal_load_rms_N": 0.6824372731121628,
+      "integration_um": 72.14889658874492
+     }
+    },
+    "plant_engine": "Isaac Sim / PhysX",
+    "references": {
+     "standin": null,
+     "mujoco_compliant": null,
+     "mujoco": null,
+     "pinocchio": null
+    },
+    "contact": "rigid",
+    "standin_contact": null,
+    "standin_comparable": true,
+    "differs_from_standin": []
+   },
+   "verdict": "confirmed in Isaac Sim"
+  },
+  "ridgeback3": {
+   "team": "ridgeback3",
+   "platform": "Ridgeback / UR10e",
+   "folder": "ridgeback3",
+   "run_id": "20261015T063854Z_08d337d0",
+   "manifest_status": "passed",
+   "stages": {
+    "selftest": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1
+    },
+    "preflight": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1
+    },
+    "settle": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 34.33746850001626,
+     "simulated_s": 3.0,
+     "mission_status": "running"
+    },
+    "carry": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 167.82880060002208,
+     "simulated_s": 14.0,
+     "mission_status": "running"
+    },
+    "mission": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 3712.52913540008,
+     "simulated_s": 263.862,
+     "mission_status": "complete"
+    }
+   },
+   "problems": [],
+   "notes": [],
+   "engine_kind": "isaac",
+   "engine": "Isaac Sim 6.1.0.0, Kit 110.3.0+feature.371399.00c488ae.gl, omni.physx-110.3.2",
+   "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.1",
+    "scipy": "1.17.0",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "isaacsim": "6.1.0.0",
+    "isaac_version": [
+     "6.1.0",
+     "rc.26",
+     "6",
+     "1",
+     "0",
+     "rc",
+     "26",
+     "release.49347.2d230af4.gl"
+    ],
+    "kit_version": "110.3.0+feature.371399.00c488ae.gl",
+    "physx_extension": "omni.physx-110.3.2",
+    "tensors_extension": "omni.physics.tensors-110.3.2",
+    "physx_tensors_extension": "omni.physx.tensors-110.3.2"
+   },
+   "settings": {
+    "dt": 0.002,
+    "solver": "PGS",
+    "position_iterations": 64,
+    "velocity_iterations": 8,
+    "contact": "auto",
+    "roller_hull": [
+     21,
+     30
+    ],
+    "clamp": null,
+    "headless": true,
+    "physx_threads": null,
+    "contact_used": "rigid"
+   },
+   "contact_used": "rigid",
+   "tyres": false,
+   "physics_runtime": {
+    "engine": "physx",
+    "tensor_route": "omni.physics.tensors.create_simulation_view(numpy, explicit stage id)",
+    "device": "cpu"
+   },
+   "source_identical": true,
+   "preflight": {
+    "checks": 103,
+    "passed": 103,
+    "failed": [],
+    "unavailable": [],
+    "load": {
+     "force_N": 28.333333333333332,
+     "moment_Nm": 1.7777777777777777
+    },
+    "cooked_hull_vertices": [
+     [
+      60,
+      60
+     ]
+    ],
+    "worst": {
+     "link masses": {
+      "value": 1.0054829971123434e-07,
+      "limit": 2e-06,
+      "checks": 3
+     },
+     "link centres of mass": {
+      "value": 7.271766661043344e-09,
+      "limit": 2e-06,
+      "checks": 3
+     },
+     "link inertia tensors": {
+      "value": 4.228959615746552e-07,
+      "limit": 5e-05,
+      "checks": 3
+     },
+     "joint armature": {
+      "value": 4.768371586472142e-08,
+      "limit": 1e-06,
+      "checks": 3
+     },
+     "joint limits": {
+      "value": 1.7484556025237907e-07,
+      "limit": 5e-06,
+      "checks": 3
+     },
+     "payload: inertia": {
+      "value": 2.3835487510896805e-07,
+      "limit": 5e-05,
+      "checks": 1
+     },
+     "gravity": {
+      "value": 4.196166987213701e-07,
+      "limit": 1e-05,
+      "checks": 1
+     },
+     "roller hulls": {
+      "value": 3.552713678800501e-18,
+      "limit": 2e-05,
+      "checks": 1
+     },
+     "configuration round trip": {
+      "value": 5.722045894884786e-07,
+      "limit": 2e-05,
+      "checks": 7
+     },
+     "velocity round trip": {
+      "value": 1.7002635177565395e-07,
+      "limit": 2e-05,
+      "checks": 7
+     },
+     "link positions against": {
+      "value": 1.06470391056429e-06,
+      "limit": 5e-05,
+      "checks": 7
+     },
+     "link orientations against": {
+      "value": 6.391886052348489e-07,
+      "limit": 0.0002,
+      "checks": 7
+     },
+     "free-flight forward dynamics": {
+      "value": 6.384489017071742e-05,
+      "limit": 0.02,
+      "checks": 12
+     },
+     "effect of external": {
+      "value": 1.9270782673092833e-05,
+      "limit": 0.03,
+      "checks": 4
+     },
+     "do not act in the following step": {
+      "value": 0.0003869300057120873,
+      "limit": 0.3,
+      "checks": 4
+     },
+     "step displacement against": {
+      "value": 9.871313470646834e-07,
+      "limit": 2e-05,
+      "checks": 14
+     }
+    },
+    "worst_standin": null
+   },
+   "mission": {
+    "status": "complete",
+    "unmet_bounds": [],
+    "saturated_steps": 0,
+    "steps": 131931,
+    "clamp_stability_ratio": 0.2921180964424127,
+    "clamp_max_deflection_mm": 0.734276196481743,
+    "tyre_stability_ratio": null,
+    "contact_report": {
+     "callbacks": 131931,
+     "points": 79406092,
+     "wheels_in_contact": 12,
+     "pads_in_contact": 4,
+     "wheel_collider": true,
+     "clamp_contact_steps_unsigned": 0,
+     "friction_reported": true,
+     "friction_note": null,
+     "impulse_on_first_collider": 1.0
+    },
+    "supports_accepted": true,
+    "sensor_balance_vs_physx_joint_force": {
+     "force_rms_N": 0.0030809541355023944,
+     "of_N": 54.692358024826866,
+     "native_sign": [
+      1
+     ]
+    },
+    "bounds": {
+     "grasp_force": {
+      "value": 57.5711555366291,
+      "bound": 85.0,
+      "ok": true
+     },
+     "grasp_moment": {
+      "value": 0.6135643482006757,
+      "bound": 10.0,
+      "ok": true
+     },
+     "effort_ratio": {
+      "value": 0.6672169083835341,
+      "bound": 0.9,
+      "ok": true
+     },
+     "traction": {
+      "value": 0.2905838707512071,
+      "bound": 0.6,
+      "ok": true
+     },
+     "tipping": {
+      "value": 0.07851244961607043,
+      "bound": 0.06,
+      "ok": true
+     },
+     "wheel_load": {
+      "value": 358.4300993633934,
+      "bound": 100.0,
+      "ok": true
+     },
+     "clearance": {
+      "value": 0.03998020907737828,
+      "bound": 0.02,
+      "ok": true
+     },
+     "payload_tilt": {
+      "value": 0.0007389639627889157,
+      "bound": 0.012,
+      "ok": true
+     },
+     "payload_position": {
+      "value": 0.0013075522090232284,
+      "bound": 0.02,
+      "ok": true
+     },
+     "no_forbidden_contact": {
+      "value": 0,
+      "bound": 0,
+      "ok": true
+     },
+     "mission_complete": {
+      "value": "complete",
+      "bound": "complete",
+      "ok": true
+     },
+     "supports_verified": {
+      "value": true,
+      "bound": true,
+      "ok": true
+     }
+    },
+    "all_bounds_met": true,
+    "metrics": {
+     "sim_time_s": 263.862,
+     "payload_position_error_mm": 1.3075522090232283,
+     "payload_tilt_mrad": 0.7389639627889156,
+     "internal_force_max_N": 20.959272980654816,
+     "internal_force_rms_N": 4.752143394374117,
+     "grasp_force_max_N": 57.5711555366291,
+     "grasp_moment_max_Nm": 0.6135643482006757,
+     "effort_ratio_max": 0.6672169083835341,
+     "min_wheel_load_N": 358.4300993633934,
+     "traction_use_max": 0.2905838707512071,
+     "tipping_margin_min_m": 0.07851244961607043,
+     "base_tracking_max_mm": 31.93292332857031,
+     "base_yaw_error_max_mrad": 5.938901753597515,
+     "clearance_min_m": 0.03998020907737828,
+     "placement_error_mm": 0.167040632210734,
+     "consistency": {
+      "unbalanced_rms": 5.499500570930403,
+      "payload_balance_rms_N": 0.5516445368488829,
+      "recovered_force_rms_N": 0.676889659854378,
+      "recovered_moment_rms_Nm": 0.14722272644540926,
+      "normal_load_rms_N": 0.1478726560096435,
+      "integration_um": 53.72544746869417
+     }
+    },
+    "plant_engine": "Isaac Sim / PhysX",
+    "references": {
+     "standin": null,
+     "mujoco_compliant": null,
+     "mujoco": null,
+     "pinocchio": null
+    },
+    "contact": "rigid",
+    "standin_contact": null,
+    "standin_comparable": true,
+    "differs_from_standin": []
+   },
+   "verdict": "confirmed in Isaac Sim"
+  },
+  "husky3": {
+   "team": "husky3",
+   "platform": "Husky A300 / UR10e",
+   "folder": "husky3",
+   "run_id": "20261015T064406Z_968b0b4a",
+   "manifest_status": "passed",
+   "stages": {
+    "selftest": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1
+    },
+    "preflight": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1
+    },
+    "settle": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 13.774164899950847,
+     "simulated_s": 3.0,
+     "mission_status": "running"
+    },
+    "carry": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 70.23693769995589,
+     "simulated_s": 14.0,
+     "mission_status": "running"
+    },
+    "mission": {
+     "status": "passed",
+     "problems": [],
+     "attempts": 1,
+     "wall_s": 1629.4110875000479,
+     "simulated_s": 298.272,
+     "mission_status": "complete"
+    }
+   },
+   "problems": [],
+   "notes": [],
+   "engine_kind": "isaac",
+   "engine": "Isaac Sim 6.1.0.0, Kit 110.3.0+feature.371399.00c488ae.gl, omni.physx-110.3.2",
+   "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.1",
+    "scipy": "1.17.0",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "isaacsim": "6.1.0.0",
+    "isaac_version": [
+     "6.1.0",
+     "rc.26",
+     "6",
+     "1",
+     "0",
+     "rc",
+     "26",
+     "release.49347.2d230af4.gl"
+    ],
+    "kit_version": "110.3.0+feature.371399.00c488ae.gl",
+    "physx_extension": "omni.physx-110.3.2",
+    "tensors_extension": "omni.physics.tensors-110.3.2",
+    "physx_tensors_extension": "omni.physx.tensors-110.3.2"
+   },
+   "settings": {
+    "dt": 0.002,
+    "solver": "PGS",
+    "position_iterations": 64,
+    "velocity_iterations": 8,
+    "contact": "auto",
+    "roller_hull": [
+     21,
+     30
+    ],
+    "clamp": null,
+    "headless": true,
+    "physx_threads": null,
+    "contact_used": "tyre"
+   },
+   "contact_used": "tyre",
+   "tyres": true,
+   "physics_runtime": {
+    "engine": "physx",
+    "tensor_route": "omni.physics.tensors.create_simulation_view(numpy, explicit stage id)",
+    "device": "cpu"
+   },
+   "source_identical": true,
+   "preflight": {
+    "checks": 116,
+    "passed": 116,
+    "failed": [],
+    "unavailable": [],
+    "load": {
+     "force_N": 28.333333333333332,
+     "moment_Nm": 1.7777777777777777,
+     "tyre_force_N": 110.660724
+    },
+    "worst": {
+     "link masses": {
+      "value": 1.0054829971123434e-07,
+      "limit": 2e-06,
+      "checks": 3
+     },
+     "link centres of mass": {
+      "value": 7.271766661043344e-09,
+      "limit": 2e-06,
+      "checks": 3
+     },
+     "link inertia tensors": {
+      "value": 4.228959615746552e-07,
+      "limit": 5e-05,
+      "checks": 3
+     },
+     "joint armature": {
+      "value": 4.768371586472142e-08,
+      "limit": 1e-06,
+      "checks": 3
+     },
+     "joint limits": {
+      "value": 1.7484556025237907e-07,
+      "limit": 5e-06,
+      "checks": 3
+     },
+     "payload: inertia": {
+      "value": 2.3835487510896805e-07,
+      "limit": 5e-05,
+      "checks": 1
+     },
+     "gravity": {
+      "value": 4.196166987213701e-07,
+      "limit": 1e-05,
+      "checks": 1
+     },
+     "configuration round trip": {
+      "value": 1.9073486345888568e-07,
+      "limit": 2e-05,
+      "checks": 8
+     },
+     "velocity round trip": {
+      "value": 2.8939074359080053e-08,
+      "limit": 2e-05,
+      "checks": 8
+     },
+     "link positions against": {
+      "value": 1.4327686844827581e-06,
+      "limit": 5e-05,
+      "checks": 8
+     },
+     "link orientations against": {
+      "value": 7.217455529160856e-07,
+      "limit": 0.0002,
+      "checks": 8
+     },
+     "free-flight forward dynamics": {
+      "value": 0.0003903275294576047,
+      "limit": 0.02,
+      "checks": 14
+     },
+     "effect of external": {
+      "value": 0.00038311180684370686,
+      "limit": 0.03,
+      "checks": 6
+     },
+     "do not act in the following step": {
+      "value": 0.0006032787852358462,
+      "limit": 0.3,
+      "checks": 6
+     },
+     "step displacement against": {
+      "value": 2.514962947167273e-06,
+      "limit": 2e-05,
+      "checks": 16
+     }
+    },
+    "worst_standin": null
+   },
+   "mission": {
+    "status": "complete",
+    "unmet_bounds": [],
+    "saturated_steps": 0,
+    "steps": 149136,
+    "clamp_stability_ratio": 0.2921201080147451,
+    "clamp_max_deflection_mm": 0.7218970524435183,
+    "tyre_stability_ratio": 0.4543033374327976,
+    "contact_report": {
+     "callbacks": 63526,
+     "points": 508200,
+     "wheels_in_contact": 0,
+     "pads_in_contact": 4,
+     "wheel_collider": false,
+     "clamp_contact_steps_unsigned": 0,
+     "friction_reported": true,
+     "friction_note": null,
+     "impulse_on_first_collider": 1.0
+    },
+    "supports_accepted": true,
+    "sensor_balance_vs_physx_joint_force": {
+     "force_rms_N": 0.000249389882192194,
+     "of_N": 51.59568110246158,
+     "native_sign": [
+      1
+     ]
+    },
+    "bounds": {
+     "grasp_force": {
+      "value": 56.244783889568254,
+      "bound": 85.0,
+      "ok": true
+     },
+     "grasp_moment": {
+      "value": 0.6727442642395559,
+      "bound": 10.0,
+      "ok": true
+     },
+     "effort_ratio": {
+      "value": 0.6903310384015939,
+      "bound": 0.9,
+      "ok": true
+     },
+     "traction": {
+      "value": 0.08757609927638993,
+      "bound": 0.6,
+      "ok": true
+     },
+     "tipping": {
+      "value": 0.1809961221668042,
+      "bound": 0.1,
+      "ok": true
+     },
+     "wheel_load": {
+      "value": 174.3800761767975,
+      "bound": 100.0,
+      "ok": true
+     },
+     "clearance": {
+      "value": 0.04003766091275709,
+      "bound": 0.02,
+      "ok": true
+     },
+     "payload_tilt": {
+      "value": 0.0003249619842041414,
+      "bound": 0.012,
+      "ok": true
+     },
+     "payload_position": {
+      "value": 0.0008814689572332753,
+      "bound": 0.02,
+      "ok": true
+     },
+     "no_forbidden_contact": {
+      "value": 0,
+      "bound": 0,
+      "ok": true
+     },
+     "mission_complete": {
+      "value": "complete",
+      "bound": "complete",
+      "ok": true
+     },
+     "supports_verified": {
+      "value": true,
+      "bound": true,
+      "ok": true
+     }
+    },
+    "all_bounds_met": true,
+    "metrics": {
+     "sim_time_s": 298.272,
+     "payload_position_error_mm": 0.8814689572332753,
+     "payload_tilt_mrad": 0.3249619842041414,
+     "internal_force_max_N": 12.453315765792288,
+     "internal_force_rms_N": 0.9963918165796628,
+     "grasp_force_max_N": 56.244783889568254,
+     "grasp_moment_max_Nm": 0.6727442642395559,
+     "effort_ratio_max": 0.6903310384015939,
+     "min_wheel_load_N": 174.3800761767975,
+     "traction_use_max": 0.08757609927638993,
+     "tipping_margin_min_m": 0.1809961221668042,
+     "base_tracking_max_mm": 5.5224497987298635,
+     "base_yaw_error_max_mrad": 9.161906771875783,
+     "clearance_min_m": 0.04003766091275709,
+     "placement_error_mm": 0.14692095939075636,
+     "skid_yaw_rate_ratio": [
+      0.9995632964778062,
+      0.9998032804853153,
+      0.9997394623229988
+     ],
+     "consistency": {
+      "unbalanced_rms": 0.0884833410246794,
+      "payload_balance_rms_N": 0.5146387749647816,
+      "recovered_force_rms_N": 0.158603780673047,
+      "recovered_moment_rms_Nm": 0.0556800238772483,
+      "normal_load_rms_N": 0.11284176881055676,
+      "integration_um": 47.384013342701834
+     }
+    },
+    "plant_engine": "Isaac Sim / PhysX",
+    "references": {
+     "standin": null,
+     "mujoco_compliant": null,
+     "mujoco": null,
+     "pinocchio": null
+    },
+    "contact": "tyre",
+    "standin_contact": null,
+    "standin_comparable": true,
+    "differs_from_standin": []
+   },
+   "verdict": "confirmed in Isaac Sim"
+  }
+ },
+ "teams_expected": [
+  "team2",
+  "ridgeback2",
+  "husky2",
+  "team3",
+  "ridgeback3",
+  "husky3"
+ ],
+ "teams_missing": [],
+ "headline": "CONFIRMED IN ISAAC SIM: 6 team(s), every stage passed and every declared bound met",
+ "exit_code": 0,
+ "engines": [
+  "Isaac Sim 6.1.0.0, Kit 110.3.0+feature.371399.00c488ae.gl, omni.physx-110.3.2"
+ ],
+ "verdicts": [
+  "confirmed in Isaac Sim",
+  "confirmed in Isaac Sim",
+  "confirmed in Isaac Sim",
+  "confirmed in Isaac Sim",
+  "confirmed in Isaac Sim",
+  "confirmed in Isaac Sim"
+ ],
+ "stages_with_closing_problems": 0
+}

@@ -1,0 +1,281 @@
+{
+ "schema_version": 1,
+ "campaign_id": "20261015T062209Z_c93f9a61",
+ "started_utc": "2026-10-15T06:22:09.282516+00:00",
+ "status": "passed",
+ "package": {
+  "kernel_sha256": "bbd1fb482e7529d70e05be3c3533d6d1076dada79f6b121e70424d138a9be8de",
+  "source_digest": "4a3aeacd7b2a6919e718c58df623eec6378710b7a5eb06025545614b58d1bb9b",
+  "files": 64
+ },
+ "options": {
+  "worker_arguments": []
+ },
+ "environment": {
+  "folder": "environment",
+  "team": "team2",
+  "outcome": "passed",
+  "text": "Isaac Sim 6.1.0.0, Kit 110.3.0+feature.371399.00c488ae.gl, omni.physx-110.3.2"
+ },
+ "teams": {
+  "team2": {
+   "folder": "team2",
+   "platform": "RB-ROBOUT+ / UR30",
+   "stages": {
+    "selftest": "passed",
+    "preflight": "passed",
+    "settle": "passed",
+    "carry": "passed",
+    "mission": "passed"
+   }
+  },
+  "ridgeback2": {
+   "folder": "ridgeback2",
+   "platform": "Ridgeback / UR10e",
+   "stages": {
+    "selftest": "passed",
+    "preflight": "passed",
+    "settle": "passed",
+    "carry": "passed",
+    "mission": "passed"
+   }
+  },
+  "husky2": {
+   "folder": "husky2",
+   "platform": "Husky A300 / UR10e",
+   "stages": {
+    "selftest": "passed",
+    "preflight": "passed",
+    "settle": "passed",
+    "carry": "passed",
+    "mission": "passed"
+   }
+  },
+  "team3": {
+   "folder": "team3",
+   "platform": "RB-ROBOUT+ / UR30",
+   "stages": {
+    "selftest": "passed",
+    "preflight": "passed",
+    "settle": "passed",
+    "carry": "passed",
+    "mission": "passed"
+   }
+  },
+  "ridgeback3": {
+   "folder": "ridgeback3",
+   "platform": "Ridgeback / UR10e",
+   "stages": {
+    "selftest": "passed",
+    "preflight": "passed",
+    "settle": "passed",
+    "carry": "passed",
+    "mission": "passed"
+   }
+  },
+  "husky3": {
+   "folder": "husky3",
+   "platform": "Husky A300 / UR10e",
+   "stages": {
+    "selftest": "passed",
+    "preflight": "passed",
+    "settle": "passed",
+    "carry": "passed",
+    "mission": "passed"
+   }
+  }
+ },
+ "invocations": [
+  {
+   "started_utc": "2026-10-15T06:22:09.282516+00:00",
+   "teams": [
+    "team2",
+    "ridgeback2",
+    "husky2",
+    "team3",
+    "ridgeback3",
+    "husky3"
+   ],
+   "stages": [
+    "selftest",
+    "preflight",
+    "settle",
+    "carry",
+    "mission"
+   ],
+   "headless": true,
+   "jobs": 1,
+   "runtime": "%USERPROFILE%\\AppData\\Local\\miniforge3\\envs\\isaac61\\python.exe",
+   "coordinator_python": "3.12.14",
+   "platform": "Windows-11-10.0.26100-SP0",
+   "resumed": false,
+   "source_digest": "4a3aeacd7b2a6919e718c58df623eec6378710b7a5eb06025545614b58d1bb9b",
+   "steps": [
+    {
+     "phase": "environment",
+     "team": "team2",
+     "stages": [
+      "environment"
+     ],
+     "started_utc": "2026-10-15T06:22:09.382376+00:00",
+     "exit_code": 0,
+     "finished_utc": "2026-10-15T06:22:32.210286+00:00",
+     "wall_s": 22.8
+    },
+    {
+     "phase": "quick stages",
+     "team": "team2",
+     "stages": [
+      "selftest",
+      "preflight",
+      "settle",
+      "carry"
+     ],
+     "started_utc": "2026-10-15T06:22:32.225990+00:00",
+     "exit_code": 0,
+     "finished_utc": "2026-10-15T06:26:54.215203+00:00",
+     "wall_s": 262.1
+    },
+    {
+     "phase": "quick stages",
+     "team": "ridgeback2",
+     "stages": [
+      "selftest",
+      "preflight",
+      "settle",
+      "carry"
+     ],
+     "started_utc": "2026-10-15T06:26:54.217222+00:00",
+     "exit_code": 0,
+     "finished_utc": "2026-10-15T06:31:24.159496+00:00",
+     "wall_s": 270.0
+    },
+    {
+     "phase": "quick stages",
+     "team": "husky2",
+     "stages": [
+      "selftest",
+      "preflight",
+      "settle",
+      "carry"
+     ],
+     "started_utc": "2026-10-15T06:31:24.159496+00:00",
+     "exit_code": 0,
+     "finished_utc": "2026-10-15T06:33:46.648535+00:00",
+     "wall_s": 142.5
+    },
+    {
+     "phase": "quick stages",
+     "team": "team3",
+     "stages": [
+      "selftest",
+      "preflight",
+      "settle",
+      "carry"
+     ],
+     "started_utc": "2026-10-15T06:33:46.648535+00:00",
+     "exit_code": 0,
+     "finished_utc": "2026-10-15T06:38:53.886435+00:00",
+     "wall_s": 307.2
+    },
+    {
+     "phase": "quick stages",
+     "team": "ridgeback3",
+     "stages": [
+      "selftest",
+      "preflight",
+      "settle",
+      "carry"
+     ],
+     "started_utc": "2026-10-15T06:38:53.886435+00:00",
+     "exit_code": 0,
+     "finished_utc": "2026-10-15T06:44:06.673020+00:00",
+     "wall_s": 312.8
+    },
+    {
+     "phase": "quick stages",
+     "team": "husky3",
+     "stages": [
+      "selftest",
+      "preflight",
+      "settle",
+      "carry"
+     ],
+     "started_utc": "2026-10-15T06:44:06.673020+00:00",
+     "exit_code": 0,
+     "finished_utc": "2026-10-15T06:47:00.021726+00:00",
+     "wall_s": 173.4
+    },
+    {
+     "phase": "missions",
+     "team": "team2",
+     "stages": [
+      "mission"
+     ],
+     "started_utc": "2026-10-15T06:47:00.992402+00:00",
+     "exit_code": 0,
+     "finished_utc": "2026-10-15T07:23:06.792438+00:00",
+     "wall_s": 2165.8
+    },
+    {
+     "phase": "missions",
+     "team": "ridgeback2",
+     "stages": [
+      "mission"
+     ],
+     "started_utc": "2026-10-15T07:23:06.792438+00:00",
+     "exit_code": 0,
+     "finished_utc": "2026-10-15T08:03:50.285264+00:00",
+     "wall_s": 2443.5
+    },
+    {
+     "phase": "missions",
+     "team": "husky2",
+     "stages": [
+      "mission"
+     ],
+     "started_utc": "2026-10-15T08:03:50.285264+00:00",
+     "exit_code": 0,
+     "finished_utc": "2026-10-15T08:22:45.516336+00:00",
+     "wall_s": 1135.2
+    },
+    {
+     "phase": "missions",
+     "team": "team3",
+     "stages": [
+      "mission"
+     ],
+     "started_utc": "2026-10-15T08:22:45.516336+00:00",
+     "exit_code": 0,
+     "finished_utc": "2026-10-15T10:02:51.442569+00:00",
+     "wall_s": 6006.0
+    },
+    {
+     "phase": "missions",
+     "team": "ridgeback3",
+     "stages": [
+      "mission"
+     ],
+     "started_utc": "2026-10-15T10:02:51.444574+00:00",
+     "exit_code": 0,
+     "finished_utc": "2026-10-15T11:05:42.605287+00:00",
+     "wall_s": 3771.2
+    },
+    {
+     "phase": "missions",
+     "team": "husky3",
+     "stages": [
+      "mission"
+     ],
+     "started_utc": "2026-10-15T11:05:42.605287+00:00",
+     "exit_code": 0,
+     "finished_utc": "2026-10-15T11:33:43.038584+00:00",
+     "wall_s": 1680.4
+    }
+   ],
+   "finished_utc": "2026-10-15T11:33:43.719641+00:00",
+   "status": "passed"
+  }
+ ],
+ "finished_utc": "2026-10-15T11:33:43.719641+00:00"
+}

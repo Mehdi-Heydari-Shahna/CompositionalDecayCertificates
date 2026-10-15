@@ -1,0 +1,17 @@
+status: running  (simulated 3.0 s)
+payload while carried: position error max - mm, tilt max - mrad, yaw error max - mrad
+base tracking: r1 5.7 mm / 1.4 mrad, r2 5.1 mm / 2.3 mrad
+internal wrench while carried: force max - N (rms -), moment max - N m (rms -)
+  grasp_r1: force max - N, moment max - N m, not carrying
+  grasp_r2: force max - N, moment max - N m, not carrying
+  wrist sensor readings, largest: r1 12.5 N / 0.1 N m, r2 12.1 N / 0.1 N m (declared range 100 N / 10 N m)
+actuator demand: max ratio 0.36 (r1_arm_elbow_motor), saturated steps 0
+  r1: min wheel load 485 N, traction utilization max 0.183 (p99 0.169), tipping margin min 0.107 m, base height vs rigid wheels -0.05 mm [-0.08, -0.01], front_rocker [-0.1, +0.2] mrad of +-87
+  r2: min wheel load 480 N, traction utilization max 0.122 (p99 0.121), tipping margin min 0.105 m, base height vs rigid wheels -0.05 mm [-0.08, -0.01], front_rocker [-0.1, +0.2] mrad of +-87
+smallest clearance 0.090 m; by category: payload:neighbour 0.090, payload:pad 0.000, payload:rack 0.105, payload:wall 0.375, robot:wall 0.989
+forbidden contacts reported by the plant: 0 []
+  compiled ground loads vs plant contacts: total normal max 0.0 N (rms 0.0), each wheel normal max 58.6 N (rms 17.6), wheel traction max 93.6 N (rms 38.1)
+    r1 mean wheel loads (N): model [554.0, 553.0, 617.0, 524.0] plant [556.0, 550.0, 616.0, 526.0]
+    r2 mean wheel loads (N): model [558.0, 556.0, 618.0, 520.0] plant [557.0, 559.0, 617.0, 519.0]
+  displacement vs summed rates per 20 ms: floating bodies max 4.98 um / 11.39 urad, joints max 400.67 u(rad|m)
+declared bounds: NOT met: mission_complete (running vs complete), supports_verified (False vs True)

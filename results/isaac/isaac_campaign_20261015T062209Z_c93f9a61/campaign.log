@@ -1,0 +1,41 @@
+Campaign 20261015T062209Z_c93f9a61
+Folder: %USERPROFILE%\Downloads\Team_CMG_PACDM\results\isaac_campaign_20261015T062209Z_c93f9a61
+Isaac Python: %USERPROFILE%\AppData\Local\miniforge3\envs\isaac61\python.exe
+Teams: team2, ridgeback2, husky2, team3, ridgeback3, husky3
+Stages: selftest, preflight, settle, carry, mission
+Ctrl+C ends the campaign in order; --resume continues it later.
+
+== environment
+environment: passed (Isaac Sim 6.1.0.0, Kit 110.3.0+feature.371399.00c488ae.gl, omni.physx-110.3.2)
+
+== quick stages: team2 (selftest preflight settle carry), ridgeback2 (selftest preflight settle carry), husky2 (selftest preflight settle carry), team3 (selftest preflight settle carry), ridgeback3 (selftest preflight settle carry), husky3 (selftest preflight settle carry)
+team2: selftest passed, preflight passed, settle passed, carry passed
+ridgeback2: selftest passed, preflight passed, settle passed, carry passed
+husky2: selftest passed, preflight passed, settle passed, carry passed
+team3: selftest passed, preflight passed, settle passed, carry passed
+ridgeback3: selftest passed, preflight passed, settle passed, carry passed
+husky3: selftest passed, preflight passed, settle passed, carry passed
+quick stages: 24.5 minutes
+
+== missions: team2, ridgeback2, husky2, team3, ridgeback3, husky3
+team2: selftest passed, preflight passed, settle passed, carry passed, mission passed
+ridgeback2: selftest passed, preflight passed, settle passed, carry passed, mission passed
+husky2: selftest passed, preflight passed, settle passed, carry passed, mission passed
+team3: selftest passed, preflight passed, settle passed, carry passed, mission passed
+ridgeback3: selftest passed, preflight passed, settle passed, carry passed, mission passed
+husky3: selftest passed, preflight passed, settle passed, carry passed, mission passed
+missions: 286.7 minutes
+
+== assessment
+CONFIRMED IN ISAAC SIM: 6 team(s), every stage passed and every declared bound met
+  team2       confirmed in Isaac Sim  [selftest passed, preflight passed, settle passed, carry passed, mission passed]
+  ridgeback2  confirmed in Isaac Sim  [selftest passed, preflight passed, settle passed, carry passed, mission passed]
+  husky2      confirmed in Isaac Sim  [selftest passed, preflight passed, settle passed, carry passed, mission passed]
+  team3       confirmed in Isaac Sim  [selftest passed, preflight passed, settle passed, carry passed, mission passed]
+  ridgeback3  confirmed in Isaac Sim  [selftest passed, preflight passed, settle passed, carry passed, mission passed]
+  husky3      confirmed in Isaac Sim  [selftest passed, preflight passed, settle passed, carry passed, mission passed]
+Report: %USERPROFILE%\Downloads\Team_CMG_PACDM\results\isaac_campaign_20261015T062209Z_c93f9a61\ASSESSMENT.md
+Bundle: %USERPROFILE%\Downloads\Team_CMG_PACDM\results\isaac_campaign_20261015T062209Z_c93f9a61\campaign_bundle.zip (8.4 MB)
+
+Campaign 20261015T062209Z_c93f9a61: every stage asked for passed
+Folder: %USERPROFILE%\Downloads\Team_CMG_PACDM\results\isaac_campaign_20261015T062209Z_c93f9a61
